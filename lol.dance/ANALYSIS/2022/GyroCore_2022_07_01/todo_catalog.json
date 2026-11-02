@@ -1,0 +1,299 @@
+{
+  "stem": "GyroCore_2022_07_01",
+  "year": "2022",
+  "todos": [],
+  "milestones": [],
+  "directions": [],
+  "comments": [
+    {
+      "type": "COMMENT",
+      "content": "#include <io.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <GL/glut.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "link with Ws2_32.lib"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Excludes Anything That Isn't Emscriptem Compatible"
+    },
+    {
+      "type": "COMMENT",
+      "content": "UNIX ONLY #include <sys/socket.h> #include <netinet/in.h> #include <arpa/inet.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <netdb.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-application.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-common.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "bool isConsole = isatty(fileno(stdin));"
+    },
+    {
+      "type": "COMMENT",
+      "content": "getline (cin, ConsoleInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_sw_variables_bench();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_menu();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "create array of bits then by bits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "sort variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "++variable_type_step_check;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "list variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_sw_variable_worker();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <io.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <GL/glut.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "link with Ws2_32.lib"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Excludes Anything That Isn't Emscriptem Compatible"
+    },
+    {
+      "type": "COMMENT",
+      "content": "UNIX ONLY #include <sys/socket.h> #include <netinet/in.h> #include <arpa/inet.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <netdb.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-application.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-common.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "bool isConsole = isatty(fileno(stdin));"
+    },
+    {
+      "type": "COMMENT",
+      "content": "getline (cin, ConsoleInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_sw_variables_bench();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_menu();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "create array of bits then by bits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "sort variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "++variable_type_step_check;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "list variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_sw_variable_worker();"
+    }
+  ],
+  "functions": [
+    {
+      "return_type": "int",
+      "name": "main"
+    },
+    {
+      "return_type": "void",
+      "name": "heartbeat"
+    },
+    {
+      "return_type": "void",
+      "name": "gyrocore"
+    },
+    {
+      "return_type": "void",
+      "name": "sw_purchase_verify"
+    },
+    {
+      "return_type": "void",
+      "name": "realm"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_initiate"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_silent"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_responsive"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_multi_core"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_interface"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_post_client"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_querry_client"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_menu"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variables"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variable"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variables_sort"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variables_bench"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduits"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduit_weaver"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduit"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduit_interface_core"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduit_interface_network"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_outer_realm_conduits"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_outer_realm_conduit"
+    },
+    {
+      "return_type": "void",
+      "name": "library_letter"
+    },
+    {
+      "return_type": "void",
+      "name": "library_time"
+    },
+    {
+      "return_type": "void",
+      "name": "librarian"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_querry"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_webgl"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_vulkan"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_opengl"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_metal"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_directx"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_cores_zeluda"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_cores_cuda"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_cores_gpufort"
+    }
+  ],
+  "classes": [],
+  "total_todos": 0,
+  "total_milestones": 0,
+  "total_directions": 0
+}

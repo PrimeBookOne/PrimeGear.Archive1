@@ -1,0 +1,2810 @@
+ dance total 1 range 2 prime: 5 previousPrime: 5 primeDifference 1 pDlarge 1
+ dance total 3 range 3 prime: 11 previousPrime: 11 primeDifference 2 pDlarge 2
+ dance total 8 range 5 prime: 29 previousPrime: 29 primeDifference 3 pDlarge 3
+ dance total 23 range 9 prime: 97 previousPrime: 97 primeDifference 4 pDlarge 4
+ dance total 29 range 10 prime: 127 previousPrime: 127 primeDifference 7 pDlarge 7
+ dance total 98 range 19 prime: 541 previousPrime: 541 primeDifference 9 pDlarge 9
+ dance total 153 range 30 prime: 907 previousPrime: 907 primeDifference 10 pDlarge 10
+ dance total 188 range 32 prime: 1151 previousPrime: 1151 primeDifference 11 pDlarge 11
+ dance total 216 range 34 prime: 1361 previousPrime: 1361 primeDifference 17 pDlarge 17
+ dance total 1182 range 95 prime: 9587 previousPrime: 9587 primeDifference 18 pDlarge 18
+ dance total 1830 range 124 prime: 15727 previousPrime: 15727 primeDifference 22 pDlarge 22
+ dance total 2224 range 132 prime: 19661 previousPrime: 19661 primeDifference 26 pDlarge 26
+ dance total 3384 range 176 prime: 31469 previousPrime: 31469 primeDifference 36 pDlarge 36
+ dance total 14356 range 393 prime: 156007 previousPrime: 156007 primeDifference 43 pDlarge 43
+ dance total 30801 range 595 prime: 360749 previousPrime: 360749 primeDifference 48 pDlarge 48
+ dance total 31544 range 605 prime: 370373 previousPrime: 370373 primeDifference 56 pDlarge 56
+ dance total 40932 range 695 prime: 492227 previousPrime: 492227 primeDifference 57 pDlarge 57
+ dance total 103519 range 1161 prime: 1349651 previousPrime: 1349651 primeDifference 59 pDlarge 59
+ dance total 104070 range 1160 prime: 1357333 previousPrime: 1357333 primeDifference 66 pDlarge 66
+ dance total 149688 range 1414 prime: 2010881 previousPrime: 2010881 primeDifference 74 pDlarge 74
+ dance total 325851 range 2153 prime: 4652507 previousPrime: 4652507 primeDifference 77 pDlarge 77
+----> Dance Request Size Now Engaged at : 767676
+  singForever thread0 cycle # 0
+  singForever thread9 cycle # 0
+  singForever thread3 cycle # 0
+  singForever thread4 cycle # 0
+  singForever thread13 cycle # 0
+  singForever thread16 cycle # 0
+  singForever thread1 cycle # 0
+  singForever thread  singForever thread12 cycle #   singForever thread19 cycle # 0
+  singForever thread18 cycle # 0  singForever thread8***** infinite main = true # 0
+  singForever thread5 cycle #   singForever thread15 cycle # 0
+  singForever thread10 cycle # 0
+0
+  singForever thread17 cycle # 0
+ cycle # 0
+  singForever thread14 cycle # 0
+  singForever thread7 cycle # 0  singForever thread11 cycle # 0
+***** infinite main = true # 1
+0
+
+
+6 cycle # 0
+  singForever thread2 cycle # 0
+***** infinite main = true # 2
+***** infinite main = true # 3
+***** infinite main = true # 4
+***** infinite main = true # 5
+***** infinite main = true # 6
+***** infinite main = true # 7
+***** infinite main = true # 8
+***** infinite main = true # 9
+***** infinite main = true # 10
+***** infinite main = true # 11
+***** infinite main = true # 12
+***** infinite main = true # 13
+***** infinite main = true # 14
+***** infinite main = true # 15
+***** infinite main = true # 16
+***** infinite main = true # 17
+***** infinite main = true # 18
+***** infinite main = true # 19
+***** infinite main = true # 20
+***** infinite main = true # 21
+***** infinite main = true # 22
+***** infinite main = true # 23
+***** infinite main = true # 24
+***** infinite main = true # 25
+***** infinite main = true # 26
+***** infinite main = true # 27
+***** infinite main = true # 28
+***** infinite main = true # 29
+***** infinite main = true # 30
+***** infinite main = true # 31
+***** infinite main = true # 32
+***** infinite main = true # 33
+***** infinite main = true # 34
+***** infinite main = true # 35
+***** infinite main = true # 36
+***** infinite main = true # 37
+***** infinite main = true # 38
+***** infinite main = true # 39
+***** infinite main = true # 40
+***** infinite main = true # 41
+***** infinite main = true # 42
+***** infinite main = true # 43
+***** infinite main = true # 44
+***** infinite main = true # 45
+***** infinite main = true # 46
+***** infinite main = true # 47
+***** infinite main = true # 48
+***** infinite main = true # 49
+***** infinite main = true # 50
+***** infinite main = true # 51
+***** infinite main = true # 52
+***** infinite main = true # 53
+***** infinite main = true # 54
+***** infinite main = true # 55
+***** infinite main = true # 56
+***** infinite main = true # 57
+***** infinite main = true # 58
+***** infinite main = true # 59
+***** infinite main = true # 60
+***** infinite main = true # 61
+***** infinite main = true # 62
+***** infinite main = true # 63
+***** infinite main = true # 64
+***** infinite main = true # 65
+***** infinite main = true # 66
+
+thread 1check if fin file exists : cycle 1
+***** infinite main = true # 67
+thread 0check if fin file exists : cycle 1
+
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread1 cycle # 1
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread0 cycle # 1
+***** infinite main = true # 68
+***** infinite main = true # 69
+***** infinite main = true # 70
+***** infinite main = true # 71
+***** infinite main = true # 72
+***** infinite main = true # 73
+***** infinite main = true # 74
+***** infinite main = true # 75
+***** infinite main = true # 76
+***** infinite main = true # 77
+***** infinite main = true # 78
+***** infinite main = true # 79
+***** infinite main = true # 80
+***** infinite main = true # 81
+***** infinite main = true # 82
+***** infinite main = true # 83
+
+thread 2check if fin file exists : cycle 1
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread2 cycle # 1
+***** infinite main = true # 84
+***** infinite main = true # 85
+***** infinite main = true # 86
+***** infinite main = true # 87
+***** infinite main = true # 88
+***** infinite main = true # 89
+***** infinite main = true # 90
+***** infinite main = true # 91
+***** infinite main = true # 92
+***** infinite main = true # 93
+***** infinite main = true # 94
+***** infinite main = true # 95
+***** infinite main = true # 96
+***** infinite main = true # 97
+***** infinite main = true # 98
+***** infinite main = true # 99
+***** infinite main = true # 100
+***** infinite main = true # 101
+***** infinite main = true # 102
+***** infinite main = true # 103
+***** infinite main = true # 104
+***** infinite main = true # 105
+***** infinite main = true # 106
+***** infinite main = true # 107
+***** infinite main = true # 108
+***** infinite main = true # 109
+***** infinite main = true # 110
+
+thread 3check if fin file exists : cycle 1
+***** infinite main = true #
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread111
+3 cycle # 1***** infinite main = true #
+112
+***** infinite main = true # 113
+***** infinite main = true # 114
+***** infinite main = true # 115
+***** infinite main = true # 116
+***** infinite main = true # 117
+***** infinite main = true # 118
+***** infinite main = true # 119
+***** infinite main = true # 120
+***** infinite main = true # 121
+***** infinite main = true # 122
+***** infinite main = true # 123
+***** infinite main = true # 124
+***** infinite main = true # 125
+***** infinite main = true # 126
+***** infinite main = true # 127
+***** infinite main = true # 128
+***** infinite main = true # 129
+***** infinite main = true # 130
+***** infinite main = true # 131
+***** infinite main = true # 132
+***** infinite main = true # 133
+***** infinite main = true # 134
+***** infinite main = true # 135
+***** infinite main = true # 136
+***** infinite main = true # 137
+***** infinite main = true # 138
+***** infinite main = true #
+thread 5check if fin file exists : cycle 1
+139
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread5 cycle # 1
+
+thread 4check if fin file exists : cycle 1
+***** infinite main = true # 140
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread4 cycle # 1
+***** infinite main = true # 141
+***** infinite main = true # 142
+***** infinite main = true # 143
+***** infinite main = true # 144
+***** infinite main = true # 145
+***** infinite main = true # 146
+***** infinite main = true # 147
+***** infinite main = true # 148
+***** infinite main = true # 149
+***** infinite main = true # 150
+***** infinite main = true # 151
+***** infinite main = true # 152
+***** infinite main = true # 153
+***** infinite main = true # 154
+***** infinite main = true # 155
+***** infinite main = true # 156
+***** infinite main = true # 157
+***** infinite main = true # 158
+***** infinite main = true # 159
+***** infinite main = true # 160
+***** infinite main = true # 161
+***** infinite main = true # 162
+***** infinite main = true # 163
+***** infinite main = true # 164
+***** infinite main = true # 165
+
+thread 6check if fin file exists : cycle 1
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread6 cycle # 1
+***** infinite main = true # 166
+***** infinite main = true # 167
+***** infinite main = true # 168
+***** infinite main = true # 169
+***** infinite main = true # 170
+***** infinite main = true # 171
+***** infinite main = true # 172
+***** infinite main = true # 173
+***** infinite main = true # 174
+***** infinite main = true # 175
+***** infinite main = true # 176
+***** infinite main = true # 177
+***** infinite main = true # 178
+***** infinite main = true # 179
+***** infinite main = true # 180
+***** infinite main = true # 181
+***** infinite main = true # 182
+***** infinite main = true # 183
+***** infinite main = true # 184
+***** infinite main = true # 185
+***** infinite main = true # 186
+***** infinite main = true # 187
+***** infinite main = true # 188
+***** infinite main = true # 189
+***** infinite main = true # 190
+***** infinite main = true # 191
+***** infinite main = true # 192
+***** infinite main = true # 193
+***** infinite main = true # 194
+
+thread 9check if fin file exists : cycle 1
+
+thread
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread9 cycle # 1
+7check if fin file exists : cycle 1
+
+thread 10check if fin file exists : cycle 1
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread7 cycle # 1
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread10 cycle # 1
+
+thread 8check if fin file exists : cycle 1
+***** infinite main = true # 195
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread8 cycle # 1
+
+thread 13check if fin file exists : cycle 1
+***** infinite main = true # 196
+
+thread 14check if fin file exists : cycle 1
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread13 cycle # 1
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread14 cycle # 1
+***** infinite main = true # 197
+***** infinite main = true # 198
+***** infinite main = true # 199
+***** infinite main = true # 200
+***** infinite main = true # 201
+***** infinite main = true # 202
+***** infinite main = true # 203
+***** infinite main = true # 204
+
+thread 12check if fin file exists : cycle 1
+
+
+thread 11check if fin file exists : cycle 1
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread12 cycle # 1
+***** infinite main = true # 205
+***** infinite main = true # 206
+***** infinite main = true # 207
+***** infinite main = true # 208
+***** infinite main = true # 209
+***** infinite main = true # 210
+***** infinite main = true # 211
+***** infinite main = true # 212
+***** infinite main = true # 213
+***** infinite main = true # 214
+***** infinite main = true # 215
+***** infinite main = true # 216
+***** infinite main = true # 217
+***** infinite main = true # 218
+***** infinite main = true # 219
+***** infinite main = true # 220
+***** infinite main = true # 221
+***** infinite main = true # 222
+***** infinite main = true # 223
+***** infinite main = true # 224
+***** infinite main = true # 225
+***** infinite main = true # 226
+***** infinite main = true # 227
+***** infinite main = true # 228
+***** infinite main = true # 229
+***** infinite main = true # 230
+***** infinite main = true # 231
+***** infinite main = true # 232
+***** infinite main = true # 233
+***** infinite main = true # 234
+***** infinite main = true # 235
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread11 cycle # 1
+
+thread 17check if fin file exists : cycle 1
+***** infinite main = true # 236
+***** infinite main = true # 237
+***** infinite main = true # 238
+***** infinite main = true # 239
+***** infinite main = true # 240
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread17 cycle # 1
+
+***** infinite main = true # 241
+***** infinite main = true # 242
+***** infinite main = true # 243
+***** infinite main = true # 244
+***** infinite main = true # 245
+***** infinite main = true # 246
+***** infinite main = true # 247
+***** infinite main = true # 248
+***** infinite main = true # 249
+***** infinite main = true # 250
+***** infinite main = true # 251
+***** infinite main = true # 252
+***** infinite main = true # 253
+***** infinite main = true # 254
+***** infinite main = true # 255
+***** infinite main = true # 256
+***** infinite main = true # 257
+
+thread
+thread 16check if fin file exists : cycle 1
+***** infinite main = true # 258
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread16 cycle # 1
+15check if fin file exists : cycle 1
+
+thread 18check if fin file exists : cycle 1
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread15 cycle # 1
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread18 cycle # 1
+***** infinite main = true # 259
+***** infinite main = true # 260
+***** infinite main = true # 261
+
+thread 19check if fin file exists : cycle 1
+***** infinite main = true #
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread19 cycle # 1
+262
+***** infinite main = true # 263
+***** infinite main = true # 264
+***** infinite main = true # 265
+***** infinite main = true # 266
+***** infinite main = true # 267
+***** infinite main = true # 268
+***** infinite main = true # 269
+***** infinite main = true # 270
+***** infinite main = true # 271
+***** infinite main = true # 272
+***** infinite main = true # 273
+***** infinite main = true # 274
+***** infinite main = true # 275
+***** infinite main = true # 276
+***** infinite main = true # 277
+***** infinite main = true # 278
+***** infinite main = true # 279
+***** infinite main = true # 280
+***** infinite main = true # 281
+***** infinite main = true # 282
+***** infinite main = true # 283
+***** infinite main = true # 284
+***** infinite main = true # 285
+***** infinite main = true # 286
+***** infinite main = true # 287
+***** infinite main = true # 288
+***** infinite main = true # 289
+***** infinite main = true # 290
+***** infinite main = true # 291
+***** infinite main = true # 292
+***** infinite main = true # 293
+***** infinite main = true # 294
+***** infinite main = true # 295
+***** infinite main = true # 296
+***** infinite main = true # 297
+***** infinite main = true # 298
+***** infinite main = true # 299
+***** infinite main = true # 300
+***** infinite main = true # 301
+***** infinite main = true # 302
+***** infinite main = true # 303
+***** infinite main = true # 304
+***** infinite main = true # 305
+***** infinite main = true # 306
+***** infinite main = true # 307
+***** infinite main = true # 308
+***** infinite main = true # 309
+***** infinite main = true # 310
+***** infinite main = true # 311
+***** infinite main = true # 312
+***** infinite main = true # 313
+***** infinite main = true # 314
+***** infinite main = true # 315
+***** infinite main = true # 316
+***** infinite main = true # 317
+***** infinite main = true # 318
+***** infinite main = true # 319
+***** infinite main = true # 320
+***** infinite main = true # 321
+***** infinite main = true # 322
+***** infinite main = true # 323
+***** infinite main = true # 324
+***** infinite main = true # 325
+***** infinite main = true # 326
+***** infinite main = true # 327
+***** infinite main = true # 328
+***** infinite main = true # 329
+***** infinite main = true # 330
+***** infinite main = true # 331
+
+thread ***** infinite main = true # 332
+1check if fin file exists : cycle 2
+***** infinite main = true # 333
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread1 cycle # 2
+***** infinite main = true # 334
+***** infinite main = true # 335
+***** infinite main = true # 336
+
+thread 0check if fin file exists : cycle 2
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread0 cycle # 2
+***** infinite main = true # 337
+***** infinite main = true # 338
+***** infinite main = true # 339
+***** infinite main = true # 340
+***** infinite main = true # 341
+***** infinite main = true # 342
+***** infinite main = true # 343
+***** infinite main = true # 344
+***** infinite main = true # 345
+***** infinite main = true # 346
+***** infinite main = true # 347
+***** infinite main = true # 348
+***** infinite main = true # 349
+***** infinite main = true # 350
+***** infinite main = true # 351
+***** infinite main = true # 352
+***** infinite main = true # 353
+***** infinite main = true # 354
+***** infinite main = true # 355
+***** infinite main = true # 356
+***** infinite main = true # 357
+***** infinite main = true # 358
+***** infinite main = true # 359
+***** infinite main = true # 360
+***** infinite main = true # 361
+***** infinite main = true # 362
+***** infinite main = true # 363
+
+thread 2check if fin file exists : cycle 2
+***** infinite main = true # 364
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread***** infinite main = true # 365
+2 cycle # 2
+***** infinite main = true # 366
+***** infinite main = true # 367
+***** infinite main = true # 368
+***** infinite main = true # 369
+***** infinite main = true # 370
+***** infinite main = true # 371
+***** infinite main = true # 372
+***** infinite main = true # 373
+***** infinite main = true # 374
+***** infinite main = true # 375
+***** infinite main = true # 376
+***** infinite main = true # 377
+***** infinite main = true # 378
+***** infinite main = true # 379
+***** infinite main = true # 380
+***** infinite main = true # 381
+***** infinite main = true # 382
+***** infinite main = true # 383
+***** infinite main = true # 384
+***** infinite main = true # 385
+***** infinite main = true # 386
+***** infinite main = true # 387
+***** infinite main = true # 388
+***** infinite main = true # 389
+***** infinite main = true # 390
+***** infinite main = true # 391
+***** infinite main = true # 392
+***** infinite main = true # 393
+***** infinite main = true # 394
+***** infinite main = true # 395
+***** infinite main = true # 396
+
+thread 5check if fin file exists : cycle 2
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread5 cycle # 2
+***** infinite main = true # 397
+***** infinite main = true # 398
+***** infinite main = true # 399
+***** infinite main = true # 400
+***** infinite main = true # 401
+***** infinite main = true # 402
+***** infinite main = true # 403
+***** infinite main = true # 404
+***** infinite main = true # 405
+***** infinite main = true # 406
+***** infinite main = true # 407
+***** infinite main = true # 408
+***** infinite main = true # 409
+***** infinite main = true # 410
+***** infinite main = true # 411
+***** infinite main = true # 412
+***** infinite main = true # 413
+***** infinite main = true # 414
+***** infinite main = true # 415
+***** infinite main = true # 416
+***** infinite main = true # 417
+***** infinite main = true # 418
+***** infinite main = true # 419
+***** infinite main = true # 420
+***** infinite main = true # 421
+***** infinite main = true # 422
+***** infinite main = true # 423
+
+thread 6check if fin file exists : cycle 2
+
+thread 3check if fin file exists : cycle 2
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread3 cycle # 2
+
+  singForever thread6 cycle # 2
+***** infinite main = true # 424
+***** infinite main = true # 425
+***** infinite main = true # 426
+***** infinite main = true # 427
+***** infinite main = true # 428
+***** infinite main = true # 429
+***** infinite main = true # 430
+***** infinite main = true # 431
+***** infinite main = true # 432
+***** infinite main = true #
+thread 4check if fin file exists : cycle 2
+433
+
+***** infinite main = true # 434
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread4 cycle # 2
+***** infinite main = true # 435
+***** infinite main = true # 436
+***** infinite main = true # 437
+***** infinite main = true # 438
+***** infinite main = true # 439
+
+thread 9check if fin file exists : cycle 2
+***** infinite main = true # 440
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread9 cycle # 2
+***** infinite main = true # 441
+***** infinite main = true # 442
+***** infinite main = true # 443
+***** infinite main = true # 444
+***** infinite main = true # 445
+***** infinite main = true # 446
+***** infinite main = true # 447
+***** infinite main = true # 448
+***** infinite main = true # 449
+***** infinite main = true # 450
+***** infinite main = true # 451
+***** infinite main = true # 452
+***** infinite main = true # 453
+***** infinite main = true # 454
+***** infinite main = true # 455
+***** infinite main = true # 456
+***** infinite main = true # 457
+***** infinite main = true # 458
+***** infinite main = true # 459
+***** infinite main = true # 460
+***** infinite main = true # 461
+***** infinite main = true # 462
+***** infinite main = true # 463
+
+thread 7check if fin file exists : cycle 2
+***** infinite main = true # 464
+***** infinite main = true # 465
+***** infinite main = true # 466
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread7 cycle # 2
+***** infinite main = true # 467
+***** infinite main = true # 468
+***** infinite main = true # 469
+***** infinite main = true # 470
+***** infinite main = true # 471
+***** infinite main = true # 472
+***** infinite main = true # 473
+***** infinite main = true # 474
+***** infinite main = true # 475
+***** infinite main = true # 476
+***** infinite main = true # 477
+***** infinite main = true # 478
+***** infinite main = true # 479
+***** infinite main = true # 480
+***** infinite main = true # 481
+***** infinite main = true # 482
+***** infinite main = true # 483
+
+thread 10check if fin file exists : cycle 2
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread10 cycle # ***** infinite main = true # 484
+
+thread 13check if fin file exists : cycle 2
+
+thread 8check if fin file exists : cycle 2
+2
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread13 cycle # 2
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread8 cycle # 2
+
+thread 14check if fin file exists : cycle 2
+***** infinite main = true # 485
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread14 cycle # 2
+***** infinite main = true # 486
+***** infinite main = true # 487
+***** infinite main = true # 488
+***** infinite main = true # 489
+***** infinite main = true # 490
+***** infinite main = true # 491
+***** infinite main = true # 492
+***** infinite main = true # 493
+***** infinite main = true # 494
+***** infinite main = true # 495
+***** infinite main = true # 496
+***** infinite main = true # 497
+***** infinite main = true # 498
+***** infinite main = true # 499
+***** infinite main = true # 500
+***** infinite main = true # 501
+***** infinite main = true # 502
+***** infinite main = true # 503
+***** infinite main = true # 504
+***** infinite main = true # 505
+***** infinite main = true # 506
+***** infinite main = true # 507
+***** infinite main = true # 508
+***** infinite main = true # 509
+***** infinite main = true # 510
+***** infinite main = true # 511
+***** infinite main = true # 512
+***** infinite main = true # 513
+***** infinite main = true # 514
+
+thread 12check if fin file exists : cycle 2
+
+thread 17check if fin file exists : cycle 2
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread12 cycle # 2
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread17 cycle # 2
+***** infinite main = true # 515
+***** infinite main = true # 516
+***** infinite main = true # 517
+***** infinite main = true # 518
+***** infinite main = true # 519
+***** infinite main = true # 520
+***** infinite main = true # 521
+***** infinite main = true # 522
+***** infinite main = true # 523
+***** infinite main = true # 524
+***** infinite main = true # 525
+***** infinite main = true # 526
+***** infinite main = true # 527
+***** infinite main = true # 528
+***** infinite main = true # 529
+***** infinite main = true # 530
+***** infinite main = true # 531
+***** infinite main = true # 532
+***** infinite main = true # 533
+***** infinite main = true # 534
+***** infinite main = true # 535
+***** infinite main = true # 536
+***** infinite main = true # 537
+***** infinite main = true # 538
+***** infinite main = true # 539
+***** infinite main = true # 540
+***** infinite main = true #
+thread 11check if fin file exists : cycle 2
+541
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread11 cycle # 2
+***** infinite main = true # 542
+***** infinite main = true # 543
+***** infinite main = true # 544
+***** infinite main = true # 545
+***** infinite main = true # 546
+***** infinite main = true # 547
+***** infinite main = true # 548
+***** infinite main = true # 549
+***** infinite main = true # 550
+***** infinite main = true # 551
+***** infinite main = true # 552
+***** infinite main = true # 553
+***** infinite main = true # 554
+***** infinite main = true # 555
+***** infinite main = true # 556
+***** infinite main = true # 557
+
+thread 18check if fin file exists : cycle 2
+***** infinite main = true #
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread18 cycle # 2
+558
+***** infinite main = true # 559
+***** infinite main = true # 560
+***** infinite main = true # 561
+***** infinite main = true # 562
+***** infinite main = true # 563
+***** infinite main = true # 564
+***** infinite main = true # 565
+***** infinite main = true # 566
+***** infinite main = true # 567
+***** infinite main = true # 568
+***** infinite main = true # 569
+***** infinite main = true # 570
+***** infinite main = true # 571
+***** infinite main = true # 572
+***** infinite main = true # 573
+***** infinite main = true # 574
+***** infinite main = true # 575
+***** infinite main = true # 576
+***** infinite main = true # 577
+***** infinite main = true # 578
+***** infinite main = true # 579
+***** infinite main = true # 580
+***** infinite main = true # 581
+***** infinite main = true # 582
+***** infinite main = true # 583
+***** infinite main = true # 584
+***** infinite main = true # 585
+***** infinite main = true # 586
+***** infinite main = true # 587
+
+thread 16check if fin file exists : cycle 2
+
+thread 15
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever threadcheck if fin file exists : cycle 2
+***** infinite main = true # 588
+16 cycle # 2
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread15 cycle # 2
+***** infinite main = true # 589
+***** infinite main = true # 590
+***** infinite main = true # 591
+***** infinite main = true # 592
+***** infinite main = true # 593
+***** infinite main = true # 594
+***** infinite main = true # 595
+***** infinite main = true # 596
+***** infinite main = true # 597
+***** infinite main = true # 598
+***** infinite main = true # 599
+***** infinite main = true # 600
+***** infinite main = true # 601
+
+thread 19check if fin file exists : cycle 2
+***** infinite main = true # 602
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread19 cycle # 2
+***** infinite main = true # 603
+***** infinite main = true # 604
+***** infinite main = true # 605
+***** infinite main = true # 606
+***** infinite main = true # 607
+***** infinite main = true # 608
+***** infinite main = true # 609
+***** infinite main = true # 610
+***** infinite main = true # 611
+***** infinite main = true # 612
+***** infinite main = true # 613
+***** infinite main = true # 614
+***** infinite main = true # 615
+***** infinite main = true # 616
+***** infinite main = true # 617
+***** infinite main = true # 618
+***** infinite main = true # 619
+***** infinite main = true # 620
+***** infinite main = true # 621
+***** infinite main = true # 622
+***** infinite main = true # 623
+***** infinite main = true # 624
+***** infinite main = true # 625
+***** infinite main = true # 626
+***** infinite main = true # 627
+***** infinite main = true # 628
+***** infinite main = true # 629
+***** infinite main = true # 630
+***** infinite main = true # 631
+***** infinite main = true # 632
+***** infinite main = true # 633
+***** infinite main = true # 634
+***** infinite main = true # 635
+***** infinite main = true # 636
+***** infinite main = true # 637
+***** infinite main = true # 638
+***** infinite main = true # 639
+***** infinite main = true # 640
+***** infinite main = true # 641
+***** infinite main = true # 642
+***** infinite main = true # 643
+***** infinite main = true # 644
+***** infinite main = true # 645
+***** infinite main = true # 646
+***** infinite main = true # 647
+***** infinite main = true # 648
+***** infinite main = true # 649
+***** infinite main = true # 650
+***** infinite main = true # 651
+***** infinite main = true # 652
+***** infinite main = true # 653
+***** infinite main = true # 654
+***** infinite main = true # 655
+***** infinite main = true # 656
+***** infinite main = true # 657
+***** infinite main = true # 658
+***** infinite main = true # 659
+***** infinite main = true # 660
+***** infinite main = true # 661
+***** infinite main = true # 662
+***** infinite main = true # 663
+
+thread 1check if fin file exists : cycle 3
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread1 cycle # 3
+***** infinite main = true # 664
+***** infinite main = true # 665
+***** infinite main = true # 666
+***** infinite main = true # 667
+***** infinite main = true # 668
+***** infinite main = true # 669
+***** infinite main = true # 670
+***** infinite main = true # 671
+***** infinite main = true # 672
+***** infinite main = true # 673
+***** infinite main = true # 674
+***** infinite main = true # 675
+***** infinite main = true # 676
+***** infinite main = true # 677
+***** infinite main = true # 678
+***** infinite main = true # 679
+***** infinite main = true # 680
+***** infinite main = true # 681
+***** infinite main = true # 682
+***** infinite main = true # 683
+***** infinite main = true # 684
+***** infinite main = true # 685
+***** infinite main = true # 686
+***** infinite main = true # 687
+***** infinite main = true # 688
+
+thread 2check if fin file exists : cycle 3
+***** infinite main = true # 689
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread2 cycle # 3
+***** infinite main = true # 690
+***** infinite main = true # 691
+***** infinite main = true # 692
+***** infinite main = true # 693
+***** infinite main = true # 694
+***** infinite main = true # 695
+***** infinite main = true # 696
+***** infinite main = true # 697
+***** infinite main = true # 698
+***** infinite main = true # 699
+***** infinite main = true # 700
+***** infinite main = true # 701
+***** infinite main = true # 702
+***** infinite main = true # 703
+***** infinite main = true # 704
+***** infinite main = true # 705
+***** infinite main = true # 706
+***** infinite main = true # 707
+***** infinite main = true # 708
+***** infinite main = true # 709
+***** infinite main = true # 710
+***** infinite main = true # 711
+***** infinite main = true # 712
+***** infinite main = true # 713
+***** infinite main = true # 714
+thread 0check if fin file exists : cycle 3
+
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread0 cycle # 3
+***** infinite main = true # 715
+***** infinite main = true # 716
+***** infinite main = true # 717
+***** infinite main = true # 718
+***** infinite main = true # 719
+***** infinite main = true # 720
+***** infinite main = true # 721
+***** infinite main = true # 722
+***** infinite main = true # 723
+***** infinite main = true # 724
+***** infinite main = true # 725
+***** infinite main = true # 726
+***** infinite main = true # 727
+***** infinite main = true # 728
+***** infinite main = true # 729
+***** infinite main = true # 730
+***** infinite main = true # 731
+***** infinite main = true # 732
+***** infinite main = true # 733
+***** infinite main = true # 734
+***** infinite main = true # 735
+***** infinite main = true # 736
+***** infinite main = true # 737
+***** infinite main = true # 738
+***** infinite main = true # 739
+***** infinite main = true # 740
+***** infinite main = true # 741
+***** infinite main = true # 742
+***** infinite main = true # 743
+
+thread 6check if fin file exists : cycle 3
+
+thread 5check if fin file exists : cycle 3
+***** infinite main = true # 744
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread6 cycle # 3
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread5 cycle # 3
+***** infinite main = true # 745
+***** infinite main = true # 746
+***** infinite main = true # 747
+***** infinite main = true # 748
+***** infinite main = true # 749
+***** infinite main = true # 750
+***** infinite main = true # 751
+***** infinite main = true # 752
+***** infinite main = true # 753
+***** infinite main = true # 754
+***** infinite main = true # 755
+***** infinite main = true # 756
+***** infinite main = true # 757
+***** infinite main = true # 758
+***** infinite main = true # 759
+***** infinite main = true # 760
+***** infinite main = true # 761
+***** infinite main = true # 762
+***** infinite main = true # 763
+***** infinite main = true # 764
+***** infinite main = true # 765
+***** infinite main = true # 766
+***** infinite main = true # 767
+***** infinite main = true # 768
+***** infinite main = true # 769
+***** infinite main = true # 770
+thread 3check if fin file exists : cycle 3
+
+***** infinite main = true # 771
+***** infinite main = true # 772
+***** infinite main = true # 773
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread3 cycle # 3
+***** infinite main = true # 774
+***** infinite main = true # 775
+***** infinite main = true # 776
+***** infinite main = true # 777
+***** infinite main = true # 778
+***** infinite main = true # 779
+***** infinite main = true # 780
+***** infinite main = true # 781
+***** infinite main = true # 782
+***** infinite main = true # 783
+***** infinite main = true # 784
+***** infinite main = true # 785
+***** infinite main = true # 786
+***** infinite main = true # 787
+***** infinite main = true # 788
+***** infinite main = true # 789
+***** infinite main = true # 790
+***** infinite main = true # 791
+***** infinite main = true # 792
+***** infinite main = true # 793
+***** infinite main = true # 794
+***** infinite main = true # 795
+***** infinite main = true # 796
+***** infinite main = true # 797
+
+thread 4check if fin file exists : cycle 3
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+***** infinite main = true # 798
+
+thread 9check if fin file exists : cycle 3
+  singForever thread4 cycle # 3
+***** infinite main = true # 799
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread9 cycle # 3
+***** infinite main = true # 800
+***** infinite main = true # 801
+***** infinite main = true # 802
+***** infinite main = true # 803
+***** infinite main = true # 804
+***** infinite main = true # 805
+***** infinite main = true # 806
+***** infinite main = true # 807
+***** infinite main = true # 808
+***** infinite main = true # 809
+***** infinite main = true # 810
+***** infinite main = true # 811
+***** infinite main = true # 812
+***** infinite main = true # 813
+***** infinite main = true # 814
+***** infinite main = true # 815
+***** infinite main = true # 816
+***** infinite main = true # 817
+***** infinite main = true # 818
+***** infinite main = true # 819
+***** infinite main = true # 820
+***** infinite main = true # 821
+***** infinite main = true # 822
+***** infinite main = true # 823
+***** infinite main = true # 824
+***** infinite main = true # 825
+***** infinite main = true # 826
+***** infinite main = true # 827
+***** infinite main = true # 828
+***** infinite main = true # 829
+***** infinite main = true # 830
+***** infinite main = true # 831
+***** infinite main = true #
+thread 7check if fin file exists : cycle 3
+832
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread7 cycle # 3
+***** infinite main = true # 833
+***** infinite main = true # 834
+***** infinite main = true # 835
+***** infinite main = true # 836
+***** infinite main = true # 837
+***** infinite main = true # 838
+***** infinite main = true # 839
+***** infinite main = true # 840
+***** infinite main = true # 841
+***** infinite main = true # 842
+***** infinite main = true # 843
+***** infinite main = true # 844
+***** infinite main = true # 845
+***** infinite main = true # 846
+***** infinite main = true # 847
+***** infinite main = true # 848
+***** infinite main = true # 849
+***** infinite main = true # 850
+***** infinite main = true # 851
+***** infinite main = true # 852
+***** infinite main = true # 853
+***** infinite main = true # 854
+***** infinite main = true # 855
+***** infinite main = true # 856
+
+thread 10check if fin file exists : cycle 3
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread10 cycle # 3
+***** infinite main = true # 857
+***** infinite main = true # 858
+***** infinite main = true # 859
+***** infinite main = true # 860
+***** infinite main = true # 861
+***** infinite main = true # 862
+***** infinite main = true # 863
+
+thread 13check if fin file exists : cycle 3
+***** infinite main = true # 864
+***** infinite main = true # 865
+***** infinite main = true # 866
+***** infinite main = true # 867
+***** infinite main = true # 868
+***** infinite main = true # 869
+***** infinite main = true # 870
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread13 cycle # 3
+
+thread 14check if fin file exists : cycle 3
+***** infinite main = true # 871
+
+thread 8check if fin file exists : cycle 3
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread14 cycle # 3
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread8 cycle # 3
+***** infinite main = true # 872
+***** infinite main = true # 873
+***** infinite main = true # 874
+***** infinite main = true # 875
+***** infinite main = true # 876
+***** infinite main = true # 877
+***** infinite main = true # 878
+***** infinite main = true # 879
+***** infinite main = true # 880
+***** infinite main = true # 881
+***** infinite main = true # 882
+***** infinite main = true # 883
+***** infinite main = true # 884
+***** infinite main = true # 885
+***** infinite main = true # 886
+***** infinite main = true # 887
+***** infinite main = true # 888
+***** infinite main = true # 889
+***** infinite main = true # 890
+***** infinite main = true # 891
+***** infinite main = true # 892
+***** infinite main = true # 893
+***** infinite main = true # 894
+***** infinite main = true # 895
+***** infinite main = true # 896
+***** infinite main = true # 897
+***** infinite main = true # 898
+***** infinite main = true # 899
+***** infinite main = true # 900
+thread 17check if fin file exists : cycle 3
+
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread17 cycle # 3
+***** infinite main = true # 901
+***** infinite main = true # 902
+***** infinite main = true # 903
+***** infinite main = true # 904
+***** infinite main = true # 905
+***** infinite main = true # 906
+***** infinite main = true # 907
+***** infinite main = true # 908
+***** infinite main = true # 909
+***** infinite main = true # 910
+***** infinite main = true # 911
+***** infinite main = true # 912
+***** infinite main = true # 913
+***** infinite main = true # 914
+***** infinite main = true # 915
+***** infinite main = true # 916
+***** infinite main = true # 917
+***** infinite main = true # 918
+***** infinite main = true # 919
+***** infinite main = true # 920
+***** infinite main = true # 921
+***** infinite main = true # 922
+***** infinite main = true # 923
+***** infinite main = true # 924
+***** infinite main = true # 925
+***** infinite main = true # 926
+***** infinite main = true # 927
+
+thread 11check if fin file exists : cycle 3
+
+thread 12check if fin file exists : cycle 3
+***** infinite main = true # 928
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread12 cycle # 3
+***** infinite main = true # 929
+***** infinite main = true # 930
+***** infinite main = true # 931
+***** infinite main = true # 932
+***** infinite main = true # 933
+***** infinite main = true # 934
+***** infinite main = true # 935
+***** infinite main = true # 936
+***** infinite main = true # 937
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread11 cycle # 3
+***** infinite main = true # 938
+***** infinite main = true # 939
+
+thread 18check if fin file exists : cycle 3
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread18 cycle # 3
+***** infinite main = true # 940
+***** infinite main = true # 941
+***** infinite main = true # 942
+***** infinite main = true # 943
+
+thread 15check if fin file exists : cycle 3
+
+thread 16check if fin file exists : cycle 3
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread15 cycle # 3
+***** infinite main = true #
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread16 cycle # 3
+944
+***** infinite main = true # 945
+***** infinite main = true # 946
+***** infinite main = true # 947
+***** infinite main = true # 948
+***** infinite main = true # 949
+***** infinite main = true # 950
+***** infinite main = true # 951
+***** infinite main = true # 952
+***** infinite main = true # 953
+***** infinite main = true # 954
+***** infinite main = true # 955
+
+thread 19check if fin file exists : cycle 3
+***** infinite main = true #
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread19 cycle # 3
+956
+***** infinite main = true # 957
+***** infinite main = true # 958
+***** infinite main = true # 959
+***** infinite main = true # 960
+***** infinite main = true # 961
+***** infinite main = true # 962
+***** infinite main = true # 963
+***** infinite main = true # 964
+***** infinite main = true # 965
+***** infinite main = true # 966
+***** infinite main = true # 967
+***** infinite main = true # 968
+***** infinite main = true # 969
+***** infinite main = true # 970
+***** infinite main = true # 971
+***** infinite main = true # 972
+***** infinite main = true # 973
+***** infinite main = true # 974
+***** infinite main = true # 975
+***** infinite main = true # 976
+***** infinite main = true # 977
+***** infinite main = true # 978
+***** infinite main = true # 979
+***** infinite main = true # 980
+***** infinite main = true # 981
+***** infinite main = true # 982
+***** infinite main = true # 983
+***** infinite main = true # 984
+***** infinite main = true # 985
+***** infinite main = true # 986
+***** infinite main = true # 987
+***** infinite main = true # 988
+***** infinite main = true # 989
+***** infinite main = true # 990
+***** infinite main = true # 991
+***** infinite main = true # 992
+***** infinite main = true # 993
+***** infinite main = true # 994
+***** infinite main = true # 995
+***** infinite main = true # 996
+***** infinite main = true # 997
+***** infinite main = true # 998
+***** infinite main = true # 999
+***** infinite main = true # 1000
+***** infinite main = true # 1001
+***** infinite main = true # 1002
+***** infinite main = true # 1003
+***** infinite main = true # 1004
+***** infinite main = true # 1005
+***** infinite main = true # 1006
+***** infinite main = true # 1007
+***** infinite main = true # 1008
+***** infinite main = true # 1009
+***** infinite main = true # 1010
+***** infinite main = true # 1011
+***** infinite main = true # 1012
+***** infinite main = true # 1013
+***** infinite main = true # 1014
+***** infinite main = true # 1015
+***** infinite main = true # 1016
+***** infinite main = true # 1017
+***** infinite main = true # 1018
+***** infinite main = true # 1019
+***** infinite main = true # 1020
+***** infinite main = true # 1021
+***** infinite main = true # 1022
+***** infinite main = true # 1023
+***** infinite main = true # 1024
+***** infinite main = true # 1025
+***** infinite main = true # 1026
+***** infinite main = true # 1027
+***** infinite main = true # 1028
+***** infinite main = true # 1029
+***** infinite main = true # 1030
+
+thread 1check if fin file exists : cycle 4
+***** infinite main = true # 1031
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread1 cycle # 4
+***** infinite main = true # 1032
+***** infinite main = true # 1033
+***** infinite main = true # 1034
+***** infinite main = true # 1035
+***** infinite main = true # 1036
+***** infinite main = true # 1037
+***** infinite main = true # 1038
+***** infinite main = true # 1039
+***** infinite main = true # 1040
+***** infinite main = true # 1041
+***** infinite main = true # 1042
+***** infinite main = true # 1043
+***** infinite main = true # 1044
+***** infinite main = true # 1045
+***** infinite main = true # 1046
+***** infinite main = true # 1047
+***** infinite main = true # 1048
+***** infinite main = true # 1049
+***** infinite main = true # 1050
+***** infinite main = true # 1051
+***** infinite main = true # 1052
+***** infinite main = true # 1053
+***** infinite main = true # 1054
+***** infinite main = true # 1055
+***** infinite main = true # 1056
+
+thread 2check if fin file exists : cycle 4
+***** infinite main = true # 1057
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread2 cycle # 4
+***** infinite main = true # 1058
+***** infinite main = true # 1059
+***** infinite main = true # 1060
+***** infinite main = true # 1061
+***** infinite main = true # 1062
+***** infinite main = true # 1063
+***** infinite main = true # 1064
+***** infinite main = true # 1065
+***** infinite main = true # 1066
+***** infinite main = true # 1067
+***** infinite main = true # 1068
+***** infinite main = true # 1069
+***** infinite main = true # 1070
+***** infinite main = true # 1071
+***** infinite main = true # 1072
+***** infinite main = true # 1073
+***** infinite main = true # 1074
+***** infinite main = true # 1075
+***** infinite main = true # 1076
+***** infinite main = true # 1077
+***** infinite main = true # 1078
+***** infinite main = true # 1079
+***** infinite main = true # 1080
+***** infinite main = true # 1081
+***** infinite main = true # 1082
+
+thread 0check if fin file exists : cycle 4
+***** infinite main = true #
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread1083
+0 cycle # 4
+***** infinite main = true # 1084
+***** infinite main = true # 1085
+***** infinite main = true # 1086
+***** infinite main = true # 1087
+***** infinite main = true # 1088
+***** infinite main = true # 1089
+***** infinite main = true # 1090
+***** infinite main = true # 1091
+***** infinite main = true # 1092
+***** infinite main = true # 1093
+***** infinite main = true # 1094
+***** infinite main = true # 1095
+***** infinite main = true # 1096
+***** infinite main = true # 1097
+***** infinite main = true # 1098
+***** infinite main = true # 1099
+***** infinite main = true # 1100
+***** infinite main = true # 1101
+***** infinite main = true # 1102
+***** infinite main = true # 1103
+***** infinite main = true # 1104
+***** infinite main = true # 1105
+***** infinite main = true # 1106
+***** infinite main = true # 1107
+***** infinite main = true # 1108
+***** infinite main = true # 1109
+***** infinite main = true # 1110
+***** infinite main = true # 1111
+***** infinite main = true # 1112
+***** infinite main = true # 1113
+***** infinite main = true # 1114
+
+thread 6check if fin file exists : cycle 4
+***** infinite main = true # 1115
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread6 cycle # 4
+***** infinite main = true # 1116
+***** infinite main = true # 1117
+***** infinite main = true # 1118
+***** infinite main = true # 1119
+***** infinite main = true # 1120
+***** infinite main = true # 1121
+***** infinite main = true # 1122
+***** infinite main = true # 1123
+***** infinite main = true # 1124
+***** infinite main = true # 1125
+***** infinite main = true # 1126
+***** infinite main = true # 1127
+***** infinite main = true # 1128
+***** infinite main = true # 1129
+***** infinite main = true # 1130
+***** infinite main = true # 1131
+***** infinite main = true # 1132
+***** infinite main = true # 1133
+***** infinite main = true # 1134
+***** infinite main = true # 1135
+***** infinite main = true # 1136
+***** infinite main = true # 1137
+***** infinite main = true # 1138
+***** infinite main = true # 1139
+***** infinite main = true # 1140
+***** infinite main = true # 1141
+***** infinite main = true #
+thread 5check if fin file exists : cycle 4
+1142
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread5 cycle # 4
+***** infinite main = true # 1143
+***** infinite main = true # 1144
+***** infinite main = true # 1145
+***** infinite main = true # 1146
+***** infinite main = true # 1147
+***** infinite main = true # 1148
+***** infinite main = true # 1149
+***** infinite main = true # 1150
+***** infinite main = true # 1151
+***** infinite main = true # 1152
+***** infinite main = true # 1153
+***** infinite main = true # 1154
+***** infinite main = true # 1155
+***** infinite main = true # 1156
+***** infinite main = true # 1157
+***** infinite main = true # 1158
+***** infinite main = true # 1159
+***** infinite main = true # 1160
+***** infinite main = true # 1161
+***** infinite main = true # 1162
+***** infinite main = true # 1163
+***** infinite main = true # 1164
+***** infinite main = true # 1165
+***** infinite main = true # 1166
+***** infinite main = true # 1167
+***** infinite main = true # 1168
+***** infinite main = true # 1169
+***** infinite main = true # 1170
+***** infinite main = true # 1171
+***** infinite main = true # 1172
+***** infinite main = true # 1173
+***** infinite main = true # 1174
+
+thread 3check if fin file exists : cycle 4
+***** infinite main = true # 1175
+***** infinite main = true # 1176
+***** infinite main = true # 1177
+***** infinite main = true # 1178
+***** infinite main = true # 1179
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread3 cycle # 4
+***** infinite main = true # 1180
+***** infinite main = true # 1181
+***** infinite main = true # 1182
+***** infinite main = true # 1183
+***** infinite main = true # 1184
+***** infinite main = true # 1185
+***** infinite main = true # 1186
+***** infinite main = true # 1187
+***** infinite main = true # 1188
+***** infinite main = true # 1189
+***** infinite main = true # 1190
+***** infinite main = true # 1191
+***** infinite main = true # 1192
+***** infinite main = true # 1193
+***** infinite main = true # 1194
+***** infinite main = true # 1195
+***** infinite main = true # 1196
+***** infinite main = true # 1197
+***** infinite main = true # 1198
+***** infinite main = true # 1199
+***** infinite main = true # 1200
+***** infinite main = true # 1201
+
+thread 9check if fin file exists : cycle 4
+***** infinite main = true # 1202
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread9 cycle # 4
+***** infinite main = true # 1203
+***** infinite main = true # 1204
+***** infinite main = true # 1205
+***** infinite main = true # 1206
+***** infinite main = true # 1207
+***** infinite main = true # 1208
+***** infinite main = true # 1209
+***** infinite main = true # 1210
+***** infinite main = true # 1211
+***** infinite main = true # 1212
+***** infinite main = true # 1213
+***** infinite main = true # 1214
+***** infinite main = true # 1215
+***** infinite main = true # 1216
+***** infinite main = true # 1217
+***** infinite main = true # 1218
+***** infinite main = true # 1219
+***** infinite main = true # 1220
+***** infinite main = true # 1221
+***** infinite main = true # 1222
+***** infinite main = true # 1223
+***** infinite main = true # 1224
+***** infinite main = true # 1225
+***** infinite main = true # 1226
+***** infinite main = true # 1227
+***** infinite main = true # 1228
+***** infinite main = true # 1229
+***** infinite main = true #
+thread 4check if fin file exists : cycle 4
+1230
+***** infinite main = true # 1231
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread***** infinite main = true # 1232
+4 cycle # 4
+***** infinite main = true # 1233
+***** infinite main = true # 1234
+***** infinite main = true # 1235
+***** infinite main = true # 1236
+***** infinite main = true # 1237
+***** infinite main = true # 1238
+***** infinite main = true # 1239
+***** infinite main = true # 1240
+***** infinite main = true # 1241
+***** infinite main = true # 1242
+***** infinite main = true # 1243
+***** infinite main = true # 1244
+***** infinite main = true # 1245
+***** infinite main = true # 1246
+***** infinite main = true # 1247
+***** infinite main = true # 1248
+***** infinite main = true # 1249
+***** infinite main = true # 1250
+***** infinite main = true # 1251
+***** infinite main = true # 1252
+***** infinite main = true # 1253
+***** infinite main = true # 1254
+***** infinite main = true # 1255
+***** infinite main = true # 1256
+***** infinite main = true # 1257
+***** infinite main = true # 1258
+***** infinite main = true # 1259
+***** infinite main = true # 1260
+***** infinite main = true # 1261
+
+thread 10check if fin file exists : cycle 4
+***** infinite main = true # 1262
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread10 cycle # 4
+***** infinite main = true # 1263
+***** infinite main = true # 1264
+***** infinite main = true # 1265
+***** infinite main = true # 1266
+***** infinite main = true # 1267
+***** infinite main = true # 1268
+***** infinite main = true # 1269
+***** infinite main = true # 1270
+***** infinite main = true # 1271
+***** infinite main = true # 1272
+***** infinite main = true # 1273
+***** infinite main = true # 1274
+***** infinite main = true # 1275
+***** infinite main = true # 1276
+***** infinite main = true # 1277
+***** infinite main = true # 1278
+***** infinite main = true # 1279
+***** infinite main = true # 1280
+***** infinite main = true # 1281
+***** infinite main = true # 1282
+***** infinite main = true # 1283
+***** infinite main = true # 1284
+***** infinite main = true # 1285
+***** infinite main = true # 1286
+***** infinite main = true # 1287
+thread 7check if fin file exists : cycle 4
+
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread***** infinite main = true # 1288
+
+thread 14check if fin file exists : cycle 4
+7 cycle # 4
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread14 cycle # 4
+***** infinite main = true # 1289
+***** infinite main = true # 1290
+***** infinite main = true # 1291
+***** infinite main = true # 1292
+***** infinite main = true # 1293
+***** infinite main = true # 1294
+***** infinite main = true # 1295
+***** infinite main = true # 1296
+***** infinite main = true # 1297
+***** infinite main = true # 1298
+***** infinite main = true # 1299
+***** infinite main = true # 1300
+***** infinite main = true # 1301
+***** infinite main = true # 1302
+***** infinite main = true # 1303
+***** infinite main = true # 1304
+***** infinite main = true # 1305
+***** infinite main = true # 1306
+***** infinite main = true # 1307
+***** infinite main = true # 1308
+***** infinite main = true # 1309
+***** infinite main = true # 1310
+***** infinite main = true # 1311
+***** infinite main = true # 1312
+***** infinite main = true # 1313
+***** infinite main = true # 1314
+
+thread 13check if fin file exists : cycle 4
+***** infinite main = true # 1315
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread13 cycle # 4
+***** infinite main = true # 1316
+***** infinite main = true # 1317
+***** infinite main = true # 1318
+***** infinite main = true # 1319
+***** infinite main = true # 1320
+***** infinite main = true # 1321
+***** infinite main = true # 1322
+***** infinite main = true # 1323
+***** infinite main = true # 1324
+***** infinite main = true # 1325
+***** infinite main = true # 1326
+***** infinite main = true # 1327
+***** infinite main = true # 1328
+***** infinite main = true # 1329
+***** infinite main = true # 1330
+***** infinite main = true # 1331
+***** infinite main = true # 1332
+***** infinite main = true # 1333
+***** infinite main = true # 1334
+***** infinite main = true # 1335
+***** infinite main = true # 1336
+***** infinite main = true # 1337
+***** infinite main = true # 1338
+***** infinite main = true # 1339
+***** infinite main = true # 1340
+***** infinite main = true # 1341
+***** infinite main = true # 1342
+***** infinite main = true # 1343
+***** infinite main = true # 1344
+***** infinite main = true #
+thread 8check if fin file exists : cycle 4
+1345
+***** infinite main = true # 1346
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread***** infinite main = true # 1347
+8 cycle # 4
+***** infinite main = true # 1348
+***** infinite main = true # 1349
+***** infinite main = true # 1350
+***** infinite main = true # 1351
+***** infinite main = true # 1352
+***** infinite main = true # 1353
+***** infinite main = true # 1354
+***** infinite main = true # 1355
+***** infinite main = true # 1356
+***** infinite main = true # 1357
+***** infinite main = true # 1358
+***** infinite main = true # 1359
+***** infinite main = true # 1360
+***** infinite main = true # 1361
+***** infinite main = true # 1362
+***** infinite main = true # 1363
+***** infinite main = true # 1364
+***** infinite main = true # 1365
+***** infinite main = true # 1366
+***** infinite main = true # 1367
+***** infinite main = true # 1368
+***** infinite main = true # 1369
+***** infinite main = true # 1370
+***** infinite main = true # 1371
+***** infinite main = true # 1372
+***** infinite main = true #
+1373
+thread 17check if fin file exists : cycle 4
+***** infinite main = true # 1374
+***** infinite main = true # 1375
+***** infinite main = true # 1376
+***** infinite main = true # 1377
+***** infinite main = true # 1378
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread17 cycle # 4
+***** infinite main = true # 1379
+***** infinite main = true # 1380
+***** infinite main = true # 1381
+***** infinite main = true # 1382
+***** infinite main = true # 1383
+***** infinite main = true # 1384
+***** infinite main = true # 1385
+***** infinite main = true # 1386
+***** infinite main = true # 1387
+***** infinite main = true # 1388
+***** infinite main = true # 1389
+***** infinite main = true # 1390
+***** infinite main = true # 1391
+***** infinite main = true # 1392
+***** infinite main = true # 1393
+***** infinite main = true # 1394
+***** infinite main = true # 1395
+***** infinite main = true # 1396
+***** infinite main = true # 1397
+***** infinite main = true # 1398
+***** infinite main = true # 1399
+***** infinite main = true # 1400
+***** infinite main = true # 1401
+***** infinite main = true # 1402
+***** infinite main = true # 1403
+
+thread 11check if fin file exists : cycle 4
+***** infinite main = true # 1404
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread11 cycle # 4
+***** infinite main = true # 1405
+***** infinite main = true # 1406
+***** infinite main = true # 1407
+***** infinite main = true # 1408
+***** infinite main = true # 1409
+***** infinite main = true # 1410
+***** infinite main = true # 1411
+***** infinite main = true # 1412
+***** infinite main = true # 1413
+***** infinite main = true # 1414
+***** infinite main = true # 1415
+***** infinite main = true # 1416
+***** infinite main = true # 1417
+***** infinite main = true # 1418
+***** infinite main = true # 1419
+***** infinite main = true # 1420
+***** infinite main = true # 1421
+***** infinite main = true # 1422
+***** infinite main = true # 1423
+***** infinite main = true # 1424
+***** infinite main = true # 1425
+***** infinite main = true # 1426
+***** infinite main = true # 1427
+***** infinite main = true #
+thread 12check if fin file exists : cycle 4
+1428
+
+thread 18check if fin file exists : cycle 4
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread18 cycle # 4
+***** infinite main = true # 1429
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread12 cycle # 4
+***** infinite main = true # 1430
+***** infinite main = true # 1431
+***** infinite main = true # 1432
+***** infinite main = true # 1433
+***** infinite main = true # 1434
+***** infinite main = true # 1435
+***** infinite main = true # 1436
+***** infinite main = true # 1437
+***** infinite main = true # 1438
+***** infinite main = true # 1439
+***** infinite main = true # 1440
+***** infinite main = true # 1441
+***** infinite main = true # 1442
+***** infinite main = true # 1443
+***** infinite main = true # 1444
+***** infinite main = true # 1445
+***** infinite main = true # 1446
+***** infinite main = true # 1447
+***** infinite main = true # 1448
+***** infinite main = true # 1449
+***** infinite main = true # 1450
+***** infinite main = true # 1451
+***** infinite main = true # 1452
+***** infinite main = true # 1453
+***** infinite main = true # 1454
+***** infinite main = true # 1455
+***** infinite main = true # 1456
+***** infinite main = true # 1457
+***** infinite main = true # 1458
+***** infinite main = true # 1459
+***** infinite main = true # 1460
+***** infinite main = true # 1461
+
+thread 15check if fin file exists : cycle 4
+***** infinite main = true # 1462
+***** infinite main = true # 1463
+***** infinite main = true # 1464
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread***** infinite main = true # 1465
+15 cycle # 4
+***** infinite main = true # 1466
+***** infinite main = true # 1467
+***** infinite main = true # 1468
+***** infinite main = true # 1469
+***** infinite main = true # 1470
+***** infinite main = true # 1471
+***** infinite main = true # 1472
+***** infinite main = true # 1473
+***** infinite main = true # 1474
+***** infinite main = true # 1475
+***** infinite main = true # 1476
+***** infinite main = true # 1477
+***** infinite main = true # 1478
+***** infinite main = true # 1479
+***** infinite main = true # 1480
+***** infinite main = true # 1481
+***** infinite main = true # 1482
+***** infinite main = true # 1483
+***** infinite main = true # 1484
+***** infinite main = true # 1485
+***** infinite main = true # 1486
+***** infinite main = true # 1487
+***** infinite main = true # 1488
+
+thread 16check if fin file exists : cycle 4
+
+***** infinite main = true # 1489
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread16 cycle # 4
+***** infinite main = true # 1490
+***** infinite main = true # 1491
+***** infinite main = true # 1492
+***** infinite main = true # 1493
+***** infinite main = true # 1494
+***** infinite main = true # 1495
+***** infinite main = true # 1496
+***** infinite main = true # 1497
+***** infinite main = true # 1498
+***** infinite main = true # 1499
+***** infinite main = true # 1500
+***** infinite main = true # 1501
+***** infinite main = true # 1502
+***** infinite main = true # 1503
+***** infinite main = true # 1504
+***** infinite main = true # 1505
+***** infinite main = true # 1506
+***** infinite main = true # 1507
+***** infinite main = true # 1508
+***** infinite main = true # 1509
+***** infinite main = true # 1510
+***** infinite main = true # 1511
+***** infinite main = true # 1512
+***** infinite main = true # 1513
+***** infinite main = true # 1514
+***** infinite main = true # 1515
+***** infinite main = true # 1516
+***** infinite main = true # 1517
+***** infinite main = true # 1518
+***** infinite main = true # 1519
+***** infinite main = true # 1520
+
+thread 19check if fin file exists : cycle 4
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread19 cycle # 4
+***** infinite main = true # 1521
+***** infinite main = true # 1522
+***** infinite main = true # 1523
+***** infinite main = true # 1524
+***** infinite main = true # 1525
+***** infinite main = true # 1526
+***** infinite main = true # 1527
+***** infinite main = true # 1528
+***** infinite main = true # 1529
+***** infinite main = true # 1530
+***** infinite main = true # 1531
+***** infinite main = true # 1532
+***** infinite main = true # 1533
+***** infinite main = true # 1534
+***** infinite main = true # 1535
+***** infinite main = true # 1536
+***** infinite main = true # 1537
+***** infinite main = true # 1538
+***** infinite main = true # 1539
+***** infinite main = true # 1540
+***** infinite main = true # 1541
+***** infinite main = true # 1542
+***** infinite main = true # 1543
+***** infinite main = true # 1544
+***** infinite main = true # 1545
+***** infinite main = true # 1546
+***** infinite main = true # 1547
+***** infinite main = true # 1548
+***** infinite main = true # 1549
+***** infinite main = true # 1550
+***** infinite main = true # 1551
+***** infinite main = true # 1552
+***** infinite main = true # 1553
+***** infinite main = true # 1554
+***** infinite main = true # 1555
+***** infinite main = true # 1556
+***** infinite main = true # 1557
+***** infinite main = true # 1558
+***** infinite main = true # 1559
+***** infinite main = true # 1560
+***** infinite main = true # 1561
+***** infinite main = true # 1562
+***** infinite main = true # 1563
+***** infinite main = true # 1564
+***** infinite main = true # 1565
+***** infinite main = true # 1566
+***** infinite main = true # 1567
+***** infinite main = true # 1568
+***** infinite main = true # 1569
+***** infinite main = true # 1570
+***** infinite main = true # 1571
+***** infinite main = true # 1572
+***** infinite main = true # 1573
+***** infinite main = true # 1574
+***** infinite main = true # 1575
+***** infinite main = true # 1576
+***** infinite main = true # 1577
+***** infinite main = true # 1578
+***** infinite main = true # 1579
+***** infinite main = true # 1580
+***** infinite main = true # 1581
+***** infinite main = true # 1582
+***** infinite main = true # 1583
+***** infinite main = true # 1584
+***** infinite main = true # 1585
+***** infinite main = true # 1586
+***** infinite main = true # 1587
+***** infinite main = true # 1588
+***** infinite main = true # 1589
+***** infinite main = true # 1590
+***** infinite main = true # 1591
+***** infinite main = true # 1592
+***** infinite main = true # 1593
+***** infinite main = true # 1594
+***** infinite main = true # 1595
+
+thread 1check if fin file exists : cycle 5
+***** infinite main = true #
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread1 cycle # 5
+1596
+***** infinite main = true # 1597
+***** infinite main = true # 1598
+***** infinite main = true # 1599
+***** infinite main = true # 1600
+***** infinite main = true # 1601
+***** infinite main = true # 1602
+***** infinite main = true # 1603
+***** infinite main = true # 1604
+***** infinite main = true # 1605
+***** infinite main = true # 1606
+***** infinite main = true # 1607
+***** infinite main = true # 1608
+***** infinite main = true # 1609
+***** infinite main = true # 1610
+***** infinite main = true # 1611
+***** infinite main = true # 1612
+***** infinite main = true # 1613
+***** infinite main = true # 1614
+***** infinite main = true # 1615
+***** infinite main = true # 1616
+***** infinite main = true # 1617
+***** infinite main = true # 1618
+***** infinite main = true # 1619
+
+thread 2check if fin file exists : cycle 5
+***** infinite main = true # 1620
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread2***** infinite main = true # 1621
+ cycle # 5
+***** infinite main = true # 1622
+***** infinite main = true # 1623
+***** infinite main = true # 1624
+***** infinite main = true # 1625
+***** infinite main = true # 1626
+***** infinite main = true # 1627
+***** infinite main = true # 1628
+***** infinite main = true # 1629
+***** infinite main = true # 1630
+***** infinite main = true # 1631
+***** infinite main = true # 1632
+***** infinite main = true # 1633
+***** infinite main = true # 1634
+***** infinite main = true # 1635
+***** infinite main = true # 1636
+***** infinite main = true # 1637
+***** infinite main = true # 1638
+***** infinite main = true # 1639
+***** infinite main = true # 1640
+***** infinite main = true # 1641
+***** infinite main = true # 1642
+***** infinite main = true # 1643
+***** infinite main = true # 1644
+***** infinite main = true # 1645
+***** infinite main = true # 1646
+***** infinite main = true # 1647
+***** infinite main = true # 1648
+***** infinite main = true # 1649
+
+thread 6check if fin file exists : cycle 5
+***** infinite main = true # 1650
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread6 cycle # 5
+***** infinite main = true # 1651
+***** infinite main = true # 1652
+***** infinite main = true # 1653
+***** infinite main = true # 1654
+***** infinite main = true # 1655
+***** infinite main = true # 1656
+***** infinite main = true # 1657
+***** infinite main = true # 1658
+***** infinite main = true # 1659
+***** infinite main = true # 1660
+***** infinite main = true # 1661
+***** infinite main = true # 1662
+***** infinite main = true # 1663
+***** infinite main = true # 1664
+***** infinite main = true # 1665
+***** infinite main = true # 1666
+***** infinite main = true # 1667
+***** infinite main = true # 1668
+***** infinite main = true # 1669
+***** infinite main = true # 1670
+***** infinite main = true # 1671
+***** infinite main = true # 1672
+***** infinite main = true #
+thread 0check if fin file exists : cycle 5
+1673
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread0 cycle # 5
+***** infinite main = true # 1674
+***** infinite main = true # 1675
+***** infinite main = true # 1676
+***** infinite main = true # 1677
+***** infinite main = true # 1678
+***** infinite main = true # 1679
+***** infinite main = true # 1680
+***** infinite main = true # 1681
+***** infinite main = true # 1682
+***** infinite main = true # 1683
+***** infinite main = true # 1684
+***** infinite main = true # 1685
+***** infinite main = true # 1686
+***** infinite main = true # 1687
+***** infinite main = true # 1688
+***** infinite main = true # 1689
+***** infinite main = true # 1690
+***** infinite main = true # 1691
+***** infinite main = true # 1692
+***** infinite main = true # 1693
+***** infinite main = true # 1694
+***** infinite main = true # 1695
+***** infinite main = true # 1696
+***** infinite main = true # 1697
+***** infinite main = true # 1698
+***** infinite main = true # 1699
+***** infinite main = true # 1700
+
+thread 5check if fin file exists : cycle 5
+***** infinite main = true # 1701
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread5 cycle # 5
+***** infinite main = true # 1702
+***** infinite main = true # 1703
+***** infinite main = true # 1704
+***** infinite main = true # 1705
+***** infinite main = true # 1706
+***** infinite main = true # 1707
+***** infinite main = true # 1708
+***** infinite main = true # 1709
+***** infinite main = true # 1710
+***** infinite main = true # 1711
+***** infinite main = true # 1712
+***** infinite main = true # 1713
+***** infinite main = true # 1714
+***** infinite main = true # 1715
+***** infinite main = true # 1716
+***** infinite main = true # 1717
+***** infinite main = true # 1718
+***** infinite main = true # 1719
+***** infinite main = true # 1720
+***** infinite main = true # 1721
+***** infinite main = true # 1722
+***** infinite main = true # 1723
+***** infinite main = true # 1724
+***** infinite main = true # 1725
+***** infinite main = true # 1726
+***** infinite main = true # 1727
+***** infinite main = true # 1728
+***** infinite main = true # 1729
+***** infinite main = true # 1730
+***** infinite main = true # 1731
+***** infinite main = true # 1732
+***** infinite main = true # 1733
+***** infinite main = true #
+thread 3check if fin file exists : cycle 5
+1734
+***** infinite main = true # 1735
+***** infinite main = true # 1736
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread3 cycle # 5
+***** infinite main = true # 1737
+***** infinite main = true # 1738
+***** infinite main = true # 1739
+***** infinite main = true # 1740
+***** infinite main = true # 1741
+***** infinite main = true # 1742
+***** infinite main = true # 1743
+***** infinite main = true # 1744
+***** infinite main = true # 1745
+***** infinite main = true # 1746
+***** infinite main = true # 1747
+***** infinite main = true # 1748
+***** infinite main = true # 1749
+***** infinite main = true # 1750
+***** infinite main = true # 1751
+***** infinite main = true # 1752
+***** infinite main = true # 1753
+***** infinite main = true # 1754
+***** infinite main = true # 1755
+***** infinite main = true # 1756
+***** infinite main = true # 1757
+***** infinite main = true # 1758
+***** infinite main = true # 1759
+
+thread 9check if fin file exists : cycle 5
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread9 cycle # 5
+***** infinite main = true # 1760
+***** infinite main = true # 1761
+***** infinite main = true # 1762
+***** infinite main = true # 1763
+***** infinite main = true # 1764
+***** infinite main = true # 1765
+***** infinite main = true # 1766
+***** infinite main = true # 1767
+***** infinite main = true # 1768
+***** infinite main = true # 1769
+***** infinite main = true # 1770
+***** infinite main = true # 1771
+***** infinite main = true # 1772
+***** infinite main = true # 1773
+***** infinite main = true # 1774
+***** infinite main = true # 1775
+***** infinite main = true # 1776
+***** infinite main = true # 1777
+***** infinite main = true # 1778
+***** infinite main = true # 1779
+***** infinite main = true # 1780
+***** infinite main = true # 1781
+***** infinite main = true # 1782
+***** infinite main = true # 1783
+***** infinite main = true # 1784
+***** infinite main = true # 1785
+***** infinite main = true # 1786
+***** infinite main = true # 1787
+***** infinite main = true # 1788
+***** infinite main = true # 1789
+***** infinite main = true # 1790
+***** infinite main = true # 1791
+***** infinite main = true # 1792
+***** infinite main = true # 1793
+***** infinite main = true #
+thread 4check if fin file exists : cycle 5
+1794
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread4 cycle # 5
+***** infinite main = true # 1795
+***** infinite main = true # 1796
+***** infinite main = true # 1797
+***** infinite main = true # 1798
+***** infinite main = true # 1799
+***** infinite main = true # 1800
+***** infinite main = true # 1801
+***** infinite main = true # 1802
+***** infinite main = true # 1803
+***** infinite main = true # 1804
+***** infinite main = true # 1805
+***** infinite main = true # 1806
+***** infinite main = true # 1807
+***** infinite main = true # 1808
+***** infinite main = true # 1809
+***** infinite main = true # 1810
+***** infinite main = true # 1811
+***** infinite main = true # 1812
+***** infinite main = true # 1813
+***** infinite main = true # 1814
+
+thread 10check if fin file exists : cycle 5
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread10 cycle # 5
+
+thread 14check if fin file exists : cycle 5
+***** infinite main = true # 1815
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread14 cycle # 5
+***** infinite main = true # 1816
+***** infinite main = true # 1817
+***** infinite main = true # 1818
+***** infinite main = true # 1819
+***** infinite main = true # 1820
+***** infinite main = true # 1821
+***** infinite main = true # 1822
+***** infinite main = true # 1823
+***** infinite main = true # 1824
+***** infinite main = true # 1825
+***** infinite main = true # 1826
+***** infinite main = true # 1827
+***** infinite main = true # 1828
+***** infinite main = true # 1829
+***** infinite main = true # 1830
+***** infinite main = true # 1831
+***** infinite main = true # 1832
+***** infinite main = true # 1833
+***** infinite main = true # 1834
+***** infinite main = true # 1835
+***** infinite main = true # 1836
+***** infinite main = true # 1837
+***** infinite main = true # 1838
+***** infinite main = true # 1839
+***** infinite main = true # 1840
+***** infinite main = true # 1841
+***** infinite main = true # 1842
+***** infinite main = true # 1843
+***** infinite main = true # 1844
+***** infinite main = true # 1845
+
+thread 13check if fin file exists : cycle 5
+***** infinite main = true # 1846
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread13 cycle # 5
+***** infinite main = true # 1847
+***** infinite main = true # 1848
+***** infinite main = true # 1849
+***** infinite main = true # 1850
+***** infinite main = true # 1851
+***** infinite main = true # 1852
+***** infinite main = true # 1853
+
+thread 7check if fin file exists : cycle 5
+***** infinite main = true # 1854
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread7 cycle # 5
+***** infinite main = true # 1855
+***** infinite main = true # 1856
+***** infinite main = true # 1857
+***** infinite main = true # 1858
+***** infinite main = true # 1859
+***** infinite main = true # 1860
+***** infinite main = true # 1861
+***** infinite main = true # 1862
+***** infinite main = true # 1863
+***** infinite main = true # 1864
+***** infinite main = true # 1865
+***** infinite main = true # 1866
+***** infinite main = true # 1867
+***** infinite main = true # 1868
+***** infinite main = true # 1869
+***** infinite main = true # 1870
+***** infinite main = true # 1871
+***** infinite main = true # 1872
+***** infinite main = true # 1873
+***** infinite main = true # 1874
+***** infinite main = true # 1875
+
+thread 8check if fin file exists : cycle 5
+***** infinite main = true # 1876
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread8 cycle # 5
+***** infinite main = true # 1877
+***** infinite main = true # 1878
+***** infinite main = true # 1879
+***** infinite main = true # 1880
+***** infinite main = true # 1881
+***** infinite main = true # 1882
+***** infinite main = true # 1883
+***** infinite main = true # 1884
+***** infinite main = true # 1885
+***** infinite main = true # 1886
+***** infinite main = true # 1887
+***** infinite main = true # 1888
+***** infinite main = true # 1889
+***** infinite main = true # 1890
+***** infinite main = true # 1891
+***** infinite main = true # 1892
+***** infinite main = true # 1893
+***** infinite main = true # 1894
+***** infinite main = true # 1895
+***** infinite main = true # 1896
+***** infinite main = true # 1897
+***** infinite main = true # 1898
+***** infinite main = true # 1899
+***** infinite main = true # 1900
+
+thread 17check if fin file exists : cycle 5
+***** infinite main = true # 1901
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread17 cycle # 5
+***** infinite main = true # 1902
+***** infinite main = true # 1903
+***** infinite main = true # 1904
+***** infinite main = true # 1905
+***** infinite main = true # 1906
+***** infinite main = true # 1907
+***** infinite main = true # 1908
+***** infinite main = true # 1909
+***** infinite main = true # 1910
+***** infinite main = true # 1911
+***** infinite main = true # 1912
+***** infinite main = true # 1913
+***** infinite main = true # 1914
+***** infinite main = true # 1915
+***** infinite main = true # 1916
+***** infinite main = true # 1917
+***** infinite main = true # 1918
+***** infinite main = true # 1919
+***** infinite main = true # 1920
+***** infinite main = true # 1921
+***** infinite main = true # 1922
+***** infinite main = true # 1923
+***** infinite main = true # 1924
+***** infinite main = true # 1925
+***** infinite main = true # 1926
+
+thread 18check if fin file exists : cycle 5
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread18 cycle # 5
+
+thread 11check if fin file exists : cycle 5
+***** infinite main = true # 1927
+***** infinite main = true # 1928
+***** infinite main = true # 1929
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread11 cycle # 5
+***** infinite main = true # 1930
+***** infinite main = true # 1931
+***** infinite main = true # 1932
+***** infinite main = true # 1933
+***** infinite main = true # 1934
+***** infinite main = true # 1935
+***** infinite main = true # 1936
+***** infinite main = true # 1937
+***** infinite main = true # 1938
+***** infinite main = true # 1939
+***** infinite main = true # 1940
+***** infinite main = true # 1941
+***** infinite main = true # 1942
+***** infinite main = true # 1943
+***** infinite main = true # 1944
+***** infinite main = true # 1945
+***** infinite main = true # 1946
+***** infinite main = true # 1947
+***** infinite main = true # 1948
+***** infinite main = true # 1949
+***** infinite main = true # 1950
+***** infinite main = true # 1951
+***** infinite main = true # 1952
+***** infinite main = true # 1953
+***** infinite main = true # 1954
+***** infinite main = true # 1955
+***** infinite main = true # 1956
+***** infinite main = true # 1957
+
+thread 12check if fin file exists : cycle 5
+***** infinite main = true #
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread1958
+12 cycle # 5
+***** infinite main = true # 1959
+***** infinite main = true # 1960
+***** infinite main = true # 1961
+***** infinite main = true # 1962
+***** infinite main = true # 1963
+***** infinite main = true # 1964
+***** infinite main = true # 1965
+***** infinite main = true # 1966
+***** infinite main = true # 1967
+***** infinite main = true # 1968
+***** infinite main = true # 1969
+***** infinite main = true # 1970
+***** infinite main = true # 1971
+***** infinite main = true # 1972
+***** infinite main = true # 1973
+***** infinite main = true # 1974
+***** infinite main = true # 1975
+***** infinite main = true # 1976
+***** infinite main = true # 1977
+***** infinite main = true # 1978
+***** infinite main = true # 1979
+***** infinite main = true # 1980
+***** infinite main = true # 1981
+***** infinite main = true # 1982
+***** infinite main = true # 1983
+***** infinite main = true # 1984
+***** infinite main = true # 1985
+***** infinite main = true # 1986
+***** infinite main = true # 1987
+***** infinite main = true # 1988
+***** infinite main = true # 1989
+***** infinite main = true #
+thread 15check if fin file exists : cycle 5
+1990
+***** infinite main = true # 1991
+***** infinite main = true # 1992
+***** infinite main = true # 1993
+***** infinite main = true # 1994
+***** infinite main = true # 1995
+***** infinite main = true # 1996
+***** infinite main = true # 1997
+***** infinite main = true # 1998
+***** infinite main = true # 1999
+***** infinite main = true # 2000
+***** infinite main = true # 2001
+***** infinite main = true # 2002
+***** infinite main = true # 2003
+***** infinite main = true # 2004
+***** infinite main = true # 2005
+***** infinite main = true # 2006
+***** infinite main = true # 2007
+***** infinite main = true # 2008
+***** infinite main = true # 2009
+***** infinite main = true # 2010
+***** infinite main = true # 2011
+***** infinite main = true # 2012
+***** infinite main = true # 2013
+***** infinite main = true # 2014
+***** infinite main = true # 2015
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread
+15 cycle # 5
+***** infinite main = true # 2016
+***** infinite main = true # 2017
+***** infinite main = true # 2018
+***** infinite main = true # 2019
+***** infinite main = true # 2020
+***** infinite main = true # 2021
+***** infinite main = true # 2022
+***** infinite main = true # 2023
+***** infinite main = true # 2024
+***** infinite main = true # 2025
+***** infinite main = true # 2026
+***** infinite main = true # 2027
+***** infinite main = true # 2028
+***** infinite main = true # 2029
+***** infinite main = true # 2030
+***** infinite main = true # 2031
+***** infinite main = true # 2032
+***** infinite main = true # 2033
+***** infinite main = true # 2034
+***** infinite main = true # 2035
+***** infinite main = true # 2036
+***** infinite main = true # 2037
+***** infinite main = true # 2038
+***** infinite main = true # 2039
+***** infinite main = true # 2040
+***** infinite main = true # 2041
+***** infinite main = true # 2042
+***** infinite main = true # 2043
+***** infinite main = true # 2044
+***** infinite main = true # 2045
+thread 16check if fin file exists : cycle 5
+
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread16 cycle # 5
+***** infinite main = true # 2046
+***** infinite main = true # 2047
+***** infinite main = true # 2048
+***** infinite main = true # 2049
+***** infinite main = true # 2050
+***** infinite main = true # 2051
+***** infinite main = true # 2052
+***** infinite main = true # 2053
+***** infinite main = true # 2054
+***** infinite main = true # 2055
+***** infinite main = true # 2056
+***** infinite main = true # 2057
+***** infinite main = true # 2058
+***** infinite main = true # 2059
+***** infinite main = true # 2060
+***** infinite main = true # 2061
+***** infinite main = true # 2062
+***** infinite main = true # 2063
+***** infinite main = true # 2064
+***** infinite main = true # 2065
+***** infinite main = true # 2066
+***** infinite main = true # 2067
+***** infinite main = true # 2068
+***** infinite main = true # 2069
+***** infinite main = true # 2070
+***** infinite main = true # 2071
+***** infinite main = true # 2072
+***** infinite main = true # 2073
+***** infinite main = true # 2074
+***** infinite main = true # 2075
+***** infinite main = true # 2076
+***** infinite main = true #
+thread 19check if fin file exists : cycle 2077
+5
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread19 cycle # 5
+***** infinite main = true # 2078
+***** infinite main = true # 2079
+***** infinite main = true # 2080
+***** infinite main = true # 2081
+***** infinite main = true # 2082
+***** infinite main = true # 2083
+***** infinite main = true # 2084
+***** infinite main = true # 2085
+***** infinite main = true # 2086
+***** infinite main = true # 2087
+***** infinite main = true # 2088
+***** infinite main = true # 2089
+***** infinite main = true # 2090
+***** infinite main = true # 2091
+***** infinite main = true # 2092
+***** infinite main = true # 2093
+***** infinite main = true # 2094
+***** infinite main = true # 2095
+***** infinite main = true # 2096
+***** infinite main = true # 2097
+***** infinite main = true # 2098
+***** infinite main = true # 2099
+***** infinite main = true # 2100
+***** infinite main = true # 2101
+***** infinite main = true # 2102
+***** infinite main = true # 2103
+***** infinite main = true # 2104
+***** infinite main = true # 2105
+***** infinite main = true # 2106
+***** infinite main = true # 2107
+***** infinite main = true # 2108
+***** infinite main = true # 2109
+***** infinite main = true # 2110
+***** infinite main = true # 2111
+***** infinite main = true # 2112
+***** infinite main = true # 2113
+***** infinite main = true # 2114
+***** infinite main = true # 2115
+***** infinite main = true # 2116
+***** infinite main = true # 2117
+***** infinite main = true # 2118
+***** infinite main = true # 2119
+***** infinite main = true # 2120
+***** infinite main = true # 2121
+***** infinite main = true # 2122
+***** infinite main = true # 2123
+***** infinite main = true # 2124
+***** infinite main = true # 2125
+***** infinite main = true # 2126
+***** infinite main = true # 2127
+***** infinite main = true # 2128
+***** infinite main = true # 2129
+***** infinite main = true # 2130
+***** infinite main = true # 2131
+***** infinite main = true # 2132
+***** infinite main = true # 2133
+***** infinite main = true # 2134
+***** infinite main = true # 2135
+***** infinite main = true # 2136
+***** infinite main = true # 2137
+***** infinite main = true # 2138
+***** infinite main = true # 2139
+***** infinite main = true # 2140
+***** infinite main = true # 2141
+***** infinite main = true # 2142
+***** infinite main = true # 2143
+***** infinite main = true # 2144
+***** infinite main = true # 2145
+***** infinite main = true # 2146
+***** infinite main = true # 2147
+***** infinite main = true # 2148
+***** infinite main = true # 2149
+***** infinite main = true # 2150
+***** infinite main = true # 2151
+***** infinite main = true # 2152
+***** infinite main = true # 2153
+***** infinite main = true # 2154
+***** infinite main = true # 2155
+***** infinite main = true # 2156
+***** infinite main = true # 2157
+***** infinite main = true # 2158
+
+thread 1check if fin file exists : cycle 6
+***** infinite main = true # 2159
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread1 cycle # 6
+***** infinite main = true # 2160
+***** infinite main = true # 2161
+***** infinite main = true # 2162
+***** infinite main = true # 2163
+***** infinite main = true # 2164
+***** infinite main = true # 2165
+***** infinite main = true # 2166
+***** infinite main = true # 2167
+***** infinite main = true # 2168
+***** infinite main = true # 2169
+***** infinite main = true # 2170
+***** infinite main = true # 2171
+***** infinite main = true # 2172
+***** infinite main = true # 2173
+***** infinite main = true # 2174
+***** infinite main = true # 2175
+***** infinite main = true # 2176
+***** infinite main = true # 2177
+***** infinite main = true # 2178
+***** infinite main = true # 2179
+***** infinite main = true # 2180
+***** infinite main = true # 2181
+***** infinite main = true # 2182
+
+thread 2check if fin file exists : cycle 6
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread2 cycle # 6
+***** infinite main = true # 2183
+***** infinite main = true # 2184
+***** infinite main = true # 2185
+***** infinite main = true # 2186
+***** infinite main = true # 2187
+***** infinite main = true # 2188
+***** infinite main = true # 2189
+***** infinite main = true # 2190
+***** infinite main = true # 2191
+***** infinite main = true # 2192
+***** infinite main = true # 2193
+***** infinite main = true # 2194
+***** infinite main = true # 2195
+***** infinite main = true # 2196
+***** infinite main = true # 2197
+***** infinite main = true # 2198
+***** infinite main = true # 2199
+***** infinite main = true # 2200
+***** infinite main = true # 2201
+***** infinite main = true # 2202
+***** infinite main = true # 2203
+***** infinite main = true # 2204
+***** infinite main = true # 2205
+***** infinite main = true # 2206
+***** infinite main = true # 2207
+***** infinite main = true # 2208
+***** infinite main = true # 2209
+
+thread 6check if fin file exists : cycle 6
+***** infinite main = true # 2210
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread6 cycle # 6***** infinite main = true # 2211
+
+***** infinite main = true # 2212
+***** infinite main = true # 2213
+***** infinite main = true # 2214
+***** infinite main = true # 2215
+***** infinite main = true # 2216
+***** infinite main = true # 2217
+***** infinite main = true # 2218
+***** infinite main = true # 2219
+***** infinite main = true # 2220
+***** infinite main = true # 2221
+***** infinite main = true # 2222
+***** infinite main = true # 2223
+***** infinite main = true # 2224
+***** infinite main = true # 2225
+***** infinite main = true # 2226
+***** infinite main = true # 2227
+thread 5check if fin file exists : cycle 6
+
+
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread***** infinite main = true # 2228
+5 cycle # 6
+***** infinite main = true # 2229
+***** infinite main = true # 2230
+***** infinite main = true # 2231
+***** infinite main = true # 2232
+***** infinite main = true # 2233
+***** infinite main = true # 2234
+***** infinite main = true # 2235
+***** infinite main = true # 2236
+thread 0check if fin file exists : cycle 6
+
+***** infinite main = true #
+//THREAD SING FOREVER IS ALWAYS TRUE <<
+  singForever thread0 cycle # 6
+2237
+***** infinite main = true # 2238
+***** infinite main = true # 2239
+
+Process returned -1073741819 (0xC0000005)   execution time : 356.171 s
+Press any key to continue.

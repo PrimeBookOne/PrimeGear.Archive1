@@ -1,0 +1,4931 @@
+{
+  "stem": "primeOne_2024_02_26",
+  "year": "2024",
+  "todos": [],
+  "milestones": [
+    {
+      "type": "MILESTONE",
+      "keyword": "Finished",
+      "content": "Press Enter to Continue. \" ;"
+    },
+    {
+      "type": "MILESTONE",
+      "keyword": "Finished",
+      "content": "Press Enter to Continue. \" ;"
+    }
+  ],
+  "directions": [],
+  "comments": [
+    {
+      "type": "COMMENT",
+      "content": "#include <io.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <GL/glut.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "link with Ws2_32.lib"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Excludes Anything That Isn't Emscriptem Compatible"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Excludes Anything That Isn't Emscriptem Compatible"
+    },
+    {
+      "type": "COMMENT",
+      "content": "UNIX ONLY #include <sys/socket.h> #include <netinet/in.h> #include <arpa/inet.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <netdb.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-application.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-common.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "variable_type_array_step_count"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//////////////// GLOBAL Dancer"
+    },
+    {
+      "type": "COMMENT",
+      "content": "globalGuestNewHost[0]=false;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "globalGuestBecomeHost[0] =false;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//////////////// GLOBAL"
+    },
+    {
+      "type": "COMMENT",
+      "content": "array size in bytes"
+    },
+    {
+      "type": "COMMENT",
+      "content": "1MB"
+    },
+    {
+      "type": "COMMENT",
+      "content": "const int PORT = 54000; // Port number for the connection"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Add a comma every three digits (except at the beginning)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Function to convert a string to __int128"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Process the received data (e.g., write to a file)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Return the number of bytes processed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Increased buffer size"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Directly output to stderr"
+    },
+    {
+      "type": "COMMENT",
+      "content": "api.github.com/repos/\" + owner + \"/\" + repo + \"/contents/\" + remotePath;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "api.github.com/repos/\" + owner + \"/\" + repo + \"/contents/\" + remotePath;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Pass 'this' as userdata"
+    },
+    {
+      "type": "COMMENT",
+      "content": "api.github.com/repos/\" + owner + \"/\" + repo + \"/contents\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Directly output to stderr"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** PRIVATE *******************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 infiniteWalk = 5 ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" 999 \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << listBookZipString << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "count lines of file cout"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Number of Tiles in bookZipList.txt : \" <<stringLineCount << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Begin Book Read of Index *1111111111111111111111111111111111111111111111111111111111111111111111111 \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 tileStart[MAX_LINES];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 tileFinish[MAX_LINES];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 tileTotals[MAX_LINES];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128  readTileCount = 28;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  value1S << \" V1  \" <<value2S << \" V2  \" << value3S << \" V3 \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" print PrimeBookOne Index\"<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Print the read data"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << tileStartString.getString() << \" R1 \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << tileFinishString.getString() << \" R2 \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << tileTotalsString.getString()  << \" R3 \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "infiniteWalk = tileFinish[ readTileCount-1 ];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "tileCount = readTileCount;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "total =tileTotals[readTileCount-1];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128Class totalString(total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128Class infiniteWalkString(infiniteWalk);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128Class tileCountString(tileCount);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" FFFFFFFFFFFFFFFFFFFFFFFFFinish readbook INDEX\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"cout << totalString.getString(); \" << totalString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"cout << infiniteWalkString.getString(); \" << infiniteWalkString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"cout << tileCountString.getString(); \" <<  tileCountString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Extract Tile \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string userInput=\"\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" 101010 \" << endl;      realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"unzipTile: \"<< unzipTile << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" 11 11 11 \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string primeBookIndexString = \"tar -xvf PrimeBookOne\\\\\" +  primeBookName + \" PrimeBookOne/PrimeBookOneIndexImport.txt\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"primeBookIndexString: \" << primeBookIndexString << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system( primeBookIndexString.c_str());"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<\"Cleanup\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"delZip: \" << delZip << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"delPrime: \"<< delPrime << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void verifyBook(__int128 singers){"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout  << \" Total Primes to Test : \" << totalString.getString();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout  <<\"  singersPlus = \" << singersPlusString.getString() << endl<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "still(singers);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "breezeDigits = breeze( singers )*2;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout  << \" primeBuild Pre : \" << int(primeBuild) << \"  bookWalk \" << int(bookWalk) ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" PRIMEBOOK is GOOD!!!!!   \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(primeBuild) << \" is  PRIME  \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  bookWalk \" << int(bookWalk) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "breezeDigits = breeze( singers )*2;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primeBuild+= breezeDigits;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \" breezeDigits \" << int(breezeDigits) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int testTile(){"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"Created TEST GRID array: \" << std::endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Handle the exception"
+    },
+    {
+      "type": "COMMENT",
+      "content": "TESTTILE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout  << \" ETCHED FILE TO WINDOWS OS FS : \" << targetTileNamePath << endl << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "total++;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "infiniteWalkAdd += data;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  etchWalkString: \" << stringBean2;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  tileCountString: \" <<  stringBean3;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  gridString: \" << gridString ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  targetTileName  \" << targetTileName << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"    BEGIN ETCH   \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"ETCHED GOOD \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int_fast16_t* newTile = new int_fast16_t[grid];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "tiles[targetTileName] = newTile;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "targetTile = newTile;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "targetTile = newTile;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" targetTileName  \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << targetTileName  << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "ETCHTILE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "INITIATETILE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"CarveSlate Begin \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primeRatio = (infiniteWalk/total) +1; // cout << \"PrimeRatio \"<< int(primeRatio)<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"targetSlateName \" << targetSlateName << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"roughcut\"<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"cleanslate\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Slate Carved\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "CARVESLATE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"singer scribeSlate \" << int(singer) << \" data \" << data << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Target Slate to Scribe : \" << targetTileName;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" SlateWalk \" << int(slateWalk)<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "slateWalks[singer] ++;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" SLATE ETCHED \"<< int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "SCRIBESLATE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Read Slate\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "while(singer < singers){"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"ThreadScribe Total Read \" << int(threadScribeTotal) << \" singers \"<< int(singers) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"TargetSlateName \" << targetSlateName << endl; //"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"ThreadReadPreWALK \" << int(singer) << \" threadReadWalk \" << int(threadReadWalk) ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  int(threadReadWalk) <<   \"  threadScribeTotal \" << int(threadScribeTotal) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"threadReadWalk \" << int(threadReadWalk) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" walkData = threadSlateWalk[singer] \" << int(walkData) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"data = targetSlate[ threadReadWalk ]; \" << int(data) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "READSLATE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return threadTotal[singer] ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "BREAKSLATE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 infiniteWalkCurrent() {return infiniteWalk;}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[25;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "=\"cout << \" & CHAR(34) & \"Function Begin : \"  & B2 & CHAR(34)  & \" << endl;\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"X                                X       |      \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[1;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"threadTileWalk[singer] \" << int(threadTileWalk[singer]) <<\"  grid : \"<< int(grid)<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"singer \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" threadBreezeWalk[singer] \"<< int(threadBreezeWalk[singer] ) << \"  singer =\" << int(singer)<<  \" start \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" threadBreezeWalk[singer] \"<< int(threadBreezeWalk[singer] ) << \"  singer =\" << int(singer)<<  \" finish \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if (return16 > 9) {cout << int(threadTileWalk[singer]) << \" \" <<  int(return16) << \" \";}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "BREEZE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Begin still for singer : \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Midway  still for singer : \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Finished still for singer : \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128Class infiniteWalkString( infiniteWalk );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string stringBean2 = infiniteWalkString.getString();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"PrimeBuild Total = \" << stringBean << \" infiniteWalk : \" << stringBean2 << \" Total : \" << stringBean3 << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "88888 INCORPORATE SIZE@PRIMERATIO TO SAVE SPACE IF NEEDED"
+    },
+    {
+      "type": "COMMENT",
+      "content": "88888 INCORPORATE SIZE@PRIMERATIO TO SAVE SPACE IF NEEDED"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total Before primeDivise  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(infiniteWalk) << \"   infiniteWalk    \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(primeDifference) << \"   primeDifference\" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total After primeDivise  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total After infiniteWalk++  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(infiniteWalk) << \"   infiniteWalk    \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128ClassComma primeBasePrimerString( primeBasePrimer );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << endl << endl << endl <<\"  PrimeBasePrimer : \" << // primeBasePrimerString.getString() << \" Completed\" << endl << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"create singer \"<<int(singer)<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "SEND dancerTotals INT and  dancerPrimeFinds Array to each thread"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH CREATE ALL THREADS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Singer \" << int(singer) << \" at etchWalk \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(etchWalk) << \" found difference \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  targetArray[etchWalk] << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH CONDUCTOR ETCH THREAD DATA"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE INFINITE = TRUE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild DIVISIBLE by \" << int(primeBuild ) << \" data \" << int(data)  << \"\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild \" << int(primeBuild ) << \" infiniteWalk \" << int(data)  << \"\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** IF PRIME BY RANGE *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild inDIVISIBLE by range \" << int(primeBuild ) << \" data \" << int(data)  << \"\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" ******** WHILE DANCE = TRUE LOOP ******* \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PRIMEDIVISE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Begin Dancer : \" << int(singer)<< \"  myWalk = \" << int(myInfiniteWalk ) ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  perThreadSlices = \" << int(perThreadSlices) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "MOONWALKER FIND PREVIOUS BEGIN ****************************************************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "vvvvvvvvvvvv DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild DIVISIBLE by \" << int(primeBuild );  //  cout << \" moonWalker \" << int( moonWalker )  << \"\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild \" << int(primeBuild ) << \" moonWalker \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int( moonWalker )  << \"singer \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** IF PRIME BY RANGE *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild inDIVISIBLE by range \" << int(primeBuild );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" moonWalker \" << int( moonWalker )  << \" singer\" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" moonwalk \" << int(singer);  cout << \" \" << int(moonWalker)<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" ******** WHILE DANCE = TRUE LOOP ******* \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "^^^^^^^^^^^^ DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^"
+    },
+    {
+      "type": "COMMENT",
+      "content": "IF PRIME"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH findPrevious"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Singer \" << int(singer) << \" Moon Walked found previousPrime =\"; cout << int(myPreviousPrime) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"     ********** BUILD perThreadSlicesTHREADArray ************** \"; cout << \"\\033[1;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "vvvvvvvvvvvv DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild DIVISIBLE by \" << int(primeBuild ); //  cout << \" myInfiniteWalk \" << int( myInfiniteWalk )  << \"\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild \" << int(primeBuild ) << \" myInfiniteWalk \"; // cout << int( myInfiniteWalk )  << \"singer \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** IF PRIME BY RANGE *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild inDIVISIBLE by range \" << int(primeBuild ); //  cout << \" myInfiniteWalk \" << int( myInfiniteWalk )  << \" singer\" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" myInfiniteWalk \" << int(singer); //  cout << \" \" << int(myInfiniteWalk)<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" ******** WHILE DANCE = TRUE LOOP ******* \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "^^^^^^^^^^^^ DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(slice) << \"singer \"<< int(singer); //  cout<< \"   myInfiniteWalk \"<< int( myInfiniteWalk);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if(countThis++ > 1000 ) {cout << \"\\033[1;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "while(spaceBuffer<singer){cout<< endl; spaceBuffer++;}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128ClassComma  myInfiniteWalkString (  myInfiniteWalk );      cout << myInfiniteWalkString.getString();; spaceBuffer =0; countThis=0;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"singer \"<< int(singer)<< \"  difference \"; //  cout << int(primeDifference) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** WHILE SLICELOOP *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 findRatio =int(int(perThreadSlices/myPrimeFindsLocal)); //cout << \"singer SIGN \"<< int(singer)<< \"  array =  \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int( myPrimeFinds ) << \" ratio : \" << int(findRatio) ; //  cout << int( myPrimeFindsLocal ) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "LIBRARIAN DANCER FINISH"
+    },
+    {
+      "type": "COMMENT",
+      "content": "88888 INCORPORATE SIZE@PRIMERATIO TO SAVE SPACE IF NEEDED"
+    },
+    {
+      "type": "COMMENT",
+      "content": "88888 INCORPORATE SIZE@PRIMERATIO TO SAVE SPACE IF NEEDED"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 infiniteWalk =5;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total Before primeDivise  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(infiniteWalk) << \"   infiniteWalk    \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(primeDifference) << \"   primeDifference\" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total After primeDivise  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total After infiniteWalk++  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(infiniteWalk) << \"   infiniteWalk    \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128ClassComma primeBasePrimerString( primeBasePrimer );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << endl << endl << endl <<\"  PrimeBasePrimer : \" << // primeBasePrimerString.getString() << \" Completed\" << endl << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "READ TILE ******************************************************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "infiniteWalk+=  readPage2Tile(tileLay );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Begin read page 2 tile \" << endl;  //   realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "targetTile = tiles[targetTileName];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << targetTileNamePath << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "for (__int128 zeroTile = 0 ; zeroTile < grid; ) {"
+    },
+    {
+      "type": "COMMENT",
+      "content": "targetTile[zeroTile] = 0 ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "zeroTile++;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"zeroTile \" <<int(zeroTile)  << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" read tile data = \" << int( data ) << \"  \" << int(tileWalk) << \"  TileLay : \" << int(tileLay) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if (  data == 0 ) {"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" read tile data = \" << int( data ) << \"  \" << int(tileWalk) << \"  TileNumber : \" << int( tileLay) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" FINISHED read tile data = \" <<targetTileNamePath  << endl <<\"  totaltiles=\" << int(tileWalk) << \"  myInfiniteWalk \" << int( infiniteWalk ) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "delete[] targetTile;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "READ TILE ******************************************************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"create singer \"<<int(singer)<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "SEND dancerTotals INT and  dancerPrimeFinds Array to each thread"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH CREATE ALL THREADS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "for (singer = 0; singer < singers; singer++) {"
+    },
+    {
+      "type": "COMMENT",
+      "content": "dancerPrimeFinds[singer] = futures[singer].get(); // RECEIVE SINGERS PRIME TOTALS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "conductorPrimeFindsArray[singer] = dancerPrimeFindsArray[singer];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Conductor Receive from Singer \" << int(singer) << \" FOUND  \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(  dancerPrimeFinds[singer]) << \"  \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  \"Conductor READ Array \" << int(findsArray[singer]) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "} // RECEIVE DATA FROM THREADS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Singer \" << int(singer) << \" at etchWalk \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(etchWalk) << \" found difference \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  targetArray[etchWalk] << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH CONDUCTOR ETCH THREAD DATA"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE INFINITE = TRUE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** PUBLIC *******************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" Initiate prime tile class \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"tar -cvjf PrimeBookOne\\\\PrimeBookOne.zip PrimeBookOne\\\\PrimeBookOneIndex.txt\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** // ****************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "infiniteWalk = 5 ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "powerOf = 24 ; // = powerOf ; 24 = 16meg 25 = 32 26 = 64 27 =128 28 =256meg uncompressed tile file"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** // ****************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128ClassComma infiniteWalkString( infiniteWalk );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  PerThreadSlices Song Count \" << perThreadSlicesString.getString()  << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  SingersPlus \" << singersPlusString.getString()<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  Tile Grid Width : \" << gridString;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" @ 2 to the Power of \" << powerOfString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  PrimeBasePrimer \" << primeBasePrimerString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  infiniteWalk Start \" << infiniteWalkString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PRIMETILECLASS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void verifyPrimeBook(__int128 singers){ verifyBook(singers);}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 tileInquiry(){ return tileCount ;}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void loadPrimeBook(__int128 singers, __int128&infiniteWalk ){readPrimeBook(singers, infiniteWalk);}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void engageLibrarianDancer () {librarianDancer(); }"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 requestInfiniteWalkCurrent() {__int128 returnInfiniteWalkCurrent = infiniteWalkCurrent(); return infiniteWalk;}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primeBookOneIndexStatus = indexOpenerContent + \"<h1>Status Updated: \" + currentTime + \"</h1>\" + indexCloserContent;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"primeBookOneIndexStatus: \" << primeBookOneIndexStatus << std::endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PRIMETILE CLASS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if ( data <= 15){ primeBook << hex << data; }"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if ( data > 15 && data < 256){ primeBook << endl << hex << data; lineCount++;}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if ( data > 255) {primeBook << endl << \"0\" << hex << data; lineCount++; }"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(lineCount) << \"lineCount \"<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(lineCountMax) << \"lineCountMax \"<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "pen16 function"
+    },
+    {
+      "type": "COMMENT",
+      "content": "unCapPen function"
+    },
+    {
+      "type": "COMMENT",
+      "content": "printMileStone function"
+    },
+    {
+      "type": "COMMENT",
+      "content": "mark function"
+    },
+    {
+      "type": "COMMENT",
+      "content": "capPen function"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Seed the random number generator with the current time in the constructor"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Lock to ensure thread safety"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Mutex for thread safety"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"Random String \" << randomString << std::endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Adjusted size"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** PRIVATE *******************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  for (conduit = 0; conduit < hostConduits; conduit++) {\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"create conduit \"<<int(conduit)<< \" of total created: \" << ++conduitCount << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" created threads = \" << int(conduits) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "END FUNCTION"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  for (conduit = 0; conduit < hostConduits; conduit++) {\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"create conduit \"<<int(conduit)<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "remoteIP = guestReturnIpArray[0];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "instruction = guestReturnGearArray[0];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if ( guestWaitTime00 == true){"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::this_thread::sleep_for(std::chrono::seconds(3));"
+    },
+    {
+      "type": "COMMENT",
+      "content": "}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "create conduit loop"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" created threads = \" << int(conduits) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Returned to Become Host\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "weaveip="
+    },
+    {
+      "type": "COMMENT",
+      "content": "END FUNCTION"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" ARRAY_SIZE \" <<  ARRAY_SIZE << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H Initialize Winsock\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H Create socket\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H  Port Attempt: \" << ntohs(hint.sin_port) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H  HOST Created at IP :  \" << ipAddress ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" Port: \" << PORTgrow << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PORTgrow+=3;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE socketSearch==true  // cout << \"Socket Connected Successfully\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "claimedPort00=PORTgrow;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H HOST uniqueId: \" << uniqueId<<\":\"<< conduit << \"IP Address 127.0.0.1:\" << claimedPort00<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "while (PORTgrow == PORT){  // Listen for incoming connections"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**  cerr << \"H Can't listen on socket! Quitting\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "SOCKET ERROR"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H Awaiting Gear Connection : Host uniqueId: \" << uniqueId<< \"IP Address 127.0.0.1:\" << portString << endl << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "5 seconds timeout"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Timeout occurred"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**  cerr << \"H Can't accept client Invalid Socket! Quitting\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "INVALID SOCKET"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Service (i.e., port) the client is connected on"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Client's remote name"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H  HOST name: \" << computerName << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "** cerr << \"H Failed to retrieve computer name!\" << endl;    //    return 1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Get information about the client"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Manually convert IP address to string"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**   cout << \"H Connected on port NTOS \" << ntohs(client.sin_port) << \" to \" << host << endl; }"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" additionalDataBuffer begin\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "guest receive"
+    },
+    {
+      "type": "COMMENT",
+      "content": "gearBuildString 10 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "myUniqueLoginKeyString 50 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "hostIp00String 15 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "claimedPort00String //5digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "UniqueId   // 10 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "tileCountString = \"01234567890123456789\";   // 20 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "wolfPackIdString = uniqueId;   // 10 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "wolfHungerString = \"1234512345\";   // 10 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "myPreferredUserHandleString =\"jasonisaachuffbrodsky\";  // no digit limit but string variable roof"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//cout << \"guestData  All: \" << guestDataAll << endl << endl;\ncout << \"guestData2 gearBuildString              : \" << guestData2 << \"   gearBuildString \" << endl;\ncout << \"guestData3 myUniqueLoginKeyS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  \"H from Gear \"<< additionalDataBuffer << \" 127.0.0.1:\" << service << \" x64 \"<< computerName<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system (\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "parse guest"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Hp Check for \"<< guestData << \" in GuestList with total guests: \" << totalGuests<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Hp hostGuestListArray00[guestCheck]: \"<<hostGuestListArray00[guestCheck] << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Hp Return Guest: \" << guestData << \" Freshness: \" << guestFreshness << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "name of guest peer"
+    },
+    {
+      "type": "COMMENT",
+      "content": "hostGuestPortListArray00[totalGuests] = guestData2;  //guest peer stated Port"
+    },
+    {
+      "type": "COMMENT",
+      "content": "actual peer port as received"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Hp New gear: \"<< hostGuestListArray00[totalGuests]<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "while foundGuest or searchComplete = false"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"Hp \"<< uniqueIdGlobal << \" Host:  127.0.0.1:\"<< myPort << \"   List All Guests total: \"<< (totalGuests+2) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Freshness : Roof : userUniqueID : Handle : totalFinds  : Gear PP/M : Rhombus Reliability : infiniteWalk : pieSlice\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << hostGuestListArray00[guestCheck];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"     \" << freshness<< \"     jasonisaachuffbrodsky\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"   127.0.0.1:\"<<hostGuestPortListArray00[guestCheck];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"   127.0.0.1:\"<< guestPortListArray00[guestCheck] << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "remove stale gears"
+    },
+    {
+      "type": "COMMENT",
+      "content": "host send"
+    },
+    {
+      "type": "COMMENT",
+      "content": "hostCREATEinstructions"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Open the file for writing"
+    },
+    {
+      "type": "COMMENT",
+      "content": "reconnect at specified ip and port as guestUpdater"
+    },
+    {
+      "type": "COMMENT",
+      "content": "reconnect at specified ip and port as tileUpdater"
+    },
+    {
+      "type": "COMMENT",
+      "content": "inFiniteWalk this pieSlice"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return foundPrimes to assigned primeFindsUpdaterPort"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int to string service"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int to string"
+    },
+    {
+      "type": "COMMENT",
+      "content": "verifyTorchPass = true;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "become host"
+    },
+    {
+      "type": "COMMENT",
+      "content": "next run connect to new host"
+    },
+    {
+      "type": "COMMENT",
+      "content": "become host"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Close the file"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H File \" << hostFileName << \" created and filled with content.\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H to Send \" << uniqueId<<\":\"<< conduit << \" 127.0.0.1:\" << claimedPort00 << \" x64 \" << host << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  \"H  to Gear \"<< additionalDataBuffer << \" 127.0.0.1:\" << service << \" x64 \"<< computerName<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Read the contents of the file into the vector variable"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "** cerr << \"H Failed to open 'original.zip' file\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H totalDataSends: \" << totalSends++ << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout.flush();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Break out of the loop when all data has been sent"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "datasend SIZE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE (sendForever)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "}        // WHILE (PORTgrow == PORT)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H -----------------------------------------------\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE hostStayOpen"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE SOCKETFOREVER == TRUE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "END HOST FUNCTION"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Remaining Guests = -1 : globalNewHostPort:\" <<  globalNewHostPort<< endl;  realm_os_user_input( userInput );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "weaveHost = globalNewHostPort;  weavePortHost= globalNewHostPort;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[1;1H\"<< \"H:  \"<< weavePortHost  << \" Miles: \" << myMiles << \" Hosted: \"<< hostCount++ << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "CREATE HOST CONDUITS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[1;1H\"<< \"G: \"<< uniqueId << \" \"  << weavePort << \" \" << weavePortHost << \" \" << weaveNewPort  << \" \" <<  myConnectAttempts << \"     \" <<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << uniqueId << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WEAVE FOREVER"
+    },
+    {
+      "type": "COMMENT",
+      "content": "END FUNCTION"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** PUBLIC *******************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout<<\"conduitCLass Begin \" << dataPort<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "vector<string*> hostsGuestArrays (  maxGuestConduits  );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_querry();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "heartbeat();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "gyrocore();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "sw_purchase_verify();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Skip the next argument since it's already processed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Skip the next argument since it's already processed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Skip the next argument since it's already processed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Skip the next argument since it's already processed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Print the results"
+    },
+    {
+      "type": "COMMENT",
+      "content": "bool isConsole = isatty(fileno(stdin));"
+    },
+    {
+      "type": "COMMENT",
+      "content": "text_post = \"Realm OS is Compiled by: \"+Compiler; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[25;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "=\"cout << \" & CHAR(34) & \"Function Begin : \"  & B2 & CHAR(34)  & \" << endl;\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"X                                X       |      \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[1;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PrimeOne.engageLibrarianDancer(singer);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "=\"text_post = \" &CHAR(34)&  \" ENTER TEXT HERE \"&CHAR(34)&\";\"&\" \"&\"realm_post_client(text_function_name, text_post );\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "future use 767676767"
+    },
+    {
+      "type": "COMMENT",
+      "content": "future use 1000000"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primePillarClass primeOne(window,pDaSize);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"PrimeBook Load Finished : Press Enter to Continue. \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"PrimeBook Now Verify : Press Enter to Continue. \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PrimeOne.verifyPrimeBook(singers);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" Mr T Says Start From Beginning\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PrimeOne.verifyPrimeBook(singers);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 totalPrimeNow = PrimeOne.requestTotal();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 infiniteWalkNow = PrimeOne.requestInfiniteWalk();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128ClassComma PrimeOneTotalString(total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "stringBean = PrimeOneTotalString.getString() ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"----------> Dance Primed to : \" << stringBean << \" Total Primes\" << endl<< endl<< endl<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "check system and gpu temp compare and contrast to previous inquiries in array"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if (_kbhit()) {  // Check if a key has been pressed\n    char key = _getch(); // Read the pressed key\n    std::cout << endl << \"Key pressed: \" << key << \" : \";  // Process the key press\n\n    if (key =="
+    },
+    {
+      "type": "COMMENT",
+      "content": "} // WHILE INFINITE == TRUE  ===============================================^"
+    },
+    {
+      "type": "COMMENT",
+      "content": "create array of bits then by bits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "sort variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "++variable_type_step_check;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "list variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Get the current time point"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Extract individual components of time"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Format the string as \"MODYYRHRMNSEC\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::string result = formattedTime.str();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"Formatted Time: \" << result << std::endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <io.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <GL/glut.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "link with Ws2_32.lib"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Excludes Anything That Isn't Emscriptem Compatible"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Excludes Anything That Isn't Emscriptem Compatible"
+    },
+    {
+      "type": "COMMENT",
+      "content": "UNIX ONLY #include <sys/socket.h> #include <netinet/in.h> #include <arpa/inet.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <netdb.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-application.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-common.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "variable_type_array_step_count"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//////////////// GLOBAL Dancer"
+    },
+    {
+      "type": "COMMENT",
+      "content": "globalGuestNewHost[0]=false;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "globalGuestBecomeHost[0] =false;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//////////////// GLOBAL"
+    },
+    {
+      "type": "COMMENT",
+      "content": "array size in bytes"
+    },
+    {
+      "type": "COMMENT",
+      "content": "1MB"
+    },
+    {
+      "type": "COMMENT",
+      "content": "const int PORT = 54000; // Port number for the connection"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Add a comma every three digits (except at the beginning)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Function to convert a string to __int128"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Process the received data (e.g., write to a file)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Return the number of bytes processed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Increased buffer size"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Directly output to stderr"
+    },
+    {
+      "type": "COMMENT",
+      "content": "api.github.com/repos/\" + owner + \"/\" + repo + \"/contents/\" + remotePath;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "api.github.com/repos/\" + owner + \"/\" + repo + \"/contents/\" + remotePath;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Pass 'this' as userdata"
+    },
+    {
+      "type": "COMMENT",
+      "content": "api.github.com/repos/\" + owner + \"/\" + repo + \"/contents\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Directly output to stderr"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** PRIVATE *******************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 infiniteWalk = 5 ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" 999 \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << listBookZipString << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "count lines of file cout"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Number of Tiles in bookZipList.txt : \" <<stringLineCount << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Begin Book Read of Index *1111111111111111111111111111111111111111111111111111111111111111111111111 \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 tileStart[MAX_LINES];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 tileFinish[MAX_LINES];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 tileTotals[MAX_LINES];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128  readTileCount = 28;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  value1S << \" V1  \" <<value2S << \" V2  \" << value3S << \" V3 \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" print PrimeBookOne Index\"<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Print the read data"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << tileStartString.getString() << \" R1 \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << tileFinishString.getString() << \" R2 \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << tileTotalsString.getString()  << \" R3 \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "infiniteWalk = tileFinish[ readTileCount-1 ];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "tileCount = readTileCount;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "total =tileTotals[readTileCount-1];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128Class totalString(total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128Class infiniteWalkString(infiniteWalk);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128Class tileCountString(tileCount);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" FFFFFFFFFFFFFFFFFFFFFFFFFinish readbook INDEX\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"cout << totalString.getString(); \" << totalString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"cout << infiniteWalkString.getString(); \" << infiniteWalkString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"cout << tileCountString.getString(); \" <<  tileCountString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Extract Tile \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string userInput=\"\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" 101010 \" << endl;      realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"unzipTile: \"<< unzipTile << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" 11 11 11 \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string primeBookIndexString = \"tar -xvf PrimeBookOne\\\\\" +  primeBookName + \" PrimeBookOne/PrimeBookOneIndexImport.txt\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"primeBookIndexString: \" << primeBookIndexString << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system( primeBookIndexString.c_str());"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<\"Cleanup\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"delZip: \" << delZip << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"delPrime: \"<< delPrime << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void verifyBook(__int128 singers){"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout  << \" Total Primes to Test : \" << totalString.getString();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout  <<\"  singersPlus = \" << singersPlusString.getString() << endl<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "still(singers);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "breezeDigits = breeze( singers )*2;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout  << \" primeBuild Pre : \" << int(primeBuild) << \"  bookWalk \" << int(bookWalk) ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" PRIMEBOOK is GOOD!!!!!   \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(primeBuild) << \" is  PRIME  \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  bookWalk \" << int(bookWalk) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "breezeDigits = breeze( singers )*2;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primeBuild+= breezeDigits;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \" breezeDigits \" << int(breezeDigits) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int testTile(){"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"Created TEST GRID array: \" << std::endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Handle the exception"
+    },
+    {
+      "type": "COMMENT",
+      "content": "TESTTILE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout  << \" ETCHED FILE TO WINDOWS OS FS : \" << targetTileNamePath << endl << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "total++;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "infiniteWalkAdd += data;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  etchWalkString: \" << stringBean2;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  tileCountString: \" <<  stringBean3;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  gridString: \" << gridString ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  targetTileName  \" << targetTileName << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"    BEGIN ETCH   \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"ETCHED GOOD \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int_fast16_t* newTile = new int_fast16_t[grid];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "tiles[targetTileName] = newTile;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "targetTile = newTile;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "targetTile = newTile;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" targetTileName  \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << targetTileName  << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "ETCHTILE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "INITIATETILE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"CarveSlate Begin \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primeRatio = (infiniteWalk/total) +1; // cout << \"PrimeRatio \"<< int(primeRatio)<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"targetSlateName \" << targetSlateName << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"roughcut\"<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"cleanslate\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Slate Carved\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "CARVESLATE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"singer scribeSlate \" << int(singer) << \" data \" << data << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Target Slate to Scribe : \" << targetTileName;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" SlateWalk \" << int(slateWalk)<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "slateWalks[singer] ++;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" SLATE ETCHED \"<< int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "SCRIBESLATE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Read Slate\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "while(singer < singers){"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"ThreadScribe Total Read \" << int(threadScribeTotal) << \" singers \"<< int(singers) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"TargetSlateName \" << targetSlateName << endl; //"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"ThreadReadPreWALK \" << int(singer) << \" threadReadWalk \" << int(threadReadWalk) ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  int(threadReadWalk) <<   \"  threadScribeTotal \" << int(threadScribeTotal) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"threadReadWalk \" << int(threadReadWalk) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" walkData = threadSlateWalk[singer] \" << int(walkData) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"data = targetSlate[ threadReadWalk ]; \" << int(data) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "READSLATE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return threadTotal[singer] ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "BREAKSLATE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 infiniteWalkCurrent() {return infiniteWalk;}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[25;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "=\"cout << \" & CHAR(34) & \"Function Begin : \"  & B2 & CHAR(34)  & \" << endl;\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"X                                X       |      \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[1;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"threadTileWalk[singer] \" << int(threadTileWalk[singer]) <<\"  grid : \"<< int(grid)<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"singer \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" threadBreezeWalk[singer] \"<< int(threadBreezeWalk[singer] ) << \"  singer =\" << int(singer)<<  \" start \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" threadBreezeWalk[singer] \"<< int(threadBreezeWalk[singer] ) << \"  singer =\" << int(singer)<<  \" finish \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if (return16 > 9) {cout << int(threadTileWalk[singer]) << \" \" <<  int(return16) << \" \";}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "BREEZE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Begin still for singer : \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Midway  still for singer : \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Finished still for singer : \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128Class infiniteWalkString( infiniteWalk );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string stringBean2 = infiniteWalkString.getString();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"PrimeBuild Total = \" << stringBean << \" infiniteWalk : \" << stringBean2 << \" Total : \" << stringBean3 << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "88888 INCORPORATE SIZE@PRIMERATIO TO SAVE SPACE IF NEEDED"
+    },
+    {
+      "type": "COMMENT",
+      "content": "88888 INCORPORATE SIZE@PRIMERATIO TO SAVE SPACE IF NEEDED"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total Before primeDivise  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(infiniteWalk) << \"   infiniteWalk    \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(primeDifference) << \"   primeDifference\" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total After primeDivise  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total After infiniteWalk++  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(infiniteWalk) << \"   infiniteWalk    \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128ClassComma primeBasePrimerString( primeBasePrimer );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << endl << endl << endl <<\"  PrimeBasePrimer : \" << // primeBasePrimerString.getString() << \" Completed\" << endl << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"create singer \"<<int(singer)<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "SEND dancerTotals INT and  dancerPrimeFinds Array to each thread"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH CREATE ALL THREADS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Singer \" << int(singer) << \" at etchWalk \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(etchWalk) << \" found difference \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  targetArray[etchWalk] << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH CONDUCTOR ETCH THREAD DATA"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE INFINITE = TRUE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild DIVISIBLE by \" << int(primeBuild ) << \" data \" << int(data)  << \"\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild \" << int(primeBuild ) << \" infiniteWalk \" << int(data)  << \"\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** IF PRIME BY RANGE *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild inDIVISIBLE by range \" << int(primeBuild ) << \" data \" << int(data)  << \"\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" ******** WHILE DANCE = TRUE LOOP ******* \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PRIMEDIVISE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Begin Dancer : \" << int(singer)<< \"  myWalk = \" << int(myInfiniteWalk ) ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  perThreadSlices = \" << int(perThreadSlices) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "MOONWALKER FIND PREVIOUS BEGIN ****************************************************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "vvvvvvvvvvvv DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild DIVISIBLE by \" << int(primeBuild );  //  cout << \" moonWalker \" << int( moonWalker )  << \"\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild \" << int(primeBuild ) << \" moonWalker \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int( moonWalker )  << \"singer \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** IF PRIME BY RANGE *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild inDIVISIBLE by range \" << int(primeBuild );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" moonWalker \" << int( moonWalker )  << \" singer\" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" moonwalk \" << int(singer);  cout << \" \" << int(moonWalker)<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" ******** WHILE DANCE = TRUE LOOP ******* \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "^^^^^^^^^^^^ DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^"
+    },
+    {
+      "type": "COMMENT",
+      "content": "IF PRIME"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH findPrevious"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Singer \" << int(singer) << \" Moon Walked found previousPrime =\"; cout << int(myPreviousPrime) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"     ********** BUILD perThreadSlicesTHREADArray ************** \"; cout << \"\\033[1;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "vvvvvvvvvvvv DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild DIVISIBLE by \" << int(primeBuild ); //  cout << \" myInfiniteWalk \" << int( myInfiniteWalk )  << \"\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild \" << int(primeBuild ) << \" myInfiniteWalk \"; // cout << int( myInfiniteWalk )  << \"singer \" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** IF PRIME BY RANGE *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" primeBuild inDIVISIBLE by range \" << int(primeBuild ); //  cout << \" myInfiniteWalk \" << int( myInfiniteWalk )  << \" singer\" << int(singer) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" myInfiniteWalk \" << int(singer); //  cout << \" \" << int(myInfiniteWalk)<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" ******** WHILE DANCE = TRUE LOOP ******* \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "^^^^^^^^^^^^ DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(slice) << \"singer \"<< int(singer); //  cout<< \"   myInfiniteWalk \"<< int( myInfiniteWalk);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if(countThis++ > 1000 ) {cout << \"\\033[1;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "while(spaceBuffer<singer){cout<< endl; spaceBuffer++;}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128ClassComma  myInfiniteWalkString (  myInfiniteWalk );      cout << myInfiniteWalkString.getString();; spaceBuffer =0; countThis=0;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"singer \"<< int(singer)<< \"  difference \"; //  cout << int(primeDifference) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** WHILE SLICELOOP *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 findRatio =int(int(perThreadSlices/myPrimeFindsLocal)); //cout << \"singer SIGN \"<< int(singer)<< \"  array =  \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int( myPrimeFinds ) << \" ratio : \" << int(findRatio) ; //  cout << int( myPrimeFindsLocal ) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "LIBRARIAN DANCER FINISH"
+    },
+    {
+      "type": "COMMENT",
+      "content": "88888 INCORPORATE SIZE@PRIMERATIO TO SAVE SPACE IF NEEDED"
+    },
+    {
+      "type": "COMMENT",
+      "content": "88888 INCORPORATE SIZE@PRIMERATIO TO SAVE SPACE IF NEEDED"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 infiniteWalk =5;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total Before primeDivise  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(infiniteWalk) << \"   infiniteWalk    \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(primeDifference) << \"   primeDifference\" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total After primeDivise  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(total)<< \"   Total After infiniteWalk++  \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(infiniteWalk) << \"   infiniteWalk    \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128ClassComma primeBasePrimerString( primeBasePrimer );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << endl << endl << endl <<\"  PrimeBasePrimer : \" << // primeBasePrimerString.getString() << \" Completed\" << endl << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "READ TILE ******************************************************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "infiniteWalk+=  readPage2Tile(tileLay );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Begin read page 2 tile \" << endl;  //   realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "targetTile = tiles[targetTileName];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << targetTileNamePath << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "for (__int128 zeroTile = 0 ; zeroTile < grid; ) {"
+    },
+    {
+      "type": "COMMENT",
+      "content": "targetTile[zeroTile] = 0 ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "zeroTile++;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"zeroTile \" <<int(zeroTile)  << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" read tile data = \" << int( data ) << \"  \" << int(tileWalk) << \"  TileLay : \" << int(tileLay) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if (  data == 0 ) {"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" read tile data = \" << int( data ) << \"  \" << int(tileWalk) << \"  TileNumber : \" << int( tileLay) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" FINISHED read tile data = \" <<targetTileNamePath  << endl <<\"  totaltiles=\" << int(tileWalk) << \"  myInfiniteWalk \" << int( infiniteWalk ) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "delete[] targetTile;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "READ TILE ******************************************************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"create singer \"<<int(singer)<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "SEND dancerTotals INT and  dancerPrimeFinds Array to each thread"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH CREATE ALL THREADS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "menu_gyrogear(primeRatio, tileCount, pDlarge, infiniteWalk, total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "for (singer = 0; singer < singers; singer++) {"
+    },
+    {
+      "type": "COMMENT",
+      "content": "dancerPrimeFinds[singer] = futures[singer].get(); // RECEIVE SINGERS PRIME TOTALS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "conductorPrimeFindsArray[singer] = dancerPrimeFindsArray[singer];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Conductor Receive from Singer \" << int(singer) << \" FOUND  \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(  dancerPrimeFinds[singer]) << \"  \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  \"Conductor READ Array \" << int(findsArray[singer]) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "} // RECEIVE DATA FROM THREADS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Singer \" << int(singer) << \" at etchWalk \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(etchWalk) << \" found difference \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  targetArray[etchWalk] << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH CONDUCTOR ETCH THREAD DATA"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE INFINITE = TRUE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** PUBLIC *******************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" Initiate prime tile class \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"tar -cvjf PrimeBookOne\\\\PrimeBookOne.zip PrimeBookOne\\\\PrimeBookOneIndex.txt\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** // ****************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "infiniteWalk = 5 ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "powerOf = 24 ; // = powerOf ; 24 = 16meg 25 = 32 26 = 64 27 =128 28 =256meg uncompressed tile file"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** // ****************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128ClassComma infiniteWalkString( infiniteWalk );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  PerThreadSlices Song Count \" << perThreadSlicesString.getString()  << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  SingersPlus \" << singersPlusString.getString()<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  Tile Grid Width : \" << gridString;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" @ 2 to the Power of \" << powerOfString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  PrimeBasePrimer \" << primeBasePrimerString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  infiniteWalk Start \" << infiniteWalkString.getString() << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PRIMETILECLASS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void verifyPrimeBook(__int128 singers){ verifyBook(singers);}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 tileInquiry(){ return tileCount ;}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void loadPrimeBook(__int128 singers, __int128&infiniteWalk ){readPrimeBook(singers, infiniteWalk);}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void engageLibrarianDancer () {librarianDancer(); }"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 requestInfiniteWalkCurrent() {__int128 returnInfiniteWalkCurrent = infiniteWalkCurrent(); return infiniteWalk;}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primeBookOneIndexStatus = indexOpenerContent + \"<h1>Status Updated: \" + currentTime + \"</h1>\" + indexCloserContent;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"primeBookOneIndexStatus: \" << primeBookOneIndexStatus << std::endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PRIMETILE CLASS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if ( data <= 15){ primeBook << hex << data; }"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if ( data > 15 && data < 256){ primeBook << endl << hex << data; lineCount++;}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if ( data > 255) {primeBook << endl << \"0\" << hex << data; lineCount++; }"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(lineCount) << \"lineCount \"<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(lineCountMax) << \"lineCountMax \"<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "pen16 function"
+    },
+    {
+      "type": "COMMENT",
+      "content": "unCapPen function"
+    },
+    {
+      "type": "COMMENT",
+      "content": "printMileStone function"
+    },
+    {
+      "type": "COMMENT",
+      "content": "mark function"
+    },
+    {
+      "type": "COMMENT",
+      "content": "capPen function"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Seed the random number generator with the current time in the constructor"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Lock to ensure thread safety"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Mutex for thread safety"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"Random String \" << randomString << std::endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Adjusted size"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** PRIVATE *******************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  for (conduit = 0; conduit < hostConduits; conduit++) {\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"create conduit \"<<int(conduit)<< \" of total created: \" << ++conduitCount << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" created threads = \" << int(conduits) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "END FUNCTION"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"  for (conduit = 0; conduit < hostConduits; conduit++) {\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"create conduit \"<<int(conduit)<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "remoteIP = guestReturnIpArray[0];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "instruction = guestReturnGearArray[0];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if ( guestWaitTime00 == true){"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::this_thread::sleep_for(std::chrono::seconds(3));"
+    },
+    {
+      "type": "COMMENT",
+      "content": "}"
+    },
+    {
+      "type": "COMMENT",
+      "content": "create conduit loop"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" created threads = \" << int(conduits) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Returned to Become Host\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "weaveip="
+    },
+    {
+      "type": "COMMENT",
+      "content": "END FUNCTION"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" ARRAY_SIZE \" <<  ARRAY_SIZE << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H Initialize Winsock\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H Create socket\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H  Port Attempt: \" << ntohs(hint.sin_port) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H  HOST Created at IP :  \" << ipAddress ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" Port: \" << PORTgrow << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PORTgrow+=3;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE socketSearch==true  // cout << \"Socket Connected Successfully\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "claimedPort00=PORTgrow;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H HOST uniqueId: \" << uniqueId<<\":\"<< conduit << \"IP Address 127.0.0.1:\" << claimedPort00<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "while (PORTgrow == PORT){  // Listen for incoming connections"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**  cerr << \"H Can't listen on socket! Quitting\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "SOCKET ERROR"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H Awaiting Gear Connection : Host uniqueId: \" << uniqueId<< \"IP Address 127.0.0.1:\" << portString << endl << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "5 seconds timeout"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Timeout occurred"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**  cerr << \"H Can't accept client Invalid Socket! Quitting\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "INVALID SOCKET"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Service (i.e., port) the client is connected on"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Client's remote name"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H  HOST name: \" << computerName << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "** cerr << \"H Failed to retrieve computer name!\" << endl;    //    return 1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Get information about the client"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Manually convert IP address to string"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**   cout << \"H Connected on port NTOS \" << ntohs(client.sin_port) << \" to \" << host << endl; }"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" additionalDataBuffer begin\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "guest receive"
+    },
+    {
+      "type": "COMMENT",
+      "content": "gearBuildString 10 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "myUniqueLoginKeyString 50 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "hostIp00String 15 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "claimedPort00String //5digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "UniqueId   // 10 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "tileCountString = \"01234567890123456789\";   // 20 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "wolfPackIdString = uniqueId;   // 10 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "wolfHungerString = \"1234512345\";   // 10 digits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "myPreferredUserHandleString =\"jasonisaachuffbrodsky\";  // no digit limit but string variable roof"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//cout << \"guestData  All: \" << guestDataAll << endl << endl;\ncout << \"guestData2 gearBuildString              : \" << guestData2 << \"   gearBuildString \" << endl;\ncout << \"guestData3 myUniqueLoginKeyS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  \"H from Gear \"<< additionalDataBuffer << \" 127.0.0.1:\" << service << \" x64 \"<< computerName<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system (\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "parse guest"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Hp Check for \"<< guestData << \" in GuestList with total guests: \" << totalGuests<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Hp hostGuestListArray00[guestCheck]: \"<<hostGuestListArray00[guestCheck] << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Hp Return Guest: \" << guestData << \" Freshness: \" << guestFreshness << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "name of guest peer"
+    },
+    {
+      "type": "COMMENT",
+      "content": "hostGuestPortListArray00[totalGuests] = guestData2;  //guest peer stated Port"
+    },
+    {
+      "type": "COMMENT",
+      "content": "actual peer port as received"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Hp New gear: \"<< hostGuestListArray00[totalGuests]<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "while foundGuest or searchComplete = false"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"Hp \"<< uniqueIdGlobal << \" Host:  127.0.0.1:\"<< myPort << \"   List All Guests total: \"<< (totalGuests+2) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Freshness : Roof : userUniqueID : Handle : totalFinds  : Gear PP/M : Rhombus Reliability : infiniteWalk : pieSlice\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << hostGuestListArray00[guestCheck];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"     \" << freshness<< \"     jasonisaachuffbrodsky\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"   127.0.0.1:\"<<hostGuestPortListArray00[guestCheck];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"   127.0.0.1:\"<< guestPortListArray00[guestCheck] << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "remove stale gears"
+    },
+    {
+      "type": "COMMENT",
+      "content": "host send"
+    },
+    {
+      "type": "COMMENT",
+      "content": "hostCREATEinstructions"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Open the file for writing"
+    },
+    {
+      "type": "COMMENT",
+      "content": "reconnect at specified ip and port as guestUpdater"
+    },
+    {
+      "type": "COMMENT",
+      "content": "reconnect at specified ip and port as tileUpdater"
+    },
+    {
+      "type": "COMMENT",
+      "content": "inFiniteWalk this pieSlice"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return foundPrimes to assigned primeFindsUpdaterPort"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int to string service"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int to string"
+    },
+    {
+      "type": "COMMENT",
+      "content": "verifyTorchPass = true;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "become host"
+    },
+    {
+      "type": "COMMENT",
+      "content": "next run connect to new host"
+    },
+    {
+      "type": "COMMENT",
+      "content": "become host"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Close the file"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H File \" << hostFileName << \" created and filled with content.\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H to Send \" << uniqueId<<\":\"<< conduit << \" 127.0.0.1:\" << claimedPort00 << \" x64 \" << host << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<  \"H  to Gear \"<< additionalDataBuffer << \" 127.0.0.1:\" << service << \" x64 \"<< computerName<<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Read the contents of the file into the vector variable"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "** cerr << \"H Failed to open 'original.zip' file\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H totalDataSends: \" << totalSends++ << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout.flush();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Break out of the loop when all data has been sent"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "datasend SIZE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE (sendForever)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "H"
+    },
+    {
+      "type": "COMMENT",
+      "content": "}        // WHILE (PORTgrow == PORT)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"H -----------------------------------------------\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE hostStayOpen"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE SOCKETFOREVER == TRUE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "END HOST FUNCTION"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Remaining Guests = -1 : globalNewHostPort:\" <<  globalNewHostPort<< endl;  realm_os_user_input( userInput );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "weaveHost = globalNewHostPort;  weavePortHost= globalNewHostPort;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[1;1H\"<< \"H:  \"<< weavePortHost  << \" Miles: \" << myMiles << \" Hosted: \"<< hostCount++ << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "CREATE HOST CONDUITS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "system(\"cls\");"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[1;1H\"<< \"G: \"<< uniqueId << \" \"  << weavePort << \" \" << weavePortHost << \" \" << weaveNewPort  << \" \" <<  myConnectAttempts << \"     \" <<endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << uniqueId << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WEAVE FOREVER"
+    },
+    {
+      "type": "COMMENT",
+      "content": "END FUNCTION"
+    },
+    {
+      "type": "COMMENT",
+      "content": "**************** PUBLIC *******************"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout<<\"conduitCLass Begin \" << dataPort<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "vector<string*> hostsGuestArrays (  maxGuestConduits  );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_querry();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "heartbeat();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "gyrocore();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "sw_purchase_verify();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Skip the next argument since it's already processed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Skip the next argument since it's already processed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Skip the next argument since it's already processed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Skip the next argument since it's already processed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Print the results"
+    },
+    {
+      "type": "COMMENT",
+      "content": "bool isConsole = isatty(fileno(stdin));"
+    },
+    {
+      "type": "COMMENT",
+      "content": "text_post = \"Realm OS is Compiled by: \"+Compiler; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[25;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "=\"cout << \" & CHAR(34) & \"Function Begin : \"  & B2 & CHAR(34)  & \" << endl;\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"X                                X       |      \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"\\033[1;1H\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PrimeOne.engageLibrarianDancer(singer);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "=\"text_post = \" &CHAR(34)&  \" ENTER TEXT HERE \"&CHAR(34)&\";\"&\" \"&\"realm_post_client(text_function_name, text_post );\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "future use 767676767"
+    },
+    {
+      "type": "COMMENT",
+      "content": "future use 1000000"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primePillarClass primeOne(window,pDaSize);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"PrimeBook Load Finished : Press Enter to Continue. \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"PrimeBook Now Verify : Press Enter to Continue. \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input(userInput);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PrimeOne.verifyPrimeBook(singers);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" Mr T Says Start From Beginning\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "PrimeOne.verifyPrimeBook(singers);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 totalPrimeNow = PrimeOne.requestTotal();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "__int128 infiniteWalkNow = PrimeOne.requestInfiniteWalk();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "string128ClassComma PrimeOneTotalString(total);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "stringBean = PrimeOneTotalString.getString() ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"----------> Dance Primed to : \" << stringBean << \" Total Primes\" << endl<< endl<< endl<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "check system and gpu temp compare and contrast to previous inquiries in array"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if (_kbhit()) {  // Check if a key has been pressed\n    char key = _getch(); // Read the pressed key\n    std::cout << endl << \"Key pressed: \" << key << \" : \";  // Process the key press\n\n    if (key =="
+    },
+    {
+      "type": "COMMENT",
+      "content": "} // WHILE INFINITE == TRUE  ===============================================^"
+    },
+    {
+      "type": "COMMENT",
+      "content": "create array of bits then by bits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "sort variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "++variable_type_step_check;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "list variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Get the current time point"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Extract individual components of time"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Format the string as \"MODYYRHRMNSEC\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::string result = formattedTime.str();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"Formatted Time: \" << result << std::endl;"
+    }
+  ],
+  "functions": [
+    {
+      "return_type": "__int128",
+      "name": "listBookZip"
+    },
+    {
+      "return_type": "void",
+      "name": "readBookIndex"
+    },
+    {
+      "return_type": "void",
+      "name": "extractTile"
+    },
+    {
+      "return_type": "void",
+      "name": "extractBookIndex"
+    },
+    {
+      "return_type": "void",
+      "name": "cleanupRead"
+    },
+    {
+      "return_type": "void",
+      "name": "verifyBook"
+    },
+    {
+      "return_type": "int",
+      "name": "testTile"
+    },
+    {
+      "return_type": "void",
+      "name": "exportTile"
+    },
+    {
+      "return_type": "void",
+      "name": "compressTile"
+    },
+    {
+      "return_type": "void",
+      "name": "etchTile"
+    },
+    {
+      "return_type": "void",
+      "name": "initiateTile"
+    },
+    {
+      "return_type": "void",
+      "name": "initiateBreeze"
+    },
+    {
+      "return_type": "void",
+      "name": "carveSlate"
+    },
+    {
+      "return_type": "void",
+      "name": "scribeSlate"
+    },
+    {
+      "return_type": "void",
+      "name": "readSlate"
+    },
+    {
+      "return_type": "void",
+      "name": "scrubSlate"
+    },
+    {
+      "return_type": "__int128",
+      "name": "threadReadTotals"
+    },
+    {
+      "return_type": "__int128",
+      "name": "primeTotalCurrent"
+    },
+    {
+      "return_type": "__int128",
+      "name": "threadSlicesCurrent"
+    },
+    {
+      "return_type": "__int128",
+      "name": "threadSingersCurrent"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_user_input"
+    },
+    {
+      "return_type": "void",
+      "name": "menu_gyrogear"
+    },
+    {
+      "return_type": "byte",
+      "name": "breeze"
+    },
+    {
+      "return_type": "void",
+      "name": "still"
+    },
+    {
+      "return_type": "void",
+      "name": "testBook"
+    },
+    {
+      "return_type": "__int128",
+      "name": "primeBase"
+    },
+    {
+      "return_type": "bool",
+      "name": "primeDivise"
+    },
+    {
+      "return_type": "void",
+      "name": "librarianDancer"
+    },
+    {
+      "return_type": "void",
+      "name": "theConductor"
+    },
+    {
+      "return_type": "void",
+      "name": "carve"
+    },
+    {
+      "return_type": "void",
+      "name": "scribe"
+    },
+    {
+      "return_type": "void",
+      "name": "scrub"
+    },
+    {
+      "return_type": "void",
+      "name": "read"
+    },
+    {
+      "return_type": "void",
+      "name": "conductor"
+    },
+    {
+      "return_type": "void",
+      "name": "buildPrimeBase"
+    },
+    {
+      "return_type": "void",
+      "name": "cleanUpTiles"
+    },
+    {
+      "return_type": "__int128",
+      "name": "requestTotal"
+    },
+    {
+      "return_type": "__int128",
+      "name": "requestThreadSlicesCurrent"
+    },
+    {
+      "return_type": "__int128",
+      "name": "requestThreadSingersCurrent"
+    },
+    {
+      "return_type": "int",
+      "name": "getCurrentTimeInSeconds"
+    },
+    {
+      "return_type": "void",
+      "name": "conduit_git"
+    },
+    {
+      "return_type": "void",
+      "name": "NET"
+    },
+    {
+      "return_type": "void",
+      "name": "WALL"
+    },
+    {
+      "return_type": "void",
+      "name": "DOOR"
+    },
+    {
+      "return_type": "void",
+      "name": "IP"
+    },
+    {
+      "return_type": "void",
+      "name": "PORTS"
+    },
+    {
+      "return_type": "void",
+      "name": "DHCP"
+    },
+    {
+      "return_type": "void",
+      "name": "IPCONFIG"
+    },
+    {
+      "return_type": "bool",
+      "name": "pen16"
+    },
+    {
+      "return_type": "void",
+      "name": "unCapPen"
+    },
+    {
+      "return_type": "void",
+      "name": "printMileStone"
+    },
+    {
+      "return_type": "void",
+      "name": "mark"
+    },
+    {
+      "return_type": "void",
+      "name": "capPen"
+    },
+    {
+      "return_type": "void",
+      "name": "conduit_win_guests"
+    },
+    {
+      "return_type": "void",
+      "name": "conduit_win_host"
+    },
+    {
+      "return_type": "void",
+      "name": "conduit_weaver"
+    },
+    {
+      "return_type": "string",
+      "name": "getCurrentTimeInSecondsString"
+    },
+    {
+      "return_type": "int",
+      "name": "getCurrentTimeInSeconds"
+    },
+    {
+      "return_type": "void",
+      "name": "weaverBegin"
+    },
+    {
+      "return_type": "int",
+      "name": "main"
+    },
+    {
+      "return_type": "void",
+      "name": "heartbeat"
+    },
+    {
+      "return_type": "void",
+      "name": "gyrocore"
+    },
+    {
+      "return_type": "void",
+      "name": "sw_purchase_verify"
+    },
+    {
+      "return_type": "void",
+      "name": "realm"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_initiate"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_silent"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_responsive"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_multi_core"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gpu_primer"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_interface"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_post_client"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_querry_client"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_menu"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_user_input"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_divisor_dancer"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variable_primer"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variables"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variable"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variables_sort"
+    },
+    {
+      "return_type": "string",
+      "name": "realm_unique_time_stamp"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduits"
+    }
+  ],
+  "classes": [
+    {
+      "type": "class",
+      "name": "string128Class"
+    },
+    {
+      "type": "class",
+      "name": "string128ClassComma"
+    },
+    {
+      "type": "class",
+      "name": "StringTo128Class"
+    },
+    {
+      "type": "class",
+      "name": "GitHubFileManager"
+    },
+    {
+      "type": "class",
+      "name": "primeTileClass"
+    },
+    {
+      "type": "class",
+      "name": "realm_conduit_win64Class"
+    },
+    {
+      "type": "class",
+      "name": "primeScribeClass"
+    },
+    {
+      "type": "class",
+      "name": "RandomSeedProvider"
+    },
+    {
+      "type": "class",
+      "name": "StringGenerator"
+    },
+    {
+      "type": "class",
+      "name": "conduitClass"
+    }
+  ],
+  "total_todos": 0,
+  "total_milestones": 2,
+  "total_directions": 0
+}

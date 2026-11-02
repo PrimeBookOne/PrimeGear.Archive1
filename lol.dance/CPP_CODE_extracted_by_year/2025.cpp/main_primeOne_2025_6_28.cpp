@@ -1,0 +1,20247 @@
+
+#undef UNICODE
+
+#ifndef _WIN32_WINNT
+    #define _WIN32_WINNT 0x0600
+#elif _WIN32_WINNT < 0x0600
+    #undef _WIN32_WINNT
+    #define _WIN32_WINNT 0x0600
+#endif
+#define MAX_IPV4_ADDRESS_LENGTH 16
+
+/* #include <io.h> */
+#include <cstdint>
+/* #include <GL/glut.h> */
+#include <iomanip>
+#include <string>
+#include <iostream>
+#include <thread>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+#include <errno.h>
+#include <vector>
+#include <sys/types.h>
+#include <limits>
+#include <fstream>
+#include <pthread.h>
+/* link with Ws2_32.lib */
+#pragma comment (lib, "Ws2_32.lib")
+#include <Ws2tcpip.h>
+#ifndef __linux__ /*Excludes Anything That Isn't Emscriptem Compatible*/
+#ifndef __EMSCRIPTEN__ /*Excludes Anything That Isn't Emscriptem Compatible*/
+#include <winsock2.h>  /* UNIX ONLY #include <sys/socket.h> #include <netinet/in.h> #include <arpa/inet.h>*/
+#include <winsock.h>  /* #include <netdb.h> */
+/* #include "../application/vulkan/vulkan-application.hpp" */
+/* #include "../application/vulkan/vulkan-common.hpp" */
+#include <quadmath.h>
+#include <Ws2tcpip.h>
+#include <immintrin.h>
+#endif
+#endif
+#include <d3d9.h>
+#include <stdio.h>
+#include <process.h>
+#include <wtypes.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <sstream>
+#include <bits/stdc++.h>
+#include <sched.h>
+#include <unistd.h>
+#include <winbase.h>
+#include <chrono>
+#include <dos.h>
+
+#include <filesystem>
+#include <algorithm>
+#include <conio.h>
+#include <iostream>
+#include <vector>
+#include <thread>
+#include <future>
+#include <numeric>
+#include <chrono>
+#include <mutex>
+#include <condition_variable>
+#include <functional>
+#include <omp.h>
+#include <cuda_runtime_api.h>
+#include <Windows.h>
+#include <winternl.h>
+#include <winsock2.h> 
+#include <ws2tcpip.h>
+#include <comdef.h>
+#include <Wbemidl.h>
+#include <TlHelp32.h>
+#pragma comment(lib, "wbemuuid.lib")
+#pragma comment(lib, "ws2_32.lib")
+#include <condition_variable>
+#include <Iptypes.h>
+#include <Mstcpip.h>
+#include <iphlpapi.h>
+#pragma comment(lib, "iphlpapi.lib")
+#include <atomic>
+
+
+
+#include <wbemidl.h>
+#include <comdef.h>
+#include <tuple>
+#pragma comment(lib, "wbemuuid.lib")
+
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <stdexcept>
+#include <curl/curl.h>
+#include <base64_default_rfc4648.hpp>
+#include <sstream>
+#include <cstdio>
+#include <memory>
+#include <array>
+#include <chrono>
+#include <ctime>
+#include <iomanip>
+
+#define ID_CLOSE_ALL 9001
+#include <windows.h>
+#include <cmath>
+
+
+
+using namespace std;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int const variable_types_available = 95;
+int bit_current_count = 1;
+int const system_max_bit = 65;
+int variable_type_array_step_total = 0;
+int variable_type_step_check = 0;
+int variable_type_array_check = 0;
+bool bit_current_count_continue;
+int variable_bits_comparor = 0;
+int not_bit =0;
+string variable_type_array[variable_types_available];
+int variable_type_array_bits[variable_types_available];
+int bit_array[system_max_bit];
+int bitarray_walk[system_max_bit];
+int vtasc  = 0; /* variable_type_array_step_count */
+bool variable_type_step_check_continue;
+bool variable_type_array_bits_continue;
+int bitarrayvariable[system_max_bit][variable_types_available];
+int current_total_variables_same_bit = 0;
+bool bitarrayvariable_continue;
+int bitarrayvariable_walk  = 0;
+bool bit_display_walk_continue ;
+int bit_display_walk =0;
+string globalWolfPackIdString = "";       string globalHostIdString = "";  string globalWolfDenIdString = "";   string globalWolfCPUIdString = "";   
+////////////////// GLOBAL Dancer
+string globalRemotePortString="";   string globalRemoteIpString="";
+int    globalNewHostPort = 54000;
+bool    globalNewHost = false;
+int* globalNewPort = new int[ 2 ];
+bool* globalGuestNewHost = new bool[ 2 ]; // globalGuestNewHost[0]=false;
+bool* globalGuestBecomeHost = new bool[ 2 ]; // globalGuestBecomeHost[0] =false;
+////////////////// GLOBAL
+string globalRemoteNameString  = "";
+__int128 maximum__int128  = 9999999999999999999;
+int globalGuestBecomeHostCount=0;
+
+bool guestWaitTime00 = false;
+string uniqueIdGlobal ="";
+typedef struct _SYSTEM_HANDLE
+{
+    ULONG ProcessId;
+    BYTE ObjectTypeNumber;
+    BYTE Flags;
+    USHORT Handle;
+    PVOID Object;
+    ACCESS_MASK GrantedAccess;
+} SYSTEM_HANDLE, *PSYSTEM_HANDLE;
+
+const int ARRAY_SIZE = 1024 * 1024 / sizeof(int); // array size in bytes
+
+const int BUFFER_SIZE = 1024 * 1024; // 1MB
+//const int PORT = 54000; // Port number for the connection
+
+
+typedef NTSTATUS(NTAPI* PNT_QUERY_SYSTEM_INFORMATION)(
+    SYSTEM_INFORMATION_CLASS SystemInformationClass,
+    PVOID SystemInformation,
+    ULONG SystemInformationLength,
+    PULONG ReturnLength
+);
+
+bool interrupted = false;
+std::mutex mtx;
+    const int countdown_seconds = 0;
+string globalBuildString="3266";
+int globalBuild=3266;
+double globalMetalUptime=0;
+string globalMetalGUID ="";
+string globalMetalIdNum ="";
+
+string globalPrimeClientUserName ="";
+
+
+std::wstring message = L"Hello Circular World";
+
+int diameter; // current window diameter
+
+int argc;
+LPWSTR* argvW = CommandLineToArgvW(GetCommandLineW(), &argc);
+const char CLASS_NAME[] = "CircularWindow";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class string128Class
+{
+private:
+    __int128 number;
+    std::string result;
+
+    void convert() {
+        if (number == 0) {
+            result = "0";
+            return;
+        }
+
+        bool isNegative = false;
+
+        if (number < 0) {
+            isNegative = true;
+            number = -number;
+        }
+
+        while (number > 0) {
+            int digit = number % 10;
+            result.insert(result.begin(), static_cast<char>('0' + digit));
+            number /= 10;
+        }
+
+        if (isNegative)
+            result.insert(result.begin(), '-');
+    }
+
+public:
+    string128Class(__int128 num) : number(num) {
+        convert();
+    }
+
+
+    std::string getString() const {
+        return result;
+    }
+};
+
+
+
+class string128ClassComma
+
+{
+private:
+    __int128 number;
+    std::string result;
+
+    void convert() {
+        if (number == 0) {
+            result = "0";
+            return;
+        }
+
+        bool isNegative = false;
+
+        if (number < 0) {
+            isNegative = true;
+            number = -number;
+        }
+
+        int digitCount = 0;
+
+        while (number > 0) {
+            int digit = number % 10;
+            result.insert(result.begin(), static_cast<char>('0' + digit));
+            number /= 10;
+
+            digitCount++;
+
+            // Add a comma every three digits (except at the beginning)
+            if (digitCount % 3 == 0 && number > 0) {
+                result.insert(result.begin(), ',');
+            }
+        }
+
+        if (isNegative)
+            result.insert(result.begin(), '-');
+    }
+
+public:
+    string128ClassComma(__int128 num) : number(num) {
+        convert();
+    }
+
+    std::string getString() const {
+        return result;
+    }
+};
+
+
+
+class StringTo128Class {
+public:
+    // Function to convert a string to __int128
+    static __int128 stringToInt128(const std::string& str) {
+        if (str.empty())
+            throw std::invalid_argument("Empty string");
+
+        int i = 0;
+        int sign = 1;
+
+        if (str[i] == '-') {
+            sign = -1;
+            i++;
+        }
+
+        __int128 result = 0;
+        for (; i < str.size(); i++) {
+            if (str[i] >= '0' && str[i] <= '9') {
+                result = result * 10 + (str[i] - '0');
+            } else {
+                throw std::invalid_argument("Invalid character in the input string");
+            }
+        }
+
+        return result * sign;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class GitHubFileManager {
+private:
+    static size_t save_data(char* buffer, size_t size, size_t nmemb, void* userdata);
+    static std::string exec(const char* cmd);
+    static int curlDebugCallback(CURL* handle, curl_infotype type, char* data, size_t size, void* userptr);
+    static void initCurl();
+    static void cleanupCurl();
+    static void setCurlOptions(CURL* curl, const std::string& apiUrl, struct curl_slist* headers);
+
+public:
+    static std::string getCurrentTime();
+    static std::string getSHAFromGitHub(const std::string& accessToken, const std::string& owner, const std::string& repo, const std::string& remotePath);
+    virtual void updateFileOnGitHub(const std::string& accessToken, const std::string& owner, const std::string& repo, const std::string& remotePath, const std::string& fileContent, const std::string& sha);
+
+    static void listFilesInRootDirectory(const std::string& accessToken, const std::string& owner, const std::string& repo);
+};
+
+size_t GitHubFileManager::save_data(char* buffer, size_t size, size_t nmemb, void* userdata) {
+    GitHubFileManager* self = static_cast<GitHubFileManager*>(userdata);
+    // Process the received data (e.g., write to a file)
+    return size * nmemb; // Return the number of bytes processed
+}
+
+std::string GitHubFileManager::exec(const char* cmd) {
+    std::array<char, 256> buffer; // Increased buffer size
+    std::string result;
+    std::unique_ptr<FILE, decltype(&pclose)> pipe(popen(cmd, "r"), pclose);
+    if (!pipe) {
+        throw std::runtime_error("popen() failed!");
+    }
+    while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
+        result += buffer.data();
+    }
+    return result;
+}
+
+std::string GitHubFileManager::getCurrentTime() {
+    std::stringstream ss;
+    auto now = std::chrono::system_clock::now();
+    auto nowTime = std::chrono::system_clock::to_time_t(now);
+    ss << std::put_time(std::localtime(&nowTime), "%Y-%m-%d %H:%M:%S");
+    return ss.str();
+}
+
+int GitHubFileManager::curlDebugCallback(CURL* handle, curl_infotype type, char* data, size_t size, void* userptr) {
+    std::ostream* outputStream = static_cast<std::ostream*>(userptr);
+    outputStream->write(data, size);
+    return 0;
+}
+
+void GitHubFileManager::initCurl() {
+    try {
+        curl_global_init(CURL_GLOBAL_DEFAULT);
+    } catch (const std::exception& e) {
+        std::cerr << "Error initializing libcurl: " << e.what() << std::endl;
+        throw;
+    }
+}
+
+void GitHubFileManager::cleanupCurl() {
+    curl_global_cleanup();
+}
+
+void GitHubFileManager::setCurlOptions(CURL* curl, const std::string& apiUrl, struct curl_slist* headers) {
+    curl_easy_setopt(curl, CURLOPT_URL, apiUrl.c_str());
+    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, curlDebugCallback);
+    curl_easy_setopt(curl, CURLOPT_WRITEDATA, &std::cerr); // Directly output to stderr
+    curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+    curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 0);
+    curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 0);
+}
+
+std::string GitHubFileManager::getSHAFromGitHub(const std::string& accessToken, const std::string& owner, const std::string& repo, const std::string& remotePath) {
+    std::string cmd = "curl -s -H \"Authorization: token " + accessToken + "\" https://api.github.com/repos/" + owner + "/" + repo + "/contents/" + remotePath;
+    std::string output = exec(cmd.c_str());  system("cls");
+    std::string shaLabel = "\"sha\": \"";
+    std::size_t shaPos = output.find(shaLabel);
+    if (shaPos != std::string::npos) {
+        std::size_t shaStart = shaPos + shaLabel.length();
+        std::size_t shaEnd = output.find("\"", shaStart);
+        if (shaEnd != std::string::npos) {
+            std::string sha = output.substr(shaStart, shaEnd - shaStart);
+            return sha;
+        }
+    }
+    return "";
+}
+
+void GitHubFileManager::updateFileOnGitHub(const std::string& accessToken, const std::string& owner, const std::string& repo, const std::string& remotePath, const std::string& fileContent, const std::string& sha) {
+    CURL* curl = nullptr;
+    std::string encodedContent = cppcodec::base64_rfc4648::encode(fileContent);
+    initCurl();
+    std::string apiUrl = "https://api.github.com/repos/" + owner + "/" + repo + "/contents/" + remotePath;
+    curl = curl_easy_init();
+    if (!curl) {
+        throw std::runtime_error("Failed to initialize CURL.");
+    }
+    struct curl_slist* headers = NULL;
+    headers = curl_slist_append(headers, ("Authorization: token " + accessToken).c_str());
+    headers = curl_slist_append(headers, "Content-Type: application/json");
+    headers = curl_slist_append(headers, "User-Agent: PrimeBookOne");
+    setCurlOptions(curl, apiUrl, headers);
+    curl_easy_setopt(curl, CURLOPT_CAINFO, "cacert.pem");
+    std::string payload = "{\"message\":\"Test\",\"content\":\"" + encodedContent + "\",\"sha\":\"" + sha + "\",\"branch\":\"main\"}";
+    curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, "PUT");
+    curl_easy_setopt(curl, CURLOPT_VERBOSE, 1L);
+    curl_easy_setopt(curl, CURLOPT_POSTFIELDSIZE, payload.length());
+    curl_easy_setopt(curl, CURLOPT_POSTFIELDS, payload.c_str());
+    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, &GitHubFileManager::save_data);
+    curl_easy_setopt(curl, CURLOPT_WRITEDATA, this); // Pass 'this' as userdata
+    CURLcode res = curl_easy_perform(curl);
+    if (res != CURLE_OK) {
+        throw std::runtime_error("HTTP PUT request failed.");
+    }
+    long httpCode = 0;
+    curl_easy_getinfo(curl, CURLINFO_RESPONSE_CODE, &httpCode);
+    if (httpCode != 200) {
+        throw std::runtime_error("HTTP response code is not 200.");
+    }
+    curl_slist_free_all(headers);
+    curl_easy_cleanup(curl);
+    cleanupCurl();
+}
+
+void GitHubFileManager::listFilesInRootDirectory(const std::string& accessToken, const std::string& owner, const std::string& repo) {
+    std::string apiUrl = "https://api.github.com/repos/" + owner + "/" + repo + "/contents";
+    CURL* curl;
+    CURLcode res;
+    std::string readBuffer;
+    curl_global_init(CURL_GLOBAL_DEFAULT);
+    curl = curl_easy_init();
+    if (curl) {
+        curl_easy_setopt(curl, CURLOPT_URL, apiUrl.c_str());
+        curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, curlDebugCallback);
+       curl_easy_setopt(curl, CURLOPT_WRITEDATA, &std::cerr); // Directly output to stderr
+        curl_easy_setopt(curl, CURLOPT_USERAGENT, "PrimeBookOne");
+        struct curl_slist* headers = NULL;
+        headers = curl_slist_append(headers, ("Authorization: token " + accessToken).c_str());
+        curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYPEER, 1L);
+        curl_easy_setopt(curl, CURLOPT_SSL_VERIFYHOST, 2L);
+        curl_easy_setopt(curl, CURLOPT_CAINFO, "cacert.pem");
+        res = curl_easy_perform(curl);
+
+        if (res != CURLE_OK) {
+            std::cerr << "curl_easy_perform() failed: " << curl_easy_strerror(res) << std::endl;
+        }
+        curl_easy_cleanup(curl);
+    }
+    curl_global_cleanup();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+struct AdapterInfo {
+    std::string adapterName;
+    std::vector<std::string> ipv4Addresses;
+    std::vector<std::string> ipv6Addresses;
+    bool isConnected = true;
+};
+// Class to manage network adapters
+class NetworkAdapters {
+private:
+    std::vector<AdapterInfo> adapters;
+    std::vector<std::string> getIpconfigOutput() {
+        std::vector<std::string> output;
+        std::array<char, 256> buffer;
+        FILE* pipe = _popen("ipconfig", "r");
+        if (!pipe) throw std::runtime_error("Failed to run ipconfig");
+        while (fgets(buffer.data(), buffer.size(), pipe)) {
+            output.push_back(buffer.data());
+        }
+        _pclose(pipe);
+        return output;
+    }
+    void parseAdapters(const std::vector<std::string>& lines) {
+        AdapterInfo* currentAdapter = nullptr;
+        std::regex adapterHeader(R"(adapter (.+):)");
+        std::regex ipv4Regex(R"(IPv4 Address.*?:\s*([\d\.]+))");
+        std::regex ipv6Regex(R"(IPv6 Address.*?:\s*([\da-fA-F:]+))");
+        std::regex disconnectedRegex(R"(Media disconnected)");
+        std::smatch match;
+        for (const auto& line : lines) {
+            std::string trimmed = line;
+            trimmed.erase(trimmed.find_last_not_of(" \n\r\t") + 1);
+            if (std::regex_search(trimmed, match, adapterHeader)) {
+                adapters.push_back(AdapterInfo{ match[1], {}, {}, true });
+                currentAdapter = &adapters.back();
+            } else if (currentAdapter) {
+                if (std::regex_search(trimmed, match, disconnectedRegex)) {
+                    currentAdapter->isConnected = false;
+                } else if (std::regex_search(trimmed, match, ipv4Regex)) {
+                    currentAdapter->ipv4Addresses.push_back(match[1]);
+                } else if (std::regex_search(trimmed, match, ipv6Regex)) {
+                    currentAdapter->ipv6Addresses.push_back(match[1]);
+                }
+            }
+        }
+    }
+public:
+    NetworkAdapters() {
+        auto lines = getIpconfigOutput();
+        parseAdapters(lines);
+    }
+    int getTotalAdapters() const {
+        return static_cast<int>(adapters.size());
+    }
+    const AdapterInfo& getAdapter(int index) const {
+        return adapters.at(index);
+    }
+std::string getPublicIP() {
+    std::string result;
+    std::array<char, 128> buffer;
+    // Open a pipe to run curl
+    std::unique_ptr<FILE, decltype(&pclose)> pipe(popen("curl -s https://api.ipify.org", "r"), pclose);
+    if (!pipe) {
+        return "Unavailable";
+    }
+    // Read the output of curl
+    while (fgets(buffer.data(), buffer.size(), pipe.get()) != nullptr) {
+        result += buffer.data();
+    }
+    return result;
+}
+};
+
+
+std::vector<std::string> splitCommandLine(const std::string& cmdLine) {
+    std::vector<std::string> args;
+    std::istringstream stream(cmdLine);
+    std::string token;
+    while (stream >> std::quoted(token)) {  // supports quoted strings like "value with spaces"
+        args.push_back(token);
+    }
+    return args;
+}
+
+
+void runGuiThread(HINSTANCE hInstance, int nCmdShow, std::string hostIp, std::string label) {
+    const char* className = "ZetaWindowClass";
+    WNDCLASSA wc = {};
+    wc.lpfnWndProc = [](HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) -> LRESULT {
+        switch (msg) {
+            case WM_APP + 1: {
+                std::string* str = reinterpret_cast<std::string*>(lParam);
+                MessageBoxA(hwnd, str->c_str(), "IPC Message", MB_OK);
+                delete str;
+                return 0;
+            }
+        }
+        return DefWindowProcA(hwnd, msg, wParam, lParam);
+    };
+    wc.hInstance = hInstance;
+    wc.lpszClassName = className;
+    RegisterClassA(&wc);
+    HWND hwnd = CreateWindowExA(0, className, label.c_str(), WS_OVERLAPPEDWINDOW,
+                                CW_USEDEFAULT, CW_USEDEFAULT, 300, 200,
+                                nullptr, nullptr, hInstance, nullptr);
+    if (!hwnd) return;
+    ShowWindow(hwnd, nCmdShow);
+    UpdateWindow(hwnd);
+    // store globally or accessible location for PostMessage
+    g_hwnd = hwnd;
+    MSG msg;
+    while (GetMessage(&msg, nullptr, 0, 0)) {
+        TranslateMessage(&msg);
+        DispatchMessage(&msg);
+    }
+}
+
+
+class RandomSeedProvider
+{
+
+
+
+public:
+    RandomSeedProvider() {
+        // Seed the random number generator with the current time in the constructor
+        std::srand(static_cast<unsigned int>(std::time(nullptr)));
+    }
+
+    int getRandomNumber(int max) {
+        std::lock_guard<std::mutex> lock(mutex);  // Lock to ensure thread safety
+        return std::rand() % max;
+    }
+
+private:
+    std::mutex mutex;  // Mutex for thread safety
+};
+
+class StringGenerator {
+public:
+    StringGenerator(RandomSeedProvider& seedProvider) : seedProvider(seedProvider) {}
+
+    std::string generateRandomString(int length) {
+        std::string randomString;
+        for (int i = 0; i < length; ++i) {
+            randomString += charset[seedProvider.getRandomNumber(charsetSize)];
+        }
+
+     //   std::cout << "Random String " << randomString << std::endl;
+
+        return randomString;
+    }
+
+private:
+    static const char charset[];
+    static const int charsetSize = 11; // Adjusted size
+    RandomSeedProvider& seedProvider;
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class primeTileClass
+{
+private:  // **************** PRIVATE *******************
+
+string ptv_win_archive()
+{
+string text_function_name="ptv_win_archive"; string text_post = "";
+
+system("del PrimeOneUpdate\\*.* /Q");
+
+
+RandomSeedProvider seedProvider;
+StringGenerator stringGenerator(seedProvider);
+string randomString1 = stringGenerator.generateRandomString(5);
+
+cout << "Win archive running"<< endl;
+string uniqueFileName =  "updater_"+ ptv_uniqueId(randomString1) + ".zip";
+string command1 = "tar -a -cf PrimeOneUpdate\\" + uniqueFileName + " *.dll *.exe *.bat";
+system(command1.c_str());
+
+
+
+
+
+
+// system("del PrimeOneUpdate\\PrimeOneUpdate.zip /q");
+
+
+//system("copy PrimeOneUpdate\\PrimeOneUpdater.zip PrimeOneUpdate\\PrimeOneUpdate.zip");
+
+return uniqueFileName;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void ptv_win_updater( bool isHost, string guestName, string guestIP, string guestPort, string hostIP, string hostPort, string uniqueFileName)
+{
+string text_function_name="realm_win_guest"; string text_post = "";
+int PORT = 54000 ; bool yesContinue=true; bool socketSearch=true; int PORTgrow = PORT; bool sendForever=true;
+int ARRAY_SIZE = 999999999;  // cout << " ARRAY_SIZE " <<  ARRAY_SIZE << endl;
+bool receiveForever=true; int dataSend=0;  bool socketForever=true;  bool printForever=true;
+
+
+int totalSends=0; int allData=0;
+int* array = new int[ARRAY_SIZE];
+// cout << "Initialize Winsock" << endl;
+    WSADATA wsData;
+    WORD ver = MAKEWORD(2, 2);
+    int wsOk = WSAStartup(ver, &wsData);
+    if (wsOk != 0){
+        cerr << "Can't initialize Winsock! Quitting" << endl;
+        return;
+    }
+
+// cout << "Create socket" << endl;
+    SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);
+    if (sock == INVALID_SOCKET) {
+        cerr << "Can't create socket! Quitting" << endl;
+        WSACleanup();
+        return;
+    }
+    sockaddr_in hint{};
+    hint.sin_family = AF_INET;
+    hint.sin_addr.s_addr = inet_addr("127.0.0.1");
+    string ipAddress = inet_ntoa(hint.sin_addr);
+while (socketForever==true){
+while (socketSearch==true){
+    hint.sin_port = htons(PORTgrow);
+cout << "\033[2;1H";
+
+
+    cout << "  Port: " << ntohs(hint.sin_port) << endl;
+    int bindResult = bind(sock, reinterpret_cast<sockaddr*>(&hint), sizeof(hint));
+    if (bindResult != SOCKET_ERROR){
+       cout << "  HOST ip :  " << ipAddress << endl;
+    }
+
+    if (bindResult == SOCKET_ERROR){
+        int errorCode = WSAGetLastError();
+            cout << "  HOST remote ip : " << ipAddress<< endl;  cout << "  HOST name : " <<  endl;
+            cout << "  GUEST local ip : " << ipAddress<< endl;    cout << "  GUEST name : "<< endl;
+            cerr << "  not Host Error code: " << errorCode << endl;
+            int connectResult = connect(sock, reinterpret_cast<sockaddr*>(&hint), sizeof(hint));
+            if (connectResult == SOCKET_ERROR) {
+              std::cerr << "  due to HOST port Unavailable Error code: " << WSAGetLastError() << std::endl;
+          //    closesocket(sock);
+       //       WSACleanup();
+        //      return;
+}
+cout << "I am GUEST CONNECTED TO HOST" << endl;
+std::ofstream copy("PrimeOneUpdate\PrimeOneUpdate.zip", std::ios::binary);
+
+while(printForever==true){
+int* received_array = new int[ARRAY_SIZE];
+// int received_array[ARRAY_SIZE];
+int bytes_received = recv(sock, reinterpret_cast<char*>(received_array), ARRAY_SIZE * sizeof(int), 0);
+
+
+
+copy.write(reinterpret_cast<const char*>(received_array), bytes_received);
+copy.close();
+   closesocket(sock);    WSACleanup();   return;
+
+if (bytes_received == SOCKET_ERROR) {
+    std::cerr << "recv() failed: " << WSAGetLastError() << std::endl;
+    break;
+} else if (bytes_received == 0) {
+    std::cout << "Guest disconnected" << std::endl;
+    break;
+}
+
+
+
+
+
+
+
+
+cout << "\033[1;1H";
+cout << "GUEST totalDataReceives : "<<allData++;
+cout.flush();
+}
+}
+
+
+   else {socketSearch=false;};
+} // (socketSearch==true)
+// cout << "Socket Connected Successfully" << endl;
+
+while (PORTgrow == PORT){
+
+// Listen for incoming connections
+if (listen(sock, SOMAXCONN) == SOCKET_ERROR){
+   cerr << "Can't listen on socket! Quitting" << endl;
+
+
+   closesocket(sock);    WSACleanup();   return;
+}
+
+// cout << "Waiting for a connection " << endl; // Accept a client socket
+sockaddr_in client{};
+int clientSize = sizeof(client);
+
+SOCKET clientSocket = accept(sock, reinterpret_cast<sockaddr*>(&client), &clientSize);
+if (clientSocket == INVALID_SOCKET){
+   cerr << "Can't accept client Invalid Socket! Quitting" << endl;
+
+
+   closesocket(sock);    WSACleanup();   return;
+}
+
+char computerName[MAX_COMPUTERNAME_LENGTH + 1];
+DWORD computerNameSize = sizeof(computerName);
+
+char service[NI_MAXSERV];   // Service (i.e., port) the client is connected on
+char host[NI_MAXHOST];      // Client's remote name
+
+ZeroMemory(host, NI_MAXHOST);
+ZeroMemory(service, NI_MAXSERV);
+if (GetComputerName(computerName, &computerNameSize)){
+   cout << "  HOST name: " << computerName << endl;
+
+}
+else{
+   cerr << "Failed to retrieve computer name!" << endl;    //    return 1;
+}
+
+// Get information about the client
+if (getnameinfo(reinterpret_cast<sockaddr*>(&client), clientSize, host, NI_MAXHOST, service, NI_MAXSERV, 0) == 0){
+cout << "  GUEST name : " << host <<endl ;
+cout << "  GUEST ip : ??? " << endl ;
+cout << "  GUEST port : "  << service << endl ;
+cout << "I am HOST CONNECTED TO GUEST" << endl;
+}
+else{    cout << "Connected on port NTOS " << ntohs(client.sin_port) << " to " << host << endl; }
+
+std::vector<char> data;
+std::ifstream original("PrimeOneUpdate\PrimeOneUpdater.zip", std::ios::binary);
+
+if (original) {
+    // Read the contents of the file into the vector variable
+    std::istreambuf_iterator<char> start(original), end;
+    data.assign(start, end);
+    original.close();
+} else {
+    std::cerr << "Failed to open 'original.zip' file" << std::endl;
+   closesocket(sock);    WSACleanup();   return;
+}
+
+
+
+
+while (sendForever) {
+    int remainingData = data.size() - dataSend;
+    int bytesToSend = std::min(remainingData, static_cast<int>(ARRAY_SIZE * sizeof(char)));
+    int bytes_sent = send(clientSocket, reinterpret_cast<char*>(data.data()) + dataSend, bytesToSend, 0);
+    if (bytes_sent == SOCKET_ERROR) {
+        std::cerr << "send() failed error: " << WSAGetLastError();
+        break;
+    } else if (bytes_sent <= 0) {
+        std::cerr << "Failed to send data" << std::endl;
+        break;
+    } else {
+        cout << "\033[1;1H";
+        cout << "HOST totalDataSends: " << totalSends++;
+        cout.flush();
+
+        dataSend += bytes_sent;
+    }
+
+    if (dataSend >= data.size()) {
+   closesocket(sock);    WSACleanup();   return;
+
+
+
+       // break;  // Break out of the loop when all data has been sent
+    }
+}
+
+
+
+cout << "SOCKET FOREVER ==TRUE"<< endl;
+}
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+string ptv_unique_time_stamp()
+{
+
+
+
+
+
+
+
+
+
+
+ // Get the current time point
+    auto now = std::chrono::system_clock::now();
+
+    // Extract individual components of time
+    auto time = std::chrono::system_clock::to_time_t(now);
+    std::tm tm_time = *std::localtime(&time);
+
+    // Format the string as "MODYYRHRMNSEC"
+    std::ostringstream formattedTime;
+    formattedTime << std::put_time(&tm_time, "%b%d%Y%H%M%S");
+
+ //   std::string result = formattedTime.str();
+
+  //  std::cout << "Formatted Time: " << result << std::endl;
+
+
+
+
+string timeStamp =  formattedTime.str() ;
+
+
+
+
+
+
+
+
+
+
+
+return timeStamp;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PRIVATE VARIABLES       
+
+string targetTileName = "";
+string arrayNamePrefix = "Tile";
+string stringBean4 = "";
+string stringBean = "";
+string stringBean2 = "";
+string stringBean3 = "";
+ 
+string gridString ="";
+string primeBookName = "PrimeBookOne.zip"; 
+string primeBookNameImport = "PrimeBookOne.tar";
+string userInput;
+
+int memError = 0 ;
+int memErrorCount =1;
+
+__int128 tileCount = 0;
+__int128 powerOf = 0 ;
+__int128 grid = 0 ;
+__int128 singers =0;
+__int128 total = 1;
+__int128 etchWalk =0;
+__int128 etchWalkArray =0;
+__int128 etchWalkSum =0;
+__int128 etchWalkPrint =0; 
+__int128 breezeWalk =0;
+__int128 tileWalk =0;
+__int128 readTileCount=0;
+__int128 previousPrimeRatio = 0 ; 
+__int128 gearCreatedTiles =0;
+__int128 perThreadSlices =0;
+__int128 primeBasePrimer =0;
+__int128 slatePrimeRatio =0; // remove slate
+__int128 slateRoughCut =0 ;// remove slate
+__int128 minimumPrimeBookNeeded = 0;
+__int128 indexTiles=0;
+__int128 primeIndexRoof=0;
+
+std::unordered_map<std::string, byte*> tiles;
+std::unordered_map<std::string, byte*> slate ;
+
+bool etchStatus = 0;
+bool printBookIndex = false;
+
+bool mrTsaysRead = false ;
+
+
+__int128* threadTotal;
+__int128* threadSlateWalk ;
+__int128* threadBreezeWalk ;
+__int128* threadTileWalk ;
+
+
+__int128 singerFinished=0;
+__int128* findsArray ;
+
+
+__int128* primeIndex;
+
+
+
+
+__int128 guiGrid128[3][31];
+string guiGrid[3][31][3];
+bool guiUpdate[31];
+
+int guiGridWidth = 96;
+int guiGridHeight = 31;
+
+__int128 previousEtchWalkSum =0;
+__int128 infiniteCycleStarts =0; 
+__int128 infiniteCycleFinishes =0;
+
+
+
+__int128* bookIndex ;
+__int128* bookIndexTotals;
+__int128* bookIndexTotalsDif ;
+__int128 indexFileTileCount;
+
+byte** myTiles ;
+
+string* hostGuestListArray00;
+string* guestCheck;
+
+int* hostGuestListArrayFreshness00;
+int maxHostConduits = 9999;
+int maxGuestConduits = 9999;
+int dataPort =4321;
+int* hostGuestListArrayFreshnessCurrent00;
+int totalGuests=0;
+
+__int128 weaverData00;
+__int128 globalMyMiles=0;
+
+string* hostGuestPortListArray00;
+string* hostGuestIpListArray00;
+string* guestPortListArray00;
+string globalNewHostIp ="";
+string globalNewHostName = "";
+string* guestReturnArray;
+string* guestReturnIpArray;
+string* guestReturnGearArray;
+
+bool globalBecomeHost = false;
+bool globalNewHost = false;
+bool globalAllTorchesPassed = false;
+
+int hostCount;
+int claimedPort00 = globalNewHostPort;
+int guestClaimedPort00 = globalNewHostPort;
+int myMiles;
+int myGuestMiles;
+int myHostMiles;
+int myGuestTotalMiles;
+int myHostTotalMiles;
+int maxMiles;
+int remainingGuests;
+int* guestReturnPortArray;
+
+// conductor private variables
+
+__int128 infiniteWalk = 0;
+__int128 previousPrime = 0;
+__int128 totalTiles = 0; 
+__int128 totalPrimes = 0; 
+__int128 primeRatio =0;
+__int128 singer =0;
+__int128 pDlarge = 0;
+__int128 tileLay=0; 
+__int128 tileWalkData=0;
+__int128 thirdTileCount =0;
+__int128 conductorCount =0;
+ __int128 printWalk=0;
+__int128 sliceWalk=0;
+ __int128 conductorEtchWalkPrint=0;
+__int128 data =0;
+__int128 primeDifference =0;
+
+
+
+int conductorClockIns =0;
+int conductorClockIn =0;
+int conductorCheckClock =0;
+int conductorLastGitUpdate = 0;
+int createTileRequest = 0;
+int conductorUpdateInterval=0;
+int statusUpdates=0;
+int primerBenchTime =0;
+
+
+bool iUpdate ;
+bool infinite;
+bool unBroken ;
+
+char choice ;
+
+// byte* targetArray ;
+byte* dancerPrimeFinds ;
+
+string uniqueId = "";
+string gitData="";
+
+bool metalGuest = false;
+__int128 privateLeapsLap;
+__int128 privateLeapsLapDouble;
+__int128* privateWolfLeap;
+int privateTilesCreated;
+vector<byte>* privateWolfFeast;
+
+string* privateWolfLeapAssingment;
+
+
+
+int privatePrimeQue;
+int privateQueCount;
+
+int collectionPlateFirst;  int collectionPlateSecond;
+
+vector<byte> privateGuestWork;
+
+byte* privatePrimeNetCatch;
+
+//    std::chrono::milliseconds lastCompletedTile{1}; // Example: 5 seconds per work unit
+//    std::chrono::milliseconds elapsedCompletedTile{1}; // Example: 5 seconds per work unit
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+__int128 listBookZip(){ 
+string userInput;   
+
+// cout << " Begin listBookZip " << endl;   realm_os_user_input(userInput);
+ //  realm_os_user_input(userInput);
+
+ string listBookZipString = "echo off & cd PrimeBookOne & tar -tf " + primeBookNameImport +" > bookZipList.txt";
+     cout << "\033[2;1H";
+ system( listBookZipString.c_str() ); 
+ //cout << listBookZipString << endl;
+ // count lines of file cout
+
+ ifstream file("PrimeBookOne\\bookZipList.txt");
+
+ if (!file) { cerr << "Error opening file: bookZipList.txt" << endl;  cout << "Error Reading ZipList File" << endl; }
+
+ __int128 lineCount = 0;
+ string line;
+__int128 tileWalk = 1;
+ while (getline(file, line)) {lineCount++;}   lineCount--;
+
+ string128Class lineCountString( lineCount );
+ string stringLineCount = lineCountString.getString();
+ //  cout << "Number of Tiles in bookZipList.txt : " <<stringLineCount << endl;
+file.close();  //  readTileCount=lineCount; 
+// cout << " Finish listBookZip " << endl;   realm_os_user_input(userInput);
+return lineCount;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void extractTile(__int128 tileNumber){      // cout << "Extract Tile " << endl; 
+// string userInput="";  
+  string128Class tileNumberString(tileNumber);
+  string tileString = tileNumberString.getString();
+
+
+
+
+
+
+  string extractTile = "echo off & cd PrimeBookOne & tar -xvf "  +  primeBookNameImport + " PrimeBookOne/Tile0" + tileString +".zip > NUL 2>&1";
+//  cout  <<extractTile << endl;
+  system( extractTile.c_str());
+
+
+
+
+
+
+
+  string unzipTile = "echo off & cd PrimeBookOne & cd PrimeBookOne & tar -xvf Tile0" + tileString +".zip > NUL 2>&1";
+//   cout << "unzipTile: "<< unzipTile << endl;
+  system( unzipTile.c_str());
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+__int128 threadRetrieveTile(__int128 singer, __int128 tileNumber, string uniqueId, byte* workingArray) {
+
+__int128 dataTotal =0;
+__int128 threadGridWalk=0;
+
+// string delPrimeFile = "";
+// string delZipFile = "";
+string targetTileName = "";
+string targetTileNamePath="";
+
+string128Class tileNumberString ( tileNumber );
+
+targetTileName = "Tile0" + tileNumberString.getString() ;
+
+extractTile(tileNumber);
+
+targetTileNamePath += "PrimeBookOne/PrimeBookOne/PrimeBookOne/";
+targetTileNamePath +=  targetTileName;
+targetTileNamePath += ".prime";
+
+cout << "\033[1;1H";
+
+ifstream input(targetTileNamePath, std::ios::binary);
+   if (!input) { 
+        // create re-read scenario
+        //std::cerr << "Error opening file: " << targetTileNamePath << std::endl;
+    }
+
+input.read(reinterpret_cast<char*>(workingArray), grid );
+
+//delPrimeFile = "del PrimeBookOne/PrimeBookOne/" +  targetTileName + ".zip";
+//delZipFile = "del PrimeBookOne/PrimeBookOne/PrimeBookOne/" +  targetTileName + ".prime";
+
+input.close();
+
+//system(delPrimeFile.c_str());
+//system(delZipFile.c_str());
+
+//cout << "  tileTotals start    retrieveTile singer : "<< int(singer)<< endl;
+
+
+
+while(threadGridWalk < grid){
+
+   dataTotal+=workingArray[threadGridWalk];
+   threadGridWalk++;
+//cout << "singer " <<int(singer) << " tile# " << int(tileNumber) << int(dataTotal) << endl;
+}
+
+//cout << "singer " <<int(singer) << " tile# " << int(tileNumber) << int(dataTotal) << endl;
+
+bookIndexTotals[tileNumber]= dataTotal;
+
+//cout << " FINISHED read tile data = " <<targetTileNamePath  << endl <<"  totaltiles=" << int(tileWalk) << endl;
+//cout << "  preFinish    retrieveTile singer : "<< int(singer)<< endl;
+//workingArray = targetTile;
+//cout << "  Finish    retrieveTile singer : "<< int(singer)<< endl;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void cleanupRead(__int128 tileNumber){  
+
+// cout <<"Cleanup" << endl;
+  string128Class tileNumberString(tileNumber);
+  string tileString = tileNumberString.getString();
+
+
+  string delZip = "echo off & del PrimeBookOne\\PrimeBookOne\\Tile0" + tileString +".zip";
+
+  // cout << "delZip: " << delZip << endl;
+  system( delZip.c_str());
+
+  string delPrime = "echo off & del PrimeBookOne\\PrimeBookOne\\PrimeBookOne\\Tile0" + tileString +".prime";
+//  cout << "delPrime: "<< delPrime << endl;
+
+  system( delPrime.c_str());
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+__int128 epochMicroSeconds(){
+
+// Return Microseconds Since Epoch
+    auto currentTime = std::chrono::system_clock::now();
+    auto microSecondsSinceEpoch = std::chrono::duration_cast<std::chrono::microseconds>(currentTime.time_since_epoch());
+__int128 timeInMicroSeconds =  static_cast<__int128>(microSecondsSinceEpoch.count());
+
+return timeInMicroSeconds;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void archivePrimeBook(__int128 readTileCount, string uniqueId){
+string userInput;   
+
+string newPrimeBookName ="";  string newPrimeIndexTotalsName="";
+string copyBookString="";  string copyIndexTotalsString ="";
+string newPrimeIndexName ="";  string newPrimeIndexTotalsDifName="";
+string copyIndexString ="";  string copyIndexTotalsDifString ="";
+
+ string128Class readTileCountString( readTileCount );
+// cout << " Begin ArchivePrimeBook " << endl;   realm_os_user_input(userInput); //  realm_os_user_input(userInput);
+
+newPrimeBookName += "primebookone";
+newPrimeBookName += readTileCountString.getString();
+newPrimeBookName += "_" + uniqueId + ".tar";
+
+copyBookString += "echo off & cd PrimeBookOne & ";
+copyBookString += "copy primebookone.tar ";
+copyBookString += "archive\\" +uniqueId+"\\";
+copyBookString += newPrimeBookName;
+
+newPrimeIndexName += "primebookindex";
+newPrimeIndexName += readTileCountString.getString();
+newPrimeIndexName += "_" + uniqueId + ".txt";
+
+copyIndexString += "echo off & cd PrimeBookOne & ";
+copyIndexString += "copy primebookindex.txt ";
+copyIndexString += "archive\\" +uniqueId+"\\";
+copyIndexString += newPrimeIndexName;
+
+newPrimeIndexTotalsName += "primebookindextotals";
+newPrimeIndexTotalsName += readTileCountString.getString();
+newPrimeIndexTotalsName += "_" + uniqueId + ".txt";
+
+copyIndexTotalsString += "echo off & cd PrimeBookOne & ";
+copyIndexTotalsString += "copy primebookindextotals.txt ";
+copyIndexTotalsString += "archive\\" +uniqueId+"\\";
+copyIndexTotalsString += newPrimeIndexTotalsName;
+
+newPrimeIndexTotalsDifName += "primebookindextotalsdif";
+newPrimeIndexTotalsDifName += readTileCountString.getString();
+newPrimeIndexTotalsDifName += "_" + uniqueId + ".txt";
+
+copyIndexTotalsDifString += "echo off & cd PrimeBookOne & ";
+copyIndexTotalsDifString += "copy primebookindextotalsdif.txt ";
+copyIndexTotalsDifString += "archive\\" +uniqueId+"\\";
+copyIndexTotalsDifString += newPrimeIndexTotalsDifName;
+
+ system( copyBookString.c_str() ); 
+ system( copyIndexString.c_str() ); 
+ system( copyIndexTotalsString.c_str() ); 
+ system( copyIndexTotalsDifString.c_str() ); 
+
+// cout << " FINISH ArchivePrimeBook and Index " << endl;   realm_os_user_input(userInput);
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+string ptv_uniqueId(string randomString3)
+{
+const auto realm_thread_count = thread::hardware_concurrency();
+
+
+    string128Class numObj1( realm_thread_count );
+
+//cout << "Unique Id for Instance of PrimeBookOne Gear# " << uniqueId << endl;
+//string userInput;
+//realm_os_user_input(userInput);
+
+
+ // Get the current time point
+    auto now = std::chrono::system_clock::now();
+
+    // Extract individual components of time
+    auto time = std::chrono::system_clock::to_time_t(now);
+    std::tm tm_time = *std::localtime(&time);
+
+    // Format the string as "MODYYRHRMNSEC"
+    std::ostringstream formattedTime;
+    formattedTime << std::put_time(&tm_time, "%b%d%Y%H%M%S");
+
+ //   std::string result = formattedTime.str();
+
+  //  std::cout << "Formatted Time: " << result << std::endl;
+
+
+
+
+string uniqueId = "pb1_"+ numObj1.getString() + "_" + randomString3+"_" + formattedTime.str() ;
+
+
+
+
+
+
+
+
+
+
+uniqueIdGlobal = uniqueId;
+return uniqueId;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void ptv_COMMANDER(){
+
+ // vector<byte*> dancerPrimeFindsArray (  perThreadSlices );  
+  vector<byte*> threadWorkingArray (  grid );  
+ // vector<byte*> conductorPrimeFindsArray (  perThreadSlices );  
+  //conductorPrimeFindsArray[singer] = new byte[ perThreadSlices ];
+string uniqueId = uniqueIdGlobal;
+//mrTsaysRead = mrTsaysReadLibrarian;
+//guiDefaultsSet();
+//   guiGrid128[0][16] = primeRatio;     guiGrid128[0][16] = primeRatio;   guiGrid[2][8][1] = totalTiles;  guiGrid128[0][19] = pDlarge;    guiGrid128[0][20] = infiniteWalk;   guiGrid128[0][21] =total; guiGrid128[2][18] = singers;
+// gui128String(); guiPrime();  system("cls"); gui(); 
+   __int128 readTileCount = listBookZip() +1;
+//  guiGrid128[2][8] = readTileCount;
+bool verifyTiles=false;
+   bool rebuildIndex = false;
+   bool reCreateIndex = false;
+
+
+//string createTileName="";
+  //  archivePrimeBook(readTileCount,uniqueId);  
+__int128 etchRunner=0;
+
+    string128Class totalString(total); 
+//  tileCount = readTileCount;
+//__int128 createTiles=0;
+
+
+
+
+
+
+
+
+//tileLay=1;
+
+//        minimumPrimeBookNeeded = findMinimumPrimeBook(readTileCount,bookIndex);
+__int128 walkInfiniteTile =0;
+
+     minimumPrimeBookNeeded = readTileCount;
+
+        //     infiniteWalk=bookIndex[readTileCount-1]; // read the largest known prime 
+        //   etchIndexInfiniteWalkSum=infiniteWalk;       infiniteWalk+=2;      // Walk 2 into the unknown
+
+         //string128Class infiniteWalkString(infiniteWalk);  string128Class tileCountString(tileCount);
+
+         //string128Class highestPrimeM1(  bookIndex[readTileCount-1]  );
+
+
+
+
+
+
+
+
+
+
+
+bool verifiedPrimeBook=false;
+bool readLastBatch = false;
+
+__int128 assignedBook=0;
+__int128 totalCores = singers;
+__int128 availableCores = totalCores ; //. totalCores-1
+
+
+
+__int128 batchCount =0;
+__int128 createTileReadThread =0;
+
+
+  vector < thread > bookClub;
+__int128 threadReadTotal=0;
+
+
+
+
+
+
+
+
+
+
+
+// ****** BEGIN BATCH READ LOOP *********
+__int128 rejoinThreadWalk=0;
+
+
+  __int128 gridWalk=0;
+
+
+__int128 batchWalk = 0;
+__int128 theBatchWalk = minimumPrimeBookNeeded;
+__int128 partialBatchTotal =0;
+ //     byte* threadTile = new byte[ grid ];
+
+
+
+
+
+
+
+while ( readLastBatch == false){
+
+   if (theBatchWalk > availableCores){
+      batchWalk = availableCores;
+
+   } else {
+     batchWalk = theBatchWalk;
+     readLastBatch=true;
+
+   }
+
+
+
+
+
+    bookClub.clear();
+   for (__int128 batchWalker = 0; batchWalker < batchWalk; batchWalker++) {      //   cout << "create singer "<<int(singer)<< endl;
+
+
+
+
+      threadWorkingArray[batchWalker] = new byte[ grid ];
+
+
+
+
+      bookClub.push_back(thread([this,
+                            batchWalker,
+                              assignedBook,
+                                uniqueId,
+
+                                    &workingArray  = threadWorkingArray[batchWalker]
+                                      ]() {
+                            this->threadRetrieveTile(batchWalker,
+                              assignedBook,
+                                uniqueId,
+
+                                   workingArray
+                                      );}));
+
+
+
+
+
+
+
+     theBatchWalk--; 
+      assignedBook++;
+
+
+   }           // FINISH CREATE ALL THREADS
+   
+
+
+
+
+
+
+   for (auto& readTileReadThread : bookClub) {
+
+
+
+         readTileReadThread.join(); 
+   }                                  // Finish Join All Threads
+
+   bookClub.front();
+
+for (__int128 batchWalkerReader = 0; batchWalkerReader < batchWalk; batchWalkerReader++) {
+
+     byte* targetTile;
+
+
+
+      string128Class tileNumberString ( tileLay );
+      string targetTileName = "Tile0" + tileNumberString.getString();
+   //  cout << "Begin read batchWalker tile : " << int(batchWalkerReader) << " targetTileName = " << targetTileName << endl;
+targetTile=  threadWorkingArray[batchWalkerReader]; //  tiles[targetTileName] = new byte[grid];
+//cout << "             create tile " << targetTileName << "   "  << endl;
+
+// tiles[targetTileName] = targetTile;       tileLay++;
+etchRunner=0;
+while (etchRunner < grid){ data = targetTile[etchRunner++];
+
+// ptv_etchTileARM data => in    
+
+
+//if(etchWalk%10000==0){
+//cout << "EtchTile : " << int(data) << "  EtchWalk : " << int(etchWalk)<< endl;}
+//cin >> userInput;
+
+ byte* targetTile;
+
+
+  string128Class tileCountString ( tileCount );    
+  targetTileName = "Tile0" + tileCountString.getString();
+     targetTile = tiles[ targetTileName ];
+     targetTile[etchWalk] = data;
+     etchWalkSum+=data;  // ADD ONTO TILE SUM
+  etchWalk++;
+  if (etchWalk == grid) {
+guiGrid128[2][11] = etchWalkSum;
+previousEtchWalkSum =  previousEtchWalkSum;   // PREVIOUS TILESUM
+gearCreatedTiles++;  guiGrid128[2][9]=gearCreatedTiles; // primebooksCreated talley
+
+guiGrid128[2][12] = previousEtchWalkSum; // cout << "previousEtchWalkSum : 
+bookIndexTotals[tileCount]= etchWalkSum;        
+  primeRatio =infiniteWalk/total;
+// exportTile( targetTileName );// cout << "export Tile" << endl;
+
+  etchWalkSum=0; // BEGIN NEW TILE SUM
+     tileCount++;    
+etchWalk = 0;
+
+    string128Class tileCountString ( tileCount );
+    targetTileName = "Tile0" + tileCountString.getString() ;
+    byte* newTile = new byte[grid]();
+    tiles[targetTileName] = newTile;
+
+    targetTile = tiles[ targetTileName ];
+
+
+    targetTile[0] = 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+delete[] targetTile;
+   }           // FINISH READ ALL THREADS 
+
+} // WHILE readLastBatch != True    //*******************FINISH  BATCH READ LOOP ********* *********************
+
+        total = (grid*(readTileCount)); 
+
+
+
+
+// ptv_walkIndexARM 
+__int128 indexWalk =0;
+__int128 previousBookIndex =3;
+__int128 bookIndexTotal=0;
+__int128 num;
+__int128 num_intervals = 100000; 
+// Increased for better accuracy with larger numbers.
+string delIndexTXT ="";
+ delIndexTXT += "echo off &";
+ delIndexTXT += "del primebookone\\primebookindex.txt > NUL 2>&1";
+ system( delIndexTXT.c_str() ); // cout << " rebuild PrimeBook Index " << endl;
+ fstream createPrimeIndexTXT;
+ createPrimeIndexTXT.open("primebookindex.txt", fstream::in | fstream::out | fstream::app); 
+ createPrimeIndexTXT.close();
+ fstream PrimeOneIndex ;
+ PrimeOneIndex.open("PrimeBookOne\\primebookindex.txt", fstream::out );
+// PrimeOneIndex << stringBean2 <<endl;
+// PrimeOneIndex.close();
+string bookIndexPrint = "";
+string bookIndexTotalsPrint = "";
+string bookIndexTotalsDifPrint = "";
+string indexWalkPrint = "";
+string approximationPrint = "";
+while (indexWalk < readTileCount){
+ bookIndex[indexWalk] = (bookIndexTotals[indexWalk]*2) + previousBookIndex;
+ previousBookIndex = bookIndex[indexWalk];
+if ( (bookIndexTotals[indexWalk]) < (bookIndexTotals[indexWalk+1])){
+ bookIndexTotalsDif[indexWalk] = (bookIndexTotals[indexWalk+1]*2) - (bookIndexTotals[indexWalk]*2);
+} else { 
+ bookIndexTotalsDif[indexWalk] = (bookIndexTotals[indexWalk]*2) - (bookIndexTotals[indexWalk+1]*2);
+}
+ string128ClassComma indexWalkString(indexWalk);
+   indexWalkPrint = indexWalkString.getString();
+ string128ClassComma bookIndexString(bookIndex[indexWalk]);
+   bookIndexPrint =  bookIndexString.getString();
+ bookIndexTotal = bookIndexTotals[indexWalk]*2;
+ string128ClassComma bookIndexTotalsString(bookIndexTotal);
+   bookIndexTotalsPrint = bookIndexTotalsString.getString();
+ string128ClassComma bookIndexTotalsDifString(bookIndexTotalsDif[indexWalk]);
+   bookIndexTotalsDifPrint = bookIndexTotalsDifString.getString();
+ double approximation = ptv_logarithmicIntegral(bookIndex[indexWalk], num_intervals);
+   string128ClassComma approximationString(approximation);
+      approximationPrint = approximationString.getString();
+cout << "iWalk: "<< indexWalkPrint;
+PrimeOneIndex << "iWalk: "<< indexWalkPrint;
+cout << " I: " << bookIndexPrint;
+PrimeOneIndex << " I: " << bookIndexPrint;
+cout << " T: " << bookIndexTotalsPrint;
+PrimeOneIndex << " T: " << bookIndexTotalsPrint;
+cout << " L: " << approximationPrint;
+PrimeOneIndex << " L: " << approximationPrint;
+cout << " M: ";
+PrimeOneIndex << " M: ";
+cout << std::fixed;
+PrimeOneIndex << std::fixed;
+cout << std::setprecision(4);
+PrimeOneIndex << std::setprecision(4);
+if (approximation > bookIndexTotal){
+ cout << (approximation/ bookIndexTotal);
+ PrimeOneIndex << (approximation/ bookIndexTotal);
+} else { 
+ cout << (bookIndexTotal/approximation);
+ PrimeOneIndex << (bookIndexTotal/approximation);
+}
+cout << "%";
+PrimeOneIndex << "%";
+cout << " TD: " << bookIndexTotalsDifPrint;
+PrimeOneIndex << " TD: " << bookIndexTotalsDifPrint;
+cout << " "<< endl;
+PrimeOneIndex << " "<< endl;
+ indexWalk++;
+}
+// cout << int(bookIndex[readTileCount-2] ) << " " << int(bookIndex[readTileCount-1] ) << " " << int(bookIndex[readTileCount] ) << " " << endl;
+PrimeOneIndex.close();
+//cin >> userInput;
+
+
+
+//cout <<  int(bookIndex[readTileCount-2] ) << "   " <<   int(bookIndex[readTileCount-1] ) << "   " <<   int(bookIndex[readTileCount] ) << "   " << endl;
+previousPrime = bookIndex[readTileCount-1];
+
+infiniteWalk = previousPrime+2;  //string128Class infiniteWalkString(infiniteWalk);
+//cout << endl<< "           InfiniteWalk = "<<  infiniteWalkString.getString() << "   TileCount : "<< int(tileCount) << endl;
+//for (int i = countdown_seconds; i >= 1; --i) {cout << i << " "; this_thread::sleep_for(std::chrono::seconds(1));}
+
+
+
+
+
+
+// COMMANDER verifyTile Arm
+//gui();
+
+
+int gWalk =0;
+int moonWalk =1;
+int center = 10;
+int depth  = 8;
+
+
+string guiGridString ="";
+string title = "";
+string indexString="";
+
+
+__int128 loadedTileDif=0; 
+__int128 tileSetup = 0;
+__int128 previousPrimeWalk = 0;
+__int128  nextPrime =0;
+__int128 nextPrimeWalk=0;
+__int128 targetTileDif =0;
+__int128 previousTile = totalTiles--;
+__int128 expectedTileDif =0;
+__int128 primeMoonWalk = bookIndex[tileSetup];
+__int128 walkTheMoon=0;
+__int128 previousPrimeMoonWalk = bookIndex[tileSetup];
+__int128 primeGridWalk = 3;
+__int128 primetileSetupBase=3;
+__int128 primetileSetupBaseNext=3;
+__int128 previousPrimeGridWalk = 0;
+__int128 expectedPrimetileSetup=0;
+__int128 primetileSetup = primetileSetupBase;
+__int128 primeMoonWalkNext =0;
+
+byte* targetTile = new byte[grid];
+//cout << endl<< "                              Begin VERIFY TILE?"; realm_os_user_input( userInput); 
+
+while(tileSetup<readTileCount){
+
+   //string128Class infinitePrimeIndexString(bookIndex[tileSetup-1] );
+   //string128Class infinitePrimeIndexTotalString(  bookIndexTotals[tileSetup] );
+
+   indexString = "";
+
+   primetileSetupBaseNext =(primetileSetupBase)+ ( bookIndexTotals[tileSetup])*2 ;
+
+   //string128Class primetileSetupBaseNextString(primetileSetupBaseNext);
+
+   string128Class tileNumberString ( tileSetup );
+   targetTileName = "Tile0" + tileNumberString.getString();
+   
+   targetTile = tiles[targetTileName] ;
+
+
+   // NAME TITLE
+   //string128Class primetileSetupBaseString ( primetileSetupBase );
+  // title  = "";
+ //  title += "Grid Tile0";
+  // title += tileNumberString.getString();
+  // title += " infinitePrimeWalk ' Verify";
+   
+//   guiGrid[1][center][1] = title;
+
+   // INDEX TITLE
+   //indexString  = "";
+   //indexString += primetileSetupBaseString.getString(); 
+   //indexString += "  ";
+   //indexString += infinitePrimeIndexTotalString.getString();
+   //indexString += "  ";
+   //indexString += primetileSetupBaseNextString.getString();
+
+   //if(verifyPrime(primetileSetupBaseNext)==true){ indexString += " P "; } else {indexString += " X ";}
+   
+   //guiGrid[1][center+1][1] = indexString;
+
+   walkTheMoon= primetileSetupBaseNext;
+   primeMoonWalk= primetileSetupBaseNext;
+   moonWalk=1;
+
+   while (moonWalk < (depth+1)){
+      targetTileDif = targetTile[grid -moonWalk];
+
+      primeMoonWalkNext = moonWalkPrime(primeMoonWalk);
+      expectedTileDif =  (primeMoonWalk -primeMoonWalkNext )/2;
+
+      //string128Class targetTileDifString(targetTileDif);
+      //string128Class expectedTileDifString(expectedTileDif);
+      //string128Class walkTheMoonString(walkTheMoon);
+      //string128Class moonWalkString(moonWalk);
+      //string128Class primeMoonWalkString(primeMoonWalk);
+
+      //// guiGridString += "-";
+      //// guiGridString += moonWalkString.getString();
+      //// guiGridString += " "  ;
+      // guiGridString += targetTileDifString.getString();
+      // guiGridString += " "  ;
+      // guiGridString += walkTheMoonString.getString();
+
+   //  if(verifyPrime(walkTheMoon)==true){ // guiGridString += " P "  ;} else { // guiGridString += " X "  ; } 
+
+      // guiGridString += " ' "  ;
+      // guiGridString += expectedTileDifString.getString();
+      
+      // guiGridString += " "  ;
+      // guiGridString += primeMoonWalkString.getString();
+ 
+   //  if(verifyPrime(primeMoonWalk)==true){ // guiGridString += " P "  ; } else { // guiGridString += " X "  ; }
+     
+     if (walkTheMoon != primeMoonWalk){  
+     // system("cls");
+     cout << "     !!!! Prime Math not Matching  ";
+     cout << "     !!!!  " << int(walkTheMoon) << " != Not Equal != " << int(primeMoonWalk) << "  !!!!  " ;
+cin >> userInput;
+       for (int i = countdown_seconds; i >= 1; --i) {cout << i << " ";this_thread::sleep_for(chrono::seconds(1)); }
+    
+       __int128 mathDifference = walkTheMoon - primeMoonWalk;
+       //string128Class mathDifferenceString(mathDifference); 
+  //     string mathError = "Prime Math Error Difference of : " + mathDifferenceString.getString();
+       // logExit(mathError);    system("start /b PrimeOneReboot.bat");    exit(0);
+     }
+     
+  //    guiGrid[1][center-moonWalk][1] = // guiGridString;
+      // guiGridString="";
+      primeMoonWalk = primeMoonWalkNext;
+      walkTheMoon= walkTheMoon-(targetTileDif*2);
+      moonWalk++;
+   }  // FINISH moonWALK
+   gWalk=0;
+   while (gWalk < (depth+1)){
+      targetTileDif = targetTile[gWalk];
+      primetileSetup += targetTileDif*2;
+      previousPrimeGridWalk = primeGridWalk;
+      primeGridWalk = nextWalkPrime(previousPrimeGridWalk);
+      expectedTileDif = (primeGridWalk -previousPrimeGridWalk)/2 ;
+   //string128Class expectedTileDifString(expectedTileDif);
+   //string128Class targetTileDifString(targetTileDif);
+   //string128Class primetileSetupString(primetileSetup);
+   //string128Class expectedPrimetileSetupString(primeGridWalk);
+   //string128Class gWalkString(gWalk);
+
+
+   
+      // guiGridString += "+";
+      // guiGridString += gWalkString.getString();
+      // guiGridString += " "  ;
+      // guiGridString += targetTileDifString.getString();
+      // guiGridString += " "  ;
+      // guiGridString += primetileSetupString.getString();
+
+   // if(verifyPrime(primetileSetup)==true){ // guiGridString += " P "  ;  } else { // guiGridString += " X "  ;}
+
+      // guiGridString += " ' "  ;
+      // guiGridString += expectedTileDifString.getString();
+      // guiGridString += " "  ;
+      // guiGridString += expectedPrimetileSetupString.getString();
+
+    //if(verifyPrime(expectedPrimetileSetup)==false){ // guiGridString += " P "  ; } else { // guiGridString += " X "  ; }
+    
+     // guiGrid[1][center+gWalk+2][1] = // guiGridString;
+
+      // guiGridString="";
+      
+      gWalk++;
+      
+      
+}  // FINISH gWALK
+
+   primetileSetupBase = bookIndex[tileSetup];
+   primeGridWalk = bookIndex[tileSetup];
+
+   primetileSetup = bookIndex[tileSetup];
+
+   primeMoonWalk = bookIndex[tileSetup];
+
+   tileSetup++;
+   //gui();
+
+  //  for (int i = countdown_seconds; i >= 1; --i) {
+  //      std::cout << i << " ";
+  //      std::this_thread::sleep_for(std::chrono::seconds(1));
+  //  }
+
+
+
+} // finish tileSetup
+
+// not a function but a commander insert} // FINISH VERIFY TILE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+archivePrimeBook(readTileCount,uniqueId);
+
+
+ //  guiGrid128[2][16] = perThreadSlices;
+
+
+
+ //***FINISH  ptv_Commander Function ******
+}
+
+
+
+
+
+
+
+
+
+
+__int128 findMinimumPrimeBook( __int128 readTileCount, __int128* bookIndex) {
+  //  system("cls");
+  //  cout << "BEGIN FIND MINIMUMPRIMEBOOK "<< endl;   realm_os_user_input(userInput);
+    __int128 infiniteWalk=bookIndex[readTileCount-1] +2;
+    __int128 maxDivisibleNumberMaxNeeded = (infiniteWalk +(singers*perThreadSlices)+2)/3;
+
+string128Class infiniteWalkString(infiniteWalk);
+string128Class maxDivisibleNumberMaxNeededString(maxDivisibleNumberMaxNeeded); 
+
+bool search = true;
+__int128 findTile=0;
+ //  cout << "BEGIN FIND MINIMUMPRIMEBOOK WHILE LOOP"<< endl;   realm_os_user_input(userInput);
+
+while(search==true){
+     string128Class bookIndexFindTileString(bookIndex[findTile]);
+  //   cout << "Current Tile : "  << int(findTile)<<  "  maxDivisibleNeeded : " << maxDivisibleNumberMaxNeededString.getString() << "  For InfiniteWalk : " << infiniteWalkString.getString() << endl;
+   if (maxDivisibleNumberMaxNeeded < bookIndex[findTile] ){
+      string128Class tileIndexedString(bookIndex[findTile]);
+     //  cout << "\033[6;1H" << "                                                                       Minimum PrimeBooks Needed : " << int(findTile)<< " : " << tileIndexedString.getString() << endl;
+      search = false;
+   }
+  else{ findTile++;
+    //  cout << "\033[1;1H" << " Mimimum PrimeBooks Needed : " << int(findTile)<< " :  NOT " << bookIndexFindTileString.getString() << endl;
+
+}
+
+
+}
+   //cout << "MINIMUMPRIMEBOOK FINISHED "<< endl;   realm_os_user_input(userInput);
+return findTile;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bool verifyPrimeGear(  __int128 myInfiniteWalk )
+{
+
+bool findPrime = true;
+  __int128 isPrime = false; __int128 myTileWalk=0;  __int128 myBreezeWalk=0;
+__int128 primeBuild =3 ; 
+//cout << "                begin VERIFY PRIME : "<< int(infiniteWalk) << endl;  
+
+__int128   primeRange = ( myInfiniteWalk / primeBuild ) +1;
+while(findPrime){
+//cout << "primebuild = " << int(primeBuild) << "  ";  cin >> userInput; 
+
+if ( myInfiniteWalk % primeBuild == 0 ){
+   findPrime = false;
+   isPrime = false;
+
+} else {
+   primeRange = ( myInfiniteWalk / primeBuild ) +1;
+   if ( primeBuild > primeRange ){
+      findPrime=false;
+      isPrime=true; 
+//cout << "                                       ****isPrime=true;******" << endl;
+
+
+
+
+
+   } else {
+//cout << "Querry for next PrimeBuild "<< endl; 
+primeBuild+= breeze()*2;
+//if(myBreezeWalk<grid){ } else {
+//myTileWalk++; myBreezeWalk=0; };
+  //       primeBuild += myTiles[myTileWalk][myBreezeWalk]*2;
+//myBreezeWalk++;
+//cout << "primebuild = " << int(primeBuild) << "  ";  realm_os_user_input( userInput); 
+// primeBuild+=2;
+  }  // IF PrimeRange
+
+} // IF ELSE % == 0
+still(0);
+} // FIND PRIME
+
+
+if (isPrime){
+return true;
+
+} else {
+return false;
+}
+} // endl verify Prime function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+__int128 nextWalkPrime(  __int128 myInfiniteWalk )
+{
+
+__int128 myPrimeFindsLocal=0;
+
+
+
+__int128 primeDifference=0;
+__int128 primeBuild=0;
+
+__int128 myPreviousPrime = 0;
+
+
+
+  bool findPrime=true;
+  bool dance=true;
+  bool isPrime = false;
+  bool findPrevious=true;
+
+
+while ( findPrime==true ){
+myInfiniteWalk+=2;
+
+isPrime = slowWalkToSundayDivise(myInfiniteWalk);
+
+
+
+if ( isPrime== true){
+
+
+
+
+
+return myInfiniteWalk;
+
+
+}
+
+
+ 
+//cout << "my InfiniteWalk " << int(myInfiniteWalk)<< endl;
+  
+} // continue prime number search
+
+
+} // Close return nextPrime function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+__int128 moonWalkPrime(   __int128 myInfiniteWalk )
+{
+
+
+__int128 myPrimeFindsLocal=0;
+
+__int128 singer =0;
+__int128 countThis=0;
+__int128 primeDifference=0;
+__int128 primeBuild=0;
+__int128 intTail=0;
+__int128 myPreviousPrime = 0;
+__int128 moonWalker = 0;
+__int128 slice=0;
+__int128 spaceBuffer =0;
+  bool findPrime=true;
+  bool dance=true;
+  bool isPrime = false;
+  bool findPrevious=true;
+
+
+while ( findPrime==true ){
+myInfiniteWalk+=-2;
+
+isPrime = verifyPrime(myInfiniteWalk);
+
+
+
+if ( isPrime== true){
+
+
+//  myPreviousPrime =  myInfiniteWalk; 
+
+            still(singer);
+return myInfiniteWalk;
+
+
+}
+
+
+ 
+//cout << "my InfiniteWalk " << int(myInfiniteWalk)<< endl;
+  
+} // continue prime number search
+
+
+} // Close return previousPrime function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void gui(){
+string col1Spacer = "   ";
+string col2Spacer = "                          ";
+string col3Spacer = "                                      ";
+
+for (int gridRowWalk = 0; gridRowWalk < guiGridHeight; gridRowWalk++) {
+
+  //   if (guiUpdate[gridRowWalk]==true){
+       string128Class gridRowWalkString(gridRowWalk+2);
+      string coutLocator ="\033["+gridRowWalkString.getString()+";1H";
+   //   cout << gridRowWalkString.getString() << " ";
+
+
+      cout << coutLocator << col1Spacer << col2Spacer << col3Spacer << guiGrid[2][gridRowWalk][1];
+      cout << coutLocator << col1Spacer << col2Spacer << guiGrid[1][gridRowWalk][1];
+      cout << coutLocator  << col1Spacer << guiGrid[0][gridRowWalk][1];
+    //  guiUpdate[gridRowWalk] = false;
+   //  }
+}
+
+ cout << "\033[0;1H";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void exportTile(string targetTileName){
+// cout << "Begin exportTile                "<< endl;  realm_os_user_input(userInput);     
+   byte* fileTile;    fileTile = tiles[targetTileName];
+  string targetTileNamePath = "PrimeBookOne\\" + targetTileName + ".prime";
+  ofstream copy( targetTileNamePath , std::ios::binary);
+//   cout << "                  Begin Write         copy.write(reinterpret_cast<const char*>(fileTile), grid)       "<< endl;  realm_os_user_input(userInput);     
+  copy.write(reinterpret_cast<const char*>(fileTile), grid);
+  copy.close();
+
+  compressTile(targetTileName);
+
+  //fstream PrimeOneIndex ;
+  //PrimeOneIndex.open("PrimeBookOne\\PrimeBookIndex.txt",
+  //fstream::in | fstream::out | fstream::app);
+
+  //string128Class infiniteWalkString(infiniteWalk);
+  //string stringBean2= infiniteWalkString.getString();
+
+
+
+
+
+
+
+//  PrimeOneIndex  << stringBean2 <<endl;
+  //PrimeOneIndex.close();
+  //infiniteWalkStart=infiniteWalkAdd;
+  // cout  << " ETCHED FILE TO WINDOWS OS FS : " << targetTileNamePath << endl << endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     } //exportTile finish
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void guiPrime(){
+guiGrid[0][0][1] =guiGrid[0][0][0]+"Win64|";
+guiGrid[1][0][1] =guiGrid[1][0][0];
+guiGrid[2][0][1] =guiGrid[2][0][0] +guiGrid[2][0][2]; // +"1340|"; // BUILD;
+//guiGrid[0][1][1] =" ";
+//guiGrid[1][1][1] =" ";
+guiGrid[2][1][1] = uniqueIdGlobal;
+guiGrid[0][2][1] =guiGrid[0][2][0] + "127.0.0.1|";
+//guiGrid[1][2][1] =" ";
+guiGrid[2][2][1] ="file:///workspace/app/PB1/PrimeBook.CPP/primebookonexlsm.archive/2025/[primeOne_2025_6_28.xlsm]librarian_functions";
+guiGrid[0][3][1] =guiGrid[0][3][0]+guiGrid[0][3][2]; // +"0x2ec|";
+//guiGrid[1][3][1] =" ";
+guiGrid[2][3][1] =guiGrid[2][3][0] + "1|";
+guiGrid[0][4][1]=guiGrid[0][4][0]+"0x344| "; // Thread Handle : 
+//guiGrid[1][4][1] =" ";
+guiGrid[2][4][1] =guiGrid[2][4][0]+"Identified as INTEL|";
+//guiGrid[0][5][1] =" ";
+//guiGrid[1][5][1] =" ";
+//guiGrid[2][5][1] =" ";
+//guiGrid[0][6][1] =" ";
+//guiGrid[1][6][1] =" ";
+//guiGrid[2][6][1] =" ";
+//guiGrid[0][7][1] =" ][ ";
+//guiGrid[1][7][1] =" ";
+//guiGrid[2][7][1] =" ";
+//guiGrid[0][8][1] =" ";
+//guiGrid[1][8][1] =guiGrid[1][8][0];
+guiGrid[2][8][1] = guiGrid[2][8][0] + guiGrid[2][8][2];
+//guiGrid[0][9][1] =" ";
+//guiGrid[1][9][1] =guiGrid[1][9][0];
+guiGrid[2][9][1] = guiGrid[2][9][0] + guiGrid[2][9][2]; //primebooks created
+//guiGrid[0][10][1] =" ";
+//guiGrid[1][10][1] =" ";
+guiGrid[2][10][1]= guiGrid[2][10][0]+  guiGrid[2][10][2]; // ="PrimeBooks Loaded : ";
+//guiGrid[0][11][1] =" ";
+//guiGrid[1][11][1] =" ";
+guiGrid[2][11][1] = guiGrid[2][11][0]+ guiGrid[2][11][2];//  ="Tile Sum : ";
+//guiGrid[0][12][1] =" ";
+//guiGrid[1][12][1] =" ";
+guiGrid[2][12][1] =guiGrid[2][12][0]+guiGrid[2][12][2];  //0] ="Previous Tile Sum : ";
+//guiGrid[0][13][1] =" ";
+//guiGrid[1][13][1] =" ";
+guiGrid[2][13][1] =guiGrid[2][13][0]+guiGrid[2][13][2] ;//  ="gitInterval :  ";
+//guiGrid[0][14][1] =" ";
+//guiGrid[1][14][1] =" ";
+guiGrid[2][14][1] =guiGrid[2][14][0]+guiGrid[2][14][2]; // ="gitUpdates : ";
+//guiGrid[0][15][1] =" ";
+//guiGrid[1][15][1] =" ";
+guiGrid[2][15][1] =guiGrid[2][15][0]+guiGrid[2][15][2];  //][0] ="git Clocks : ";
+guiGrid[0][16][1] =guiGrid[0][16][0] +guiGrid[0][16][2]; //+ "Prime Ratio =  ";
+//guiGrid[1][16][1] =" ";
+guiGrid[2][16][1] =guiGrid[2][16][0]+guiGrid[2][16][2]; //slices
+// guiGrid[0][17][1] =guiGrid[0][17][0]  +guiGrid[0][17][2]; //"Total Tiles = ";
+//guiGrid[1][17][1] =" ";
+guiGrid[2][17][1] =guiGrid[2][17][0]+ "1,048,576|"; //"Primer =
+//guiGrid[0][18][1] =" ";
+//guiGrid[1][18][1] =" ";
+guiGrid[2][18][1] =guiGrid[2][18][0]+guiGrid[2][18][2]; //Singers
+guiGrid[0][19][1] =  guiGrid[0][19][0] + guiGrid[0][19][2]; // "Largest Difference = ";
+//guiGrid[1][19][1] =" ";
+guiGrid[2][19][1] =guiGrid[2][19][0]+ guiGrid[2][19][2]; //"Power = 20 ";
+guiGrid[0][20][1] =guiGrid[0][20][0] + guiGrid[0][20][2]; // "infiniteWalk = ";
+//guiGrid[1][20][1] =" ";
+guiGrid[2][20][1] =guiGrid[2][20][0] +  guiGrid[2][20][2];   // "Grid = 1][048][576 ";
+guiGrid[0][21][1] = guiGrid[0][21][0] + guiGrid[0][21][2] ; // "Total Primes = ";
+//guiGrid[1][21][1] =" ";
+guiGrid[2][21][1] = guiGrid[2][21][0] + guiGrid[2][21][2]; // infiniteCyclesStarts
+//guiGrid[0][22][1] =" ";
+guiGrid[1][22][1]  =guiGrid[1][22][0]; // "PRIMEBOOK  ONE ";
+guiGrid[2][22][1] = guiGrid[2][22][0] + guiGrid[2][22][2]; // infinitecyclefinishes
+//guiGrid[0][23][1] =" ";
+guiGrid[1][23][1]  =guiGrid[1][23][0]; // "PRIMEBOOK  ONE ";
+guiGrid[2][23][1] = guiGrid[2][23][0] +" Yes|";  // "(c)PU = Yes ";
+//guiGrid[0][24][1] =" ";
+guiGrid[1][24][1] =guiGrid[1][24][0]; // "PRIMEBOOK  ONE ";
+guiGrid[2][24][1] =guiGrid[2][24][0] +"No|";   // "(g)PU = No ";
+guiGrid[0][25][1] = guiGrid[0][25][0] + "300|";  // "Network Peers  = 300 ";
+guiGrid[1][25][1] =guiGrid[1][25][0]; // "PRIMEBOOK  ONE ";
+guiGrid[2][25][1] = guiGrid[2][25][0] + " No|"; // "(t)hermal = No ";
+guiGrid[0][26][1] = guiGrid[0][26][0] + "12.34.56.78|"; //  "XXX Active ip = 1  XX ";
+guiGrid[1][26][1]  =guiGrid[1][26][0]; // "PRIMEBOOK  ONE ";
+guiGrid[2][26][1] =guiGrid[2][26][0] + " 55555|"; // "XX Port = 55555 ";
+//guiGrid[0][27][1] =" ";
+//guiGrid[1][27][1] =" ";
+//guiGrid[2][27][1] =" ";
+//guiGrid[0][28][1] =" ";
+//guiGrid[1][28][1] =" ";
+//guiGrid[2][28][1] =" ";
+//guiGrid[0][29][1] =" ";
+//guiGrid[1][29][1] =" ";
+//guiGrid[2][29][1] =" ";
+//guiGrid[0][30][1] =" ";
+//guiGrid[1][30][1] =" ";
+//guiGrid[2][30][1] =" ";
+}
+
+void compressTile(string targetTileName){
+  string addZipString = "echo off & tar  -r -f PrimeBookOne\\PrimeBookOne.tar PrimeBookOne\\"+ targetTileName + ".zip";
+  string zipTileString = "echo off & tar -czf PrimeBookOne\\"+ targetTileName + ".zip PrimeBookOne\\"+ targetTileName + ".prime";
+  string delTilePrime = "echo off & del PrimeBookOne\\"+ targetTileName + ".prime";
+  string delTileZip = "echo off & del PrimeBookOne\\"+ targetTileName + ".zip";
+  cout << "\033[1;1H"; cout << endl;
+  system( zipTileString.c_str() );
+  cout << "\033[1;1H"; cout << endl;
+  system( addZipString.c_str() );
+  cout << "\033[1;1H"; cout << endl;
+  system( delTilePrime.c_str() );
+  cout << "\033[1;1H"; cout << endl;
+  system( delTileZip.c_str() );
+}
+
+
+void guiDefaultsSet(){
+
+guiGrid[0][0][0] ="OS : ";
+guiGrid[1][0][0] =" ";
+guiGrid[2][0][0] ="BUILD # ";
+
+guiGrid[0][1][0] =" ";
+guiGrid[1][1][0] =" ";
+guiGrid[2][1][0] =" "; // uniqueIdGlobal; 
+
+guiGrid[0][2][0] ="Net :  ";
+guiGrid[1][2][0] =" ";
+guiGrid[2][2][0] =" ";  //"XLSM.";
+
+guiGrid[0][3][0] ="Windows Handle : ";
+guiGrid[1][3][0] =" ";
+guiGrid[2][3][0] ="Total DirectX GPUs : ";
+
+guiGrid[0][4][0] ="Thread Handle : ";
+guiGrid[1][4][0] =" ";
+guiGrid[2][4][0] ="GPU[0] : ";
+
+guiGrid[0][5][0] ="";
+guiGrid[1][5][0] =" ";
+guiGrid[2][5][0] =" ";
+
+guiGrid[0][6][0] ="";
+guiGrid[1][6][0] =" ";
+guiGrid[2][6][0] =" ";
+
+guiGrid[0][7][0] ="";
+guiGrid[1][7][0] ="";
+guiGrid[2][7][0] =" ";
+
+guiGrid[0][8][0] =" ";
+guiGrid[1][8][0] ="";
+guiGrid[2][8][0] ="PrimeBook Tiles   : ";
+
+guiGrid[0][9][0] =" ";
+guiGrid[1][9][0] ="";
+guiGrid[2][9][0]="PrimeBooks Created : ";
+
+guiGrid[0][10][0] =" ";
+guiGrid[1][10][0] ="";
+guiGrid[2][10][0] ="PrimeBooks Loaded  : ";
+
+guiGrid[0][11][0] =" ";
+guiGrid[1][11][0] ="";
+guiGrid[2][11][0] ="Tile Sum : ";
+
+guiGrid[0][12][0] =" ";
+guiGrid[1][12][0] =" ";
+guiGrid[2][12][0] ="Previous Tile Sum : ";
+
+guiGrid[0][13][0] =" ";
+guiGrid[1][13][0] =" ";
+guiGrid[2][13][0] ="gitInterval : ";
+
+guiGrid[0][14][0] =" ";
+guiGrid[1][14][0] =" ";
+guiGrid[2][14][0] ="gitUpdates : ";
+
+guiGrid[0][15][0] =" ";
+guiGrid[1][15][0] =" ";
+guiGrid[2][15][0] ="git Clocks : ";
+
+guiGrid[0][16][0] ="Prime Ratio =  ";
+guiGrid[1][16][0] =" ";
+guiGrid[2][16][0] ="Slices = ";
+
+guiGrid[0][17][0] =" ";
+guiGrid[1][17][0] =" ";
+guiGrid[2][17][0] ="Primer = ";
+
+guiGrid[0][18][0] =" ";
+guiGrid[1][18][0] =" ";
+guiGrid[2][18][0] ="Singers = ";
+
+guiGrid[0][19][0] ="Largest Difference = ";
+guiGrid[1][19][0] =" ";
+guiGrid[2][19][0] ="Grid Power = ";
+
+guiGrid[0][20][0] ="infiniteWalk = ";
+guiGrid[1][20][0] =" ";
+guiGrid[2][20][0] ="Grid = ";
+
+guiGrid[0][21][0] ="Total Primes = ";
+guiGrid[1][21][0] =" ";
+guiGrid[2][21][0] ="iCycleStarts   : ";
+
+guiGrid[0][22][0] =" ";
+guiGrid[1][22][0] ="  || ||||| ||| ||";
+guiGrid[2][22][0] ="iCycleFinishes : ";
+
+guiGrid[0][23][0] =" ";
+guiGrid[1][23][0] =" |                |";
+guiGrid[2][23][0] ="(c)PU = ";
+
+guiGrid[0][24][0] =" ";
+guiGrid[1][24][0] ="|  PRIMEBOOK  ONE";
+guiGrid[2][24][0] ="(g)PU = ";
+
+guiGrid[0][25][0] ="Network Peers  = ";
+guiGrid[1][25][0] =" |";
+guiGrid[2][25][0] ="(t)hermal = ";
+
+guiGrid[0][26][0] ="Net Active IP = ";
+guiGrid[1][26][0] ="  || |||||||||||";
+guiGrid[2][26][0] ="Net Port = ";
+
+guiGrid[0][27][0] =" ";
+guiGrid[1][27][0] =" ";
+guiGrid[2][27][0] =" ";
+
+guiGrid[0][28][0] =" ";
+guiGrid[1][28][0] =" ";
+guiGrid[2][28][0] =" ";
+
+guiGrid[0][29][0] =" ";
+guiGrid[1][29][0] =" ";
+guiGrid[2][29][0] =" ";
+
+guiGrid[0][30][0] =" ";
+guiGrid[1][30][0] =" ";
+guiGrid[2][30][0] =" ";
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void etchTile( byte data) {
+ byte* targetTile;
+ string128Class tileCountString ( tileCount ); 
+ targetTileName = "Tile0" + tileCountString.getString();
+
+if (etchWalk < grid) {
+ targetTile = tiles[ targetTileName ];
+ targetTile[etchWalk] = data;
+ etchWalkSum+=data; // ADD ONTO TILE SUM
+} else {
+    
+ if(metalGuest==false){exportTile( targetTileName );}
+ 
+// auto now = std::chrono::steady_clock::now();
+ //elapsedCompletedTile = std::chrono::duration_cast<std::chrono::milliseconds>(now - lastCompletedTile);
+// lastCompletedTile = now;
+
+ gearCreatedTiles++;
+ // guiGrid128[2][9]=gearCreatedTiles; 
+ // guiGrid128[2][11] = etchWalkSum;
+ previousEtchWalkSum = previousEtchWalkSum; 
+ // guiGrid128[2][12] = previousEtchWalkSum; 
+ bookIndexTotals[tileCount]= etchWalkSum; 
+ tileCount++;
+ etchWalk = 0;
+ privateTilesCreated++;
+ string128Class tileCountString ( tileCount );
+ targetTileName = "Tile0" + tileCountString.getString() ;
+ byte* newTile = new byte[grid]();
+ tiles[targetTileName] = newTile;
+ targetTile = tiles[ targetTileName ];
+ etchWalkSum=data; // BEGIN NEW TILE SUM
+ targetTile[etchWalk] = data;
+ }
+
+etchWalk++;
+} // ETCHTILE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void gui128String(){
+
+//  guiGrid128[0][0] =0;//"OS : ";
+//  guiGrid128[1][0] =0;
+string128ClassComma buildString(3266); //"BUILD # ";    =BUILD!C17
+guiGrid[2][0][2]  = buildString.getString();
+//  guiGrid128[0][1]  =0;
+//  guiGrid128[1][1] =0;
+//  guiGrid128[2][1] =0;//"XLSM.";
+
+//  guiGrid128[0][2]  =0;//"Net :  ";
+//  guiGrid128[1][2]  =0;
+//  guiGrid128[2][2] =0;
+
+//  guiGrid128[0][3]  =0;//"Windows Handle : ";
+//  guiGrid128[1][3] =0;
+//  guiGrid128[2][3] =0;//"Total DirectX GPUs : ";
+
+//  guiGrid128[0][4]  =0;//"Thread Handle : ";
+//  guiGrid128[1][4] =0;
+//  guiGrid128[2][4] =0; // GPU[0] : ";
+
+//  guiGrid128[0][5] =0; // ";
+//  guiGrid128[1][5] =0;
+//  guiGrid128[2][5] =0;
+
+//  guiGrid128[0][6] =0; // ";
+//  guiGrid128[1][6] =0;
+//  guiGrid128[2][6] =0;
+
+//  guiGrid128[0][7] =0; // ";
+//  guiGrid128[1][7] =0;
+//  guiGrid128[2][7] =0;
+
+//  guiGrid128[0][8] =0;
+//  guiGrid128[1][8] =0; // ";
+   string128ClassComma totalTilesString(   guiGrid128[2][8] );   guiGrid[2][8][2] =totalTilesString.getString();
+
+//  guiGrid128[0][9] =0;
+//  guiGrid128[1][9] =0;
+string128ClassComma  primeBooksCreatedString(guiGrid128[2][9]);  guiGrid[2][9][2] = primeBooksCreatedString.getString();
+
+//  guiGrid128[0][10] =0;
+//  guiGrid128[1][10] =0;
+string128ClassComma   minimumPrimeBookNeededString(guiGrid128[2][10]); guiGrid[2][10][2] = minimumPrimeBookNeededString.getString(); // PrimeBooks Loaded : ";
+
+//  guiGrid128[0][11] =0;
+//  guiGrid128[1][11] =0;
+string128ClassComma   tileSumString( guiGrid128[2][11]);  guiGrid[2][11][2] =  tileSumString.getString(); // Tile Sum : ";
+
+//  guiGrid128[0][12] =0;
+//  guiGrid128[1][12] =0;
+string128ClassComma  previousTileSumString( guiGrid128[2][12]);   guiGrid[2][12][2] = previousTileSumString.getString();  // Previous Tile Sum : ";
+
+//  guiGrid128[0][13] =0;
+//  guiGrid128[1][13] =0;
+string128ClassComma conductorUpdateIntervalString(guiGrid128[2][13]); guiGrid[2][13][2]=conductorUpdateIntervalString.getString(); // gitInterval : ";
+
+//  guiGrid128[0][14] =0;
+//  guiGrid128[1][14] =0;
+string128ClassComma  statusUpdatesString( guiGrid128[2][14]);  guiGrid[2][14][2] = statusUpdatesString.getString(); // gitUpdates : ";
+
+//  guiGrid128[0][15] =0;
+//  guiGrid128[1][15] =0;
+string128ClassComma gitClocksString( guiGrid128[2][15]);  guiGrid[2][15][2]= gitClocksString.getString(); // gitClocks : ";
+
+string128ClassComma primeRatioString(  guiGrid128[0][16] );   guiGrid[0][16][2]=primeRatioString.getString();  // Prime Ratio =  ";
+//  guiGrid128[1][16] =0;
+string128ClassComma slicesString(  guiGrid128[2][16]  );   guiGrid[2][16][2]=slicesString.getString();   //  guiGrid128[2][16] =0; // Slices = ";
+
+//string128ClassComma totalTilesString(   guiGrid128[0][16] );   guiGrid[0][17][2] =totalTilesString.getString(); // Total Tiles = ";
+//  guiGrid128[1][17] =0;
+//  guiGrid128[2][17] =0; // Primer = ";
+
+//  guiGrid128[0][18] =0;
+//  guiGrid128[1][18] =0;
+  string128ClassComma singersString(guiGrid128[2][18]); guiGrid[2][18][2] =singersString.getString(); // Singers = ";
+
+string128ClassComma pDlargeString(   guiGrid128[0][19] );  guiGrid[0][19][2]=pDlargeString.getString();  // Largest Difference = "; 
+//  guiGrid128[1][19] =0;
+string128ClassComma powerOfString(     guiGrid128[2][19] );   guiGrid[2][19][2] =powerOfString.getString();  ; // Grid Power = ";  powerOf
+
+string128ClassComma infiniteWalkString(    guiGrid128[0][20] );   guiGrid[0][20][2] =infiniteWalkString.getString(); // infiniteWalk = ";
+//  guiGrid128[1][20] =0;
+string128ClassComma gridString(    guiGrid128[2][20] );   guiGrid[2][20][2] =gridString.getString();// Grid = ";
+
+string128ClassComma totalPrimesString(   guiGrid128[0][21] );  guiGrid[0][21][2] =totalPrimesString.getString(); // Total Primes = ";
+//  guiGrid128[1][21] =0;
+string128ClassComma iCycleStartsString(infiniteCycleStarts) ;  guiGrid[2][21][2] =   iCycleStartsString.getString();  // infinitecyclestarts
+
+//  guiGrid128[0][22] =0;
+//  guiGrid128[1][22] =0; //   || ||||| ||| ||";
+string128ClassComma iCycleFinishesString( infiniteCycleFinishes) ;  guiGrid[2][22][2] =   iCycleFinishesString.getString();   // infinitecyclesfinishes
+
+//  guiGrid128[0][23] =0;
+//  guiGrid128[1][23] =0; //  |                |";
+//  guiGrid128[2][23] =0; // (c)PU = ";
+
+//  guiGrid128[0][24] =0;
+//  guiGrid128[1][24] =0; // |  PRIMEBOOK  ONE";
+//  guiGrid128[2][24] =0; // (g)PU = ";
+
+//  guiGrid128[0][25] =0; // Network Peers  = ";
+//  guiGrid128[1][25] =0; //  |";
+//  guiGrid128[2][25] =0; // (t)hermal = ";
+
+//  guiGrid128[0][26] =0; // Net Active IP = ";
+//  guiGrid128[1][26] =0; //   || |||||||||||";
+//  guiGrid128[2][26] =0; // Net Port = ";
+
+//  guiGrid128[0][27] =0;
+//  guiGrid128[1][27] =0;
+//  guiGrid128[2][27] =0;
+
+//  guiGrid128[0][28] =0;
+//  guiGrid128[1][28] =0;
+//  guiGrid128[2][28] =0;
+
+//  guiGrid128[0][29] =0;
+//  guiGrid128[1][29] =0;
+//  guiGrid128[2][29] =0;
+
+//  guiGrid128[0][30] =0;
+//  guiGrid128[1][30] =0;
+//  guiGrid128[2][30] =0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void initiateTile(__int128 tileNumber ){
+
+  string128Class tileNumberString ( tileNumber ); 
+  targetTileName = "Tile0" + tileNumberString.getString();  byte* targetTile = new byte[grid];
+  byte* newTile = new byte[grid];
+
+  tiles[targetTileName] = newTile;
+  targetTile = newTile;
+
+
+
+} // INITIATETILE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bool verifyPrime(  __int128 myInfiniteWalk )
+{
+
+bool findPrime = true;
+  __int128 isPrime = false; __int128 myTileWalk=0;  __int128 myBreezeWalk=0;
+__int128 primeBuild =3 ; 
+//cout << "                begin VERIFY PRIME : "<< int(infiniteWalk) << endl;  
+
+__int128   primeRange = 0; //( myInfiniteWalk / primeBuild ) +1;
+while(findPrime){
+//cout << "primebuild = " << int(primeBuild) << "  ";  cin >> userInput; 
+
+if ( myInfiniteWalk % primeBuild == 0 ){
+   findPrime = false;
+   isPrime = false;
+
+} else {
+   primeRange = ( myInfiniteWalk / primeBuild ) +1;
+   if ( primeBuild > primeRange ){
+      findPrime=false;
+      isPrime=true; 
+//cout << "                                       ****isPrime=true;******" << endl;
+
+
+
+
+
+   } else {
+//cout << "Querry for next PrimeBuild "<< endl; 
+primeBuild+= breeze()*2;
+
+
+
+
+//cout << "primebuild = " << int(primeBuild) << "  ";  realm_os_user_input( userInput); 
+// primeBuild+=2;
+  }  // IF PrimeRange
+
+} // IF ELSE % == 0
+still(0);
+} // FIND PRIME
+
+
+if (isPrime){
+return true;
+
+} else {
+return false;
+}
+} // endl verify Prime function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void initiateBreeze(){
+  byte* threadBreezeWalk = new byte[singers];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bool slowWalkToSundayDivise(__int128 data){
+
+__int128 d3=data/2 +1;
+  __int128 primeBuild = 3;
+__int128 quickStep=0;
+
+
+while(primeBuild < d3){
+    if (data%primeBuild==0){ 
+  //    cout << " primeBuild DIVISIBLE by " << int(primeBuild ) << " data " << int(data)  << "" << endl;
+  return false;
+    }
+
+    else  if( primeBuild > (( data /primeBuild) +1) ){
+      // cout << " primeBuild " << int(primeBuild ) << " infiniteWalk " << int(data)  << "" << endl;
+    return true;
+    }  // ******** IF PRIME BY RANGE *******
+
+    else { 
+
+//  primeBuild+= breeze(0)*2; 
+
+   primeBuild+=2;  
+
+
+
+
+
+
+
+
+//cout << "prime : " << int(primeBuild)<< " dif : "<< int( quickPrime[quickStep])<< "          " ;
+
+
+
+
+
+    }
+
+}
+
+
+      return true;
+
+
+
+
+
+
+
+
+} //
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void carveSlate(__int128 singers ) {  // cout << "CarveSlate Begin " << endl;
+  __int128 singer = 0;
+  string stringBean4;
+  singers=singers;
+  string targetSlateName;
+  previousPrimeRatio = primeRatio;
+ // primeRatio = (infiniteWalk/total) +1; // cout << "PrimeRatio "<< int(primeRatio)<< endl;
+  slateRoughCut = (perThreadSlices ); 
+  while (singer < singers ) {
+    byte* targetSlate ;
+    string128Class singerString ( singer );
+    stringBean4 = singerString.getString();
+    targetSlateName = "Slate" + stringBean4 ; // cout << "targetSlateName " << targetSlateName << endl;
+    byte* cleanSlate = new byte[ slateRoughCut ]; // cout << "roughcut"<<endl;
+    slate[targetSlateName] = cleanSlate ; // cout << "cleanslate" << endl;
+    targetSlate = cleanSlate ;
+    singer++;
+  }
+  threadTotal = new __int128[ singers ]; 
+  threadSlateWalk = new __int128[ singers ];
+
+  singer= 0;
+  while (singer < singers) { 
+    threadTotal[singer] = 0;
+      threadSlateWalk[singer] = 0; singer++;
+  }
+
+// cout << "Slate Carved" << endl;
+}// CARVESLATE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vector<byte> ptv_primeBookAuthor(__int128 wolfLeap, int wolfHunger, int privateGuestAssignedQue, int privatePrimeQue){
+vector<byte> wolfCatch;
+__int128   wolfByte = pow(2,wolfHunger);
+__int128 wolfDomain = wolfLeap+wolfByte;
+//__int128 totalPrimesFound = 0;
+__int128 previousPrime = moonWalkPrime(wolfLeap);
+while (wolfLeap < wolfDomain){
+if (verifyPrimeGear(wolfLeap)){
+  primeDifference = (wolfLeap - previousPrime)/2;
+  previousPrime=wolfLeap;
+//  totalPrimesFound++;
+  wolfCatch.push_back(primeDifference);
+}
+wolfLeap += 2;
+} // FINISH REQUESTED WOLFDOMAIN Prowel
+return wolfCatch;
+} // finish ptv_primeBookAuthor FUNCTION
+
+void realm_os_user_input(string&validUserInput)
+{    
+ //  cout << "\033[25;1H"; 
+/* ="cout << " & CHAR(34) & "Function Begin : "  & B2 & CHAR(34)  & " << endl;" */
+//cout << "X                                X       |      " ;
+  string userRawInput="";
+  cin.clear(); 
+  getline(cin, userRawInput);
+  validUserInput = userRawInput +"\0";
+
+//cout << "\033[1;1H";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+byte breeze() {
+bool forever = true;
+while (forever== true){
+//cout << "    BBBBBBBBBBBBBBBBBBBEEEEEEEEEEEEEEEEEEEEEEEEEEEZZZZZZZZZZZZZZZZZZZZZEEEEEEEEEEEEEEEEEEEEEE"<< endl<< endl;
+  if (threadBreezeWalk[0] == grid){
+        threadTileWalk[0]++;
+
+//cout << "threadTileWalk[singer] " << int(threadTileWalk[singer]) <<"  grid : "<< int(grid)<< endl;
+//cout << "singer " << int(singer) << endl;
+//cout << " threadBreezeWalk[singer] "<< int(threadBreezeWalk[singer] ) << "  singer =" << int(singer)<<  " start " << endl;
+        threadBreezeWalk[0] = 0;
+//cout << " threadBreezeWalk[singer] "<< int(threadBreezeWalk[singer] ) << "  singer =" << int(singer)<<  " finish " << endl;
+  } else {
+
+  string128Class tileWalkString(threadTileWalk[0]);  // prepare load by name of array
+  string myTargetTileName = "Tile0" +  tileWalkString.getString(); // create name of primebook
+//cout << "Breeze read : " << targetTileName << endl;
+//cin >> userInput;
+// check if the requested tile is MEM SSD RING WEB
+
+// if tileLocationXX =  00 mem read from pre-loaded memory
+
+  byte* myTargetTile = tiles[myTargetTileName];
+  int myBreezeWalk = threadBreezeWalk[0];
+//  byte return16 = myTargetTile[myBreezeWalk];
+  threadBreezeWalk[0]++; // should delete this targetTile
+//if (return16 > 9) {cout << int(threadTileWalk[singer]) << " " <<  int(return16) << " ";}
+
+
+// else if tileLocationXX = 01 SSD read from disk from primebookcache at primebookreadlocation00
+
+
+// else if tileLocationXX = 10 RING read ask host for primebook00.zip file unzip it then load it into memory or ssd
+
+
+// if tileLocationXX = 11 WEB read ask www.primebook.one for the primebook00.zip file then load it into memory or ssd
+
+
+return myTargetTile[myBreezeWalk];
+}
+}
+
+
+}  // BREEZE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void still(__int128 singer){  
+//cout << "Begin still for singer : " << int(singer) << endl;
+threadTileWalk[singer]=0;  
+//cout << "Midway  still for singer : " << int(singer) << endl;
+threadBreezeWalk[singer]=0;  
+
+
+
+// cout << "Finished still for singer : " << int(singer) << endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void testBook(){   string userInput="";
+
+ cout << " Test Read PrimeBook Begin : Singers 00000000000000000000000000000000000000000" << int(singers) << endl;
+  cout << " 000 " << endl;      realm_os_user_input(userInput);
+__int128 readWalk =0;
+ __int128 singersPlus = singers +1 ;
+__int128 primeBuild = 3;  
+  cout << " 111 " << endl;      realm_os_user_input(userInput);
+while (readWalk<total){   cout << " 222 " << endl;      realm_os_user_input(userInput);
+  primeBuild+= breeze()*2; 
+
+  readWalk++; 
+
+   cout << int(primeBuild)<< endl;
+
+}
+  cout << " 333 " << endl;      realm_os_user_input(userInput);
+
+  string128Class primeBuildString( primeBuild );
+  string stringBean = primeBuildString.getString();
+ // string128Class infiniteWalkString( infiniteWalk );
+  //string stringBean2 = infiniteWalkString.getString();
+  string128Class totalString( total );
+  string stringBean3 = totalString.getString();
+
+
+//cout << "PrimeBuild Total = " << stringBean << " infiniteWalk : " << stringBean2 << " Total : " << stringBean3 << endl;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void librarianDancer( __int128 singer,
+                      __int128 myInfiniteWalk ,
+                      __int128 perThreadSlices,  const int myMinimumTileCount,
+                      byte* primeFindsArray )
+{
+        // cout << "  perThreadSlices = " << int(perThreadSlices) << endl;
+        // cout << "Begin Dancer : " << int(singer)<< "  myWalk = " << int(myInfiniteWalk ) ;
+
+// ProcessLogDeclare
+
+
+__int128 process00[10];
+__int128 process01[10];
+__int128 process02[10];
+__int128 process03[10];
+__int128 process04[10];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ProcessLogZero
+
+process00[0]=0;  process00[1]=0;  process00[2]=0;  process00[3]=0;  process00[4]=0;  process00[5]=0;  process00[6]=0;  
+process01[0]=0;  process01[1]=0;  process01[2]=0;  process01[3]=0;  process01[4]=0;  process01[5]=0;  process01[6]=0;  
+process02[0]=0;  process02[1]=0;  process02[2]=0;  process02[3]=0;  process02[4]=0;  process02[5]=0;  process02[6]=0;  
+process03[0]=0;  process03[1]=0;  process03[2]=0;  process03[3]=0;  process03[4]=0;  process03[5]=0;  process03[6]=0;  
+process04[0]=0;  process04[1]=0;  process04[2]=0;  process04[3]=0;  process04[4]=0;  process04[5]=0;  process04[6]=0;  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+string processName="";
+__int128 myPrimeFindsLocalStep=0;
+__int128 countThis=0;
+__int128 primeDifference=0;
+__int128 primeBuild = 0;
+__int128 myPreviousPrime = 0;
+__int128 moonWalker = 0;
+__int128 slice=0;  int return16b=0;
+__int128 spaceBuffer =0;
+__int128 myPrimeFindsLocal=0;
+__int128 d3=0; int dice=0;
+__int128 startTime=0;
+  int myBreezeWalk = 0;
+  int itWorks=0;
+  int jump = 6; 
+  int myThreadBreezeWalk=0;
+  int gridInt = grid;
+  int gridWalker=0;  
+  int myThreadTileWalk=0;
+  int myTilePlacement =0;
+  int minimumTileWalk=0;
+  int TIlePlacement =0;
+  byte return16 =0;
+  bool foreverRead = true;
+  bool findPrevious=true;
+  bool dance=true;
+  bool isPrime = false;
+
+string128Class tileWalkString(myThreadTileWalk);  // prepare load by name of array
+string targetTileName = "Tile0" +  tileWalkString.getString(); // create name of primebook
+
+byte* targetTile = new byte[grid];
+
+    const int arrayGrid = static_cast<int>(std::pow(2, 20)); // Convert to int for array size
+    byte** myTiles = new uint8_t*[myMinimumTileCount]; // Allocate rows       // Dynamically allocate a 2D array
+    for (int i = 0; i < myMinimumTileCount; ++i) {   myTiles[i] = new uint8_t[arrayGrid];} // Allocate columns for each row
+
+byte* myTargetTile = new byte[gridInt];
+
+while (minimumTileWalk<myMinimumTileCount){
+   string128Class minimumTileWalkString(minimumTileWalk);  // prepare load by name of array
+   string targetTileName = "Tile0" +  minimumTileWalkString.getString(); // create name of primebook
+   byte*  myTargetTile= new byte[grid];   myTargetTile = tiles[targetTileName];
+   while (gridWalker < gridInt){ myTiles[minimumTileWalk][gridWalker]=myTargetTile[gridWalker];  gridWalker++;} gridWalker=0; // cout << "   " << int(myTargetTile[gridWalker])<< "   " << int( myTiles[minimumTileWalk][gridWalker]) << "        ";
+      minimumTileWalk++;}
+      
+// MOONWALKER FIND PREVIOUS BEGIN ****************************************************
+moonWalker =  myInfiniteWalk;
+while ( findPrevious==true ){ 
+   moonWalker+=-2;
+   d3 = moonWalker/3 +1;
+   // vvvvvvvvvvvv DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv 
+   primeBuild = 3;
+   dance = true;
+   
+   while (dance == true){ 
+     if (moonWalker%primeBuild==0){ 
+         // cout << " primeBuild DIVISIBLE by " << int(primeBuild );  //  cout << " moonWalker " << int( moonWalker )  << "" << endl;
+         isPrime = false;
+         dance = false;
+     }
+     else  if( primeBuild > d3 ){
+            //   cout << " primeBuild inDIVISIBLE by range " << int(primeBuild );
+            //   cout << " moonWalker " << int( moonWalker )  << " singer" << int(singer) << endl;
+        isPrime = true;
+        findPrevious=false;
+        dance = false;
+     } else { 
+             // Librarian Reader Segment Start
+        if (myThreadBreezeWalk == gridInt){
+                 // threadTileWalk[singer]++;
+                 //cout << "threadTileWalk[singer] " << int(threadTileWalk[singer]) <<"  grid : "<< int(grid)<< endl;
+                 //cout << "singer " << int(singer) << endl;
+                 //cout << " threadBreezeWalk[singer] "<< int(threadBreezeWalk[singer] ) << "  singer =" << int(singer)<<  " start " << endl;
+                 // cout << " threadBreezeWalk[singer] "<< int(threadBreezeWalk[singer] ) << "  singer =" << int(singer)<<  " finish " << endl;
+                 //cout << "TargetTile Previous : "<< targetTileName;
+           myThreadBreezeWalk = 0;
+           myThreadTileWalk++;
+           string128Class tileWalkString(myThreadTileWalk);              // prepare load by name of array
+           string targetTileName = "Tile0" +  tileWalkString.getString();             // create name of primebook
+           targetTile = tiles[targetTileName];
+                 //cout << "   TargetTile Next : "<< targetTileName<< endl;
+                 //cout << "Breeze read : " << targetTileName << endl;
+                 //cin >> userInput;
+                 // check if the requested tile is MEM SSD RING WEB
+                 // if tileLocationXX =  00 mem read from pre-loaded memory
+        }
+        return16 = targetTile[myThreadBreezeWalk++];
+             // Librarian Reader Segment FINISH
+        primeBuild += return16*2;
+    }
+          //  cout << " moonwalk " << int(singer);  cout << " " << int(moonWalker)<<endl;
+  } // cout << " ******** WHILE DANCE = TRUE LOOP ******* " << endl;
+       // ^^^^^^^^^^^^ DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^ 
+        
+  if ( isPrime== true){
+          myPreviousPrime = moonWalker;
+          findPrevious=false;
+  } //  IF PRIME
+
+}    // FINISH MoonWalk findPrevious
+     // cout << "Singer " << int(singer) << " Moon Walked found previousPrime =";
+     // cout << int(myPreviousPrime) << endl;
+     // cout << endl << "     ********** BUILD perThreadSlicesTHREADArray ************** ";  v
+     
+// ******************* BEGIN DANCE ************************     
+while ( slice  <  perThreadSlices ){
+        // vvvvvvvvvvvv DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv  DIVISE vvvvvvvvvvvv 
+   myTilePlacement=0;
+   myThreadTileWalk=0;
+//targetTileName = "Tile00";
+//myTargetTile = tiles[targetTileName];
+    primeBuild = 3 ;   dance = true;
+   d3=(myInfiniteWalk/3) +1;
+   while (dance == true){ 
+      // *** *** PROCESSstart    :  Divisible00
+     // process00[0] = epochMicroSeconds();  // Process Start
+      if (myInfiniteWalk%primeBuild==0){ 
+         //cout << " primeBuild DIVISIBLE by " << int(primeBuild ); //  cout << " myInfiniteWalk " << int( myInfiniteWalk )  << "" << endl;
+         isPrime = false;
+         dance = false;
+         // *** *** PROCESSfinish   :  Divisible00
+     //    process00[1] = epochMicroSeconds() - process00[0] ; if ( process00[1]  > process00[2] ){ process00[2]  = process00[1]  ;} ; if ( process00[1]  < process00[3]  ){ process00[3]   = process00[1]   ;}; process00[4]   =  (process00[1]   + process00[4]   ) /2;  ; process00[5]  =   process00[5]   + process00[1] ; process00[6]++;
+      }
+      else  if( primeBuild > d3 ){
+         //cout << " primeBuild " << int(primeBuild ) << " myInfiniteWalk "; // cout << int( myInfiniteWalk )  << "singer " << int(singer) << endl;
+         isPrime = true;
+         dance = false;
+      }  else { // ******** IF PRIME BY RANGE *******                // Librarian Reader Segment Start
+         // *** *** PROCESSstart    :  Reader04
+     //    process04[0] = epochMicroSeconds();  // Process Start
+         if (myThreadBreezeWalk == grid){
+            // *** *** PROCESSstart    :  grid02
+     //       process02[0] = epochMicroSeconds();  // Process Start
+
+            myThreadBreezeWalk = 0;
+            myThreadTileWalk++;
+  //          myTilePlacement++;
+   //         string128Class tileWalkString(myThreadTileWalk);              // prepare load by name of array
+  //          targetTileName = "Tile0" +  tileWalkString.getString();             // create name of primebook
+   //          myTargetTile = tiles[targetTileName];
+
+            // *** *** PROCESSfinish   :  grid02
+     //       process02[1] = epochMicroSeconds() - process02[0] ; if ( process02[1]  > process02[2] ){ process02[2]  = process02[1]  ;} ; if ( process02[1]  < process02[3]  ){ process02[3]   = process02[1]   ;}; process02[4]   =  (process02[1]   + process02[4]   ) /2;  ; process02[5]  =   process02[5]   + process02[1] ; process02[6]++;
+         }
+         // *** *** PROCESSstart   :  d3
+     //    process03[0] = epochMicroSeconds();  // Process Start03
+         return16=myTiles[myThreadTileWalk][myThreadBreezeWalk]*2;
+     //    return16 = myTargetTile[myThreadBreezeWalk]*2; 
+    //     if (return16b != return16){cout << "     "<<int(return16) <<"        NoDice        "<<int(return16b) <<"     "<< int(dice)<< "       ";  
+   //         cout << int(myThreadBreezeWalk) << "  tilePl: "<< int(myTilePlacement) << "  tileWl: " << int(myThreadTileWalk) <<   " It Works: "<< int(itWorks)<< endl;;            string ok; cin >> ok;}
+   //      else {itWorks++; }
+         
+         primeBuild += return16;
+         myThreadBreezeWalk++;//         threadBreezeWalk[singer]++; dice++;    // Librarian Reader Segment FINISH
+         // *** *** PROCESSfinish   :  d3
+     //    process03[1] = epochMicroSeconds() - process03[0] ; if ( process03[1]  > process03[2] ){ process03[2]  = process03[1]  ;} ; if ( process03[1]  < process03[3]  ){ process03[3]   = process03[1]   ;}; process03[4]   =  (process03[1]   + process03[4]   ) /2;  ; process03[5]  =   process03[5]   + process03[1] ; process03[6]++;
+         // *** *** PROCESSfinish   :  Reader04
+     //    process04[1] = epochMicroSeconds() - process04[0] ; if ( process04[1]  > process04[2] ){ process04[2]  = process04[1]  ;} ; if ( process04[1]  < process04[3]  ){ process04[3]   = process04[1]   ;}; process04[4]   =  (process04[1]   + process04[4]   ) /2;  ; process04[5]  =   process04[5]   + process04[1] ; process04[6]++;
+      }            //  cout << " myInfiniteWalk " << int(singer);            //  cout << " " << int(myInfiniteWalk)<<endl;
+   }  //cout << " ******** WHILE DANCE = TRUE LOOP ******* " << endl;
+      // ^^^^^^^^^^^^ DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^  DIVISE ^^^^^^^^^^^^ 
+   if ( isPrime== true){            // cout << int(slice) << " : singer "<< int(singer);  cout<< "   myInfiniteWalk "<< int( myInfiniteWalk)<< endl;
+      // *** *** PROCESSstart    :  IsPrime01
+     // process01[0] = epochMicroSeconds();  // Process Start
+      primeDifference = ( myInfiniteWalk - myPreviousPrime)/2;  
+      myPreviousPrime =  myInfiniteWalk; 
+      primeFindsArray[ myPrimeFindsLocal ] = primeDifference; 
+      myPrimeFindsLocal++;
+      isPrime = false;
+
+      // *** *** PROCESSfinish   :  IsPrime01
+     // process01[1] = epochMicroSeconds() - process01[0] ; if ( process01[1]  > process01[2] ){ process01[2]  = process01[1]  ;} ; if ( process01[1]  < process01[3]  ){ process01[3]   = process01[1]   ;}; process01[4]   =  (process01[1]   + process01[4]   ) /2;  ; process01[5]  =   process01[5]   + process01[1] ; process01[6]++;
+
+//      if(myPrimeFindsLocalStep==100 ) {
+ //        string128ClassComma  myPrimeFindsLocalString (  myPrimeFindsLocal );  
+
+
+
+
+
+
+
+// =ptv_processLogPrintArm!A1
+
+
+
+          
+//             myPrimeFindsLocalStep=0;
+//          } else { myPrimeFindsLocalStep++;}
+} // IS PRIME
+ // cout << "singer "<< int(singer)<< "  difference "; //  cout << int(primeDifference) << endl;
+myInfiniteWalk+=2;
+slice++;
+myThreadTileWalk=0;  //myTilePlacement=0;
+//targetTileName = "Tile00";
+
+}  // ******** WHILE SLICELOOP *******
+   //int128 findRatio =int(int(perThreadSlices/myPrimeFindsLocal));
+   //cout << "singer SIGN "<< int(singer)<< "  array =  ";
+   // cout << "singer SIGN "<< int(singer)<< "  array =    "<<   int( myPrimeFindsLocal ) << endl;  
+
+findsArray[singer]= myPrimeFindsLocal ;
+
+singerFinished++;
+
+
+
+
+} // LIBRARIAN DANCER FINISH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+public: // **************** PUBLIC *******************
+
+primeTileClass(__int128 powerOfIN,
+ __int128 perThreadSlicesIN,
+ __int128 singersIN, 
+ __int128 primeBasePrimerIN ,
+ __int128* primeIndexIN,
+ __int128 indexTilesIN,
+ __int128 primeIndexRoofIN
+) : powerOf(powerOfIN),
+ perThreadSlices(perThreadSlicesIN),
+ singers(singersIN),
+ primeBasePrimer(primeBasePrimerIN),
+ primeIndex(primeIndexIN),
+ indexTiles(indexTilesIN),
+ primeIndexRoof(primeIndexRoofIN)
+{
+__int128 singersPlus = 0;
+privateTilesCreated=0;
+ // **************** // ****************
+infiniteWalk = 3; 
+ // powerOf = 24 ; // = powerOf 24 = 16meg 25 = 32 26 = 64 
+ // 27 =128 28 =256meg uncompressed tile file
+ singersPlus = singers ;
+ grid = pow(2,powerOf);
+const int arrayGrid = static_cast<int>(std::pow(2, 20)); // Convert to int for array size
+ // **************** // ****************
+ 
+singerFinished=0;
+ initiateTile(0);
+ 
+ threadTotal = new __int128[ singersPlus ]; 
+ threadTileWalk = new __int128[ singersPlus ]; 
+ threadSlateWalk = new __int128[ singersPlus ]; 
+ threadBreezeWalk = new __int128[ singersPlus ]; 
+findsArray = new __int128[ singersPlus ]; 
+__int128 tileLay =0; //cout << " 8888888 " << endl;
+// guiGrid128[2][8] = 0;
+// guiGrid128[2][9] = previousEtchWalkSum;
+// guiGrid128[2][10] = 0;
+// guiGrid128[2][11] = 0;
+// guiGrid128[2][13] = 0;
+// guiGrid128[2][14] = 0;
+// guiGrid128[2][15] = 0;
+// guiGrid128[2][20] =grid; // guiGrid128[2][19] =powerOf; 
+indexFileTileCount= 50000;
+bookIndex = new __int128[ indexFileTileCount ]; 
+bookIndexTotals = new __int128[ indexFileTileCount ]; 
+bookIndexTotalsDif = new __int128[ indexFileTileCount ]; 
+pDlarge = 228;
+conductorCount =1;
+conductorLastGitUpdate= conductorClockIn ;
+createTileRequest = 1;
+conductorUpdateInterval=6000;
+//targetArray = new byte[ singers ];
+dancerPrimeFinds = new byte[ singers ];
+uniqueId = uniqueIdGlobal;
+privateQueCount=0;
+privatePrimeQue =0; 
+//auto now = std::chrono::steady_clock::now();
+//lastCompletedTile = now;
+} // PRIMETILECLASS
+
+
+void carve (__int128 singers) { carveSlate( singers );}
+vector<byte> primeBookAuthor(__int128 wolfLeap, int wolfHunger, int privateGuestAssignedQue, int privatePrimeQue) { return ptv_primeBookAuthor(wolfLeap, wolfHunger, privateGuestAssignedQue, privatePrimeQue);}
+void cleanUpTiles(){ for (auto& pair : tiles) { delete[] pair.second;} }
+__int128 getInfiniteWalk(){return infiniteWalk;}    void advanceInfiniteWalk(__int128 factor){ infiniteWalk+=pow(2,factor);}
+//__int128* rebuildBookIndex(__int128 bookIndexSize) { return rebuildIndex(); }
+void quiltInfiniteWalk(__int128 quiltWeave){ infiniteWalk=quiltWeave;}
+int getCurrentTimeInSeconds() {
+    auto currentTime = std::chrono::system_clock::now();
+    auto secondsSinceEpoch = std::chrono::duration_cast<std::chrono::seconds>(currentTime.time_since_epoch());
+    return static_cast<int>(secondsSinceEpoch.count());
+}
+/*
+void conduit_git(string gitData, __int128 primeRatio,  __int128 pDlarge,__int128  infiniteWalk,   __int128 conductorCount, __int128 tileCount, __int128 total){
+   std::string accessToken ="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";
+    std::string owner = "PrimeBookOne";
+    std::string repo = "PrimeBookOne.github.io";
+    std::string remoteFilePath = "index.html";
+    std::string indexOpener = "indexopener.html";
+    std::string indexCloser = "indexcloser.html";
+    std::string sha = GitHubFileManager::getSHAFromGitHub(accessToken, owner, repo, remoteFilePath);
+    std::string currentTime = GitHubFileManager::getCurrentTime();
+    std::string primeBookOneIndexStatus = "";
+    std::ifstream inputFile(indexOpener);
+    if (!inputFile.is_open()) {
+        throw std::runtime_error("Failed to open local file for reading.");
+    }
+    std::string indexOpenerContent((std::istreambuf_iterator<char>(inputFile)), std::istreambuf_iterator<char>());
+    inputFile.close();
+    std::ifstream inputFile2(indexCloser);
+    if (!inputFile2.is_open()) {
+        throw std::runtime_error("Failed to open local file for reading.");
+    }
+    std::string indexCloserContent((std::istreambuf_iterator<char>(inputFile2)), std::istreambuf_iterator<char>());
+    inputFile2.close();
+string128ClassComma primeRatioString( primeRatio );
+string128ClassComma totalTilesString( tileCount );
+string128ClassComma pDlargeString ( pDlarge );
+string128ClassComma infiniteWalkString( infiniteWalk );
+string128ClassComma totalPrimesString( total );
+    primeBookOneIndexStatus = indexOpenerContent;
+    primeBookOneIndexStatus =  primeBookOneIndexStatus + "<h4>Status Updated: " + currentTime;
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +  "      Prime Ratio = " + primeRatioString.getString();
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +  "      Total Tiles = " + totalTilesString.getString();
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +  "      Largest Difference = " + pDlargeString.getString() ;
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +  "      infiniteWalk = " + infiniteWalkString.getString();
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +  "      Total Primes = " + totalPrimesString.getString();
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +   "</h4>" ;
+    primeBookOneIndexStatus =  primeBookOneIndexStatus + indexCloserContent;
+//    primeBookOneIndexStatus = indexOpenerContent + "<h1>Status Updated: " + currentTime + "</h1>" + indexCloserContent;
+  //  std::cout << "primeBookOneIndexStatus: " << primeBookOneIndexStatus << std::endl;
+    GitHubFileManager fileManager;
+    fileManager.updateFileOnGitHub(accessToken, owner, repo, remoteFilePath, primeBookOneIndexStatus, sha);
+}
+*/
+string getCurrentTimeInSecondsString() {
+    auto currentTime = std::chrono::system_clock::now();
+    auto secondsSinceEpoch = std::chrono::duration_cast<std::chrono::seconds>(currentTime.time_since_epoch());
+    int returnInt =  static_cast<int>(secondsSinceEpoch.count());
+    string128Class timeInSeconds( returnInt );
+ return timeInSeconds.getString();
+}
+void COMMANDER(){ptv_COMMANDER();}
+int getPrimeQue(){ privateQueCount++;
+if (privatePrimeQue<((singers-1)*4)){return privatePrimeQue++;}
+else{ privatePrimeQue=0; return privatePrimeQue++;}
+}
+__int128 getTotalCount(){return total;}
+__int128 getTileCount(){ return tileCount;}
+void etchFeast(byte data) { etchTile(data);total++;}
+int getPrivateQueCount(){return privateQueCount;}
+int remainingEtchWalk() {int remaining = (grid - etchWalk); return remaining;}
+vector<byte> getTileArrayVector(int tile){
+    vector<byte> sendTile;
+    string128Class tileNumberString ( tile );  string targetTileName = "Tile0" + tileNumberString.getString();  byte* targetTile = new byte[grid] ; targetTile = tiles[targetTileName];
+    for (int tWalk = 0; tWalk < grid; ++tWalk) {   
+sendTile.push_back(targetTile[tWalk]); 
+//cout << int(targetTile[tWalk]<< endl;
+}
+return sendTile;
+}
+byte* getTileArrayByte(int tile){
+    byte* sendTile = new byte[grid];
+    string128Class tileNumberString ( tile );  string targetTileName = "Tile0" + tileNumberString.getString();   sendTile = tiles[targetTileName];
+//for (int i = 0; i < 10000; i++) {
+//cout << int(sendTile[i])<< "           ";
+//'}
+    return sendTile;
+}
+void setMetalGuest(){
+metalGuest=true;
+}
+void setMetalHost(){
+metalGuest=false;
+}
+int getTilesCreated(){ return privateTilesCreated;}
+string getTileCreationTime(){}
+// Function to evaluate 1/ln(x)
+double ptv_integrand(double x) {
+    if (x <= 1) {
+        // Avoid division by zero or undefined logarithm
+        return 0.0;
+    }
+    return 1.0 / log(x);
+}
+// Function to approximate the Logarithmic Integral using the trapezoidal rule
+double ptv_logarithmicIntegral(__int128 n, __int128 num_intervals) {
+    if (n < 2) {
+        return 0.0;
+    }
+    double a = 2.0;
+    double b = static_cast<double>(n); // Cast n to double for calculations
+    double h = (b - a) / static_cast<double>(num_intervals); // Cast num_intervals to double
+    double integral = 0.5 * (ptv_integrand(a) + ptv_integrand(b));
+    for (__int128 i = 1; i < num_intervals; ++i) {
+        integral += ptv_integrand(a + static_cast<double>(i) * h); // Cast i to double
+    }
+    integral *= h;
+    return integral;
+}
+
+}; // PRIMETILE CLASS
+
+void realm_post_client(string,string);
+void realm_querry_client();
+void realm_sw_variables();
+void realm_sw_variables_sort();
+void realm_sw_variable();
+void realm_conduit_adapter();
+void librarian(); 
+string realm_wolfpack_id(string randomString3);
+vector<DISPLAY_DEVICE> realm_gl_winGpus();
+void realm_gl_querry(); 
+void realm_gl_webgl(); 
+void realm_gl_vulkan(); 
+void realm_gl_opengl(); 
+void realm_gl_metal(); 
+void realm_gl_directx(); 
+void realm_gl_cores_zeluda(); 
+string realm_unique_id(string randomString3);
+void realm_gl_cores_gpufort(); 
+int realm_sw_array_Flexor();
+void realm_gl_cuda_devices(int gpuIndex);
+vector<DISPLAY_DEVICE> realm_gl_cores_cuda();
+void realm_gl_cuda_devices(int gpuIndex);
+double realm_metalUpTime();
+void realm_os_user_input(string&validUserInput);
+void menu_librarian();
+void librarian_functions( string hostIp, int hostPort, int optionCores, string optionMenue, string optionFlag, string optionCompute,  bool singleCore, string computeMethod, bool createHost );
+void realm_gpu_primer();
+string realm_win_archive();
+void realm_gl_cuda_querry();
+void realm_win_handles_process();
+void realm_win_handles_file();
+void realm_win_handles_file2();
+void realm_win_handles_sockets();
+void realm_win_handles_events();
+void realm_win_handles_mutex();
+void realm_win_save_state();
+void realm_os_windows();
+string realm_metalGUID();
+void realm_win_host_send_data();
+void realm_win_updater( bool isHost, string guestName, string guestIP, string guestPort, string hostIP, string hostPort, string uniqueFileName);
+void realm_win_handles_thread();
+bool realm_win_port_check( string checkPort );
+void realm_os_tcp_host( );
+void realm_os_tcp_guest( string remoteHostIPv4 );
+void realm_win_ipconfig( );
+void realm_win_roll();
+string getCurrentTimeInSecondsString();
+string realm_unique_time_stamp();
+string realm_metalIdNum();
+int getCurrentTimeInSecondsInt();
+tuple<int,string,string,__int128,int,int,int,vector<byte>,int,unique_ptr<byte[]>> realm_conduit_win_guest(string hostIp, string returnGuestStatusIn, string uniqueId, int conduit, int myPort, string myIP, int remotePort, string remoteIP, string instruction, string randomString1, string randomString2, string randomString3, vector<byte> primeCatch, int returnPrimeQue, int privateGrid, int tileCount, int returnTileReceives);
+void AttachConsoleWindow();
+LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR lpCmdLine, int nCmdShow) ;
+int oldMain(int argc, char* argv[]);
+std::vector<std::string> splitCommandLine(const std::string& cmdLine);
+void runGuiThread(HINSTANCE hInstance, int nCmdShow, std::string hostIp, std::string label) ;
+
+class realm_conduit_win64Class
+{
+
+
+private: 
+string text_function_name=""; string text_post = "";
+string querryNet;
+public:
+
+void NET(){
+system("ipconfig /all");
+
+
+
+
+}
+void WALL(){
+text_post = "  WALL()  "; realm_post_client(text_function_name, text_post );
+
+}
+void DOOR(){
+text_post = "  DOOR()  "; realm_post_client(text_function_name, text_post );
+
+}
+
+void IP(int newIP){
+text_post = "  IP(newIP) "; realm_post_client(text_function_name, text_post );
+
+}
+
+void PORTS(){
+text_post = "  PORTS()  "; realm_post_client(text_function_name, text_post );
+
+}
+
+void DHCP(){
+text_post = "  DHCP()  "; realm_post_client(text_function_name, text_post );
+
+}
+
+void IPCONFIG(){
+text_post = "  IPCONFIG()  "; realm_post_client(text_function_name, text_post );
+
+}
+
+
+
+
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class conduitClass
+{
+private:  // **************** PRIVATE *******************
+
+int* hostGuestListArrayFreshness00;
+string* hostGuestListArray00;
+int maxHostConduits = 9999;
+int maxGuestConduits = 9999;
+string* guestCheck;
+int dataPort =4321;
+int* hostGuestListArrayFreshnessCurrent00;
+int totalGuests=0;
+__int128 weaverData00;
+string* hostGuestPortListArray00;
+string* hostGuestIpListArray00;
+string* guestPortListArray00;
+__int128 globalMyMiles=0;
+bool globalAllTorchesPassed = false;
+string globalNewHostIp =  "";
+string globalNewHostName = "";
+bool globalBecomeHost = false;
+bool globalNewHost = false;
+int hostCount;
+int claimedPort00 = globalNewHostPort;
+int guestClaimedPort00 = globalNewHostPort;
+int myMiles; int maxMiles;
+int remainingGuests;
+string* guestReturnArray;
+int* guestReturnPortArray;
+string* guestReturnIpArray;
+string* guestReturnGearArray;
+double metalUpTime =0;
+string metalGUID = "";
+string metalIdNum = "";
+string privateGuestStatus="";
+string privatePrimeClientUserName;
+string tempDir="";
+__int128 privateInfiniteWalk;
+__int128 privateWolfLeap;
+int privateWolfHunger;
+int privateWolfPrimeQue;
+bool privateGuestAssigned;
+int cacheNextDif;
+int privateGuestHunger;
+int nextPrime;
+string privateHostStatus;
+int privateGuestAssignedQue;
+__int128 privateGuestAssignedWork;
+int privateGuestAssignedHunger;
+string privateGuestAssignedId;
+__int128 privatePrimeCatchSize;
+int privatePrimeQue;
+vector<vector<byte>> vectorCaches;
+int vectorArrays;
+int vectorIndex;
+int* primeArrayLane;
+__int128 hostCollectedArrays;
+__int128 privateTileCount;
+__int128 privateTotalCount;
+bool assignmentCollected;
+bool* assignmentsCollected;
+bool* currentQueueComplete;
+__int128 private1stCollects;
+int privateTileSends;
+int privateGrid;
+int returnTileReceives;
+int currentQueue = 0;
+int guestGears = 1;
+vector<byte> returnTileVector;
+int assigns;
+byte* returnTile;
+__int128* privateWorkAssignment;
+int* privateWorkAssignmentHunger;
+int privateNextBatch;
+int collectNextCache;
+bool collect;
+int privateReAssigns;
+int privateRemainingEtchWalk;
+int pressPrime;
+bool queCollected;
+int cpuVectorArrays;
+string* guestConduitNames;
+bool* guestConduitVerify;
+int privateMinimumTileCount;
+NetworkAdapters net;
+int createAttempts;
+int privateTotalAdaptersLive;
+string publicIP;
+string privateUniqueId;
+int hostConsolUpdateInterval;
+int hostConsolUpdateIntervalWalk;
+int coutGuestWolfHunger;
+int coutGuestWolfByte;
+int coutGuestWolfLeap;
+int previousPrivateWolfPrimeQue=0;
+__int128 conductorCount =0;
+int conductorClockIns =0;
+int conductorClockIn =0;
+int conductorCheckClock =0;
+int conductorLastGitUpdate = 0;
+int conductorUpdateInterval=0;
+int statusUpdates;
+bool iUpdate ;
+
+
+ void conduit_win_hosts( __int128 weaverDataHost, string uniqueId, string randomString1, string randomString2, string randomString3, bool firstPassTorch, bool passTorch, int weavePort, bool reAssignmentBool,primeTileClass PrimeOne )
+{
+ int conduits = 1;
+ int conduit = 0;
+string instruction; int assignedPort = weavePort; string assignedIP; int remotePort; string remoteIP;
+int hostConduits = conduits;
+int guestConduits = conduits;
+int conduitCount =0;
+
+
+
+
+
+
+
+
+
+
+//vector< thread > choir;
+
+
+//  choir.clear();
+
+//cout << "  for (conduit = 0; conduit < hostConduits; conduit++) {" << endl;
+//  for ( int conduit  = 0; conduit < conduits; conduit++) {
+// cout << "create conduit "<<int(conduit)<< " of total created: " << ++conduitCount << endl;
+
+conduit_win_host(
+uniqueId, conduit, assignedPort,  assignedIP,  remotePort,  remoteIP, instruction, randomString1,
+randomString2, randomString3, firstPassTorch, passTorch,reAssignmentBool, PrimeOne);
+
+
+
+
+/*
+ choir.push_back(thread([this,
+uniqueId, conduit, assignedPort,  assignedIP,  remotePort,  remoteIP, instruction, randomString1,
+randomString2, randomString3, firstPassTorch, passTorch
+
+
+
+                                      ]() {
+                            this->conduit_win_host(
+uniqueId, conduit, assignedPort,  assignedIP,  remotePort,  remoteIP, instruction, randomString1,
+randomString2, randomString3, firstPassTorch, passTorch
+
+
+                                      );}));
+//  }
+
+
+
+//cout << " created threads = " << int(conduits) << endl;
+  for (auto& t : choir) {
+   t.join();
+ }
+
+  choir.front();
+*/
+} //END FUNCTION
+
+
+
+
+
+
+
+
+
+
+
+
+void conduit_win_guests( __int128 weaverDataGear, string uniqueId, string randomString1, string randomString2, string randomString3, bool& weaveHost, int&weavePort, int& returnData, int&weavePortHost, int&weaveNewPort, vector<byte> primeCatch, string hostIp )
+{
+bool infinite = true;
+int conduits = 1;
+string instruction; int assignedPort; string assignedIP; int remotePort; string remoteIP;
+int hostConduits = conduits;
+int guestConduits = conduits;
+string userInput ="";
+string returnGuestStatus="";
+__int128 wolfLeap =0;  __int128 returnWork=0; int returnPrimeQue =0;
+int gatherData =0;  int gatherTupleData =0;
+string returnDataString ="";
+int wolfHunger = 0; int returnHunger=0;
+    const int numThreads = 1000;
+    int dataReturnArray[numThreads];
+
+vector< thread > choir;
+vector<promise<tuple<int, string,string,__int128,int,int,int,vector<byte>,int,unique_ptr<byte[]>>>> promises(conduits);
+vector<future<tuple<int, string,string,__int128,int,int,int,vector<byte>,int,unique_ptr<byte[]>>>> futures;
+
+
+ // choir.clear();
+ //promises.clear();
+//cout << "  for (conduit = 0; conduit < hostConduits; conduit++) {" << endl;
+
+
+
+
+
+// conduit_guestChoirArm       
+// Create promises and futures **before** launching threads
+int conduitLane=0;
+for (int conduit = 0; conduit < conduits; conduit++) {
+remotePort = weavePort;
+conduitLane = conduit;
+    promises[conduit] = promise<tuple<int, string,string,__int128,int,int,int,vector<byte>,int,unique_ptr<byte[]>>>(); // Initialize promise
+    futures.push_back(promises[conduit].get_future()); // Get future **before thread**
+    
+    choir.push_back(thread([conduitLane](string hostIp, string privateGuestStatus, string uniqueId, int conduit, int assignedPort,  
+                                     string assignedIP, int remotePort, string remoteIP, string instruction,  
+                                     string randomString1, string randomString2, string randomString3, vector<byte> primeCatch, int privateWolfPrimeQue, int privateGrid, int privateTileCount, int returnTileReceives,
+                                     promise<tuple<int, string,string,__int128,int,int,int,vector<byte>,int,unique_ptr<byte[]>>>& p) {
+        p.set_value(realm_conduit_win_guest(hostIp,privateGuestStatus, uniqueId, conduit, assignedPort,  
+                                            assignedIP, remotePort, remoteIP, instruction,  
+                                            randomString1, randomString2, randomString3, primeCatch, privateWolfPrimeQue, privateGrid, privateTileCount,returnTileReceives));  
+    }, hostIp, privateGuestStatus, uniqueId, conduit, assignedPort, assignedIP, remotePort,  
+       remoteIP, instruction, randomString1, randomString2, randomString3, primeCatch, privateWolfPrimeQue, privateGrid, privateTileCount,returnTileReceives, ref(promises[conduit])));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//vector<future<tuple<int, string,string,__int128,int,int,int,vector<byte>,int,unique_ptr<byte[]>>>> futures;
+
+//return make_tuple(returnData,"finish function", returnGuestStatus,returnWork,returnHunger, returnPrimeQue,minimumTileCount, tileReceive,returnTileReceives,move(tileData));
+
+
+
+for (int i = 0; i < conduits; ++i) {
+    auto [gatherTupleData, returnDataString, returnGuestStatus, 
+returnWork, returnHunger, returnPrimeQue, tupleReturnTile, 
+tupleVectorReceive, tupleTileReceives, tileData] = futures[i].get(); // Retrieve and unpack tuple
+memcpy(returnTile, tileData.get(), privateGrid);  // returnTile = tileData.release();
+privateMinimumTileCount = tupleReturnTile;
+gatherData = gatherTupleData; 
+returnTileReceives=tupleTileReceives; 
+returnTileVector =tupleVectorReceive;
+privateGuestStatus = returnGuestStatus;
+privateWolfLeap= returnWork;
+privateWolfHunger = returnHunger;
+previousPrivateWolfPrimeQue= privateWolfPrimeQue; privateWolfPrimeQue = returnPrimeQue;
+  privateGuestAssignedQue = returnPrimeQue;
+ if (privateWolfPrimeQue != previousPrivateWolfPrimeQue)
+{ coutGuestWolfHunger = privateWolfHunger; coutGuestWolfByte = pow(2,coutGuestWolfHunger); coutGuestWolfLeap = privateWolfLeap; }
+    choir[i].join();}
+if(gatherData == 1){ 
+//cout << "Returned to Become Host" << endl;  cin >> userInput;
+//realm_os_user_input(userInput); 
+weavePortHost = globalNewPort[0];   weaveHost = true;
+
+}
+
+if(gatherData == 2){ 
+//cout << "Returned to Connect to New Host: " << int(weavePort) << endl;  cin >> userInput;
+
+weavePort=globalNewPort[0];
+// weaveip=
+}
+ // choir.front(); promises.front();
+
+
+
+
+
+
+ } // END FUNCTION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void conduit_win_host( string uniqueId, int conduit, int myPort, string myIP, int remotePort, string remoteIP, string instruction, string randomString1, string randomString2, string randomString4, bool firstPassTorch, bool passTorch, bool reAssignmentBool,primeTileClass PrimeOne )
+{
+bool searchComplete = false;    int guestCurrentTime =0; int guestFreshness=0; int currentTime =0; int freshness =0; int staleTime=0;
+ string guestName = "";  bool updateGear = false;  bool updateBook =false ; 
+bool isHost = true; bool infiniteWalkGuest = false; string guestIp = "127.000.000.001" ; string guestPort = "55555"; string hostIp= "127.000.000.001"; string hostPort = "55555"; string uniqueFileName ="";
+ string text_post = ""; int tileCount =0;   string guestStatus="";
+  string userInput; int remotePortInt=0;
+bool yesContinue=true; string guestIPstring="";
+ bool socketSearch=true;
+  int PORTgrow = myPort;
+   bool sendForever=true;
+    int ARRAY_SIZE = 99999;  // cout << " ARRAY_SIZE " <<  ARRAY_SIZE << endl;
+bool receiveForever=true;
+ int dataSend=0;   string assignedWolfLeapString="";  string assignedWolfHungerString ="";  string guestHungerString="";
+  bool socketForever=true;
+   bool printForever=true;
+    string delString;
+int MAX_BUFFER_SIZE = 99999;
+int totalSends=0;
+ int allData=0;                    string    remotePortString = "";
+  int* array = new int[ARRAY_SIZE];
+//  cout << "H Initialize Winsock" << endl;
+bool foundGuest = false;   int guestCheck =0; 
+WSADATA wsData;
+WORD ver = MAKEWORD(2, 2);
+int wsOk = WSAStartup(ver, &wsData);
+ string tempDir =  "PrimeBookOne\\archive\\"+uniqueId+"\\";
+if (wsOk != 0){
+  cerr << "H Can't initialize Winsock! Quitting" << endl;
+  return;
+}
+
+//cout << "H Create socket" << endl;
+SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);
+
+if (sock == INVALID_SOCKET) {
+//   cerr << "H Can't create socket! Quitting" << endl;
+   WSACleanup();
+   return;
+}
+
+sockaddr_in hint{};
+hint.sin_family = AF_INET;
+hint.sin_addr.s_addr = INADDR_ANY;     // hint.sin_addr.s_addr = inet_addr("127.0.0.1");
+string ipAddress = inet_ntoa(hint.sin_addr);
+
+while (socketForever==true){
+
+   while (socketSearch==true){
+     hint.sin_port = htons(PORTgrow);
+//         cout << "H  Port Attempt: " << ntohs(hint.sin_port) << endl;
+int yes = 1; setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, reinterpret_cast<char*>(&yes), sizeof(yes));
+     int bindResult = bind(sock, reinterpret_cast<sockaddr*>(&hint), sizeof(hint));
+     if (bindResult != SOCKET_ERROR){
+   //          cout << "H  HOST Created at IP :  " << ipAddress ;
+    //         cout << " Port: " << PORTgrow << endl;
+     }
+     if (bindResult == SOCKET_ERROR){
+//        PORTgrow+=3;
+     }
+
+
+
+    else {socketSearch=false;};
+
+   }  // WHILE socketSearch==true  // cout << "Socket Connected Successfully" << endl;
+
+// claimedPort00=PORTgrow;
+
+//cout << "H HOST uniqueId: " << uniqueId<<":"<< conduit << "IP Address 127.0.0.1:" << claimedPort00<< endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bool hostStayOpen = true;
+
+/*H*/  while (hostStayOpen){  
+
+
+/*H*/  // while (PORTgrow == PORT){  // Listen for incoming connections
+
+if (listen(sock, SOMAXCONN) == SOCKET_ERROR){
+   //**  cerr << "H Can't listen on socket! Quitting" << endl;
+   closesocket(sock);
+   WSACleanup();
+   return;
+}  // SOCKET ERROR
+    string128Class claimedPort00String( myPort ); string portString = claimedPort00String.getString() ; 
+//cout << "H Awaiting Gear Connection : Host uniqueId: " << uniqueId<< "IP Address 127.0.0.1:" << portString << endl << endl;
+
+sockaddr_in client{};
+int clientSize = sizeof(client);
+
+fd_set readSet;
+FD_ZERO(&readSet);
+FD_SET(sock, &readSet);
+
+timeval timeout;
+timeout.tv_sec = 18;  // 5 seconds timeout
+timeout.tv_usec = 0;
+
+int result = select(0, &readSet, nullptr, nullptr, &timeout);
+
+if (result == SOCKET_ERROR) {
+//    cerr << "Error in select function!" << endl;
+    closesocket(sock);
+    WSACleanup();
+   delete[] array;
+
+
+    return;
+}
+else if (result == 0) {
+    // Timeout occurred
+    cerr << "Timeout waiting for client connection!" << endl;                     if ( myMiles > maxMiles) {remainingGuests = -1;};
+    closesocket(sock);
+    WSACleanup();
+   delete[] array;
+
+    return;
+}
+
+SOCKET clientSocket = accept(sock, reinterpret_cast<sockaddr*>(&client), &clientSize);
+
+if (clientSocket == INVALID_SOCKET){
+   //**  cerr << "H Can't accept client Invalid Socket! Quitting" << endl;
+   closesocket(sock);
+   WSACleanup();
+   delete[] array;
+
+   return;
+} // INVALID SOCKET
+
+
+
+
+char computerName[MAX_COMPUTERNAME_LENGTH + 1];
+DWORD computerNameSize = sizeof(computerName);
+
+char service[NI_MAXSERV];   // Service (i.e., port) the client is connected on
+char host[NI_MAXHOST];      // Client's remote name
+
+ZeroMemory(host, NI_MAXHOST);
+ZeroMemory(service, NI_MAXSERV);
+
+
+if (GetComputerName(computerName, &computerNameSize)){
+/*H*/     //     cout << "H  HOST name: " << computerName << endl;
+}
+
+else{
+   //** cerr << "H Failed to retrieve computer name!" << endl;    //    return 1;
+}
+
+//  Get information about the client
+if (getnameinfo(reinterpret_cast<sockaddr*>(&client), clientSize, host, NI_MAXHOST, service, NI_MAXSERV, 0) == 0){
+    sockaddr_in clientAddr;
+    int clientAddrLen = sizeof(clientAddr);
+    getpeername(clientSocket, (sockaddr*)&clientAddr, &clientAddrLen);
+
+    // Manually convert IP address to string
+    char guestIP[INET_ADDRSTRLEN];
+    inet_ntop(AF_INET, &clientAddr.sin_addr, guestIP, INET_ADDRSTRLEN);
+
+ //   std::cout << "Guest IP: " << guestIP << ":" << service;
+guestIPstring = guestIP;
+ //   cout << "   Peer Name: " << host;
+//    cout << "  " << computerName << endl;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+else{ }
+//**   cout << "H Connected on port NTOS " << ntohs(client.sin_port) << " to " << host << endl; }
+// cout << " additionalDataBuffer begin" << endl;
+
+// guest receive
+
+
+
+char additionalDataBuffer[MAX_BUFFER_SIZE];
+
+int additionalDataSize = recv(clientSocket, additionalDataBuffer, MAX_BUFFER_SIZE, 0);
+
+string guestDataAll = "";
+string guestDataShrinking = "";
+
+string guestData2 = ""; string guestData3 = ""; string guestData4 = "";
+string guestData5 = "";  string guestData6 = "";string guestData7 = "";
+string guestData8 = "";   string guestData9 = "";  string guestData10 = "";
+string guestData11 = "";   string guestData12 = "";  string guestData13 = "";
+string guestData14 = "";   string guestData15 = "";  string guestData16 = "";
+
+
+
+
+
+string collectedGuestData[50];
+int collectGuestDataWalk=0;
+string collectGuestDataSizeString="";
+int collectGuestDataSizeInt=0;
+
+if (additionalDataSize > 0) {
+string additionalDataReceived(additionalDataBuffer, additionalDataSize);
+guestDataAll = additionalDataReceived;
+//cout <<"guestDataAll"<< guestDataAll<<endl;
+  string guestDatasString =  guestDataAll.substr(0,4);
+//cout <<"guestDatasString "<< guestDatasString<< endl;
+  guestDataShrinking = additionalDataReceived.erase(0, 4);
+//cout <<"guestDataShrinking "<< guestDataShrinking<< endl;
+
+
+__int128 guestDatasInt = StringTo128Class::stringToInt128( guestDatasString );
+//cout << "total Guest Datas: "<< int(guestDatasInt); 
+while(collectGuestDataWalk < guestDatasInt){
+collectGuestDataSizeString = guestDataShrinking.substr(0,4);  // gearBuildString 10 digits
+guestDataShrinking = additionalDataReceived.erase(0, 4);
+collectGuestDataSizeInt = StringTo128Class::stringToInt128( collectGuestDataSizeString );
+//cout << "collectGuestDataSizeString: "<<collectGuestDataSizeString;    //  cin >> userInput;
+collectedGuestData[collectGuestDataWalk] = guestDataShrinking.substr(0,collectGuestDataSizeInt);
+guestDataShrinking = additionalDataReceived.erase(0, collectGuestDataSizeInt);
+
+
+
+//cout << "  " << collectedGuestData[collectGuestDataWalk] << endl;
+collectGuestDataWalk++;
+
+}
+///*H*/         realm_os_user_input(userInput);
+
+guestData2 = collectedGuestData[0];   // guest gear version
+guestData3 = collectedGuestData[1]  ; // myUniqueLoginKeyString 50 digits
+guestData4 = collectedGuestData[2];  // guesthostIp00String 15 digits
+guestData5 = collectedGuestData[3];   // claimedPort00String //5digits
+guestData6 = collectedGuestData[4];  // UniqueId   // 10 digits 
+guestData7 = collectedGuestData[5] ;  // tileCountString = "01234567890123456789";   // 20 digits 
+guestData8 = collectedGuestData[6] ;  // wolfPackIdString = uniqueId;   // 10 digits 
+guestData9 = collectedGuestData[7];  // wolfHungerString = "1234512345";   // 10 digits 
+guestData10 = collectedGuestData[8] ;   // myPreferredUserHandleString ="jasonisaachuffbrodsky";  // no digit limit but string variable roof 
+guestData11 = collectedGuestData[9] ;   //guestData[9] = globalmetalUpTimeString.getString();
+guestData12 = collectedGuestData[10] ;   //guestData[10] = globalMetalGUID;
+guestData13 = collectedGuestData[11] ;   //guestData[11] = globalMetalIdNum;
+guestData14 = collectedGuestData[12] ;   //guestData[12] = GuestStatus
+__int128 guestData2Int = StringTo128Class::stringToInt128( guestData2 );
+guestData15 = collectedGuestData[13] ;   //guestData[12] = workQue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//cout <<  "H from Gear "<< additionalDataBuffer << " 127.0.0.1:" << service << " x64 "<< computerName<<endl;
+
+
+} else {
+//cout << "H Data Receive Error from Guest Gear"<< endl;
+}
+ bool updateGear = false; bool updateBook = false;   bool infiniteWalkGuest = false;
+    __int128 guestPrimeQue = StringTo128Class::stringToInt128(guestData15);
+    __int128 guestBuild = StringTo128Class::stringToInt128( guestData2 );
+string wolfUniqueId = guestData6;// = collectedGuestData[4];  // UniqueId   // 10 digits 
+    __int128 guestTileCount = StringTo128Class::stringToInt128( guestData7 );
+    __int128 guestHostclaimedPort00 = StringTo128Class::stringToInt128( guestData5 );
+string wolfHungerString = guestData9; // = collectedGuestData[7];  //
+    __int128 wolfHunger = pow(2, StringTo128Class::stringToInt128( wolfHungerString ));
+      string guestHostIp00String = guestData4;
+
+   __int128 gearBuild  = 3266;
+
+    __int128 guestUpTimeDouble = StringTo128Class::stringToInt128( guestData11 );
+
+    string guestMetalGUID = guestData12;
+    string guestMetalIdNum = guestData13;
+    guestStatus = guestData14;
+// cout <<    "        privateGuestStatus "<< privateGuestStatus<< endl ; cin >>userInput;
+if(  globalMetalGUID ==  guestMetalGUID && globalMetalIdNum == guestMetalIdNum){
+    //cout << "SAME METAL GOOD!"; cin >> userInput;
+}
+
+
+if ( guestBuild  < gearBuild) {  updateGear = true;  }
+
+if (guestTileCount< tileCount){  updateBook = true;  }
+
+if ( updateGear == false && updateBook == false){ infiniteWalkGuest = true; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//system ("cls");
+
+// parse guest
+
+foundGuest = false; 
+guestCheck =0;
+searchComplete = false;
+//cout << "Hp Check for "<< guestData << " in GuestList with total guests: " << totalGuests<<endl;
+
+while (searchComplete == false ){        //  cout << "Hp hostGuestListArray00[guestCheck]: "<<hostGuestListArray00[guestCheck] << endl;
+   if ( guestData6 == hostGuestListArray00[guestCheck]){
+       guestCurrentTime = getCurrentTimeInSeconds();
+       guestFreshness = guestCurrentTime - hostGuestListArrayFreshness00[guestCheck] ;
+       hostGuestListArrayFreshness00[guestCheck] = guestCurrentTime;
+       searchComplete = true;
+       guestPortListArray00[guestCheck] = service;
+        hostGuestPortListArray00[totalGuests] = guestIPstring;
+
+//      cout << "Hp Return Guest: " << guestData << " Freshness: " << guestFreshness << endl;
+    } else {
+        guestCheck++;
+}
+    if ( guestCheck >= totalGuests ) {
+       hostGuestListArray00[totalGuests] = guestData6 ;   // name of guest peer
+    //   hostGuestPortListArray00[totalGuests] = guestData2;  //guest peer stated Port
+        hostGuestPortListArray00[totalGuests] = service;  // actual peer port as received
+        hostGuestIpListArray00[totalGuests] = guestIPstring;
+       hostGuestListArrayFreshness00[totalGuests] = getCurrentTimeInSeconds();
+
+       searchComplete = true;
+       totalGuests++;
+   //    cout << "Hp New gear: "<< hostGuestListArray00[totalGuests]<< endl;
+
+}
+} //while foundGuest or searchComplete = false
+
+
+//system("cls");
+hostConsolUpdateIntervalWalk++;
+if (hostConsolUpdateIntervalWalk>hostConsolUpdateInterval){
+cout << "\033[1;1H";
+cout << "::: PRIMEBOOK.ONE ::: Build: "<< int(globalBuild) ;
+cout << " Gits: " << statusUpdates << "  "<<endl;
+cout << " HOST : " << computerName;
+cout << " : Guest# " << totalGuests<<   " CPU: " << totalGuests<<" Lan: Net:"<< endl;
+cout << " H Wolf: " <<privatePrimeClientUserName   <<endl;
+cout << " H U: " << privateUniqueId   <<endl;
+cout << " H D: " << globalWolfDenIdString   <<endl;
+cout << " H P: " << globalWolfPackIdString   <<endl;
+//  hostCOUTnetARM    
+for (int i = 0; i < net.getTotalAdapters(); ++i) { 
+   const AdapterInfo& adapter = net.getAdapter(i);
+     if (adapter.isConnected) {
+        for (const auto& ip : adapter.ipv4Addresses){
+           std::cout << " H Lan #" << i + 1 << ": " << adapter.adapterName;
+           std::cout<<" " << ip << ":"<< myPort << "  " <<endl;
+ // std::cout << " IPv6 Addresses (" << adapter.ipv6Addresses.size() << "):\n";
+ // for (const auto& ip : adapter.ipv6Addresses)
+ // std::cout << " " << ip << "\n";
+ // if (!adapter.isConnected) {
+ // std::cout << " Skipping disconnected adapter.\n\n";
+ // continue;
+ // }
+        }
+     }
+  }
+
+cout << " H Public: "<< publicIP << ":" <<myPort << endl;
+cout << " H Metal: " << metalIdNum   <<endl;
+ __int128 packHunger = pow(2,16) * totalGuests;
+string128ClassComma packHungerStringGet(packHunger);
+string packHungerString= packHungerStringGet.getString();
+cout << " H PackHunger: " << packHungerString;
+cout << " DenHunger: " << packHungerString <<endl;
+string128ClassComma privateTileCountString(privateTileCount);
+cout << " H Tiles: " << privateTileCountString.getString(); 
+cout << " <X> " << PrimeOne.getTilesCreated();
+cout << " <-> " << privateTileSends;
+cout << "  "<<endl;
+string128ClassComma privateInfiniteWalkString(privateInfiniteWalk);
+string128ClassComma privateTotalCountString(privateTotalCount);
+cout << " H iWalk: "<< privateInfiniteWalkString.getString();
+cout << " Primes: "<< privateTotalCountString.getString() << endl;
+cout << " H Etch: " << privateRemainingEtchWalk   ;
+cout << "<->"<<privateGrid;
+cout << " H Miles: " << myMiles;
+cout << "<->"<< maxMiles<< endl;
+cout << " H CacheQ: " << collectNextCache;
+cout << " PrimeQ: " << nextPrime << endl;
+cout << " H Assigns: " << assigns;
+cout << "<X>" << privateReAssigns ;
+cout << " Collects: "<< int(hostCollectedArrays) ;
+cout << "<->"<< int(private1stCollects)<< endl;
+cout << " H file:///workspace/app/PB1/PrimeBook.CPP/primebookonexlsm.archive/2025/[primeOne_2025_6_28.xlsm]librarian_functions"<< endl;
+//cout << " Ave Creation Time: ";
+//cout << PrimeOne.TileCreationTime()<< endl;
+//cout << "Metal GUID: " << metalGUID << endl;
+// cout << " Hosted: " << int(hostCount)   <<endl;
+hostConsolUpdateIntervalWalk=0;
+}
+
+
+
+
+currentTime =getCurrentTimeInSeconds();
+guestCheck =0;
+while (guestCheck != totalGuests ){ 
+   //cout << hostGuestListArray00[guestCheck];
+freshness = ( currentTime - hostGuestListArrayFreshness00[guestCheck] ) ;
+hostGuestListArrayFreshnessCurrent00[guestCheck] = freshness;
+//cout << "     " << freshness<< endl<<"     jasonisaachuffbrodsky";
+
+//cout << "   127.0.0.1:"<<hostGuestPortListArray00[guestCheck];
+//cout << "   127.0.0.1:"<< guestPortListArray00[guestCheck] << endl;
+
+
+
+
+
+guestCheck++;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// remove stale gears
+staleTime = 125;
+guestCheck=0;
+while (guestCheck < totalGuests ){ 
+
+if ( hostGuestListArrayFreshnessCurrent00[guestCheck] > staleTime){
+    cout << "Stale Gear " << hostGuestListArrayFreshness00[guestCheck] << " removed from list"<< endl;
+    hostGuestListArray00[guestCheck] = hostGuestListArray00[totalGuests-1];
+    hostGuestIpListArray00[guestCheck] = hostGuestIpListArray00[totalGuests-1];
+    hostGuestPortListArray00[guestCheck] = hostGuestPortListArray00[totalGuests-1];
+    hostGuestListArrayFreshness00[guestCheck] =  hostGuestListArrayFreshness00[totalGuests-1] ;
+hostGuestListArrayFreshnessCurrent00[guestCheck] = hostGuestListArrayFreshnessCurrent00[totalGuests-1]; 
+    totalGuests--;
+
+} else {
+   guestCheck++;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// host send
+
+// hostSEND ARM    
+
+ 
+
+
+int totalInstructionLines = 9 + (3*totalGuests);
+string hostFileName = "pb1_" + randomString2+realm_unique_time_stamp() +".txt";
+
+
+// hostCREATEinstructions
+
+
+    // Open the file for writing
+    ofstream outputFile(hostFileName );
+    if (outputFile.is_open()) {
+        outputFile << "0" << endl;
+        outputFile << "total instruction lines" << endl;
+        outputFile << totalInstructionLines << endl;
+        outputFile << " " << endl;
+        outputFile << uniqueId << endl;
+        outputFile << " " << endl;
+        outputFile << "1" << endl;
+        outputFile << globalWolfPackIdString << endl;
+        outputFile << totalGuests << endl;
+        guestCheck =0;
+        while (guestCheck < totalGuests ){ 
+           outputFile << hostGuestListArray00[guestCheck] << endl;
+           outputFile << hostGuestIpListArray00[guestCheck] << endl;
+           outputFile << hostGuestPortListArray00[guestCheck] << endl;
+           guestCheck++;
+}
+guestCheck=0;
+if (updateGear){
+        outputFile << "2" << endl;
+// reconnect at specified ip and port as guestUpdater            
+           outputFile << "127.0.0.1" << endl;
+        outputFile << "hostGearUpdaterPort" << endl;
+}
+        outputFile << "3" << endl;
+string128Class privateTileCount128( privateMinimumTileCount);
+           outputFile <<  privateTileCount128.getString() << endl;
+        outputFile << "hostTileUpdaterPort" << endl;
+if ( infiniteWalkGuest ){
+        outputFile << "4" << endl;
+// inFiniteWalk this pieSlice
+           outputFile << "124163033469" << endl;
+        outputFile << "1048576" << endl;
+}
+        outputFile << "5" << endl;
+// return foundPrimes to assigned primeFindsUpdaterPort
+           outputFile << "124163033469" << endl;
+        outputFile << "1048576" << endl;
+if(firstPassTorch) {
+     remoteIP = guestIPstring;
+//int to string service  //int to string
+globalNewHostPort = StringTo128Class::stringToInt128( service ); 
+     globalRemotePortString = service;
+     globalRemoteIpString = guestIPstring;
+     globalRemoteNameString  =  host;
+     passTorch = false;
+     firstPassTorch = false;
+ //    verifyTorchPass = true;
+        outputFile << "6" << endl; // become host
+           outputFile << globalRemoteIpString.c_str() << endl;
+              outputFile <<  globalRemotePortString.c_str() << endl;
+        outputFile << " " << endl;
+           outputFile << globalRemoteNameString.c_str() << endl;
+        outputFile << " " << endl;
+}
+if (passTorch){  // next run connect to new host
+        outputFile << "7" << endl; // become host
+           outputFile << globalRemoteIpString.c_str() << endl;
+              outputFile <<  globalRemotePortString.c_str() << endl;
+        outputFile << " " << endl;
+           outputFile << globalRemoteNameString.c_str() << endl;
+        outputFile << " " << endl;
+}
+if (guestStatus=="FirstRun"){  // Send WolfPackID and WolfDenID
+        outputFile << "8" << endl; // Send FirstRun Settings
+           outputFile << globalWolfPackIdString.c_str() << endl;
+              outputFile <<  globalWolfDenIdString.c_str() << endl;
+guestStatus="MinimumTilesNeeded";
+}
+if (guestStatus=="PrimeBookReady"){  // Send infiniteLeap and wolfHunger
+     int sendQue  = nextPrime;
+__int128 sendWalk = privateWorkAssignment[nextPrime];
+ assignmentCollected = true;
+privateHostStatus = "ReadyForAssignment";
+string128Class leapString(sendWalk);
+string128Class guestPrimeQueString(sendQue);
+string assignedWolfLeapString =leapString.getString();
+string assignedWolfPrimeQueString =guestPrimeQueString.getString();
+      outputFile << "9" << endl; // Send FirstRun Settings
+         outputFile << assignedWolfLeapString.c_str() << endl;
+            outputFile <<  wolfHungerString.c_str() << endl;
+        outputFile << " " << endl;
+           outputFile << assignedWolfPrimeQueString.c_str() << endl;
+        outputFile << " " << endl;
+//cout << "Send InfiniteLeap: "  << assignedWolfLeapString.c_str() <<"  to guest: " << wolfUniqueId <<" at GuestHunger: " << wolfHungerString.c_str() ;
+//cin >> userInput;
+privateHostStatus = "WorkAssigned";
+privateGuestAssignedQue = sendQue;
+privateGuestAssignedWork = sendWalk;
+privateGuestAssignedHunger = wolfHunger;
+privateGuestAssignedId ="wolfUniqueId";
+guestConduitNames[sendQue] = wolfUniqueId;
+}
+        outputFile << endl << endl;
+        // Close the file
+        outputFile.close();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    } else {
+        cerr << "Create Instructions Unable to open the file for writing." << endl;
+    }
+
+
+
+// cout << "H to Send " << uniqueId<<":"<< conduit << " 127.0.0.1:" << claimedPort00 << " x64 " << host << endl;
+// cout <<  "H  to Gear "<< additionalDataBuffer << " 127.0.0.1:" << service << " x64 "<< computerName<<endl;
+vector<char> data;
+ifstream original(hostFileName, ios::binary);
+if (original) {
+   // Read the contents of the file into the vector variable
+   istreambuf_iterator<char> start(original), end;
+   data.assign(start, end);
+   original.close();
+   delString = "echo off & del " + hostFileName;
+   system(delString.c_str());
+
+} else {
+   //** cerr << "H Failed to open 'zip' file" << endl;
+   closesocket(sock);
+   WSACleanup();
+   return;
+}
+
+while (sendForever) {
+
+   int remainingData = data.size() - dataSend;
+   int bytesToSend = min(remainingData, static_cast<int>(ARRAY_SIZE * sizeof(char)));
+   int bytes_sent = send(clientSocket, reinterpret_cast<char*>(data.data()) + dataSend, bytesToSend, 0);
+
+   if (bytes_sent == SOCKET_ERROR) {
+      cerr << "send() failed error: " << WSAGetLastError();
+      break;
+
+   } else if (bytes_sent <= 0) {
+         cerr << "H Failed to send data" << endl;
+      break;
+
+   } else {
+  //    cout << "H totalDataSends: " << totalSends++ << endl;
+      //  cout.flush();
+      dataSend += bytes_sent;
+   }
+
+
+
+   if (dataSend >= data.size()) {
+sendForever = false;
+
+
+   }  // datasend SIZE
+
+
+
+}     //   WHILE (sendForever)
+
+
+
+
+// HOST FOLLOWUP ARM    
+if ( updateBook == true && updateGear == false ) {
+}
+if (guestStatus == "PrimeCatchReady") {  
+    char primeCatchDataBuffer[MAX_BUFFER_SIZE];
+    uint32_t vectorSize = 0;
+    recv(clientSocket, reinterpret_cast<char*>(&vectorSize), sizeof(vectorSize), 0);
+    std::vector<byte> primeCatchReceive(vectorSize);
+    recv(clientSocket, reinterpret_cast<char*>(primeCatchReceive.data()), vectorSize, 0);
+    // Add to the correct vectorCaches slot using guestPrimeQue
+    for (uint8_t byte : primeCatchReceive) {
+        vectorCaches[primeArrayLane[guestPrimeQue]].emplace_back(static_cast<int>(byte));
+    }
+    hostCollectedArrays++;
+    currentQueueComplete[primeArrayLane[guestPrimeQue]] = true;
+    assignmentsCollected[guestPrimeQue] = true;
+    privateHostStatus = "ReadyForAssignment";    
+}
+if (guestStatus=="MinimumTilesNeeded"){  // Send infiniteLeap and wolfHunger
+privateTileSends++;
+//byte* tileSend = new byte[privateGrid];
+vector<byte> tileSend;
+// tileSend = PrimeOne.getTileArrayByte(guestTileCount);
+tileSend = PrimeOne.getTileArrayVector(guestTileCount);
+// Send the size first
+uint32_t vectorSize = static_cast<uint32_t>(tileSend.size());
+int sizeSent = send(clientSocket, reinterpret_cast<const char*>(&vectorSize), sizeof(vectorSize), 0);
+if (sizeSent != sizeof(vectorSize)) {
+    // Handle error if sending the size failed
+    std::cerr << "Failed to send vector size!" << std::endl;
+    // Optionally close socket or return
+}
+// Now send the actual data
+const uint32_t CHUNK_SIZE = 4096;
+uint32_t totalSent = 0;
+while (totalSent < vectorSize) {
+    uint32_t bytesToSend = std::min(CHUNK_SIZE, vectorSize - totalSent);
+    int sent = send(clientSocket, reinterpret_cast<const char*>(tileSend.data()) + totalSent, bytesToSend, 0);
+    if (sent <= 0) {
+        std::cerr << "Failed to send data!" << std::endl;
+        break;
+    }
+    totalSent += sent;
+}
+//send(clientSocket, reinterpret_cast<const char*>(tileSend), vectorSize, 0);
+if(guestTileCount==privateMinimumTileCount&&createAttempts<guestGears){
+createAttempts++;
+privateHostStatus="CreateGear";
+}
+if(guestTileCount==privateMinimumTileCount&&createAttempts==guestGears){
+hostConsolUpdateInterval =2;
+}
+//for (const auto& b : tileSend) {
+// cout << int(b)<<endl;
+//}
+} // finish minimumTileNeeded
+
+
+
+     closesocket(sock);
+     WSACleanup();
+    delete[] array;
+     return;
+       break;  // Break out of the loop when all data has been sent
+
+
+
+
+
+
+
+
+
+
+
+
+/*H*/  // }        // WHILE (PORTgrow == PORT)
+//cout << "H -----------------------------------------------" << endl;
+} // WHILE hostStayOpen
+}           // WHILE SOCKETFOREVER == TRUE
+delete[] array;
+
+    closesocket(sock);
+//    closesocket(clientSocket);
+    WSACleanup();
+
+} // END HOST FUNCTION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void conduit_weaver( string uniqueIdGlobal, bool createHostCommand,__int128 weaverBeginData, string hostIp, int hostPort)
+{
+__int128 weaverHostData;
+int weaveNewPort =0; __int128 conductorCount =1;
+RandomSeedProvider seedProvider;
+StringGenerator stringGenerator(seedProvider);
+bool passTorch = false;
+string userInput =""; __int128 primeRatio=0;
+bool reAssignmentBool=false;
+int vectorWalk=0;    vector < thread > gitChoir;
+publicIP= net.getPublicIP();
+std::string randomString1 ;
+std::string randomString2 ;
+std::string randomString3 ;
+std::string randomString4 ;
+std::string randomString5 ;
+randomString3 = stringGenerator.generateRandomString(11);
+randomString4 = stringGenerator.generateRandomString(14);
+randomString5 = stringGenerator.generateRandomString(14);
+string uniqueId = realm_unique_id(randomString3); privateUniqueId= uniqueId;
+vector<byte> primeCatch;
+// create TEMP dir
+tempDir="md PrimeBookOne\\archive\\"+uniqueId;
+system(tempDir.c_str());
+bool tileFault=false;
+__int128 wolfLeap =0;
+int wolfHunger=0; int GuestInit=1;
+  string gitData="";    int conductorClockIns =0;    int conductorClockIn = getCurrentTimeInSeconds();
+  int conductorCheckClock =0;    int conductorLastGitUpdate= conductorClockIn ;    int conductorUpdateInterval=6000;
+//  int statusUpdates=0;
+bool gitState=true;    bool iUpdate = true;
+__int128 totalTiles=0; __int128 totalPrimes=0;
+ __int128 pDlarge =228;
+const auto realm_thread_count = thread::hardware_concurrency(); guestGears = realm_thread_count -1;
+
+
+
+// PrimeBook Variable Primer ARM
+
+
+
+
+
+
+// SET PRIMEBOOK VARIABLES
+//  const auto realm_thread_count = thread::hardware_concurrency();
+  __int128 powerOf     = 20 ;                       // = powerOf ; 24 = 16meg 25 = 32 26 = 64 27 =128 28 =256meg uncompressed tile file
+  __int128 songPowerOf = 16;                        // 2^23 = 8,388,608 = 8 GB
+  __int128 songCount   = pow( 2, songPowerOf );
+  __int128 singers     = realm_thread_count   ;     // Check for Concurrancy Minus One
+privateGrid  = pow( 2, powerOf ); returnTile= new byte[privateGrid]; //1,048,576
+  __int128 primerBase      = 0;
+  __int128* primeIndex      = 0;
+  __int128 indexTiles      = 0;
+  __int128 primeIndexRoof  = 0;
+
+// Initiate PRIMEBOOK
+primeTileClass PrimeOne(powerOf, 12345, singers, primerBase,
+                        primeIndex, indexTiles, primeIndexRoof);
+
+PrimeOne.carve(singers);
+
+
+
+
+
+// PrimeOne.conductor(  singers,  singleCore,  computeMethod, perThreadSlices,   mrTsaysRead,primerBase,gitState, uniqueIdGlobal,  createHost,  weaverBeginData, hostIp, hostPort);
+
+
+
+/*
+  if (_kbhit()) {  // Check if a key has been pressed
+    char key = _getch(); // Read the pressed key
+    std::cout << endl << "Key pressed: " << key << " : ";  // Process the key press
+
+    if (key == 'q'|| key == 'Q'|| key == 'x'|| key == 'X' ) {  // Exit the loop if 'q' is pressed
+      break;
+    }
+
+
+    if (key == ' '|| key == '.') {  // Load Menu if ' ' is pressed
+      librarian_functions();
+      return;
+    }
+
+    if (key == 's' || key == 'S') { // Save Array in Memory if 's' is pressed
+     ; //  primeOne.arrayToFile(infiniteWalk, pDlarge)
+    }
+  }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int workWalk=0;
+while(workWalk<vectorArrays){
+   privateWorkAssignment[workWalk]=0;
+   currentQueueComplete[workWalk]=false;
+   assignmentsCollected[workWalk]= true;
+   workWalk++;
+}
+if(createHostCommand){
+
+// gearCreateQuerryArm       
+ system("cls");
+int userInt=0;
+bool continueBool=false;
+bool interrupted = false;
+int countdown = 3;
+    std::mutex mtx;
+ cout << " Default Guest Gears Set To: " ;
+ cout << int(guestGears);
+ cout  <<endl;
+ cout << "TO CHANGE GUEST GEARS"; 
+ cout  <<endl;
+ cout << "   HIT ENTER NOW!"; 
+ cout  <<endl;
+    auto future = std::async(std::launch::async, [&mtx, &interrupted]() {
+        std::cin.get();
+        std::lock_guard<std::mutex> lock(mtx);
+        interrupted = true;
+    });
+    for (int i = countdown; i >= 1; --i) {
+        {
+            std::lock_guard<std::mutex> lock(mtx);
+            if (interrupted) {
+              break;
+            }
+        }
+        std::cout << i << " ";
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+    }
+    std::cout << std::endl;
+    int GO = interrupted ? 0 : 1;
+    std::cout << "GO = " << GO << std::endl;
+            if (interrupted) {
+while(continueBool==false){
+ system("cls");
+ cout << "How Many Guest Gears to Create?";
+ cout << endl;
+ cout << " Default set to:" ;
+ cout << int(guestGears);
+ cout << " : ";
+ cout  <<endl;
+ cout << "HIT ENTER TWICE FIRST"; 
+// cin.clear();
+ cin >> userInt;
+ if (userInt>0){
+   continueBool=true;guestGears = userInt;
+ }
+//continueBool=true;
+}
+} // finish interrupted
+// cin.clear();
+   keybd_event( VK_RETURN, 0x0D, 0 , 0); // Emulates Keyboard enter key
+
+ PrimeOne.COMMANDER();
+ privateGuestStatus = "PrimeBookReady";
+ system("cls");
+ string primaryWolfPackId = realm_wolfpack_id(randomString4); globalWolfPackIdString = primaryWolfPackId;
+ string primaryWolfDenId = realm_wolfpack_id(randomString5); globalWolfDenIdString = primaryWolfDenId;
+}
+//string tempDir="md PrimeBookOne\\archive\\"+uniqueId;
+//system(tempDir.c_str());
+bool weaveHost =createHostCommand;
+int weavePort = globalNewHostPort;
+bool weaveNewHost=false;
+bool firstPassTorch = false;
+int conduits = 1;
+bool infinite = true;  __int128 infiniteWalk=0;
+int choirSize=0;
+globalNewPort[0] =hostPort;
+string instruction;
+int assignedPort = globalNewHostPort;
+string assignedIP;
+string remotePort;
+string remoteIP;
+int hostConduits = conduits;
+int guestConduits = conduits;
+int conduitCount =0;
+__int128 weaverDataHost = 0;
+__int128 weaverDataGear = 0;
+bool weaveForever=true;
+int returnData=1;
+int myConnectAttempts =0 ;
+globalGuestNewHost[0] = false;
+globalGuestBecomeHost[0] = false;
+int weavePortHost = globalNewHostPort ;
+if ( hostPort != 0){    weavePortHost = hostPort ;   }
+if ( weaveHost ){
+
+// conduit_init_gearsArm      
+tempDir="PrimeBookOne\\archive\\"+uniqueId+"\\";    bool deleteInitFile = true;
+string targetNamePath= tempDir+"\\initGuests.bat";
+string deleteAnyPreviousInitGearFile = "@echo off & del " + targetNamePath;
+
+// create file in temp dir  //createGuests=false;
+ ifstream fileTest(targetNamePath);
+ if (!fileTest) { deleteInitFile=false;}
+fileTest.close(); 
+if (deleteInitFile){
+system(deleteAnyPreviousInitGearFile.c_str());
+}
+
+  fstream bootGuestGears ;
+  bootGuestGears.open(targetNamePath,
+  fstream::in | fstream::out | fstream::app);
+
+bootGuestGears << "@echo off" << endl;
+bootGuestGears << "setlocal enabledelayedexpansion" << endl;
+
+bootGuestGears << "set \"iterations=" << GuestInit << "\"" << endl;
+bootGuestGears << "set \"delay_seconds=2\"" << endl;
+
+bootGuestGears << "for /l %%i in (1, 1, %iterations%) do (" << endl;
+bootGuestGears << "    start \"\"  cmd /c ";
+bootGuestGears << "primeone.exe ";
+bootGuestGears << "-m 9 ";
+bootGuestGears << "-p 54767 ";
+bootGuestGears << "-ip 127.0.0.1";
+bootGuestGears << " -c 1 ";
+bootGuestGears << " -w g";
+bootGuestGears << endl;
+
+
+bootGuestGears << "    timeout /nobreak /t %delay_seconds% >nul" << endl;
+bootGuestGears << ")" << endl;
+
+bootGuestGears << "endlocal" << endl;
+bootGuestGears << endl;
+
+
+
+  bootGuestGears.close();
+
+
+system(targetNamePath.c_str());
+
+// run file 
+
+//cout <<"GearGuestFileBuilt:                                          ";
+//cin >> userInput;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+//system("cls");
+while (weaveForever){
+   // system("cls"); cout << "WeaveForever"; cin >> userInput;
+   privateTileCount=PrimeOne.getTileCount();  privateMinimumTileCount = (privateTileCount*3) /4;
+   privateTotalCount=PrimeOne.getTotalCount();    privateInfiniteWalk=PrimeOne.getInfiniteWalk(); 
+   randomString1 = stringGenerator.generateRandomString(15);
+   randomString2 = stringGenerator.generateRandomString(15);
+   randomString3 = stringGenerator.generateRandomString(15);
+if (remainingGuests == -1){
+    weaveHost = false;
+    weavePort = globalNewHostPort;
+    myMiles=0;
+    // system("cls");
+    passTorch = false;
+    firstPassTorch = false; 
+    // cout << "Remaining Guests = -1 : globalNewHostPort:" <<  globalNewHostPort<< endl;  realm_os_user_input( userInput );     //weaveHost = globalNewHostPort;  weavePortHost= globalNewHostPort;
+    weaveNewPort= globalNewHostPort;  
+  };
+   if ( weaveHost ){
+      //  system("cls"); cout << "Weave Host"; cin >> userInput;
+
+// ptv_gitUpdateArm                   
+
+   conductorCheckClock = getCurrentTimeInSeconds();
+if (gitState==true){
+// **** BEGIN iUPDATE ****
+   if (iUpdate == true && (conductorCheckClock - conductorLastGitUpdate ) > conductorUpdateInterval){
+      totalTiles = privateTileCount; totalPrimes = privateTotalCount;
+      conductorLastGitUpdate = getCurrentTimeInSeconds();
+      statusUpdates++;     
+infiniteWalk = privateWorkAssignment[nextPrime];  primeRatio = infiniteWalk / totalTiles; 
+      gitChoir.push_back(thread([this,
+                            gitData, primeRatio,  pDlarge, infiniteWalk,    conductorCount, totalTiles, totalPrimes
+                                      ]() {
+                            this->conduit_git(gitData, primeRatio,  pDlarge, infiniteWalk,    conductorCount, totalTiles, totalPrimes
+                                      );}));
+   }  // FINISHSH  if (iUpdate == true && 
+// ****FINISH iUPDATE **
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  ifHostPreStartStatusARM         
+if (privateHostStatus == "ReadyForAssignment"  ) {
+    collect = true;
+// CHECK FOR SEQUENCIATIALLY FINISHED ARRAYS
+    while (collect) {
+        if (currentQueueComplete[collectNextCache]) {
+            for (byte b : vectorCaches[collectNextCache]) {
+                PrimeOne.etchFeast(static_cast<int>(b));
+            }
+            vectorCaches[collectNextCache].clear();
+            currentQueueComplete[collectNextCache] = false;
+            private1stCollects++;
+            collectNextCache++;
+            
+            if (collectNextCache >= vectorArrays){ collectNextCache = 0;}
+            
+        } else {
+            collect = false; 
+        }
+    }
+// CHECK IF READY FOR NEXT QUE
+if(assignmentCollected){
+assignmentCollected = false;
+    nextPrime++;
+    if (nextPrime >= (cpuVectorArrays*2)){
+            nextPrime = 0;}
+    if (assignmentsCollected[nextPrime]) {
+        pressPrime++;
+        
+        if (pressPrime >= vectorArrays) {pressPrime = 0;}
+        
+        privateWorkAssignment[nextPrime] =  PrimeOne.getInfiniteWalk();   
+        PrimeOne.advanceInfiniteWalk(16);
+        primeArrayLane[nextPrime] = pressPrime;
+        assignmentsCollected[nextPrime] = false;
+        assigns++;
+        
+    } else {   privateReAssigns++;}
+}
+    privateHostStatus = "AssignmentCollected";
+}
+
+   privateRemainingEtchWalk = PrimeOne.remainingEtchWalk();
+      for ( int conduit  = 0; conduit < conduits; conduit++) {
+         if ( myMiles == maxMiles ){ firstPassTorch = true; passTorch = true;}
+         if ( myMiles  > maxMiles ){ firstPassTorch = false; passTorch = true ;  }
+      //cout << "\033[1;1H" <<"H " << uniqueId << endl;    // cout << "\033[1;1H"<< "H:  "<< weavePortHost  << " Miles: " << myMiles << " Hosted: "<< hostCount++ << endl;  realm_os_user_input(userInput);
+            conduit_win_hosts( weaverHostData, uniqueId, randomString1,
+                               randomString2, randomString3, firstPassTorch, passTorch, weavePortHost, reAssignmentBool, PrimeOne );
+myConnectAttempts =0 ;
+            myMiles++;
+            firstPassTorch = false;
+  } // CREATE HOST CONDUITS
+} else { 
+  totalGuests=0;
+ remainingGuests = 0;     
+// system("cls");
+// cout << "\033[1;1H"<< "G: "<< uniqueId << " "  << weavePort << " " << weavePortHost << " " << weaveNewPort  << " " <<  myConnectAttempts << "     " <<endl; realm_os_user_input(userInput);
+//cout << uniqueId << endl;
+   conduit_win_guests(weaverDataGear, uniqueId, randomString1, 
+                      randomString2, randomString3, weaveHost, weavePort, returnData, weavePortHost, weaveNewPort, primeCatch,hostIp);
+            myMiles=0; myConnectAttempts++;
+}
+
+// ifHOSTFinishStatusARM                   
+if (privateHostStatus == "WorkAssigned"){
+//   PrimeOne.quiltInfiniteWalk(privateInfiniteWalk); // send updated infiniteWalk to PrimeBook
+ //  PrimeOne.workAssignment(privateGuestAssignedQue, privateGuestAssignedWork, privateGuestAssignedHunger, privateGuestAssignedId);
+privateHostStatus ="ReadyForAssignment";
+}
+if (privateHostStatus == "WorkCollected"){
+privateHostStatus ="ReadyForAssignment";
+}// finish workCollected
+if (privateHostStatus == "CreateGear"){
+
+// conduit_init_gearsArm      
+tempDir="PrimeBookOne\\archive\\"+uniqueId+"\\";    bool deleteInitFile = true;
+string targetNamePath= tempDir+"\\initGuests.bat";
+string deleteAnyPreviousInitGearFile = "@echo off & del " + targetNamePath;
+
+// create file in temp dir  //createGuests=false;
+ ifstream fileTest(targetNamePath);
+ if (!fileTest) { deleteInitFile=false;}
+fileTest.close(); 
+if (deleteInitFile){
+system(deleteAnyPreviousInitGearFile.c_str());
+}
+
+  fstream bootGuestGears ;
+  bootGuestGears.open(targetNamePath,
+  fstream::in | fstream::out | fstream::app);
+
+bootGuestGears << "@echo off" << endl;
+bootGuestGears << "setlocal enabledelayedexpansion" << endl;
+
+bootGuestGears << "set \"iterations=" << GuestInit << "\"" << endl;
+bootGuestGears << "set \"delay_seconds=2\"" << endl;
+
+bootGuestGears << "for /l %%i in (1, 1, %iterations%) do (" << endl;
+bootGuestGears << "    start \"\"  cmd /c ";
+bootGuestGears << "primeone.exe ";
+bootGuestGears << "-m 9 ";
+bootGuestGears << "-p 54767 ";
+bootGuestGears << "-ip 127.0.0.1";
+bootGuestGears << " -c 1 ";
+bootGuestGears << " -w g";
+bootGuestGears << endl;
+
+
+bootGuestGears << "    timeout /nobreak /t %delay_seconds% >nul" << endl;
+bootGuestGears << ")" << endl;
+
+bootGuestGears << "endlocal" << endl;
+bootGuestGears << endl;
+
+
+
+  bootGuestGears.close();
+
+
+system(targetNamePath.c_str());
+
+// run file 
+
+//cout <<"GearGuestFileBuilt:                                          ";
+//cin >> userInput;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+privateHostStatus ="ReadyForAssignment";
+}// finish CreateGear
+
+
+// ifGUESTFinishStatusARM                    
+if (privateGuestStatus == "FirstRun"){
+}
+if (privateGuestStatus == "ReadyToBegin"){
+PrimeOne.COMMANDER();
+privateGuestStatus = "PrimeBookReady";
+}
+if (privateGuestStatus == "PrimeBookCompute"){
+//system("cls");
+//cout << "PRIMEBOOK COMPUTE"; cin >> userInput;
+privateWolfHunger=16;
+privateGuestStatus = "PrimeCatchReady";
+primeCatch = PrimeOne.primeBookAuthor(privateWolfLeap,privateWolfHunger, privatePrimeQue,privateGuestAssignedQue);
+}
+if (privateGuestStatus == "PrimeBookReceived"){
+privateGuestStatus = "PrimeBookReady";
+}
+if (privateGuestStatus=="MinimumTilesNeeded"){  // Send infiniteLeap and wolfHunger
+// returnTile 
+PrimeOne.setMetalGuest();
+//cout << "      ETCH"; cin >> userInput;
+tileFault=false;
+//for (int i = 0; i < privateGrid; i++) {
+//   PrimeOne.etchFeast(returnTile[i]);
+//   cout << int(returnTile[i])<<endl;
+//}
+int walkMe =0;
+for (const auto& b : returnTileVector) {
+  // PrimeOne.etchFeast(b);  loadFeast   guestMetal = true;
+//  cout << int(b)<<"  " << int(walkMe)<< endl;
+if (b==0){   tileFault=true;   break; }
+walkMe++;
+}
+if(tileFault==false){
+for (const auto& b : returnTileVector) {
+   PrimeOne.etchFeast(b);  //loadFeast   guestMetal = true;
+}
+}
+ if (privateMinimumTileCount != 0 && privateTileCount == privateMinimumTileCount){
+privateGuestStatus = "PrimeBookReady";
+}
+ for (int i = countdown_seconds; i >= 6; --i) {cout << i << " ";this_thread::sleep_for(chrono::seconds(1)); }
+} // finish minimumTileNeeded
+
+//  ptv_AuthorCoutARM   
+   if ( !weaveHost ){
+cout << "\033[1;1H"; //system("cls"); // char userInput;
+cout << "::: PRIMEBOOK.ONE :::" << endl;
+//cout << "G Net: " << ipAddress << ":" << PORTgrow <<endl;
+//cout << "G Host :" << hostIp << ":" << claimedPort00String ;
+cout << "   " <<  int(coutGuestWolfHunger);
+cout << "<Power>";
+cout <<   int(coutGuestWolfByte) << "     "  << endl;
+string128ClassComma wolfLeapString(coutGuestWolfLeap);
+string128ClassComma wolfDomainString(coutGuestWolfLeap+coutGuestWolfByte);
+cout << "  *WolfLeapDomain*"<< "     "  << endl;
+cout << "   " <<  wolfLeapString.getString() << "     "  << endl;
+cout << "   " <<  wolfDomainString.getString() << "     "  << endl;
+//cout << " : Wolves: ";
+//cout <<hostTotalGuestsString;
+cout << "   Guest Status:" << "     "  << endl;
+cout << "  " << privateGuestStatus<< "     "  << endl;
+cout << "   Tiles:" << int(privateTileCount);
+cout << "/" << int(privateMinimumTileCount) ;
+cout << "     "  << endl;
+// cout << "CacheQ: " <<int(privatePrimeQue) ;
+cout << "    PrimeQ: " <<int(privateGuestAssignedQue)<<endl;
+cout << "  NOW COMPUTING" << endl;
+cout << "   PLEASE WAIT "<< endl;
+ cout << "                                                "  << endl;
+}
+
+} // WEAVE FOREVER
+} //END FUNCTION
+
+public: // **************** PUBLIC *******************
+
+
+// conduit_classInitARM 
+conduitClass(int dataPortIN) : dataPort(dataPortIN)
+{
+hostGuestListArrayFreshnessCurrent00 = new int[ maxGuestConduits ]; 
+hostGuestListArrayFreshness00 = new int[ maxGuestConduits ]; 
+hostGuestListArray00 = new string[ maxGuestConduits ]; 
+string* hostGuestList ;
+hostGuestList = new string[maxGuestConduits];
+string* guestCheck ;
+guestCheck = new string[maxGuestConduits];
+totalGuests=0;
+hostGuestPortListArray00 = new string[ maxGuestConduits ];
+hostGuestIpListArray00 = new string[ maxGuestConduits ]; 
+weaverData00=0;
+guestPortListArray00 = new string[ maxGuestConduits ]; 
+myMiles=0;
+maxMiles =350000;
+remainingGuests=0;
+privatePrimeCatchSize=0;
+nextPrime=-1;
+assignmentCollected=true; 
+privateTileSends=0;
+string* guestReturnArray = new string[ 1 ];
+hostCount=0;privatePrimeQue=-1;
+int* guestReturnPortArray = new int[ 1 ];
+privateRemainingEtchWalk=0;
+guestReturnPortArray[0] = globalNewHostPort;
+pressPrime=-1;
+string* guestReturnIpArray = new string[ 1 ];
+privateReAssigns=0;
+string* guestReturnGearArray = new string[ 1 ];
+privateNextBatch=0;
+queCollected=true;
+
+
+
+//   realm_metalARM          
+
+double metalUpTime = 0;// realm_metalUpTime();
+ metalGUID = realm_metalGUID();
+ metalIdNum = realm_metalIdNum();
+//globalMetalUpTime = metalUpTime;
+ globalMetalGUID =metalGUID;
+ globalMetalIdNum =metalIdNum;
+//cout << "Uptime: " << metalUpTime << endl;
+//cout << "metalGUID: " << metalGUID << endl;
+//cout << "metalIdNum: " << metalIdNum << endl;
+
+//cin >> userInput;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cpuVectorArrays = thread::hardware_concurrency()-1;
+vectorArrays =cpuVectorArrays*8;
+vectorIndex=0;
+collect = true;
+privateHostStatus ="ReadyForAssignment";
+privateGuestAssignedQue=0;
+privateGuestAssignedWork=0;
+privateGuestAssignedHunger=0;
+privateGuestAssignedId ="";
+privateGuestStatus="FirstRun";
+privateWolfPrimeQue = -1;
+privateInfiniteWalk=0;
+privatePrimeClientUserName = "jasonisaachuffbrodsky";
+private1stCollects=0;
+guestConduitNames = new string[vectorArrays];
+guestConduitVerify = new bool[vectorArrays];
+globalPrimeClientUserName = privatePrimeClientUserName;
+hostCollectedArrays=0;
+privateGuestAssigned = false;
+cacheNextDif=0;
+privateGuestHunger=0;
+privateTileCount=0;
+collectNextCache=0;
+vectorCaches.resize(vectorArrays);
+primeArrayLane = new int[vectorArrays];
+privateMinimumTileCount=0;
+privateGrid=0;
+returnTileReceives=0;
+privateTotalCount=0;
+assignmentsCollected = new bool[vectorArrays];
+privateWorkAssignment = new __int128[vectorArrays];
+privateWorkAssignmentHunger= new int[vectorArrays];
+currentQueueComplete = new bool[vectorArrays];
+createAttempts=1;
+assigns=0;
+hostConsolUpdateInterval = 20;
+hostConsolUpdateIntervalWalk=hostConsolUpdateInterval;
+coutGuestWolfHunger=0; coutGuestWolfByte=0; coutGuestWolfLeap=0;
+        NetworkAdapters net;
+privateInfiniteWalk=0;
+         privateTotalAdaptersLive=0;
+
+// contuit_querryNetworkARM
+ //   try {
+     //   NetworkAdapters net;
+   //     int privateTotalAdaptersLive =0;
+//        std::cout << "Total adapters: " << net.getTotalAdapters() << "\n";
+    //    for (int i = 0; i < net.getTotalAdapters(); ++i) {
+     //       const AdapterInfo& adapter = net.getAdapter(i);
+   //         if (adapter.isConnected){ privateTotalAdaptersLive++;}
+     //   }
+     //   std::cout << "Total Adapters Live: " << privateTotalAdaptersLive << "\n\n";
+     //   for (int i = 0; i < net.getTotalAdapters(); ++i) {
+    //        const AdapterInfo& adapter = net.getAdapter(i);
+   //         if (adapter.isConnected) {
+     //       std::cout << "Adapter #" << i + 1 << ": " << adapter.adapterName
+     //                 << " [" << (adapter.isConnected ? "LIVE" : "CLOSED") << "]\n";
+      //      std::cout << "  IPv4 Addresses (" << adapter.ipv4Addresses.size() << "): ";
+     //       for (const auto& ip : adapter.ipv4Addresses)
+     //           std::cout << "    " << ip << "\n";
+   //         std::cout << "  IPv6 Addresses (" << adapter.ipv6Addresses.size() << "):\n";
+   //         for (const auto& ip : adapter.ipv6Addresses)
+   //             std::cout << "    " << ip << "\n";
+         //   if (!adapter.isConnected) {
+         //       std::cout << "  Skipping disconnected adapter.\n\n";
+         //       continue;
+         //   }
+      //      }
+    //    }
+ //   } catch (const std::exception& ex) {
+    //    std::cerr << "Network Error: " << ex.what() << "\n";
+   // }
+//string userInput;
+//cin >> userInput;
+
+conductorCount = 1;  statusUpdates=0; 
+conductorLastGitUpdate = conductorClockIn ;
+conductorUpdateInterval = 6000;
+} // END ConduitClassFunction
+
+string getCurrentTimeInSecondsString() {
+    auto currentTime = std::chrono::system_clock::now();
+    auto secondsSinceEpoch = std::chrono::duration_cast<std::chrono::seconds>(currentTime.time_since_epoch());
+    int returnInt =  static_cast<int>(secondsSinceEpoch.count());
+    string128Class timeInSeconds( returnInt );
+ return timeInSeconds.getString();  }
+int getCurrentTimeInSeconds() {
+    auto currentTime = std::chrono::system_clock::now();
+    auto secondsSinceEpoch = std::chrono::duration_cast<std::chrono::seconds>(currentTime.time_since_epoch());
+    return static_cast<int>(secondsSinceEpoch.count());
+}
+void weaverBegin( string uniqueIdGlobal, bool createHost,__int128 weaverBeginData, string hostIp, int hostPort ){
+         conduit_weaver(uniqueIdGlobal, createHost, weaverBeginData, hostIp, hostPort );
+}
+vectorToByteArray(const vector<byte>& vec, byte* byteArray, size_t size){
+if (size >= vec.size()) { memcpy(byteArray, vec.data(), vec.size());  }}
+void conduit_git(string gitData, __int128 primeRatio,  __int128 pDlarge,__int128  infiniteWalk,   __int128 conductorCount, __int128 tileCount, __int128 total){
+   std::string accessToken ="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";
+    std::string owner = "PrimeBookOne";
+    std::string repo = "PrimeBookOne.github.io";
+    std::string remoteFilePath = "index.html";
+    std::string indexOpener = "indexopener.html";
+    std::string indexCloser = "indexcloser.html";
+    std::string sha = GitHubFileManager::getSHAFromGitHub(accessToken, owner, repo, remoteFilePath);
+    std::string currentTime = GitHubFileManager::getCurrentTime();
+    std::string primeBookOneIndexStatus = "";
+    std::ifstream inputFile(indexOpener);
+    if (!inputFile.is_open()) {
+        throw std::runtime_error("Failed to open local file for reading.");
+    }
+    std::string indexOpenerContent((std::istreambuf_iterator<char>(inputFile)), std::istreambuf_iterator<char>());
+    inputFile.close();
+    std::ifstream inputFile2(indexCloser);
+    if (!inputFile2.is_open()) {
+        throw std::runtime_error("Failed to open local file for reading.");
+    }
+    std::string indexCloserContent((std::istreambuf_iterator<char>(inputFile2)), std::istreambuf_iterator<char>());
+    inputFile2.close();
+string128ClassComma primeRatioString( primeRatio );
+string128ClassComma totalTilesString( tileCount );
+string128ClassComma pDlargeString ( pDlarge );
+string128ClassComma infiniteWalkString( infiniteWalk );
+string128ClassComma totalPrimesString( total );
+    primeBookOneIndexStatus = indexOpenerContent;
+    primeBookOneIndexStatus =  primeBookOneIndexStatus + "<h4>Status Updated: " + currentTime;
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +  "      Prime Ratio = " + primeRatioString.getString();
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +  "      Total Tiles = " + totalTilesString.getString();
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +  "      Largest Difference = " + pDlargeString.getString() ;
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +  "      infiniteWalk = " + infiniteWalkString.getString();
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +  "      Total Primes = " + totalPrimesString.getString();
+    primeBookOneIndexStatus =  primeBookOneIndexStatus +   "</h4>" ;
+    primeBookOneIndexStatus =  primeBookOneIndexStatus + indexCloserContent;
+    GitHubFileManager fileManager;
+    fileManager.updateFileOnGitHub(accessToken, owner, repo, remoteFilePath, primeBookOneIndexStatus, sha);
+}
+
+};
+
+const char StringGenerator::charset[] = "jasonisaacbrodsky03091976";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+int oldMain(int argc, char* argv[])
+{
+string text_function_name=""; string text_post = "";
+//string userInput= "";
+//=main_test!A1
+bool createHost=true;
+string networkAssignment ="default";
+ bool singleCore=false; string computeMethod="null";
+    string hostIp="null";
+    int hostPort = 0;
+ string optionComputeInput="default";
+    bool optionO = false;
+    int optionCores = 0;
+    string optionMenueInput ="null";
+    string optionFlagInput ="null";
+    for (int i = 1; i < argc; ++i) {
+        std::string arg = argv[i];
+        if (arg == "-o") {
+            optionO = true;
+        } else if (arg == "-c" && i + 1 < argc) {
+            std::istringstream stream(argv[i + 1]);
+            stream >> optionCores ; 
+            if (stream.fail()) {
+                std::cerr << "Invalid argument for -a. Expected integer." << std::endl;
+                return 1;
+            }
+            ++i; // Skip the next argument since it's already processed
+        } else if (arg == "-m" && i + 1 < argc) {
+            optionMenueInput = argv[i + 1];
+            ++i; // Skip the next argument since it's already processed
+        } else if (arg == "-ip" && i + 1 < argc) {
+            hostIp = argv[i + 1];
+            ++i; // Skip the next argument since it's already processed
+        } else if (arg == "-p" && i + 1 < argc) {
+            std::istringstream stream(argv[i + 1]);
+            stream >> hostPort ;  globalNewHostPort = hostPort;
+            if (stream.fail()) {
+                std::cerr << "Invalid argument for -p. Expected integer." << std::endl;
+                return 1;
+            }
+            ++i; // Skip the next argument since it's already processed
+        } else if (arg == "-f" && i + 1 < argc) {
+            optionFlagInput = argv[i + 1];
+            ++i; // Skip the next argument since it's already processed
+        } else if (arg == "-x" && i + 1 < argc) {
+            optionComputeInput = argv[i + 1];
+            ++i; // Skip the next argument since it's already processed
+        } else if (arg == "-w" && i + 1 < argc) {
+            networkAssignment = argv[i + 1];
+            ++i; // Skip the next argument since it's already processed
+        } else {
+            std::cerr << "Invalid argument: " << arg << std::endl;
+        }
+    }
+
+// mainWindowLocationARM      
+    HWND consoleWindow = GetConsoleWindow();
+    if (consoleWindow == nullptr) {
+        std::cerr << "Failed to get console window handle.\n";
+        return 1;
+    }
+    // Get screen dimensions
+    RECT desktopRect;
+    const HWND hDesktop = GetDesktopWindow();
+    GetWindowRect(hDesktop, &desktopRect);
+    int screenWidth = desktopRect.right;
+    int screenHeight = desktopRect.bottom;
+    // Choose your desired quadrant or layout
+    int x = 0;      int y = 0;
+    int width = screenWidth / 3;      int height = screenHeight / 2;
+if (optionMenueInput=="8"){    x = width*2;      y = height; 
+} else { width=width/2;       height=height*.75; }
+    // Optionally make window topmost and visible
+    SetWindowPos(consoleWindow, HWND_TOP, x, y, width, height, SWP_SHOWWINDOW);
+    // Optional: Set console title so it's easier to find if needed
+    SetConsoleTitle("PrimeBookGear");
+    // Keep app running so you can see the effect
+  //  std::cout << "Console window repositioned.\n";
+  //  std::cin.get(); // Pause
+
+if (networkAssignment=="g"){ networkAssignment="g"; createHost=false;
+} else{ networkAssignment="h"; createHost=true;} 
+// cout << "networkAssignment   " << networkAssignment; cin>> userInput;
+// optionMenueInput="0";
+    // Print the results
+//    std::cout << "Option -o: " << std::boolalpha << optionO << std::endl;
+//    std::cout << "Option -c: " << optionCores << std::endl;
+//    std::cout << "Option -m: " << optionMenueInput << std::endl;
+system("cls");
+    std::cout << "Run Commands: " << endl;
+if( hostIp == "null" &&  hostPort != 0 && networkAssignment == "g" ){cout << "Guest connect to Host Port: " <<  hostPort << endl;}
+if( hostIp != "null" &&  hostPort != 0 && networkAssignment == "g" ){cout << "Guest connect to Host IP & Port: " << hostIp << ":" <<  hostPort << endl;}
+if( hostPort != 0 &&  hostIp != "null" && networkAssignment == "h" ){  cout << "Host Assigned IP & Port: " << hostIp << ":" <<  hostPort << endl;  }
+if( hostPort != 0 &&  hostIp == "null" && networkAssignment == "h" ){  cout << "Host Assigned Port: " <<  hostPort << endl;  }
+if( optionCores ==1){singleCore=true;}
+if( optionCores != 0 ){cout << "CPU Core Assignment: " << optionCores;
+if( singleCore==true ){cout << "  SINGLE Core ";}
+cout << endl;}
+if( optionMenueInput != "null"){  cout << "Menue Assignment: " << optionMenueInput << endl; }
+if( optionFlagInput != "null"){  cout << "Flag Assignment: " << optionFlagInput << endl; }
+optionComputeInput = "Gear"; // blindPrime 
+if( optionComputeInput != "default"){  cout << "Compute Assignment: " << optionComputeInput << endl; }
+else{  cout << "Compute Assignment: " << optionComputeInput << endl;
+computeMethod=optionComputeInput;
+}
+bool interrupted = false;
+/*    std::mutex mtx;
+    std::cout << "Press ENTER to interrupt default SET to Load-N-Go!!!" << std::endl;
+    auto future = std::async(std::launch::async, [&mtx, &interrupted]() {
+        std::cin.get();
+        std::lock_guard<std::mutex> lock(mtx);
+        interrupted = true;
+    });
+    for (int i = countdown_seconds; i >= 1; --i) {
+        {
+            std::lock_guard<std::mutex> lock(mtx);
+            if (interrupted) {
+         optionMenueInput ="null";       break;
+            }
+        }
+        std::cout << i << " ";
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+    }
+    std::cout << std::endl;
+    int GO = interrupted ? 0 : 1;
+    std::cout << "GO = " << GO << std::endl;
+*/
+librarian_functions( hostIp, hostPort, optionCores, optionMenueInput, optionFlagInput, optionComputeInput,  singleCore, computeMethod, createHost );
+}
+
+
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow) {
+    HANDLE mutexHandle = CreateMutexA(NULL, TRUE, "ZetaConduitSingleInstance");
+    if (GetLastError() == ERROR_ALREADY_EXISTS) return 0;
+    std::string fullCmdLine = GetCommandLineA();
+    std::vector<std::string> argsVec = splitCommandLine(fullCmdLine);
+    std::vector<char*> argv;
+    for (auto& s : argsVec) argv.push_back(&s[0]);
+    int argc = static_cast<int>(argv.size());
+    std::string hostIp = "null", optionMenueInput = "null", optionFlagInput = "null";
+    std::string networkAssignment = "default", optionComputeInput = "default";
+    std::string computeMethod = "null";
+    bool createHost = true, singleCore = false, optionO = false;
+    int optionCores = 0, hostPort = 0;
+    for (int i = 1; i < argc; ++i) {
+        std::string arg = argv[i];
+        if (arg == "-o") optionO = true;
+        else if (arg == "-c" && i + 1 < argc) {
+            std::istringstream(argv[++i]) >> optionCores;
+        } else if (arg == "-m" && i + 1 < argc) optionMenueInput = argv[++i];
+        else if (arg == "-ip" && i + 1 < argc) hostIp = argv[++i];
+        else if (arg == "-p" && i + 1 < argc) {
+            std::istringstream(argv[++i]) >> hostPort;
+        } else if (arg == "-f" && i + 1 < argc) optionFlagInput = argv[++i];
+        else if (arg == "-x" && i + 1 < argc) optionComputeInput = argv[++i];
+        else if (arg == "-w" && i + 1 < argc) networkAssignment = argv[++i];
+        else std::cerr << "Invalid argument: " << arg << std::endl;
+    }
+    createHost = (networkAssignment != "g");
+//    system("cls");
+    std::cout << "Run Commands: " << std::endl;
+    if (hostIp == "null" && hostPort && networkAssignment == "g")
+        std::cout << "Guest connect to Host Port: " << hostPort << std::endl;
+    if (hostIp != "null" && hostPort && networkAssignment == "g")
+        std::cout << "Guest connect to Host IP & Port: " << hostIp << ":" << hostPort << std::endl;
+    if (hostPort && hostIp != "null" && networkAssignment == "h")
+        std::cout << "Host Assigned IP & Port: " << hostIp << ":" << hostPort << std::endl;
+    if (hostPort && hostIp == "null" && networkAssignment == "h")
+        std::cout << "Host Assigned Port: " << hostPort << std::endl;
+    if (optionCores == 1) singleCore = true;
+    if (optionCores)
+        std::cout << "CPU Core Assignment: " << optionCores
+                  << (singleCore ? "  SINGLE Core " : "") << std::endl;
+    if (optionMenueInput != "null")
+        std::cout << "Menue Assignment: " << optionMenueInput << std::endl;
+    if (optionFlagInput != "null")
+        std::cout << "Flag Assignment: " << optionFlagInput << std::endl;
+    optionComputeInput = "Gear";
+    if (optionComputeInput != "default")
+        std::cout << "Compute Assignment: " << optionComputeInput << std::endl;
+    else
+        computeMethod = optionComputeInput;
+  if (createHost) AttachConsoleWindow();
+    const char* className = "ZetaWindowClass";
+    WNDCLASS wc = {};
+    wc.lpfnWndProc = WindowProc;
+    wc.hInstance = hInstance;
+    wc.lpszClassName = className;
+    wc.hbrBackground = (HBRUSH)(COLOR_WINDOW + 1);
+    RegisterClassA(&wc);
+    int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+    diameter = screenWidth / 4;
+    HWND hwnd = CreateWindowExA(
+        WS_EX_LAYERED, className, "Circular Window", WS_POPUP,
+        (screenWidth - diameter) / 2, (GetSystemMetrics(SM_CYSCREEN) - diameter) / 2,
+        diameter, diameter, nullptr, nullptr, hInstance, nullptr);
+    if (!hwnd) return 0;
+    SetLayeredWindowAttributes(hwnd, 0, 255, LWA_ALPHA);
+    ShowWindow(hwnd, nCmdShow);
+    UpdateWindow(hwnd);
+   
+    MSG msg = {};
+    while (GetMessage(&msg, nullptr, 0, 0)) {
+        TranslateMessage(&msg);
+        DispatchMessage(&msg);
+    }
+    return 0;
+}
+
+
+LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
+    static int screenWidth;
+    static HFONT hFont = nullptr;
+    switch (uMsg) {
+    case WM_CREATE: {
+        screenWidth = GetSystemMetrics(SM_CXSCREEN);
+        diameter = screenWidth / 4;
+        HRGN hRgn = CreateEllipticRgn(0, 0, diameter, diameter);
+        SetWindowRgn(hwnd, hRgn, TRUE);
+        return 0;
+    }
+    case WM_MOUSEWHEEL: {
+        int delta = GET_WHEEL_DELTA_WPARAM(wParam);
+        diameter += (delta > 0 ? 20 : -20);
+        if (diameter < 100) diameter = 100;
+        if (diameter > screenWidth) diameter = screenWidth;
+        SetWindowPos(hwnd, nullptr, 0, 0, diameter, diameter,
+                     SWP_NOMOVE | SWP_NOZORDER | SWP_NOACTIVATE);
+        HRGN hRgn = CreateEllipticRgn(0, 0, diameter, diameter);
+        SetWindowRgn(hwnd, hRgn, TRUE);
+        InvalidateRect(hwnd, nullptr, TRUE);
+        return 0;
+    }
+    case WM_LBUTTONDOWN:
+        ReleaseCapture();
+        SendMessage(hwnd, WM_NCLBUTTONDOWN, HTCAPTION, 0);
+        return 0;
+    case WM_SETCURSOR:
+        SetCursor(LoadCursor(nullptr, IDC_ARROW));
+        return TRUE;
+    case WM_PAINT: {
+        PAINTSTRUCT ps;
+        HDC hdc = BeginPaint(hwnd, &ps);
+        RECT clientRect;
+        GetClientRect(hwnd, &clientRect);
+        SetBkMode(hdc, TRANSPARENT);
+        SetTextColor(hdc, RGB(0, 0, 0));
+        const int rows = 11, cols = 11;
+        int cellWidth = clientRect.right / cols;
+        int cellHeight = clientRect.bottom / rows;
+        int number = 0;
+        for (int row = 0; row < rows; ++row) {
+            for (int col = 0; col < cols; ++col) {
+                RECT cellRect = {
+                    col * cellWidth,
+                    row * cellHeight,
+                    (col + 1) * cellWidth,
+                    (row + 1) * cellHeight
+                };
+                int fontSize = (diameter / ((number % 2 == 0) ? 14 : 20));
+                HFONT cellFont = CreateFontA(
+                    fontSize, 0, 0, 0, FW_BOLD, FALSE, FALSE, FALSE,
+                    DEFAULT_CHARSET, OUT_OUTLINE_PRECIS, CLIP_DEFAULT_PRECIS,
+                    CLEARTYPE_QUALITY, VARIABLE_PITCH, "Segoe UI");
+                HFONT oldFont = (HFONT)SelectObject(hdc, cellFont);
+                std::string text = std::to_string(number);
+                DrawTextA(hdc, text.c_str(), -1, &cellRect, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+                SelectObject(hdc, oldFont);
+                DeleteObject(cellFont);
+                if (++number > 120) break;
+            }
+            if (number > 120) break;
+        }
+        EndPaint(hwnd, &ps);
+        return 0;
+    }
+    case WM_RBUTTONUP: {
+        HMENU hPopup = CreatePopupMenu();
+        AppendMenu(hPopup, MF_STRING, ID_CLOSE_ALL, "Close All");
+        POINT pt;
+        GetCursorPos(&pt);
+        TrackPopupMenu(hPopup, TPM_RIGHTBUTTON, pt.x, pt.y, 0, hwnd, nullptr);
+        DestroyMenu(hPopup);
+        return 0;
+    }
+    case WM_COMMAND:
+        if (LOWORD(wParam) == ID_CLOSE_ALL) {
+            DestroyWindow(hwnd);
+            return 0;
+        }
+        break;
+    case WM_DESTROY:
+        if (hFont) DeleteObject(hFont);
+        PostQuitMessage(0);
+        return 0;
+    }
+    return DefWindowProc(hwnd, uMsg, wParam, lParam);
+}
+
+
+void AttachConsoleWindow() {
+    AllocConsole(); // Allocate a new console for this process
+    FILE* fp;
+    freopen_s(&fp, "CONOUT$", "w", stdout); // Redirect stdout
+    freopen_s(&fp, "CONOUT$", "w", stderr); // Redirect stderr
+    freopen_s(&fp, "CONIN$",  "r", stdin);  // Redirect stdin
+    SetConsoleTitle("Debug Console");
+}
+
+void realm_post_client(string input_text_function_name, string input_text)
+{
+int stringLength = 35 - input_text_function_name.size();
+
+cout <<  setw(stringLength) << "  " << input_text_function_name  << " :  " << input_text << endl;
+
+
+
+
+
+
+}
+
+
+
+void realm_os_user_input(string&validUserInput)
+{    
+ //  cout << "\033[25;1H"; 
+/* ="cout << " & CHAR(34) & "Function Begin : "  & B2 & CHAR(34)  & " << endl;" */
+//cout << "X                                X       |      " ;
+  string userRawInput="";
+  cin.clear(); 
+  getline(cin, userRawInput);
+  validUserInput = userRawInput +"\0";
+
+//cout << "\033[1;1H";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+double realm_metalUptime(){
+
+
+
+
+
+    // Get system uptime in milliseconds
+    DWORD uptime = GetTickCount(); 
+    
+    // Convert milliseconds to seconds
+    double uptime_seconds = uptime / 1000.0;
+
+    //std::cout << "System Uptime: " << uptime_seconds << " seconds" << std::endl;
+    
+    return uptime_seconds;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+string realm_metalGUID(){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    std::string command = "powershell.exe gwmi win32_networkadapter -Property guid";
+
+    // Execute the PowerShell command and capture the output
+    FILE* pipe = _popen(command.c_str(), "r");
+    if (!pipe)
+    {
+        std::cerr << "Failed to execute command: " << command << std::endl;
+
+    }
+//    std::cout << command.c_str()<<std::endl;
+
+    const int maxBufferSize = 128;
+    char buffer[maxBufferSize];
+    std::string result;
+    std::string bufferString;
+    std::string bufferStringShort;
+    std::string guidKey="GuidKey";
+    while (!feof(pipe))
+    {
+        if (fgets(buffer, maxBufferSize, pipe) != nullptr)
+        {
+            result += buffer;
+            bufferString = buffer;
+           bufferStringShort= bufferString.substr( 0, 4 );
+//std::cout << bufferStringShort<< std::endl;
+// std::cout << buffer;
+        if (bufferString.substr( 0, 4 )=="GUID"){
+
+        if (bufferString.substr( 0, 20 )=="GUID             : {"){
+       //  std::cout << bufferString;
+           bufferStringShort= bufferString.substr( 0, 56 );
+         //  GUID             : {9BA5A73A-7FA8-41CA-A502-C8DAD3839573
+        // std::cout << bufferStringShort << std::endl;
+
+           bufferStringShort= bufferStringShort.substr( 20, 36 );
+         //  GUID             : {9BA5A73A-7FA8-41CA-A502-C8DAD3839573
+         //std::cout << bufferStringShort << std::endl;
+         guidKey+="-"+bufferStringShort;
+         }
+        }
+        }
+    }
+// std::cout << result.c_str();
+    // Close the pipe
+    _pclose(pipe);
+
+   // std::cout << guidKey << std::endl;
+
+    // Check if the port is available
+    return guidKey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+string realm_metalIdNum(){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    std::string command = "powershell.exe get-wmiobject Win32_ComputerSystemProduct";
+
+    // Execute the PowerShell command and capture the output
+    FILE* pipe = _popen(command.c_str(), "r");
+    if (!pipe)
+    {
+        std::cerr << "Failed to execute command: " << command << std::endl;
+
+    }
+ //   std::cout << command.c_str()<<std::endl;
+
+    const int maxBufferSize = 128;
+    char buffer[maxBufferSize];
+    std::string result;
+
+
+    std::string bufferString;
+    std::string bufferStringShort;
+    std::string metalKey="MetalKey";
+
+    std::string metalIdNum="";
+    std::string metalName="";
+    std::string metalVendor="";
+
+
+
+
+    while (!feof(pipe))
+    {
+        if (fgets(buffer, maxBufferSize, pipe) != nullptr)
+        {
+            result += buffer;
+            bufferString = buffer;
+               if (bufferString.substr( 0, 4 )=="Iden"){
+               //std::cout << bufferString;
+               metalIdNum=bufferString.substr( 20, 14 );
+              // std::cout << metalIdNum << std::endl;
+
+               }
+               if (bufferString.substr( 0, 4 )=="Name"){
+              // std::cout << bufferString;
+               metalName=bufferString.substr( 20, 14 );
+            //   std::cout << metalName << std::endl;
+               }
+               if (bufferString.substr( 0, 4 )=="Vend"){
+              // std::cout << bufferString;
+               metalVendor=bufferString.substr( 20, 14 );
+              // std::cout << metalVendor << std::endl;
+
+
+               }
+
+
+
+
+        }
+    }
+ //std::cout << result.c_str();
+    // Close the pipe
+    _pclose(pipe);
+
+
+int metalIdNumSize =metalIdNum.size();
+metalIdNumSize--;
+metalIdNum = metalIdNum.substr(0,metalIdNumSize);
+
+int metalNameSize =metalName.size();
+metalNameSize--;
+metalName = metalName.substr(0,metalNameSize);
+
+int metalVendorSize =metalVendor.size();
+metalVendorSize--;
+metalVendor = metalVendor.substr(0,metalVendorSize);
+
+
+
+
+metalKey=  metalIdNum +" * "+ metalName +" * "+ metalVendor;
+
+//std::cout << metalKey.c_str();
+
+
+    // Check if the port is available
+    return metalKey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+string realm_unique_time_stamp()
+{
+
+
+
+
+
+
+
+
+
+
+ // Get the current time point
+    auto now = std::chrono::system_clock::now();
+
+    // Extract individual components of time
+    auto time = std::chrono::system_clock::to_time_t(now);
+    std::tm tm_time = *std::localtime(&time);
+
+    // Format the string as "MODYYRHRMNSEC"
+    std::ostringstream formattedTime;
+    formattedTime << std::put_time(&tm_time, "%b%d%Y%H%M%S");
+
+ //   std::string result = formattedTime.str();
+
+  //  std::cout << "Formatted Time: " << result << std::endl;
+
+
+
+
+string timeStamp =  formattedTime.str() ;
+
+
+
+
+
+
+
+
+
+
+
+return timeStamp;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_conduit_adapter()
+{
+string text_function_name="realm_conduit_adapter"; string text_post = "";
+realm_conduit_win64Class adapter0;
+
+
+
+
+
+
+
+
+text_post = " QUERRY NETWORK"; realm_post_client(text_function_name, text_post );
+adapter0.NET();
+
+
+text_post = " QUERRY FIREWALL"; realm_post_client(text_function_name, text_post );
+adapter0.WALL();
+
+
+text_post = " OPEN FIREWALL CONDUIT"; realm_post_client(text_function_name, text_post );
+adapter0.DOOR();
+
+int newIP;
+text_post = " SET NETWORK ADDRESS "; realm_post_client(text_function_name, text_post );
+adapter0.IP(newIP); // newdns // new lots 
+
+
+text_post = " OPEN CONDUIT NETWORK PORTS "; realm_post_client(text_function_name, text_post );
+adapter0.PORTS();
+
+
+text_post = " RENEW IP DHCP "; realm_post_client(text_function_name, text_post );
+adapter0.DHCP();
+
+
+text_post = " SEND IPCONFIG COMMAND "; realm_post_client(text_function_name, text_post );
+adapter0.IPCONFIG();
+
+
+
+
+
+
+
+
+
+
+
+text_post = "FUNCTION      HAS COMPLETED SUCESSFULLY!"; realm_post_client(text_function_name, text_post );
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tuple<int,string,string,__int128,int,int,int,vector<byte>,int,unique_ptr<byte[]>> realm_conduit_win_guest(string hostIp, string returnGuestStatusIn, string uniqueId, int conduit, int myPort, string myIP, int remotePort, string remoteIP, string instruction, string randomString1, string randomString2, string randomString3, vector<byte> primeCatch, int returnPrimeQue, int privateGrid, int tileCount, int returnTileReceives)
+{
+string returnGuestStatus= returnGuestStatusIn;
+int returnData = 1;      __int128 claimed128Port00  =0; int minimumTileCount=0;
+string text_function_name="realm_win_guest";   string newPort = "";
+ string text_post = "";    int guestAssignedPrimeQue =0;
+  string userInput;  string assignedWolfPrimeQueString="";
+bool yesContinue=true;  vector<byte> tileReceive;
+ bool socketSearch=true; std::unique_ptr<byte[]> tileData(new byte[privateGrid]);   //byte* tileData = new byte[privateGrid];         
+  int PORTgrow =  remotePort;  string hostTotalGuestsString; int hostTotalGuests;
+   bool sendForever=true; bool guestCout = true;
+bool receiveForever=true;
+ int dataSend=0;     __int128 guestAssignedWolfLeap =0; int guestAssignedWolfHunger =0;
+  bool socketForever=true;
+   bool printForever=true;
+    string delString;   int wolfHunger = 16 ;    string wolfHungerString = "16"; //  2pow(16)
+string remoteHostId ="";    string assignedWolfLeapString ="";  string assignedWolfHungerString ="";
+int totalSends=0;   int allData=0;
+__int128 returnWork=0;  int returnHunger=0;
+int totalGuestDatas=0;
+__int128 guestDataSize;
+string guestDataSizeString="";
+string guestData[50];   __int128 guestDataSizeStringSize=0;
+string additionalData="";   __int128 totalGuestDataStringSize;
+string totalGuestDatasString ="";  int guestAddWalk=0;
+//    cout << "Initialize Winsock" << endl;
+ string tempDir =  "PrimeBookOne\\archive\\"+uniqueId+"\\";
+WSADATA wsData;
+WORD ver = MAKEWORD(2, 2);
+int wsOk = WSAStartup(ver, &wsData);
+if (wsOk != 0){    cerr << "Can't initialize Winsock! Quitting" << endl;    return make_tuple(9,"9",returnGuestStatus,0,returnHunger, returnPrimeQue,minimumTileCount, tileReceive,returnTileReceives,move(tileData));}
+SOCKET sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);   // cout << "Create socket" << endl;     SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);  
+if (sock == INVALID_SOCKET) {
+   cerr << "Can't create socket! Quitting" << endl;
+   WSACleanup();
+   return make_tuple(8,"8",returnGuestStatus,0,returnHunger, returnPrimeQue,minimumTileCount, tileReceive,returnTileReceives,move(tileData));
+}
+    u_long mode = 1;
+    ioctlsocket(sock, FIONBIO, &mode);
+sockaddr_in hint{};
+hint.sin_family = AF_INET;
+    hint.sin_addr.s_addr = inet_addr("127.0.0.1");  // hint.sin_addr.s_addr = inet_addr(hostIp.c_str());
+string ipAddress = inet_ntoa(hint.sin_addr);
+while (socketForever==true){
+     hint.sin_port = htons( PORTgrow );
+//     cout << endl << "  G  HOST remote ip : " << ipAddress;
+//   cout << endl << "  G  GUEST local ip : " << ipAddress;
+//    cout << endl << "  G  GUEST local PORTgrow : " << int(PORTgrow) << " " ;
+int connectResult = connect(sock, reinterpret_cast<sockaddr*>(&hint), sizeof(hint));
+ if (connectResult == SOCKET_ERROR) {
+              std::cerr << "\033[1;2H" << "Host"<<endl<< "Not"<< endl <<"Ready" << "Yet"<< endl;      //  due to HOST port Unavailable Error code: " << WSAGetLastError() << std::endl;
+     //  closesocket(sock);     WSACleanup();
+ //    cout << "I am GUEST CONNECTED TO HOST now Awaiting Continue" << endl;
+  }
+
+// guestSEND ARM   
+guestData[0] = globalBuildString;
+string myUniqueLoginKeyString = "09876543210987654321098765432109876543210987654321"; // 50 digits
+guestData[1] = myUniqueLoginKeyString;
+guestData[2] = hostIp;
+string128Class claimedPort00Int128( remotePort );
+string claimedPort00String = claimedPort00Int128.getString();   // 5 digits 
+guestData[3] = claimedPort00String;
+guestData[4] = uniqueId;
+string128Class tileCountInt( tileCount );
+string tileCountString = tileCountInt.getString();   //  "01234567890123456789";   // 20 digits 
+guestData[5] =tileCountString;
+ string wolfPackIdString = uniqueId;   // 33 digits 
+guestData[6] = wolfPackIdString;
+//string wolfHungerString = "1234512345";   // 10 digits 
+guestData[7] = wolfHungerString;
+string myPreferredUserHandleString ="jasonisaachuffbrodsky";  // no digit limit but string variable roof 
+guestData[8] = myPreferredUserHandleString;
+string128Class globalMetalUpTimeString( 0 );
+guestData[9] = globalMetalUpTimeString.getString();
+guestData[10] = globalMetalGUID;
+guestData[11] = globalMetalIdNum;
+guestData[12] = returnGuestStatus;
+string128Class returnPrimeQueString(returnPrimeQue);
+guestData[13] = returnPrimeQueString.getString();
+totalGuestDatas=14;
+string128Class guestDatasString(totalGuestDatas);
+totalGuestDatasString = guestDatasString.getString();
+totalGuestDataStringSize =totalGuestDatasString.length();
+if (totalGuestDataStringSize==1){totalGuestDatasString= "000"+ totalGuestDatasString;};
+if (totalGuestDataStringSize==2){totalGuestDatasString= "00"+ totalGuestDatasString;};
+if (totalGuestDataStringSize==3){totalGuestDatasString= "0"+ totalGuestDatasString;};
+additionalData = totalGuestDatasString;
+while(guestAddWalk < totalGuestDatas){
+   guestDataSize= guestData[guestAddWalk].size();
+string128Class dataSizeString(guestDataSize);
+   guestDataSizeString =dataSizeString.getString();
+guestDataSizeStringSize = guestDataSizeString.size();  
+   if (guestDataSizeStringSize==1){guestDataSizeString= "000"+ guestDataSizeString;};
+   if (guestDataSizeStringSize==2){guestDataSizeString= "00"+ guestDataSizeString;};
+   if (guestDataSizeStringSize==3){guestDataSizeString= "0"+ guestDataSizeString;};
+additionalData+=   guestDataSizeString + guestData[guestAddWalk] ;
+//cout << int(guestAddWalk)<< endl << guestDataSizeString << endl << guestData[guestAddWalk] << endl;
+guestAddWalk++;
+}
+send(sock, additionalData.c_str(), additionalData.size(), 0);
+// std::cout << "   G Sent: "<< additionalData << "  To Host:" << std::endl;
+
+//guest send
+
+/*Guest RECEIVE ARM*/           string128Class PORTgrowString( PORTgrow );   
+string guestFileName = tempDir + "pb1_" + randomString1 + getCurrentTimeInSecondsString() + PORTgrowString.getString()  + ".txt";
+
+
+/*G*/     //    cout << "G " << uniqueId <<":"<< conduit << " Guest File Name: " << guestFileName << endl;
+/*G*/         std::ofstream copy( guestFileName , std::ios::binary);
+/*G*/         while(printForever==true){
+int* received_array = new int[ARRAY_SIZE];
+
+int bytes_received = recv(sock, reinterpret_cast<char*>(received_array), ARRAY_SIZE * sizeof(int), 0);
+copy.write(reinterpret_cast<const char*>(received_array), bytes_received);
+copy.close();
+
+delete[] received_array;
+
+
+
+
+
+// guestENACT  ARM     
+// cout << "G Enact fileName : "<< guestFileName << "   <---"<<endl;
+//  QUERRY
+    ifstream file( guestFileName );
+    if (!file) { cerr << "G Error opening Instructions file:    " << guestFileName << endl;  cout << "Error Reading ZipList File" << endl; }
+    __int128 lineCount = 0;
+    string line;
+    while (getline(file, line)) {lineCount++;}   lineCount--;
+    string128Class lineCountString( lineCount -1 );
+    string stringLineCount = lineCountString.getString();
+//  cout << "G Number of Instructions in pb1send.txt : " <<stringLineCount << endl;
+        file.close();
+// ******************************************
+  const int MAX_LINES = 500;
+string  instructionArray[MAX_LINES];
+// ********* READ TXT DATA INTO ARRAY ***********
+// cout <<"G Filename to Read Into Array : " << guestFileName << endl;
+int walk =0;
+   ifstream file2( guestFileName );
+    if (!file2) {  std::cerr << "G Error opening file: " << guestFileName << std::endl;}
+    if (file2.is_open()) {
+        while (getline(file2, instructionArray[walk] )) {
+  //        cout <<"G Instructed : "<< walk << " " << instructionArray[walk] << endl ;
+walk++;
+        }
+        file2.close();
+}
+// cout << endl << endl << "PB1 TXT FINISHED" << endl << endl;
+//system("cls");
+ cout << "\033[0;1H" ;
+//system("cls");
+string arrayInstruction; string arrayData;
+//  ENACT
+int instruction =0;
+while(instruction< lineCount ){
+//cout <<"G Enact: " << instruction << " : " << instructionArray[instruction] << " "<< instructionArray[instruction + 1] << " " <<  instructionArray[instruction + 2] << endl;
+
+
+
+// guestINSTRUCT ARM     
+//cout << endl << "G Instruction " << instructionArray[instruction] << " with data " <<  instructionArray[instruction+2] << " : " << instructionArray[instruction]<< endl;
+if (instructionArray[instruction] == "0"){        // total Instructions Line
+//cout << "\033[2;1H" << endl <<" Enact Total Instructions : "<< instructionArray[instruction+2];
+ remoteHostId = instructionArray[instruction+4];
+// cout <<  "H: "<< remoteHostId << "     " << endl ; // "\033[3;1H"
+}
+
+if (instructionArray[instruction] == "1"){
+
+//cout << "W# "<< instructionArray[instruction+2] << "     " <<endl; // << "\033[4;1H" 
+//cout <<  endl << "W: "<< instructionArray[instruction+1] << "     " <<endl ; // "\033[5;1H"
+hostTotalGuestsString = instructionArray[instruction+2];
+hostTotalGuests =  StringTo128Class::stringToInt128( hostTotalGuestsString);
+}
+
+if (instructionArray[instruction] == "2"){ // Run Updater
+
+ //cout << "                                                                    Update Gear Reconnect to Update IP : "<< instructionArray[instruction+1] << endl;
+// cout << "                                                                    Update Gear Reconnect to Update Port : "<< instructionArray[instruction+2] << endl;
+//  realm_win_updater(ip)
+}
+
+if (instructionArray[instruction]== "3"){
+minimumTileCount =  StringTo128Class::stringToInt128( instructionArray[instruction+1] );
+
+}
+
+
+
+if (instructionArray[instruction] == "4"){
+//cout << " Begin InfiniteWalk at  XXX with total piesclice = xxx" << endl;
+
+}
+
+
+
+
+if (instructionArray[instruction] == "5"){
+//cout << "  return foundPrimes to assigned primeFindsUpdaterPort" << endl;
+
+}
+
+if (instructionArray[instruction] == "6"){
+
+
+   newPort =  instructionArray[instruction+2];
+
+   claimed128Port00  =    StringTo128Class::stringToInt128( newPort );
+//    cout <<  "\033[1;1H" << " I AM THE CHOSEN ONE" << endl; // initiate Host at Stated Port 
+//cout << "Guest Become Host Count : "<< globalGuestBecomeHostCount++ << endl;    //realm_os_user_input(userInput);
+system("cls");
+      globalNewPort[0] =  int(claimed128Port00);
+      globalGuestBecomeHost[0] =true;
+      closesocket(sock);     WSACleanup();  return make_tuple(1,"1",returnGuestStatus,returnWork,returnHunger,returnPrimeQue,minimumTileCount, tileReceive,returnTileReceives,move(tileData));
+
+}
+
+if (instructionArray[instruction] == "7"){
+
+
+   newPort =  instructionArray[instruction+2];
+
+   claimed128Port00  =    StringTo128Class::stringToInt128( newPort );
+
+//      cout <<  "\033[1;1H" <<" I SEEK THE CHOSEN ONE" << endl;  // connect guest to stated ip and port
+
+system("cls");
+      globalNewPort[0] =  int(claimed128Port00);
+      globalGuestBecomeHost[0] = false;  
+      closesocket(sock);     WSACleanup();  return make_tuple(2,"2",returnGuestStatus,returnWork,returnHunger, returnPrimeQue,minimumTileCount, tileReceive,returnTileReceives,move(tileData));
+
+
+
+
+
+
+
+}
+
+
+if (instructionArray[instruction]== "8"){
+globalWolfPackIdString = instructionArray[instruction+1];
+globalWolfDenIdString = instructionArray[instruction+2];
+returnGuestStatus ="MinimumTilesNeeded";
+}
+
+if (instructionArray[instruction]== "9"){
+
+//system("cls");
+
+assignedWolfLeapString =  instructionArray[instruction+1];
+assignedWolfHungerString =  instructionArray[instruction+2];
+assignedWolfPrimeQueString =  instructionArray[instruction+4];
+//cout << "GUEST RECEIVES INFINITEWALK:" << assignedWolfLeapString << " AssignedWolfHunger: "<< assignedWolfHungerString;
+//cin >> userInput;
+ guestAssignedWolfLeap       =    StringTo128Class::stringToInt128( assignedWolfLeapString );
+ guestAssignedWolfHunger  =    StringTo128Class::stringToInt128( assignedWolfHungerString );
+ guestAssignedPrimeQue      =    StringTo128Class::stringToInt128( assignedWolfPrimeQueString );
+
+
+
+
+returnHunger = guestAssignedWolfHunger;
+returnGuestStatus="PrimeBookCompute";
+returnWork = guestAssignedWolfLeap;
+returnPrimeQue = guestAssignedPrimeQue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+instruction+=3;
+}
+  string delFile = "echo off & del " + guestFileName  ;
+  system( delFile.c_str() );
+
+
+
+// GUEST FOLLOWUP ARM       
+if (1 == 0){  //   RECEIVE PRIMBEBOOKONE UPDATER
+}
+if ( 1 == 0 && 2 == 3 ) {   // RECEIVE A PRIMEBOOK
+}
+if ( returnGuestStatus == "PrimeCatchReady") {  // SEND PRIMECATCH TO HOST
+    uint32_t vectorSize = primeCatch.size();
+    send(sock, reinterpret_cast<const char*>(&vectorSize), sizeof(vectorSize), 0);
+    // Send the vector data
+    send(sock, reinterpret_cast<const char*>(primeCatch.data()), vectorSize, 0);
+returnGuestStatus="PrimeBookReceived";
+//cout << "GUEST SENT VECTOR"; cin >> userInput;
+}
+if (returnGuestStatus=="MinimumTilesNeeded"){  // Send infiniteLeap and wolfHunger
+// receive byte array@grid from host to then hand to Weaver to load into Book
+returnTileReceives++;
+    uint32_t vectorSize = 0;
+    recv(sock, reinterpret_cast<char*>(&vectorSize), sizeof(vectorSize), 0);
+//byte* tileReceiveGuest = new byte[vectorSize];
+std::vector<byte> tileReceiveGuest(vectorSize);
+//recv(sock, reinterpret_cast<char*>(tileReceiveGuest.data()), vectorSize, 0);
+int totalReceived = 0;
+while (totalReceived < privateGrid) {
+    int received = recv(sock, reinterpret_cast<char*>(tileReceiveGuest.data()) + totalReceived, privateGrid - totalReceived, 0);
+ if (received <= 0) {
+   //    perror("Receive failed or connection closed");
+       break;
+   }
+    totalReceived += received;
+}
+//byte* tileReceiveGuest00 = new byte[vectorSize];
+//unique_ptr<byte[]> tileData(tileReceiveGuest00); 
+tileReceive= tileReceiveGuest;
+//for (uint8_t b : tileReceiveGuest) {
+// cout << int(b)<<endl;
+//}
+}
+
+//=guestCOUT!A1
+closesocket(sock);
+WSACleanup();
+return make_tuple(0,"0",returnGuestStatus,returnWork,returnHunger, returnPrimeQue,minimumTileCount, tileReceive,returnTileReceives,move(tileData));
+
+if (bytes_received == SOCKET_ERROR) {
+    std::cerr << "G recv() failed: " << WSAGetLastError() << std::endl;
+   delete[] received_array;
+
+
+   break;
+
+} else if (bytes_received == 0) {
+    std::cout << "G Guest disconnected" << std::endl;
+   delete[] received_array;
+
+
+   break;
+}
+
+//cout << "GUEST totalDataReceives : "<<allData++;
+
+
+closesocket(sock);
+WSACleanup();
+
+
+
+/*G*/            } // WHILE (printForever==true)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}           // WHILE SOCKETFOREVER == TRUE
+return make_tuple(returnData,"finish function", returnGuestStatus,returnWork,returnHunger, returnPrimeQue,minimumTileCount, tileReceive,returnTileReceives,move(tileData));
+} // END FUNCTION
+
+
+int getCurrentTimeInSecondsInt()
+{
+
+
+    auto currentTime = std::chrono::system_clock::now();
+    auto secondsSinceEpoch = std::chrono::duration_cast<std::chrono::seconds>(currentTime.time_since_epoch());
+    int returnInt =  static_cast<int>(secondsSinceEpoch.count());
+
+ return returnInt;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+string getCurrentTimeInSecondsString()
+{
+
+
+    auto currentTime = std::chrono::system_clock::now();
+    auto secondsSinceEpoch = std::chrono::duration_cast<std::chrono::seconds>(currentTime.time_since_epoch());
+    int returnInt =  static_cast<int>(secondsSinceEpoch.count());
+    string128Class timeInSeconds( returnInt );
+ return timeInSeconds.getString();
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void librarian_functions( string hostIp, int hostPort, int optionCores, string optionMenue, string optionFlag, string optionCompute,  bool singleCore, string computeMethod, bool createHost )
+
+{    
+
+  //string text_function_name="librarian_functions"; string text_post = "";
+   bool commandLineMode = true;
+   bool gitState=true;  bool noGui = false;
+   string userInput;   string setPrimeMath ="";
+   if ( optionMenue != "null" ){        commandLineMode = true;        userInput = optionMenue; noGui = true;}
+   if ( optionFlag != "null" ){        if(optionFlag=="git_off"){           gitState=false; }    }
+   if ( optionCompute != "default" ){        if(optionFlag=="quickPrime"){           setPrimeMath="quickPrime"; }    
+    if(optionFlag=="noPrime"){           setPrimeMath="noPrime"; }    
+    } else { setPrimeMath = "quickPrime";}
+
+
+
+
+
+  
+  bool runForever=true;
+  bool mrTsaysRead=false;
+  bool questionDemonstrate=true;
+  bool reload = false;
+  
+
+  int menueChoice = 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  while( questionDemonstrate==true){
+    reload = false;
+    if ( menueChoice  < 0 ) { menueChoice = 0 ; }
+
+    if ( menueChoice == 0 ) {
+  if(noGui==false){    menu_librarian() ;}
+
+    }
+    if ( menueChoice == 1 ) {  }
+    if ( menueChoice == 2 ) {  }
+
+if (optionMenue == "null"){  realm_os_user_input(userInput); }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//PRIMEBOOK NETWORK GUEST ) 9 (
+    if (userInput=="9" && menueChoice == 0  && reload == false ){  
+      mrTsaysRead=true;   menueChoice =1;  system("cls");
+
+      conduitClass winTelConduits( 5678 );
+      createHost = false;__int128 weaverBeginData =0;
+      globalRemotePortString = hostPort;
+      globalRemoteIpString = hostIp;
+      winTelConduits.weaverBegin(  uniqueIdGlobal,  createHost,  weaverBeginData, hostIp, hostPort);
+      reload = true;
+    }
+
+
+
+//PRIMEBOOK NETWORK HOST   ) 8 (
+    if (userInput=="8" && menueChoice == 0  && reload == false ){  
+      mrTsaysRead=true;   menueChoice =1;  system("cls");
+   AllocConsole();     AttachConsoleWindow();
+      conduitClass winTelConduits(5678);
+      createHost = true;__int128 weaverBeginData =0;
+      globalRemotePortString = hostPort;
+      winTelConduits.weaverBegin(  uniqueIdGlobal,  createHost,  weaverBeginData, hostIp, hostPort);
+      reload = true;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PRIMEBOOK  NETWORK Updater Send Receive LAN 127.0.0.1  ) 4 (
+    else if (userInput=="4" && menueChoice == 0  && reload == false ){  
+      //   realm_win_archive(); 
+      userInput = "";
+      //  realm_win_updater( userInput );
+      reload = true;
+    }
+
+
+
+
+//ROLL PrimeOneOS Update Install & Load  ) 5 (
+    else if (userInput=="5" && menueChoice == 0  && reload == false ){    
+      realm_win_roll();
+      reload = true;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//PRIMEBOOK  on Network ) 3 (
+    else if (userInput=="3" && menueChoice ==1  && reload == false){   
+      realm_win_ipconfig();
+      reload = true;
+    }
+    
+
+
+
+// ARCHIVE Create PrimeOneUpdater.zip  ) 4 (
+    else if (userInput=="4" && menueChoice ==1  && reload == false){  
+      //   realm_win_archive();
+      //  realm_os_user_input(userInput);    cout << endl;
+      reload = true;
+    }
+
+
+
+
+
+//  NETWORK PrimeOneUpdater.zip Send Receive LAN 127.0.0.1 ) 5 (
+    else if (userInput=="5" && menueChoice ==1  && reload == false){  
+      system("cls");
+      //   realm_win_updater( userInput );
+      reload = true;
+    }
+
+
+
+
+
+//ROLL PrimeOneOS Update Install & Load 
+    else if (userInput=="6" && menueChoice ==1  && reload == false){  
+      realm_win_roll();
+      reload = true;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+// MENUE BACKWARD
+    else if (userInput==".."|| userInput=="back") { 
+      menueChoice--;
+      reload = true; 
+    }
+
+
+
+// EXIT
+    if (userInput=="exit") { 
+      questionDemonstrate=false;
+      exit(0);
+    }
+
+    else if (  reload == true) { system("cls"); }
+
+    else {
+      cout << endl << " INVALID ENTRY " << endl<< endl;
+      system("cls");
+     }  //  1
+// 2
+
+  } //3
+} //4
+//5  FINISH LIBRARIAN FUNCTIONS Function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void menu_librarian()
+{    
+string text_function_name="menu_librarian"; string text_post = "";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+system("cls");
+cout.flush();
+
+ 
+cout  << " " << " " << " " << " " << " " << "X" << "X" << "X" << " " << "O" << "P" << "E" << "R" << "A" << "T" << "I" << "N" << "G" << " " << "S" << "Y" << "S" << "T" << "E" << "M" << " " << "X" << "X" << "X" << " " << " " << " " << " " << " " << " " << " " << "X" << "X" << "X" << " " << "N" << "E" << "T" << "W" << "O" << "R" << "K" << " " << " " << "A" << "D" << "D" << "R" << "E" << "S" << "S" << "E" << "S" << " " << "X" << "X" << "X" << " " << " " << " " << " " << " " <<  "X" << "X" << "X" << " " << "P" << "R" << "O" << "C" << "E" << "S" << "S" << "I" << "N" << "G" << " " << "U" << "N" << "I" << "T" << "S" << " " << "X" << "X" << "X" << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "1" << "2" << "7" << "." << "0" << "." << "0" << "." << "1" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "Build count: " << "3266" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" <<  "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "file:///workspace/app/PB1/PrimeBook.CPP/primebookonexlsm.archive/2025/[primeOne_2025_6_28.xlsm]librarian_functions" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" <<  "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << "X" << "X" << "X" << "X" << "X" << " " << "M" << "E" << "N" << "U" << "E" << " " << "O" << "P" << "T" << "I" << "O" << "N" << "S" << " " << "X" << "X" << "X" << "X" << "X" << "X" << " " << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << "(" << "0" << ")" << " " << "P" << "r" << "i" << "m" << "e" << "B" << "o" << "o" << "k" << " " << "L" << "o" << "a" << "d" << " " << "&" << " " << "G" << "o" << "!" << " " << " " << "X" << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << "(" << "1" << ")" << " " << "P" << "r" << "i" << "m" << "e" << "B" << "o" << "o" << "k" << " " << "S" << "t" << "a" << "r" << "t" << " " << "A" << " " << "N" << "e" << "w" << " " << "X" << " " << " " <<  " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << "X" << "X" << "X" << "X" << " " << "P" << "R" << "I" << "M" << "E" << "B" << "O" << "O" << "K" << " " << "O" << "N" << "E" << " " << "S" << "T" << "A" << "T" << "U" << "S" << " " << "X" << "X" << "X" << "X" << " " << " " << " " << " " << "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " <<  " " << " " << "X" << "X" << "X" << " " << "P" << "A" << "R" << "A" << "M" << "E" << "T" << "E" << "R" << "S" << "E" << "R" << "S" << " " << "X" << "X" << "X" << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " << " " << "X" << " " << "(" << "l" << ")" << " " << "P" << "r" << "i" << "m" << "e" << "B" << "o" << "o" << "k" << " " << "O" << "n" << "e" << " " << "L" << "i" << "b" << "r" << "a" << "r" << "y" << " " << "X" << " " << " " <<  " " << "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << "X" << " " << " " << " " << " " << " " << " " << " " << " " << "P" << "r" << "i" << "m" << "e" << " " << "R" << "a" << "t" << "i" << "o" << " " << "=" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " << "X" << " " << "(" << "a" << ")" << " " << "P" << "r" << "i" << "m" << "e" << "B" << "o" << "o" << "k" << " " << "O" << "n" << "e" << " " << "A" << "r" << "c" << "h" << "i" << "v" << "e" << " " << "X" << " " << " " <<  "X" << " " << " " << " " << " " << " " << "(" << "c" << ")" << "u" << "t" << " " << "=" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << "X" << " " << " " << " " << " " << " " << " " << " " << " " << "T" << "o" << "t" << "a" << "l" << " " << "T" << "i" << "l" << "e" << "s" << " " << "=" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " << "X" << " " << "(" << "r" << ")" << " " << "P" << "r" << "i" << "m" << "e" << "B" << "o" << "o" << "k" << " " << "O" << "n" << "e" << " " << "R" << "e" << "b" << "i" << "n" << "d" << " " << " " << "X" << " " << " " <<  "X" << " " << " " << "(" << "p" << ")" << "r" << "i" << "m" << "e" << "r" << " " << "=" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " << "X" << " " << "(" << "u" << ")" << " " << "P" << "r" << "i" << "m" << "e" << "B" << "o" << "o" << "k" << " " << "O" << "n" << "e" << " " << "U" << "p" << "d" << "a" << "t" << "e" << " " << " " << "X" << " " << " " <<  "X" << " " << "(" << "s" << ")" << "i" << "n" << "g" << "e" << "r" << "s" << " " << "=" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << "X" << " " << "L" << "a" << "r" << "g" << "e" << "s" << "t" << " " << "D" << "i" << "f" << "f" << "e" << "r" << "e" << "n" << "c" << "e" << " " << "=" << " " << "2" << "2" << "8" << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " << " " << "X" << "X" << "X" << "X" << "X" << "X" << " " << "(" << " " << ")" << " " << "P" << "a" << "u" << "s" << "e" << " " << " " << " " << " " << "X" << "X" << "X" << "X" << "X" << "X" << "X" << " " << " " << " " <<  "X" << " " << " " << " " << " " << " " << "P" << "o" << "w" << "e" << "r" << " " << "=" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << "X" << " " << " " << " " << " " << " " << " " << " " << "i" << "n" << "f" << "i" << "n" << "i" << "t" << "e" << "W" << "a" << "l" << "k" << " " << "=" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  "X" << " " << "G" << "r" << "i" << "d " << " " << "=" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << "X" << " " << " " << " " << " " << " " << " " << " " << "T" << "o" << "t" << "a" << "l" << " " << "P" << "r" << "i" << "m" << "e" << "s" << " " << "=" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " << " " << "." << "." << ":" << ":" << ":" << ":" << "T" << "Y" << "P" << "E" << " " << "A" << " " << "C" << "O" << "M" << "M" << "A" << "N" << "D" << ":" << ":" << ":" << ":" << "." << "." << " " << " " << " " << " " <<  "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " << " " << " " << " " << " " << " " << " " << "|" << "|" << " " << "|" << "|" << "|" << "|" << "|" << " " << "|" << "|" << "|" << " " << "|" << "|" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " << " " << " " << " " << " " << " " << "|" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "|" << " " << " " << " " << " " << " " << " " << " " << " " <<  "X" << " " << " " << " " << " " << " " << "(" << "c" << ")" << "P" << "U" << " " << "=" << " " << "Y" << "e" << "s" << " " << " " << " " << " " << " " << " " << " " << "X" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "X" << " " << " " << " " << " " << " " << " " << "|" << " " << " " << "P" << "R" << "I" << "M" << "E" << "B" << "O" << "O" << "K" << " " << " " << "O" << "N" << "E" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  "X" << " " << " " << " " << " " << " " << "(" << "g" << ")" << "P" << "U" << " " << "=" << " " << "N" << "o" << " " << " " << " " << " " << " " << " " << " " << " " << "X" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << "X" << " " << " " << " " << " " << "N" << "e" << "t" << "w" << "o" << "r" << "k" << " " << "P" << "e" << "e" << "r" << "s" << " " << " " << "=" << " " << "3" << "0" << "0" << " " << " " << " " << " " << " " << " " << "X" << " " << " " << " " << " " << " " << " " << " " << " " << "|" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  " " << "X" << "(" << "t" << ")" << "h" << "e" << "r" << "m" << "a" << "l" << " " << "=" << " " << "N" << "o" << " " << " " << " " << " " << " " << " " << " " << "X" << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+cout  << " " << " " << "X" << "X" << "X" << "X" << "X" << "X" << "X" << "X" << " " << "A" << "c" << "t" << "i" << "v" << "e" << " " << "i" << "p" << " " << "=" << " " << "1" << " " << " " << "X" << "X" << "X" << "X" << "X" << "X" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << "|" << "|" << " " << "|" << "|" << "|" << "|" << "|" << "|" << "|" << "|" << "|" << "|" << "|" << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " << " " <<  " " << " " << "X" << "X" << "X" << "X" << " " << "P" << "o" << "r" << "t" << " " << "=" << " " << "5" << "5" << "5" << "5" << "5" << " " << " " << "X" << "X" << " " << " " << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << "" << ""  << endl;
+
+
+
+   cout << "\033[3;1H"; 
+
+
+
+
+
+/*
+    if( realm_win_port_check( "555555" ) ){
+      cout << "Port 555555 is in use. . ." << endl;
+    }
+
+    else{
+      cout << "Port is available. . ." << endl;
+    } */
+cout << "\033[4;1H";
+// realm_gl_querry();
+
+cout << "\033[4;1H";
+realm_win_ipconfig();
+
+cout << "\033[4;1H";
+ // realm_win_handles_sockets();
+
+// realm_os_windows();
+cout << "\033[4;1H";
+}
+
+
+
+
+void librarian()
+{
+string text_function_name="librarian"; string text_post = "";
+
+
+
+
+
+
+//librarian_functions();
+
+
+
+
+
+
+text_post = "FUNCTION      HAS COMPLETED SUCESSFULLY!"; realm_post_client(text_function_name, text_post );
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_os_windows()
+{
+string text_function_name="realm_os_windows"; string text_post = "";
+
+// cout << "windows handles" << endl;
+ realm_win_handles_process();
+ realm_win_handles_thread();
+ realm_win_handles_file();
+ realm_win_handles_file2();
+ realm_win_handles_sockets();
+ realm_win_handles_events();
+ realm_win_handles_mutex();
+ realm_win_save_state();
+
+}
+
+void realm_win_handles_process()
+{
+string text_function_name="realm_win_handles_process"; string text_post = "";
+bool yesContinue=true;
+
+
+
+if (yesContinue){ //void ListProcessHandles()
+
+    DWORD processId = GetCurrentProcessId();
+    HANDLE processHandle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, processId);
+
+    if (processHandle != NULL)
+    {
+        std::cout << "Windows Handle : " << processHandle << " . . . . " <<endl;
+        CloseHandle(processHandle);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_win_handles_file()
+{
+string text_function_name="realm_win_handles_file"; string text_post = "";
+
+bool yesContinue=false;
+
+
+
+
+
+
+
+if (yesContinue){ // void ListFileHandles()
+/*
+    HRESULT hres;
+
+    // Step 1: Initialize COM
+//    hres = CoInitializeEx(0, COINIT_MULTITHREADED);
+    if (FAILED(hres))
+    {
+        std::cout << "Failed to initialize COM." << std::endl;
+        return;
+    }
+
+    // Step 2: Initialize WMI
+    hres = CoInitializeSecurity(
+        NULL,
+        -1,
+        NULL,
+        NULL,
+        RPC_C_AUTHN_LEVEL_DEFAULT,
+        RPC_C_IMP_LEVEL_IMPERSONATE,
+        NULL,
+        EOAC_NONE,
+        NULL);
+
+    if (FAILED(hres))
+    {
+        CoUninitialize();
+        std::cout << "Failed to initialize WMI security." << std::endl;
+        return;
+    }
+
+    // Step 3: Obtain the initial locator to WMI
+    IWbemLocator* pLoc = NULL;
+    hres = CoCreateInstance(
+        CLSID_WbemLocator,
+        0,
+        CLSCTX_INPROC_SERVER,
+        IID_IWbemLocator,
+        (LPVOID*)&pLoc);
+
+    if (FAILED(hres))
+    {
+        CoUninitialize();
+        std::cout << "Failed to create WbemLocator instance." << std::endl;
+        return;
+    }
+
+    // Step 4: Connect to WMI through the IWbemLocator::ConnectServer method
+    IWbemServices* pSvc = NULL;
+    hres = pLoc->ConnectServer(
+        _bstr_t(L"ROOT\\CIMV2"),
+        NULL,
+        NULL,
+        0,
+        NULL,
+        0,
+        0,
+        &pSvc);
+
+    if (FAILED(hres))
+    {
+        pLoc->Release();
+        CoUninitialize();
+        std::cout << "Failed to connect to WMI." << std::endl;
+        return;
+    }
+
+    // Step 5: Set the security levels on the proxy
+    hres = CoSetProxyBlanket(
+        pSvc,
+        RPC_C_AUTHN_WINNT,
+        RPC_C_AUTHZ_NONE,
+        NULL,
+        RPC_C_AUTHN_LEVEL_CALL,
+        RPC_C_IMP_LEVEL_IMPERSONATE,
+        NULL,
+        EOAC_NONE);
+
+    if (FAILED(hres))
+    {
+        pSvc->Release();
+        pLoc->Release();
+        CoUninitialize();
+        std::cout << "Failed to set proxy blanket." << std::endl;
+        return;
+    }
+
+    // Step 6: Use the IWbemServices pointer to make requests of WMI
+    IEnumWbemClassObject* pEnumerator = NULL;
+    hres = pSvc->ExecQuery(
+        bstr_t("WQL"),
+        bstr_t("SELECT * FROM Win32_Process"),
+        WBEM_FLAG_FORWARD_ONLY | WBEM_FLAG_RETURN_IMMEDIATELY,
+        NULL,
+        &pEnumerator);
+
+    if (FAILED(hres))
+    {
+        pSvc->Release();
+        pLoc->Release();
+        CoUninitialize();
+        std::cout << "Failed to execute WMI query." << std::endl;
+        return;
+    }
+
+    // Step 7: Retrieve the data from the query result
+  //  IWb
+
+
+
+*/
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_win_handles_file2()
+{
+string text_function_name="realm_win_handles_file2"; string text_post = "";
+
+
+
+
+
+
+//BOOL CALLBACK EnumWindowsProc(HWND hwnd, LPARAM lParam)
+
+    // Process or store the window handle as needed
+  //  std::cout << "Windows File Handle : " << hwnd << ". . . . . " <<endl;
+
+
+
+
+
+
+ //   if (!EnumWindows(EnumWindowsProc, 0))
+
+     //   std::cout << "Failed to enumerate window handles." << std::endl;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_win_handles_sockets()
+{
+string text_function_name="realm_win_handles_sockets"; string text_post = "";
+
+bool yesContinue=false;
+
+
+
+
+
+
+if (yesContinue){ // void ListSocketHandles()
+/*
+    WSADATA wsaData;
+    if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0)
+    {
+        std::cout << "Failed to initialize Winsock." << std::endl;
+        return;
+    }
+
+    SOCKET s = socket(AF_INET, SOCK_STREAM, 0);
+    if (s == INVALID_SOCKET)
+    {
+        std::cout << "Failed to create socket." << std::endl;
+        WSACleanup();
+        return;
+    }
+
+    // Use the socket handle 's' to perform operations as needed
+
+    // Example: Enumerate socket handles
+    WSANETWORKEVENTS networkEvents;
+    if (WSAEnumNetworkEvents(s, NULL, &networkEvents) != SOCKET_ERROR)
+    {
+      //  for (int i = 0; i < networkEvents.iTotalHandles; ++i)
+        {
+     //       SOCKET socketHandle = networkEvents.hEventObject[i];
+    //        std::cout << "Win Socket Handle : " << socketHandle <<" . . . . . " < endl;
+        }
+    }
+
+    // Clean up
+    closesocket(s);
+    WSACleanup();
+
+*/
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_win_handles_events()
+{
+string text_function_name="realm_win_handles_events"; string text_post = "";
+
+bool yesContinue=false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_win_handles_mutex()
+{
+string text_function_name="realm_win_handles_mutex"; string text_post = "";
+
+bool yesContinue=false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_win_save_state()
+{
+string text_function_name="realm_win_save_state"; string text_post = "";
+
+bool yesContinue=false;
+string fileName="winSave.Mem";
+
+
+
+// Function to save memory state to a file
+if (yesContinue){ // void SaveMemoryState(const std::string& fileName)
+
+    HANDLE processHandle = GetCurrentProcess();
+
+    // Get the minimum and maximum address range of the process memory
+    SYSTEM_INFO systemInfo;
+    GetSystemInfo(&systemInfo);
+    LPVOID minAddress = systemInfo.lpMinimumApplicationAddress;
+    LPVOID maxAddress = systemInfo.lpMaximumApplicationAddress;
+
+    // Calculate the size of the memory region to be saved
+    SIZE_T memorySize = static_cast<SIZE_T>(reinterpret_cast<BYTE*>(maxAddress) - reinterpret_cast<BYTE*>(minAddress));
+
+    // Create a file for writing memory state
+    std::ofstream outFile(fileName, std::ios::binary);
+    if (!outFile)
+    {
+        std::cerr << "Failed to create the output file." << std::endl;
+        return;
+    }
+
+    // Read the memory state of the process and write it to the file
+    if (!WriteProcessMemory(processHandle, minAddress, minAddress, memorySize, nullptr))
+    {
+        std::cerr << "Failed to save the memory state." << std::endl;
+        outFile.close();
+        return;
+    }
+
+    outFile.write(reinterpret_cast<const char*>(minAddress), memorySize);
+    outFile.close();
+
+    std::cout << "Memory state saved to file: " << fileName << std::endl;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_win_host_send_data()
+{
+string text_function_name="realm_win_host_send_data"; string text_post = "";
+bool yesContinue=true;
+
+
+
+
+
+
+
+
+
+
+
+
+if (yesContinue){ //void send_data(SOCKET socket)
+/*
+    int* array = new int[ARRAY_SIZE];
+    for (int i = 0; i < ARRAY_SIZE; i++)
+        array[i] = i;
+
+    while (true)
+    {
+        // Send the data
+        int bytes_sent = send(socket, (char*)array, ARRAY_SIZE * sizeof(int), 0);
+        if (bytes_sent == SOCKET_ERROR)
+        {
+            std::cerr << "send() failed: " << WSAGetLastError() << std::endl;
+            break;
+        }
+        else if (bytes_sent != ARRAY_SIZE * sizeof(int))
+        {
+            std::cerr << "sent " << bytes_sent << " bytes instead of " << ARRAY_SIZE * sizeof(int) << " bytes" << std::endl;
+            break;
+        }
+
+        // Wait for the response
+        int response;
+        int bytes_recv = recv(socket, (char*)&response, sizeof(response), 0);
+        if (bytes_recv == SOCKET_ERROR)
+        {
+            std::cerr << "recv() failed: " << WSAGetLastError() << std::endl;
+            break;
+        }
+        else if (bytes_recv == 0)
+        {
+            std::cout << "guest disconnected" << std::endl;
+            break;
+        }
+
+        std::cout << "received response: " << response << std::endl;
+    }
+
+    delete[] array;
+
+
+
+*/
+
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_win_updater( bool isHost, string guestName, string guestIP, string guestPort, string hostIP, string hostPort, string uniqueFileName)
+{
+string text_function_name="realm_win_guest"; string text_post = "";
+int PORT = 54000 ; bool yesContinue=true; bool socketSearch=true; int PORTgrow = PORT; bool sendForever=true;
+int ARRAY_SIZE = 999999999;  // cout << " ARRAY_SIZE " <<  ARRAY_SIZE << endl;
+bool receiveForever=true; int dataSend=0;  bool socketForever=true;  bool printForever=true;
+
+
+int totalSends=0; int allData=0;
+int* array = new int[ARRAY_SIZE];
+// cout << "Initialize Winsock" << endl;
+    WSADATA wsData;
+    WORD ver = MAKEWORD(2, 2);
+    int wsOk = WSAStartup(ver, &wsData);
+    if (wsOk != 0){
+        cerr << "Can't initialize Winsock! Quitting" << endl;
+        return;
+    }
+
+// cout << "Create socket" << endl;
+    SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);
+    if (sock == INVALID_SOCKET) {
+        cerr << "Can't create socket! Quitting" << endl;
+        WSACleanup();
+        return;
+    }
+    sockaddr_in hint{};
+    hint.sin_family = AF_INET;
+    hint.sin_addr.s_addr = inet_addr("127.0.0.1");
+    string ipAddress = inet_ntoa(hint.sin_addr);
+while (socketForever==true){
+while (socketSearch==true){
+    hint.sin_port = htons(PORTgrow);
+cout << "\033[2;1H";
+
+
+    cout << "  Port: " << ntohs(hint.sin_port) << endl;
+    int bindResult = bind(sock, reinterpret_cast<sockaddr*>(&hint), sizeof(hint));
+    if (bindResult != SOCKET_ERROR){
+       cout << "  HOST ip :  " << ipAddress << endl;
+    }
+
+    if (bindResult == SOCKET_ERROR){
+        int errorCode = WSAGetLastError();
+            cout << "  HOST remote ip : " << ipAddress<< endl;  cout << "  HOST name : " <<  endl;
+            cout << "  GUEST local ip : " << ipAddress<< endl;    cout << "  GUEST name : "<< endl;
+            cerr << "  not Host Error code: " << errorCode << endl;
+            int connectResult = connect(sock, reinterpret_cast<sockaddr*>(&hint), sizeof(hint));
+            if (connectResult == SOCKET_ERROR) {
+              std::cerr << "Host"<<endl<< "Not"<< endl <<"Ready" << "Yet";      //  due to HOST port Unavailable Error code: " << WSAGetLastError() << std::endl;
+          //    closesocket(sock);
+       //       WSACleanup();
+        //      return;
+}
+cout << "I am GUEST CONNECTED TO HOST" << endl;
+std::ofstream copy("PrimeOneUpdate\PrimeOneUpdate.zip", std::ios::binary);
+
+while(printForever==true){
+int* received_array = new int[ARRAY_SIZE];
+// int received_array[ARRAY_SIZE];
+int bytes_received = recv(sock, reinterpret_cast<char*>(received_array), ARRAY_SIZE * sizeof(int), 0);
+
+
+
+copy.write(reinterpret_cast<const char*>(received_array), bytes_received);
+copy.close();
+   closesocket(sock);    WSACleanup();   return;
+
+if (bytes_received == SOCKET_ERROR) {
+    std::cerr << "recv() failed: " << WSAGetLastError() << std::endl;
+    break;
+} else if (bytes_received == 0) {
+    std::cout << "Guest disconnected" << std::endl;
+    break;
+}
+
+
+
+
+
+
+
+
+cout << "\033[1;1H";
+cout << "GUEST totalDataReceives : "<<allData++;
+cout.flush();
+}
+}
+
+
+   else {socketSearch=false;};
+} // (socketSearch==true)
+// cout << "Socket Connected Successfully" << endl;
+
+while (PORTgrow == PORT){
+
+// Listen for incoming connections
+if (listen(sock, SOMAXCONN) == SOCKET_ERROR){
+   cerr << "Can't listen on socket! Quitting" << endl;
+
+
+   closesocket(sock);    WSACleanup();   return;
+}
+
+// cout << "Waiting for a connection " << endl; // Accept a client socket
+sockaddr_in client{};
+int clientSize = sizeof(client);
+
+SOCKET clientSocket = accept(sock, reinterpret_cast<sockaddr*>(&client), &clientSize);
+if (clientSocket == INVALID_SOCKET){
+   cerr << "Can't accept client Invalid Socket! Quitting" << endl;
+
+
+   closesocket(sock);    WSACleanup();   return;
+}
+
+char computerName[MAX_COMPUTERNAME_LENGTH + 1];
+DWORD computerNameSize = sizeof(computerName);
+
+char service[NI_MAXSERV];   // Service (i.e., port) the client is connected on
+char host[NI_MAXHOST];      // Client's remote name
+
+ZeroMemory(host, NI_MAXHOST);
+ZeroMemory(service, NI_MAXSERV);
+if (GetComputerName(computerName, &computerNameSize)){
+   cout << "  HOST name: " << computerName << endl;
+
+}
+else{
+   cerr << "Failed to retrieve computer name!" << endl;    //    return 1;
+}
+
+// Get information about the client
+if (getnameinfo(reinterpret_cast<sockaddr*>(&client), clientSize, host, NI_MAXHOST, service, NI_MAXSERV, 0) == 0){
+cout << "  GUEST name : " << host <<endl ;
+cout << "  GUEST ip : ??? " << endl ;
+cout << "  GUEST port : "  << service << endl ;
+cout << "I am HOST CONNECTED TO GUEST" << endl;
+}
+else{    cout << "Connected on port NTOS " << ntohs(client.sin_port) << " to " << host << endl; }
+
+std::vector<char> data;
+std::ifstream original("PrimeOneUpdate\PrimeOneUpdater.zip", std::ios::binary);
+
+if (original) {
+    // Read the contents of the file into the vector variable
+    std::istreambuf_iterator<char> start(original), end;
+    data.assign(start, end);
+    original.close();
+} else {
+    std::cerr << "Failed to open 'original.zip' file" << std::endl;
+   closesocket(sock);    WSACleanup();   return;
+}
+
+
+
+
+while (sendForever) {
+    int remainingData = data.size() - dataSend;
+    int bytesToSend = std::min(remainingData, static_cast<int>(ARRAY_SIZE * sizeof(char)));
+    int bytes_sent = send(clientSocket, reinterpret_cast<char*>(data.data()) + dataSend, bytesToSend, 0);
+    if (bytes_sent == SOCKET_ERROR) {
+        std::cerr << "send() failed error: " << WSAGetLastError();
+        break;
+    } else if (bytes_sent <= 0) {
+        std::cerr << "Failed to send data" << std::endl;
+        break;
+    } else {
+        cout << "\033[1;1H";
+        cout << "HOST totalDataSends: " << totalSends++;
+        cout.flush();
+
+        dataSend += bytes_sent;
+    }
+
+    if (dataSend >= data.size()) {
+   closesocket(sock);    WSACleanup();   return;
+
+
+
+       // break;  // Break out of the loop when all data has been sent
+    }
+}
+
+
+
+cout << "SOCKET FOREVER ==TRUE"<< endl;
+}
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_win_handles_thread()
+{
+string text_function_name="realm_win_handles_thread"; string text_post = "";
+bool yesContinue=true;
+
+
+if (yesContinue){ // void ListThreadHandles()
+
+    HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, 0);
+    if (snapshot != INVALID_HANDLE_VALUE)
+    {
+        THREADENTRY32 threadEntry;
+        threadEntry.dwSize = sizeof(threadEntry);
+        if (Thread32First(snapshot, &threadEntry))
+        {
+            do
+            {
+                if (threadEntry.th32OwnerProcessID == GetCurrentProcessId())
+                {
+                    HANDLE threadHandle = OpenThread(THREAD_ALL_ACCESS, FALSE, threadEntry.th32ThreadID);
+                    std::cout << " Thread Handle : " << threadHandle << " . . . . . . "<< endl;
+                    CloseHandle(threadHandle);
+                }
+            } while (Thread32Next(snapshot, &threadEntry));
+        }
+
+        CloseHandle(snapshot);
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bool realm_win_port_check( string checkPort )
+{
+string text_function_name="realm_win_port_check"; string text_post = "";
+bool yesContinue=true;
+
+int port =54000;
+
+
+
+
+
+
+    std::string command = "powershell.exe Test-NetConnection -ComputerName 127.0.0.1 -Port " + std::to_string(port);
+
+    // Execute the PowerShell command and capture the output
+    FILE* pipe = _popen(command.c_str(), "r");
+    if (!pipe)
+    {
+        std::cerr << "Failed to execute command: " << command << std::endl;
+        return false;
+    }
+
+    const int maxBufferSize = 128;
+    char buffer[maxBufferSize];
+    std::string result;
+
+    while (!feof(pipe))
+    {
+        if (fgets(buffer, maxBufferSize, pipe) != nullptr)
+        {
+            result += buffer;
+        }
+    }
+
+    // Close the pipe
+    _pclose(pipe);
+
+    // Check if the port is available
+    return (result.find("True") != std::string::npos);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_os_tcp_host( )
+{
+string text_function_name="realm_os_tcp_host"; string text_post = "";
+bool yesContinue=true;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Initialize Winsock
+    WSADATA wsData;
+    WORD ver = MAKEWORD(2, 2);
+
+    int wsOk = WSAStartup(ver, &wsData);
+    if (wsOk != 0)
+    {
+        std::cerr << "Can't initialize Winsock! Quitting" << std::endl;
+        return;
+    }
+
+    // Create socket
+    SOCKET listening = socket(AF_INET, SOCK_STREAM, 0);
+    if (listening == INVALID_SOCKET)
+    {
+        std::cerr << "Can't create socket! Quitting" << std::endl;
+                WSACleanup();
+        return;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_os_tcp_guest( string remoteHostIPv4 )
+{
+string text_function_name="realm_os_tcp_guest"; string text_post = "";
+bool yesContinue=true;
+
+int PORT =54000;
+
+
+
+
+
+
+
+
+
+    // Initialize Winsock
+    WSADATA wsData;
+    WORD ver = MAKEWORD(2, 2);
+
+    int wsOk = WSAStartup(ver, &wsData);
+    if (wsOk != 0)
+    {
+        std::cerr << "Can't initialize Winsock! Quitting" << std::endl;
+        return;
+    }
+
+    // Create socket
+    SOCKET sock = socket(AF_INET, SOCK_STREAM, 0);
+    if (sock == INVALID_SOCKET)
+    {
+        std::cerr << "Can't create socket! Quitting" << std::endl;
+        WSACleanup();
+        return;
+    }
+
+    // Connect to the server
+    sockaddr_in hint{};
+    hint.sin_family = AF_INET;
+    hint.sin_port = htons(PORT);
+    hint.sin_addr.s_addr = inet_addr(remoteHostIPv4.c_str());
+
+    int connectResult = connect(sock, reinterpret_cast<sockaddr*>(&hint), sizeof(hint));
+    if (connectResult == SOCKET_ERROR)
+    {
+        std::cerr << "Can't connect to the server! Error code: " << WSAGetLastError() << std::endl;
+        closesocket(sock);
+        WSACleanup();
+        return;
+    }
+
+    // Prepare the array
+    std::vector<int> dataArray = { 1, 2, 3, 4, 5 }; // Modify this array according to your needs
+
+    // Send the array size
+    int arraySize = static_cast<int>(dataArray.size());
+    int sendResult = send(sock, reinterpret_cast<char*>(&arraySize), sizeof(arraySize), 0);
+    if (sendResult == SOCKET_ERROR)
+    {
+        std::cerr << "Failed to send array size! Error code: " << WSAGetLastError() << std::endl;
+        closesocket(sock);
+        WSACleanup();
+        return;
+    }
+
+    // Send the array elements
+    sendResult = send(sock, reinterpret_cast<char*>(dataArray.data()), sizeof(int) * arraySize, 0);
+    if (sendResult == SOCKET_ERROR)
+    {
+        std::cerr << "Failed to send array data! Error code: " << WSAGetLastError() << std::endl;
+        closesocket(sock);
+        WSACleanup();
+        return;
+    }
+
+    std::cout << "Array fully sent." << std::endl;
+
+    // Clean up
+    closesocket(sock);
+    WSACleanup();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_win_ipconfig( )
+{
+string text_function_name="realm_win_ipconfig"; string text_post = "";
+
+
+
+system(" ipconfig | findstr /r /c:\"IPv4\"");
+system(" ipconfig | findstr /r /c:\"IPv6\"");
+//  system(" ipconfig /all | findstr /r /c:\"IPv4\"");
+// system(" ipconfig /all | findstr /r /c:\"IPv6\"");
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void realm_win_roll()
+{
+string text_function_name="realm_win_roll"; string text_post = "";
+
+
+system("start PrimeOneUpdate.bat");
+
+exit(0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+string realm_win_archive()
+{
+string text_function_name="realm_win_archive"; string text_post = "";
+
+system("del PrimeOneUpdate\\*.* /Q");
+
+
+RandomSeedProvider seedProvider;
+StringGenerator stringGenerator(seedProvider);
+string randomString1 = stringGenerator.generateRandomString(5);
+
+
+string uniqueFileName =  "updater_"+ realm_unique_id(randomString1) + ".zip";
+string command1 = "tar -a -cf PrimeOneUpdate\\" + uniqueFileName + " *.dll *.exe *.bat";
+system(command1.c_str());
+
+
+
+
+
+
+// system("del PrimeOneUpdate\\PrimeOneUpdate.zip /q");
+
+
+//system("copy PrimeOneUpdate\\PrimeOneUpdater.zip PrimeOneUpdate\\PrimeOneUpdate.zip");
+
+return uniqueFileName;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+string realm_unique_id(string randomString3)
+{
+const auto realm_thread_count = thread::hardware_concurrency();
+
+
+    string128Class numObj1( realm_thread_count );
+
+//cout << "Unique Id for Instance of PrimeBookOne Gear# " << uniqueId << endl;
+//string userInput;
+//realm_os_user_input(userInput);
+
+
+ // Get the current time point
+    auto now = std::chrono::system_clock::now();
+
+    // Extract individual components of time
+    auto time = std::chrono::system_clock::to_time_t(now);
+    std::tm tm_time = *std::localtime(&time);
+
+    // Format the string as "MODYYRHRMNSEC"
+    std::ostringstream formattedTime;
+    formattedTime << std::put_time(&tm_time, "%b%d%Y%H%M%S");
+
+ //   std::string result = formattedTime.str();
+
+  //  std::cout << "Formatted Time: " << result << std::endl;
+
+
+
+
+string uniqueId = "pb1_"+ numObj1.getString() + "_" + randomString3+"_" + formattedTime.str() ;
+
+
+
+
+
+
+
+
+
+
+uniqueIdGlobal = uniqueId;
+return uniqueId;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+string realm_wolfpack_id(string randomString3)
+{
+
+
+
+
+
+
+
+
+
+
+ // Get the current time point
+    auto now = std::chrono::system_clock::now();
+
+    // Extract individual components of time
+    auto time = std::chrono::system_clock::to_time_t(now);
+    std::tm tm_time = *std::localtime(&time);
+
+    // Format the string as "MODYYRHRMNSEC"
+    std::ostringstream formattedTime;
+    formattedTime << std::put_time(&tm_time, "%b%d%Y%H%M%S");
+
+ //   std::string result = formattedTime.str();
+
+  //  std::cout << "Formatted Time: " << result << std::endl;
+
+
+
+
+string wolfId = "pb1_" + randomString3+"_" + formattedTime.str() ;
+
+
+
+
+
+
+
+
+
+
+
+return wolfId;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

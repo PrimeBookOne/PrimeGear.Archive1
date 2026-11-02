@@ -1,0 +1,34 @@
+#include <windows.h>
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,3,4
+ PRODUCTVERSION 1,2,3,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS VOS__WINDOWS32
+ FILETYPE VFT_APP
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName", "Your Company Name\0"
+            VALUE "FileDescription", "Your File Description\0"
+            VALUE "FileVersion", "1.2.3.4\0"
+            VALUE "InternalName", "YourInternalName\0"
+            VALUE "LegalCopyright", "Your Legal Copyright\0"
+            VALUE "OriginalFilename", "YourOriginalFilename.exe\0"
+            VALUE "ProductName", "Your Product Name\0"
+            VALUE "ProductVersion", "1.2.3.4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END

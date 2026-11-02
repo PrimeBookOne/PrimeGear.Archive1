@@ -1,0 +1,222 @@
+# depslib dependency file v1.0
+1751234415 source:c:\users\shark\desktop\pb1\primebook.cpp\primeone\main.cpp
+	<cstdint>
+	<iomanip>
+	<string>
+	<iostream>
+	<thread>
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<errno.h>
+	<vector>
+	<sys/types.h>
+	<limits>
+	<fstream>
+	<pthread.h>
+	<Ws2tcpip.h>
+	<winsock2.h>
+	<winsock.h>
+	<quadmath.h>
+	<Ws2tcpip.h>
+	<immintrin.h>
+	<d3d9.h>
+	<stdio.h>
+	<process.h>
+	<wtypes.h>
+	<sys/types.h>
+	<unistd.h>
+	<sstream>
+	<bits/stdc++.h>
+	<sched.h>
+	<unistd.h>
+	<winbase.h>
+	<chrono>
+	<dos.h>
+	<filesystem>
+	<algorithm>
+	<conio.h>
+	<iostream>
+	<vector>
+	<thread>
+	<future>
+	<numeric>
+	<chrono>
+	<mutex>
+	<condition_variable>
+	<functional>
+	<omp.h>
+	<cuda_runtime_api.h>
+	<Windows.h>
+	<winternl.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<comdef.h>
+	<Wbemidl.h>
+	<TlHelp32.h>
+	<condition_variable>
+	<Iptypes.h>
+	<Mstcpip.h>
+	<iphlpapi.h>
+	<atomic>
+	<wbemidl.h>
+	<comdef.h>
+	<tuple>
+	<iostream>
+	<fstream>
+	<string>
+	<stdexcept>
+	<curl/curl.h>
+	<base64_default_rfc4648.hpp>
+	<sstream>
+	<cstdio>
+	<memory>
+	<array>
+	<chrono>
+	<ctime>
+	<iomanip>
+	<windows.h>
+	<cmath>
+
+1689073518 c:\program files\nvidia gpu computing toolkit\cuda\v12.2\include\cuda_runtime_api.h
+	"crt/host_defines.h"
+	"builtin_types.h"
+	"cuda_device_runtime_api.h"
+
+1689073582 c:\program files\nvidia gpu computing toolkit\cuda\v12.2\include\crt\host_defines.h
+
+1689073517 c:\program files\nvidia gpu computing toolkit\cuda\v12.2\include\builtin_types.h
+	"device_types.h"
+	"driver_types.h"
+	"surface_types.h"
+	"texture_types.h"
+	"vector_types.h"
+
+1689073519 c:\program files\nvidia gpu computing toolkit\cuda\v12.2\include\device_types.h
+	"crt/host_defines.h"
+
+1689073519 c:\program files\nvidia gpu computing toolkit\cuda\v12.2\include\driver_types.h
+	"crt/host_defines.h"
+	"vector_types.h"
+	<limits.h>
+	<stddef.h>
+
+1689073521 c:\program files\nvidia gpu computing toolkit\cuda\v12.2\include\vector_types.h
+	"crt/host_defines.h"
+
+1689073520 c:\program files\nvidia gpu computing toolkit\cuda\v12.2\include\surface_types.h
+	"driver_types.h"
+
+1689073520 c:\program files\nvidia gpu computing toolkit\cuda\v12.2\include\texture_types.h
+	"driver_types.h"
+
+1689073518 c:\program files\nvidia gpu computing toolkit\cuda\v12.2\include\cuda_device_runtime_api.h
+	<stdlib.h>
+	"driver_types.h"
+	"crt/host_defines.h"
+
+1701817062 c:\users\shark\desktop\pb1\primebook.cpp\curl\include\curl\curl.h
+	"curlver.h"
+	"system.h"
+	<stdio.h>
+	<limits.h>
+	<sys/param.h>
+	<sys/types.h>
+	<time.h>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/select.h>
+	<sys/socket.h>
+	<sys/time.h>
+	"easy.h"
+	"multi.h"
+	"urlapi.h"
+	"options.h"
+	"header.h"
+	"websockets.h"
+	"mprintf.h"
+	"typecheck-gcc.h"
+
+1701875710 c:\users\shark\desktop\pb1\primebook.cpp\curl\include\curl\curlver.h
+
+1701817062 c:\users\shark\desktop\pb1\primebook.cpp\curl\include\curl\system.h
+	<ConditionalMacros.h>
+	<inttypes.h>
+	<inttypes.h>
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<sys/poll.h>
+
+1701035378 c:\users\shark\desktop\pb1\primebook.cpp\curl\include\curl\easy.h
+
+1701035378 c:\users\shark\desktop\pb1\primebook.cpp\curl\include\curl\multi.h
+	"curl.h"
+
+1701367862 c:\users\shark\desktop\pb1\primebook.cpp\curl\include\curl\urlapi.h
+	"curl.h"
+
+1700261104 c:\users\shark\desktop\pb1\primebook.cpp\curl\include\curl\options.h
+
+1700261104 c:\users\shark\desktop\pb1\primebook.cpp\curl\include\curl\header.h
+
+1701035378 c:\users\shark\desktop\pb1\primebook.cpp\curl\include\curl\websockets.h
+
+1701035378 c:\users\shark\desktop\pb1\primebook.cpp\curl\include\curl\mprintf.h
+	<stdarg.h>
+	<stdio.h>
+	"curl.h"
+
+1701035378 c:\users\shark\desktop\pb1\primebook.cpp\curl\include\curl\typecheck-gcc.h
+
+1706688748 c:\users\shark\desktop\pb1\primebook.cpp\primeone\cppcodec\base64_default_rfc4648.hpp
+	"base64_rfc4648.hpp"
+
+1706688748 c:\users\shark\desktop\pb1\primebook.cpp\primeone\cppcodec\base64_rfc4648.hpp
+	"detail/codec.hpp"
+	"detail/base64.hpp"
+
+1706688748 c:\users\shark\desktop\pb1\primebook.cpp\primeone\cppcodec\detail\codec.hpp
+	<assert.h>
+	<stdint.h>
+	<string>
+	<vector>
+	"../data/access.hpp"
+	"../data/raw_result_buffer.hpp"
+
+1706688748 c:\users\shark\desktop\pb1\primebook.cpp\primeone\cppcodec\data\access.hpp
+	<stdint.h>
+	<string>
+	<type_traits>
+	<utility>
+	<vector>
+	"../detail/config.hpp"
+
+1706688748 c:\users\shark\desktop\pb1\primebook.cpp\primeone\cppcodec\detail\config.hpp
+
+1706688748 c:\users\shark\desktop\pb1\primebook.cpp\primeone\cppcodec\data\raw_result_buffer.hpp
+	<stdint.h>
+	<stdlib.h>
+	"access.hpp"
+
+1706688748 c:\users\shark\desktop\pb1\primebook.cpp\primeone\cppcodec\detail\base64.hpp
+	<stdexcept>
+	<stdint.h>
+	"../data/access.hpp"
+	"../parse_error.hpp"
+	"config.hpp"
+	"stream_codec.hpp"
+
+1706688749 c:\users\shark\desktop\pb1\primebook.cpp\primeone\cppcodec\parse_error.hpp
+	<stdexcept>
+	<string>
+
+1706688748 c:\users\shark\desktop\pb1\primebook.cpp\primeone\cppcodec\detail\stream_codec.hpp
+	<limits>
+	<stdlib.h>
+	<stdint.h>
+	"../parse_error.hpp"
+	"config.hpp"
+

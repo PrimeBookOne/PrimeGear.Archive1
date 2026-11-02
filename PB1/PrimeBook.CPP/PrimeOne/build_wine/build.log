@@ -1,0 +1,1317 @@
+main.cpp:29: warning: ignoring ‘#pragma comment ’ [-Wunknown-pragmas]
+   29 | #pragma comment (lib, "Ws2_32.lib")
+In file included from ./cuda_runtime_api.h:148,
+                 from main.cpp:69:
+./crt/host_defines.h:94:9: warning: "__cdecl" redefined
+   94 | #define __cdecl
+      |         ^~~~~~~
+<built-in>: note: this is the location of the previous definition
+main.cpp:77: warning: ignoring ‘#pragma comment ’ [-Wunknown-pragmas]
+   77 | #pragma comment(lib, "wbemuuid.lib")
+main.cpp:78: warning: ignoring ‘#pragma comment ’ [-Wunknown-pragmas]
+   78 | #pragma comment(lib, "ws2_32.lib")
+main.cpp:83: warning: ignoring ‘#pragma comment ’ [-Wunknown-pragmas]
+   83 | #pragma comment(lib, "iphlpapi.lib")
+main.cpp:91: warning: ignoring ‘#pragma comment ’ [-Wunknown-pragmas]
+   91 | #pragma comment(lib, "wbemuuid.lib")
+main.cpp:180:29: warning: integer constant is so large that it is unsigned
+  180 | __int128 maximum__int128  = 9999999999999999999;
+      |                             ^~~~~~~~~~~~~~~~~~~
+In file included from win_stubs/Ws2tcpip.h:3,
+                 from main.cpp:30:
+win_stubs/winsock2.h:29:16: error: redefinition of ‘struct timeval’
+   29 | typedef struct timeval { long tv_sec; long tv_usec; } timeval;
+      |                ^~~~~~~
+In file included from /usr/share/mingw-w64/include/time.h:287,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/ctime:42,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/locale_facets_nonio.h:39,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/locale:43,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/iomanip:48,
+                 from main.cpp:15:
+/usr/share/mingw-w64/include/_timeval.h:10:8: note: previous definition of ‘struct timeval’
+   10 | struct timeval
+      |        ^~~~~~~
+win_stubs/winsock2.h:29:55: error: conflicting declaration ‘typedef int timeval’
+   29 | typedef struct timeval { long tv_sec; long tv_usec; } timeval;
+      |                                                       ^~~~~~~
+/usr/share/mingw-w64/include/_timeval.h:10:8: note: previous declaration as ‘struct timeval’
+   10 | struct timeval
+      |        ^~~~~~~
+In file included from /usr/share/mingw-w64/include/winsock.h:34,
+                 from main.cpp:34:
+/usr/share/mingw-w64/include/inaddr.h:17:16: error: redefinition of ‘struct in_addr’
+   17 | typedef struct in_addr {
+      |                ^~~~~~~
+win_stubs/winsock2.h:27:16: note: previous definition of ‘struct in_addr’
+   27 | typedef struct in_addr { uint32_t s_addr; } IN_ADDR;
+      |                ^~~~~~~
+/usr/share/mingw-w64/include/inaddr.h:23:3: error: conflicting declaration ‘typedef int IN_ADDR’
+   23 | } IN_ADDR, *PIN_ADDR, *LPIN_ADDR;
+      |   ^~~~~~~
+win_stubs/winsock2.h:27:45: note: previous declaration as ‘typedef struct in_addr IN_ADDR’
+   27 | typedef struct in_addr { uint32_t s_addr; } IN_ADDR;
+      |                                             ^~~~~~~
+In file included from /usr/share/mingw-w64/include/winsock.h:35:
+/usr/share/mingw-w64/include/psdk_inc/_socket_types.h:11:9: error: ‘UINT_PTR’ does not name a type
+   11 | typedef UINT_PTR        SOCKET;
+      |         ^~~~~~~~
+In file included from /usr/share/mingw-w64/include/winsock.h:36:
+/usr/share/mingw-w64/include/psdk_inc/_fd_types.h:21:16: error: redefinition of ‘struct fd_set’
+   21 | typedef struct fd_set
+      |                ^~~~~~
+win_stubs/winsock2.h:28:16: note: previous definition of ‘struct fd_set’
+   28 | typedef struct fd_set { uint32_t fd_count; SOCKET fd_array[64]; } fd_set;
+      |                ^~~~~~
+/usr/share/mingw-w64/include/psdk_inc/_fd_types.h:25:3: error: conflicting declaration ‘typedef int fd_set’
+   25 | } fd_set;
+      |   ^~~~~~
+win_stubs/winsock2.h:28:67: note: previous declaration as ‘typedef struct fd_set fd_set’
+   28 | typedef struct fd_set { uint32_t fd_count; SOCKET fd_array[64]; } fd_set;
+      |                                                                   ^~~~~~
+In file included from /usr/share/mingw-w64/include/winsock.h:37:
+/usr/share/mingw-w64/include/psdk_inc/_ip_types.h:70:8: error: redefinition of ‘struct sockaddr’
+   70 | struct sockaddr {
+      |        ^~~~~~~~
+win_stubs/winsock2.h:25:16: note: previous definition of ‘struct sockaddr’
+   25 | typedef struct sockaddr { uint16_t sa_family; char sa_data[14]; } SOCKADDR;
+      |                ^~~~~~~~
+/usr/share/mingw-w64/include/psdk_inc/_ip_types.h:75:8: error: redefinition of ‘struct sockaddr_in’
+   75 | struct sockaddr_in {
+      |        ^~~~~~~~~~~
+win_stubs/winsock2.h:26:16: note: previous definition of ‘struct sockaddr_in’
+   26 | typedef struct sockaddr_in { uint16_t sin_family; uint16_t sin_port; uint32_t sin_addr; char sin_zero[8]; } SOCKADDR_IN;
+      |                ^~~~~~~~~~~
+In file included from /usr/share/mingw-w64/include/winsock.h:40:
+/usr/share/mingw-w64/include/psdk_inc/_xmitfile.h:11:9: error: ‘LPVOID’ does not name a type
+   11 |         LPVOID  Head;
+      |         ^~~~~~
+/usr/share/mingw-w64/include/psdk_inc/_xmitfile.h:13:9: error: ‘LPVOID’ does not name a type
+   13 |         LPVOID  Tail;
+      |         ^~~~~~
+/usr/share/mingw-w64/include/winsock.h:277:37: error: conflicting declaration of ‘SOCKET accept(SOCKET, sockaddr*, int*)’ with ‘C’ linkage
+  277 |   WINSOCK_API_LINKAGE SOCKET WSAAPI accept(SOCKET s,struct sockaddr *addr,int *addrlen);
+      |                                     ^~~~~~
+win_stubs/winsock2.h:37:8: note: previous declaration with ‘C++’ linkage
+   37 | SOCKET accept(SOCKET, SOCKADDR*, int*);
+      |        ^~~~~~
+/usr/share/mingw-w64/include/winsock.h:278:34: error: conflicting declaration of ‘int bind(SOCKET, const sockaddr*, int)’ with ‘C’ linkage
+  278 |   WINSOCK_API_LINKAGE int WSAAPI bind(SOCKET s,const struct sockaddr *name,int namelen);
+      |                                  ^~~~
+win_stubs/winsock2.h:35:5: note: previous declaration with ‘C++’ linkage
+   35 | int bind(SOCKET, const SOCKADDR*, int);
+      |     ^~~~
+/usr/share/mingw-w64/include/winsock.h:279:34: error: conflicting declaration of ‘int closesocket(SOCKET)’ with ‘C’ linkage
+  279 |   WINSOCK_API_LINKAGE int WSAAPI closesocket(SOCKET s);
+      |                                  ^~~~~~~~~~~
+win_stubs/winsock2.h:33:5: note: previous declaration with ‘C++’ linkage
+   33 | int closesocket(SOCKET);
+      |     ^~~~~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:280:34: error: conflicting declaration of ‘int connect(SOCKET, const sockaddr*, int)’ with ‘C’ linkage
+  280 |   WINSOCK_API_LINKAGE int WSAAPI connect(SOCKET s,const struct sockaddr *name,int namelen);
+      |                                  ^~~~~~~
+win_stubs/winsock2.h:34:5: note: previous declaration with ‘C++’ linkage
+   34 | int connect(SOCKET, const SOCKADDR*, int);
+      |     ^~~~~~~
+/usr/share/mingw-w64/include/winsock.h:282:34: error: conflicting declaration of ‘int getpeername(SOCKET, sockaddr*, int*)’ with ‘C’ linkage
+  282 |   WINSOCK_API_LINKAGE int WSAAPI getpeername(SOCKET s,struct sockaddr *name,int *namelen);
+      |                                  ^~~~~~~~~~~
+win_stubs/winsock2.h:52:5: note: previous declaration with ‘C++’ linkage
+   52 | int getpeername(SOCKET, SOCKADDR*, int*);
+      |     ^~~~~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:283:34: error: conflicting declaration of ‘int getsockname(SOCKET, sockaddr*, int*)’ with ‘C’ linkage
+  283 |   WINSOCK_API_LINKAGE int WSAAPI getsockname(SOCKET s,struct sockaddr *name,int *namelen);
+      |                                  ^~~~~~~~~~~
+win_stubs/winsock2.h:51:5: note: previous declaration with ‘C++’ linkage
+   51 | int getsockname(SOCKET, SOCKADDR*, int*);
+      |     ^~~~~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:284:34: error: conflicting declaration of ‘int getsockopt(SOCKET, int, int, char*, int*)’ with ‘C’ linkage
+  284 |   WINSOCK_API_LINKAGE int WSAAPI getsockopt(SOCKET s,int level,int optname,char *optval,int *optlen);
+      |                                  ^~~~~~~~~~
+win_stubs/winsock2.h:53:5: note: previous declaration with ‘C++’ linkage
+   53 | int getsockopt(SOCKET, int, int, char*, int*);
+      |     ^~~~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:287:38: error: conflicting declaration of ‘u_short htons(u_short)’ with ‘C’ linkage
+  287 |   WINSOCK_API_LINKAGE u_short WSAAPI htons(u_short hostshort);
+      |                                      ^~~~~
+win_stubs/winsock2.h:45:10: note: previous declaration with ‘C++’ linkage
+   45 | uint16_t htons(uint16_t);
+      |          ^~~~~
+/usr/share/mingw-w64/include/winsock.h:290:36: error: ambiguating new declaration of ‘char* inet_ntoa(in_addr)’
+  290 |   WINSOCK_API_LINKAGE char *WSAAPI inet_ntoa(struct in_addr in);
+      |                                    ^~~~~~~~~
+win_stubs/winsock2.h:48:13: note: old declaration ‘const char* inet_ntoa(IN_ADDR)’
+   48 | const char* inet_ntoa(IN_ADDR);
+      |             ^~~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:291:34: error: conflicting declaration of ‘int listen(SOCKET, int)’ with ‘C’ linkage
+  291 |   WINSOCK_API_LINKAGE int WSAAPI listen(SOCKET s,int backlog);
+      |                                  ^~~~~~
+win_stubs/winsock2.h:36:5: note: previous declaration with ‘C++’ linkage
+   36 | int listen(SOCKET, int);
+      |     ^~~~~~
+/usr/share/mingw-w64/include/winsock.h:294:38: error: conflicting declaration of ‘u_short ntohs(u_short)’ with ‘C’ linkage
+  294 |   WINSOCK_API_LINKAGE u_short WSAAPI ntohs(u_short netshort);
+      |                                      ^~~~~
+win_stubs/winsock2.h:47:10: note: previous declaration with ‘C++’ linkage
+   47 | uint16_t ntohs(uint16_t);
+      |          ^~~~~
+/usr/share/mingw-w64/include/winsock.h:296:34: error: conflicting declaration of ‘int recv(SOCKET, char*, int, int)’ with ‘C’ linkage
+  296 |   WINSOCK_API_LINKAGE int WSAAPI recv(SOCKET s,char *buf,int len,int flags);
+      |                                  ^~~~
+win_stubs/winsock2.h:39:5: note: previous declaration with ‘C++’ linkage
+   39 | int recv(SOCKET, char*, int, int);
+      |     ^~~~
+/usr/share/mingw-w64/include/winsock.h:297:34: error: conflicting declaration of ‘int recvfrom(SOCKET, char*, int, int, sockaddr*, int*)’ with ‘C’ linkage
+  297 |   WINSOCK_API_LINKAGE int WSAAPI recvfrom(SOCKET s,char *buf,int len,int flags,struct sockaddr *from,int *fromlen);
+      |                                  ^~~~~~~~
+win_stubs/winsock2.h:41:5: note: previous declaration with ‘C++’ linkage
+   41 | int recvfrom(SOCKET, char*, int, int, SOCKADDR*, int*);
+      |     ^~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:301:34: error: conflicting declaration of ‘int send(SOCKET, const char*, int, int)’ with ‘C’ linkage
+  301 |   WINSOCK_API_LINKAGE int WSAAPI send(SOCKET s,const char *buf,int len,int flags);
+      |                                  ^~~~
+win_stubs/winsock2.h:38:5: note: previous declaration with ‘C++’ linkage
+   38 | int send(SOCKET, const char*, int, int);
+      |     ^~~~
+/usr/share/mingw-w64/include/winsock.h:302:34: error: conflicting declaration of ‘int sendto(SOCKET, const char*, int, int, const sockaddr*, int)’ with ‘C’ linkage
+  302 |   WINSOCK_API_LINKAGE int WSAAPI sendto(SOCKET s,const char *buf,int len,int flags,const struct sockaddr *to,int tolen);
+      |                                  ^~~~~~
+win_stubs/winsock2.h:40:5: note: previous declaration with ‘C++’ linkage
+   40 | int sendto(SOCKET, const char*, int, int, const SOCKADDR*, int);
+      |     ^~~~~~
+/usr/share/mingw-w64/include/winsock.h:303:34: error: conflicting declaration of ‘int setsockopt(SOCKET, int, int, const char*, int)’ with ‘C’ linkage
+  303 |   WINSOCK_API_LINKAGE int WSAAPI setsockopt(SOCKET s,int level,int optname,const char *optval,int optlen);
+      |                                  ^~~~~~~~~~
+win_stubs/winsock2.h:54:5: note: previous declaration with ‘C++’ linkage
+   54 | int setsockopt(SOCKET, int, int, const char*, int);
+      |     ^~~~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:304:34: error: conflicting declaration of ‘int shutdown(SOCKET, int)’ with ‘C’ linkage
+  304 |   WINSOCK_API_LINKAGE int WSAAPI shutdown(SOCKET s,int how);
+      |                                  ^~~~~~~~
+win_stubs/winsock2.h:55:5: note: previous declaration with ‘C++’ linkage
+   55 | int shutdown(SOCKET, int);
+      |     ^~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:305:37: error: conflicting declaration of ‘SOCKET socket(int, int, int)’ with ‘C’ linkage
+  305 |   WINSOCK_API_LINKAGE SOCKET WSAAPI socket(int af,int type,int protocol);
+      |                                     ^~~~~~
+win_stubs/winsock2.h:32:8: note: previous declaration with ‘C++’ linkage
+   32 | SOCKET socket(int, int, int);
+      |        ^~~~~~
+/usr/share/mingw-w64/include/winsock.h:307:46: error: conflicting declaration of ‘hostent* gethostbyname(const char*)’ with ‘C’ linkage
+  307 |   WINSOCK_API_LINKAGE struct hostent *WSAAPI gethostbyname(const char *name);
+      |                                              ^~~~~~~~~~~~~
+win_stubs/winsock2.h:57:17: note: previous declaration with ‘C++’ linkage
+   57 | struct hostent* gethostbyname(const char*);
+      |                 ^~~~~~~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:309:34: error: conflicting declaration of ‘int gethostname(char*, int)’ with ‘C’ linkage
+  309 |   WINSOCK_API_LINKAGE int WSAAPI gethostname(char *name,int namelen);
+      |                                  ^~~~~~~~~~~
+win_stubs/winsock2.h:56:5: note: previous declaration with ‘C++’ linkage
+   56 | int gethostname(char*, int);
+      |     ^~~~~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:316:34: error: conflicting declaration of ‘int WSACleanup()’ with ‘C’ linkage
+  316 |   WINSOCK_API_LINKAGE int WSAAPI WSACleanup(void);
+      |                                  ^~~~~~~~~~
+win_stubs/winsock2.h:31:5: note: previous declaration with ‘C++’ linkage
+   31 | int WSACleanup(void);
+      |     ^~~~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:317:35: error: conflicting declaration of ‘void WSASetLastError(int)’ with ‘C’ linkage
+  317 |   WINSOCK_API_LINKAGE void WSAAPI WSASetLastError(int iError);
+      |                                   ^~~~~~~~~~~~~~~
+win_stubs/winsock2.h:59:6: note: previous declaration with ‘C++’ linkage
+   59 | void WSASetLastError(int);
+      |      ^~~~~~~~~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:318:34: error: conflicting declaration of ‘int WSAGetLastError()’ with ‘C’ linkage
+  318 |   WINSOCK_API_LINKAGE int WSAAPI WSAGetLastError(void);
+      |                                  ^~~~~~~~~~~~~~~
+win_stubs/winsock2.h:58:5: note: previous declaration with ‘C++’ linkage
+   58 | int WSAGetLastError(void);
+      |     ^~~~~~~~~~~~~~~
+/usr/share/mingw-w64/include/winsock.h:319:23: error: ‘WINBOOL’ does not name a type
+  319 |   WINSOCK_API_LINKAGE WINBOOL WSAAPI WSAIsBlocking(void);
+      |                       ^~~~~~~
+/usr/share/mingw-w64/include/winsock.h:321:23: error: ‘FARPROC’ does not name a type
+  321 |   WINSOCK_API_LINKAGE FARPROC WSAAPI WSASetBlockingHook(FARPROC lpBlockFunc);
+      |                       ^~~~~~~
+/usr/share/mingw-w64/include/winsock.h:340:3: error: ‘WINBOOL’ does not name a type
+  340 |   WINBOOL WINAPI TransmitFile(SOCKET hSocket,HANDLE hFile,DWORD nNumberOfBytesToWrite,DWORD nNumberOfBytesPerSend,LPOVERLAPPED lpOverlapped,LPTRANSMIT_FILE_BUFFERS lpTransmitBuffers,DWORD dwReserved);
+      |   ^~~~~~~
+/usr/share/mingw-w64/include/winsock.h:341:3: error: ‘WINBOOL’ does not name a type
+  341 |   WINBOOL WINAPI AcceptEx(SOCKET sListenSocket,SOCKET sAcceptSocket,PVOID lpOutputBuffer,DWORD dwReceiveDataLength,DWORD dwLocalAddressLength,DWORD dwRemoteAddressLength,LPDWORD lpdwBytesReceived,LPOVERLAPPED lpOverlapped);
+      |   ^~~~~~~
+/usr/share/mingw-w64/include/winsock.h:342:3: error: ‘VOID’ does not name a type
+  342 |   VOID WINAPI GetAcceptExSockaddrs(PVOID lpOutputBuffer,DWORD dwReceiveDataLength,DWORD dwLocalAddressLength,DWORD dwRemoteAddressLength,struct sockaddr **LocalSockaddr,LPINT LocalSockaddrLength,struct sockaddr **RemoteSockaddr,LPINT RemoteSockaddrLength);
+      |   ^~~~
+In file included from main.cpp:52:
+win_stubs/winbase.h:8:1: error: ‘BOOL’ does not name a type
+    8 | BOOL CloseHandle(HANDLE);
+      | ^~~~
+win_stubs/winbase.h:11:1: error: ‘BOOL’ does not name a type
+   11 | BOOL SetEvent(HANDLE);
+      | ^~~~
+win_stubs/winbase.h:12:1: error: ‘BOOL’ does not name a type
+   12 | BOOL ResetEvent(HANDLE);
+      | ^~~~
+In file included from main.cpp:54:
+win_stubs/dos.h:13:5: warning: ‘int _open(const char*, int, ...)’ redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+   13 | int _open(const char*, int, ...);
+      |     ^~~~~
+win_stubs/dos.h:14:5: warning: ‘int _close(int)’ redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+   14 | int _close(int);
+      |     ^~~~~~
+win_stubs/dos.h:15:5: warning: ‘int _read(int, void*, unsigned int)’ redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+   15 | int _read(int, void*, unsigned int);
+      |     ^~~~~
+win_stubs/dos.h:16:5: warning: ‘int _write(int, const void*, unsigned int)’ redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+   16 | int _write(int, const void*, unsigned int);
+      |     ^~~~~~
+win_stubs/dos.h:17:6: warning: ‘long int _lseek(int, long int, int)’ redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+   17 | long _lseek(int, long, int);
+      |      ^~~~~~
+win_stubs/dos.h:18:5: warning: ‘int _chmod(const char*, int)’ redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+   18 | int _chmod(const char*, int);
+      |     ^~~~~~
+win_stubs/dos.h:19:5: warning: ‘int _unlink(const char*)’ redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+   19 | int _unlink(const char*);
+      |     ^~~~~~~
+win_stubs/dos.h:20:5: warning: ‘int _access(const char*, int)’ redeclared without dllimport attribute: previous dllimport ignored [-Wattributes]
+   20 | int _access(const char*, int);
+      |     ^~~~~~~
+In file included from main.cpp:71:
+win_stubs/winternl.h:4:23: error: ‘BYTE’ does not name a type
+    4 | typedef struct _PEB { BYTE Reserved1[2]; BYTE BeingDebugged; BYTE Reserved2[1]; void* Reserved3[2]; void* Ldr; void* ProcessParameters; } PEB;
+      |                       ^~~~
+win_stubs/winternl.h:4:42: error: ‘BYTE’ does not name a type
+    4 | typedef struct _PEB { BYTE Reserved1[2]; BYTE BeingDebugged; BYTE Reserved2[1]; void* Reserved3[2]; void* Ldr; void* ProcessParameters; } PEB;
+      |                                          ^~~~
+win_stubs/winternl.h:4:62: error: ‘BYTE’ does not name a type
+    4 | typedef struct _PEB { BYTE Reserved1[2]; BYTE BeingDebugged; BYTE Reserved2[1]; void* Reserved3[2]; void* Ldr; void* ProcessParameters; } PEB;
+      |                                                              ^~~~
+In file included from main.cpp:76:
+win_stubs/TlHelp32.h:7:1: error: ‘BOOL’ does not name a type
+    7 | BOOL Process32First(HANDLE, PROCESSENTRY32*);
+      | ^~~~
+win_stubs/TlHelp32.h:8:1: error: ‘BOOL’ does not name a type
+    8 | BOOL Process32Next(HANDLE, PROCESSENTRY32*);
+      | ^~~~
+In file included from main.cpp:80:
+win_stubs/Iptypes.h:6:134: error: ‘UINT’ does not name a type
+    6 | typedef struct _IP_ADAPTER_INFO { struct _IP_ADAPTER_INFO* Next; char ComboIndex[256]; char AdapterName[256]; char Description[128]; UINT AddressLength; BYTE Address[8]; DWORD Index; UINT Type; UINT DhcpEnabled; char CurrentIpAddress[16]; IP_ADDR_STRING IpAddressList; IP_ADDR_STRING GatewayList; IP_ADDR_STRING DhcpServer; BOOL HaveWins; IP_ADDR_STRING WinsServer; DWORD LeaseObtained; DWORD LeaseExpires; } IP_ADAPTER_INFO;
+      |                                                                                                                                      ^~~~
+win_stubs/Iptypes.h:6:154: error: ‘BYTE’ does not name a type
+    6 | typedef struct _IP_ADAPTER_INFO { struct _IP_ADAPTER_INFO* Next; char ComboIndex[256]; char AdapterName[256]; char Description[128]; UINT AddressLength; BYTE Address[8]; DWORD Index; UINT Type; UINT DhcpEnabled; char CurrentIpAddress[16]; IP_ADDR_STRING IpAddressList; IP_ADDR_STRING GatewayList; IP_ADDR_STRING DhcpServer; BOOL HaveWins; IP_ADDR_STRING WinsServer; DWORD LeaseObtained; DWORD LeaseExpires; } IP_ADAPTER_INFO;
+      |                                                                                                                                                          ^~~~
+win_stubs/Iptypes.h:6:184: error: ‘UINT’ does not name a type
+    6 | typedef struct _IP_ADAPTER_INFO { struct _IP_ADAPTER_INFO* Next; char ComboIndex[256]; char AdapterName[256]; char Description[128]; UINT AddressLength; BYTE Address[8]; DWORD Index; UINT Type; UINT DhcpEnabled; char CurrentIpAddress[16]; IP_ADDR_STRING IpAddressList; IP_ADDR_STRING GatewayList; IP_ADDR_STRING DhcpServer; BOOL HaveWins; IP_ADDR_STRING WinsServer; DWORD LeaseObtained; DWORD LeaseExpires; } IP_ADAPTER_INFO;
+      |                                                                                                                                                                                        ^~~~
+win_stubs/Iptypes.h:6:195: error: ‘UINT’ does not name a type
+    6 | typedef struct _IP_ADAPTER_INFO { struct _IP_ADAPTER_INFO* Next; char ComboIndex[256]; char AdapterName[256]; char Description[128]; UINT AddressLength; BYTE Address[8]; DWORD Index; UINT Type; UINT DhcpEnabled; char CurrentIpAddress[16]; IP_ADDR_STRING IpAddressList; IP_ADDR_STRING GatewayList; IP_ADDR_STRING DhcpServer; BOOL HaveWins; IP_ADDR_STRING WinsServer; DWORD LeaseObtained; DWORD LeaseExpires; } IP_ADAPTER_INFO;
+      |                                                                                                                                                                                                   ^~~~
+win_stubs/Iptypes.h:6:325: error: ‘BOOL’ does not name a type
+    6 | typedef struct _IP_ADAPTER_INFO { struct _IP_ADAPTER_INFO* Next; char ComboIndex[256]; char AdapterName[256]; char Description[128]; UINT AddressLength; BYTE Address[8]; DWORD Index; UINT Type; UINT DhcpEnabled; char CurrentIpAddress[16]; IP_ADDR_STRING IpAddressList; IP_ADDR_STRING GatewayList; IP_ADDR_STRING DhcpServer; BOOL HaveWins; IP_ADDR_STRING WinsServer; DWORD LeaseObtained; DWORD LeaseExpires; } IP_ADAPTER_INFO;
+      |                                                                                                                                                                                                                                                                                                                                     ^~~~
+In file included from main.cpp:82:
+win_stubs/iphlpapi.h:5:16: error: redefinition of ‘struct _IP_ADAPTER_INFO’
+    5 | typedef struct _IP_ADAPTER_INFO { struct _IP_ADAPTER_INFO* Next; char ComboIndex[256]; char AdapterName[256]; char Description[128]; UINT AddressLength; BYTE Address[8]; DWORD Index; UINT Type; UINT DhcpEnabled; char CurrentIpAddress[16]; char IpAddressList[100]; char GatewayList[100]; char DhcpServer[100]; BOOL HaveWins; char WinsServer[100]; DWORD LeaseObtained; DWORD LeaseExpires; } IP_ADAPTER_INFO;
+      |                ^~~~~~~~~~~~~~~~
+win_stubs/Iptypes.h:6:16: note: previous definition of ‘struct _IP_ADAPTER_INFO’
+    6 | typedef struct _IP_ADAPTER_INFO { struct _IP_ADAPTER_INFO* Next; char ComboIndex[256]; char AdapterName[256]; char Description[128]; UINT AddressLength; BYTE Address[8]; DWORD Index; UINT Type; UINT DhcpEnabled; char CurrentIpAddress[16]; IP_ADDR_STRING IpAddressList; IP_ADDR_STRING GatewayList; IP_ADDR_STRING DhcpServer; BOOL HaveWins; IP_ADDR_STRING WinsServer; DWORD LeaseObtained; DWORD LeaseExpires; } IP_ADAPTER_INFO;
+      |                ^~~~~~~~~~~~~~~~
+win_stubs/iphlpapi.h:5:390: error: conflicting declaration ‘typedef int IP_ADAPTER_INFO’
+    5 | typedef struct _IP_ADAPTER_INFO { struct _IP_ADAPTER_INFO* Next; char ComboIndex[256]; char AdapterName[256]; char Description[128]; UINT AddressLength; BYTE Address[8]; DWORD Index; UINT Type; UINT DhcpEnabled; char CurrentIpAddress[16]; char IpAddressList[100]; char GatewayList[100]; char DhcpServer[100]; BOOL HaveWins; char WinsServer[100]; DWORD LeaseObtained; DWORD LeaseExpires; } IP_ADAPTER_INFO;
+      |                                                                                                                                                                                                                                                                                                                                                                                                      ^~~~~~~~~~~~~~~
+win_stubs/Iptypes.h:6:410: note: previous declaration as ‘typedef struct _IP_ADAPTER_INFO IP_ADAPTER_INFO’
+    6 | typedef struct _IP_ADAPTER_INFO { struct _IP_ADAPTER_INFO* Next; char ComboIndex[256]; char AdapterName[256]; char Description[128]; UINT AddressLength; BYTE Address[8]; DWORD Index; UINT Type; UINT DhcpEnabled; char CurrentIpAddress[16]; IP_ADDR_STRING IpAddressList; IP_ADDR_STRING GatewayList; IP_ADDR_STRING DhcpServer; BOOL HaveWins; IP_ADDR_STRING WinsServer; DWORD LeaseObtained; DWORD LeaseExpires; } IP_ADAPTER_INFO;
+      |                                                                                                                                                                                                                                                                                                                                                                                                                          ^~~~~~~~~~~~~~~
+win_stubs/iphlpapi.h:6:41: error: ‘PULONG’ has not been declared
+    6 | DWORD GetAdaptersInfo(IP_ADAPTER_INFO*, PULONG);
+      |                                         ^~~~~~
+In file included from curl/include/curl/curl.h:54,
+                 from main.cpp:97:
+curl/include/curl/system.h:187:38: error: ‘socklen_t’ does not name a type
+  187 | #  define CURL_TYPEOF_CURL_SOCKLEN_T socklen_t
+      |                                      ^~~~~~~~~
+curl/include/curl/system.h:449:11: note: in expansion of macro ‘CURL_TYPEOF_CURL_SOCKLEN_T’
+  449 |   typedef CURL_TYPEOF_CURL_SOCKLEN_T curl_socklen_t;
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:187:5: error: ‘ULONG’ does not name a type; did you mean ‘LONG’?
+  187 |     ULONG ProcessId;
+      |     ^~~~~
+      |     LONG
+main.cpp:188:5: error: ‘BYTE’ does not name a type
+  188 |     BYTE ObjectTypeNumber;
+      |     ^~~~
+main.cpp:189:5: error: ‘BYTE’ does not name a type
+  189 |     BYTE Flags;
+      |     ^~~~
+main.cpp:190:5: error: ‘USHORT’ does not name a type
+  190 |     USHORT Handle;
+      |     ^~~~~~
+main.cpp:191:5: error: ‘PVOID’ does not name a type
+  191 |     PVOID Object;
+      |     ^~~~~
+main.cpp:192:5: error: ‘ACCESS_MASK’ does not name a type
+  192 |     ACCESS_MASK GrantedAccess;
+      |     ^~~~~~~~~~~
+main.cpp:201:9: error: typedef ‘NTSTATUS’ is initialized (use ‘decltype’ instead)
+  201 | typedef NTSTATUS(NTAPI* PNT_QUERY_SYSTEM_INFORMATION)(
+      |         ^~~~~~~~
+main.cpp:201:18: error: ‘NTAPI’ was not declared in this scope
+  201 | typedef NTSTATUS(NTAPI* PNT_QUERY_SYSTEM_INFORMATION)(
+      |                  ^~~~~
+main.cpp:201:25: error: ‘PNT_QUERY_SYSTEM_INFORMATION’ was not declared in this scope
+  201 | typedef NTSTATUS(NTAPI* PNT_QUERY_SYSTEM_INFORMATION)(
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:225:36: error: ‘GetCommandLineW’ was not declared in this scope
+  225 | LPWSTR* argvW = CommandLineToArgvW(GetCommandLineW(), &argc);
+      |                                    ^~~~~~~~~~~~~~~
+main.cpp:225:17: error: ‘CommandLineToArgvW’ was not declared in this scope
+  225 | LPWSTR* argvW = CommandLineToArgvW(GetCommandLineW(), &argc);
+      |                 ^~~~~~~~~~~~~~~~~~
+main.cpp: In static member function ‘static __int128 StringTo128Class::stringToInt128(const std::string&)’:
+main.cpp:399:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long long unsigned int’} [-Wsign-compare]
+  399 |         for (; i < str.size(); i++) {
+      |                ~~^~~~~~~~~~~~
+main.cpp: In static member function ‘static size_t GitHubFileManager::save_data(char*, size_t, size_t, void*)’:
+main.cpp:452:24: warning: unused variable ‘self’ [-Wunused-variable]
+  452 |     GitHubFileManager* self = static_cast<GitHubFileManager*>(userdata);
+      |                        ^~~~
+main.cpp: In member function ‘void primeTileClass::ptv_win_updater(bool, std::string, std::string, std::string, std::string, std::string, std::string)’:
+main.cpp:1290:16: error: ‘MAKEWORD’ was not declared in this scope
+ 1290 |     WORD ver = MAKEWORD(2, 2);
+      |                ^~~~~~~~
+main.cpp:1306:19: error: request for member ‘S_un’ in ‘hint.sockaddr_in::sin_addr’, which is of non-class type ‘uint32_t’ {aka ‘unsigned int’}
+ 1306 |     hint.sin_addr.s_addr = inet_addr("127.0.0.1");
+      |                   ^~~~~~
+main.cpp:1307:39: error: could not convert ‘hint.sockaddr_in::sin_addr’ from ‘uint32_t’ {aka ‘unsigned int’} to ‘IN_ADDR’ {aka ‘in_addr’}
+ 1307 |     string ipAddress = inet_ntoa(hint.sin_addr);
+      |                                  ~~~~~^~~~~~~~
+      |                                       |
+      |                                       uint32_t {aka unsigned int}
+main.cpp:1333:20: warning: unknown escape sequence: '\P'
+ 1333 | std::ofstream copy("PrimeOneUpdate\PrimeOneUpdate.zip", std::ios::binary);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:1394:19: error: ‘MAX_COMPUTERNAME_LENGTH’ was not declared in this scope
+ 1394 | char computerName[MAX_COMPUTERNAME_LENGTH + 1];
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:1395:33: error: ‘computerName’ was not declared in this scope; did you mean ‘computerNameSize’?
+ 1395 | DWORD computerNameSize = sizeof(computerName);
+      |                                 ^~~~~~~~~~~~
+      |                                 computerNameSize
+main.cpp:1400:1: error: ‘ZeroMemory’ was not declared in this scope
+ 1400 | ZeroMemory(host, NI_MAXHOST);
+      | ^~~~~~~~~~
+main.cpp:1402:5: error: ‘GetComputerName’ was not declared in this scope
+ 1402 | if (GetComputerName(computerName, &computerNameSize)){
+      |     ^~~~~~~~~~~~~~~
+main.cpp:1420:24: warning: unknown escape sequence: '\P'
+ 1420 | std::ifstream original("PrimeOneUpdate\PrimeOneUpdater.zip", std::ios::binary);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:1453:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<char>::size_type’ {aka ‘long long unsigned int’} [-Wsign-compare]
+ 1453 |     if (dataSend >= data.size()) {
+      |         ~~~~~~~~~^~~~~~~~~~~~~~
+main.cpp:1281:25: warning: unused variable ‘yesContinue’ [-Wunused-variable]
+ 1281 | int PORT = 54000 ; bool yesContinue=true; bool socketSearch=true; int PORTgrow = PORT; bool sendForever=true;
+      |                         ^~~~~~~~~~~
+main.cpp:1283:6: warning: unused variable ‘receiveForever’ [-Wunused-variable]
+ 1283 | bool receiveForever=true; int dataSend=0;  bool socketForever=true;  bool printForever=true;
+      |      ^~~~~~~~~~~~~~
+main.cpp:1287:6: warning: unused variable ‘array’ [-Wunused-variable]
+ 1287 | int* array = new int[ARRAY_SIZE];
+      |      ^~~~~
+main.cpp: In member function ‘__int128 primeTileClass::listBookZip()’:
+main.cpp:2240:10: warning: unused variable ‘tileWalk’ [-Wunused-variable]
+ 2240 | __int128 tileWalk = 1;
+      |          ^~~~~~~~
+main.cpp: In member function ‘__int128 primeTileClass::threadRetrieveTile(__int128, __int128, std::string, std::byte*)’:
+main.cpp:2554:13: error: no match for ‘operator+=’ (operand types are ‘__int128’ and ‘std::byte’)
+ 2554 |    dataTotal+=workingArray[threadGridWalk];
+      |    ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:2570:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ 2570 | }
+      | ^
+main.cpp: In member function ‘void primeTileClass::ptv_COMMANDER()’:
+main.cpp:3562:18: warning: ignoring return value of ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::front() [with _Tp = std::thread; _Alloc = std::allocator<std::thread>; reference = std::thread&]’, declared with attribute ‘nodiscard’ [-Wunused-result]
+ 3562 |    bookClub.front();
+      |    ~~~~~~~~~~~~~~^~
+In file included from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/vector:66,
+                 from main.cpp:23:
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/stl_vector.h:1211:7: note: declared here
+ 1211 |       front() _GLIBCXX_NOEXCEPT
+      |       ^~~~~
+main.cpp:3578:58: error: cannot convert ‘std::byte’ to ‘__int128’ in assignment
+ 3578 | while (etchRunner < grid){ data = targetTile[etchRunner++];
+      |                                   ~~~~~~~~~~~~~~~~~~~~~~~^
+      |                                                          |
+      |                                                          std::byte
+main.cpp:3593:29: error: cannot convert ‘__int128’ to ‘std::byte’ in assignment
+ 3593 |      targetTile[etchWalk] = data;
+      |                             ^~~~
+      |                             |
+      |                             __int128
+main.cpp:3618:21: error: cannot convert ‘int’ to ‘std::byte’ in assignment
+ 3618 |     targetTile[0] = 0;
+      |                     ^
+      |                     |
+      |                     int
+main.cpp:3921:48: error: cannot convert ‘std::byte’ to ‘__int128’ in assignment
+ 3921 |       targetTileDif = targetTile[grid -moonWalk];
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~^
+      |                                                |
+      |                                                std::byte
+main.cpp:3974:39: error: cannot convert ‘std::byte’ to ‘__int128’ in assignment
+ 3974 |       targetTileDif = targetTile[gWalk];
+      |                       ~~~~~~~~~~~~~~~~^
+      |                                       |
+      |                                       std::byte
+main.cpp:3409:6: warning: unused variable ‘verifyTiles’ [-Wunused-variable]
+ 3409 | bool verifyTiles=false;
+      |      ^~~~~~~~~~~
+main.cpp:3410:9: warning: unused variable ‘rebuildIndex’ [-Wunused-variable]
+ 3410 |    bool rebuildIndex = false;
+      |         ^~~~~~~~~~~~
+main.cpp:3411:9: warning: unused variable ‘reCreateIndex’ [-Wunused-variable]
+ 3411 |    bool reCreateIndex = false;
+      |         ^~~~~~~~~~~~~
+main.cpp:3432:10: warning: unused variable ‘walkInfiniteTile’ [-Wunused-variable]
+ 3432 | __int128 walkInfiniteTile =0;
+      |          ^~~~~~~~~~~~~~~~
+main.cpp:3453:6: warning: unused variable ‘verifiedPrimeBook’ [-Wunused-variable]
+ 3453 | bool verifiedPrimeBook=false;
+      |      ^~~~~~~~~~~~~~~~~
+main.cpp:3462:10: warning: unused variable ‘batchCount’ [-Wunused-variable]
+ 3462 | __int128 batchCount =0;
+      |          ^~~~~~~~~~
+main.cpp:3463:10: warning: unused variable ‘createTileReadThread’ [-Wunused-variable]
+ 3463 | __int128 createTileReadThread =0;
+      |          ^~~~~~~~~~~~~~~~~~~~
+main.cpp:3467:10: warning: unused variable ‘threadReadTotal’ [-Wunused-variable]
+ 3467 | __int128 threadReadTotal=0;
+      |          ^~~~~~~~~~~~~~~
+main.cpp:3480:10: warning: unused variable ‘rejoinThreadWalk’ [-Wunused-variable]
+ 3480 | __int128 rejoinThreadWalk=0;
+      |          ^~~~~~~~~~~~~~~~
+main.cpp:3483:12: warning: unused variable ‘gridWalk’ [-Wunused-variable]
+ 3483 |   __int128 gridWalk=0;
+      |            ^~~~~~~~
+main.cpp:3488:10: warning: unused variable ‘partialBatchTotal’ [-Wunused-variable]
+ 3488 | __int128 partialBatchTotal =0;
+      |          ^~~~~~~~~~~~~~~~~
+main.cpp:3739:10: warning: unused variable ‘num’ [-Wunused-variable]
+ 3739 | __int128 num;
+      |          ^~~
+main.cpp:3839:10: warning: unused variable ‘loadedTileDif’ [-Wunused-variable]
+ 3839 | __int128 loadedTileDif=0;
+      |          ^~~~~~~~~~~~~
+main.cpp:3841:10: warning: unused variable ‘previousPrimeWalk’ [-Wunused-variable]
+ 3841 | __int128 previousPrimeWalk = 0;
+      |          ^~~~~~~~~~~~~~~~~
+main.cpp:3842:10: warning: unused variable ‘nextPrime’ [-Wunused-variable]
+ 3842 | __int128 nextPrime =0;
+      |          ^~~~~~~~~
+main.cpp:3843:10: warning: unused variable ‘nextPrimeWalk’ [-Wunused-variable]
+ 3843 | __int128 nextPrimeWalk=0;
+      |          ^~~~~~~~~~~~~
+main.cpp:3845:10: warning: unused variable ‘previousTile’ [-Wunused-variable]
+ 3845 | __int128 previousTile = totalTiles--;
+      |          ^~~~~~~~~~~~
+main.cpp:3849:10: warning: unused variable ‘previousPrimeMoonWalk’ [-Wunused-variable]
+ 3849 | __int128 previousPrimeMoonWalk = bookIndex[tileSetup];
+      |          ^~~~~~~~~~~~~~~~~~~~~
+main.cpp: In member function ‘bool primeTileClass::verifyPrimeGear(__int128)’:
+main.cpp:4328:22: error: no match for ‘operator*’ (operand types are ‘std::byte’ and ‘int’)
+ 4328 | primeBuild+= breeze()*2;
+      |              ~~~~~~~~^~
+      |                    |  |
+      |                    |  int
+      |                    std::byte
+main.cpp:4303:38: warning: unused variable ‘myTileWalk’ [-Wunused-variable]
+ 4303 |   __int128 isPrime = false; __int128 myTileWalk=0;  __int128 myBreezeWalk=0;
+      |                                      ^~~~~~~~~~
+main.cpp:4303:62: warning: unused variable ‘myBreezeWalk’ [-Wunused-variable]
+ 4303 |   __int128 isPrime = false; __int128 myTileWalk=0;  __int128 myBreezeWalk=0;
+      |                                                              ^~~~~~~~~~~~
+main.cpp: In member function ‘__int128 primeTileClass::nextWalkPrime(__int128)’:
+main.cpp:4616:10: warning: unused variable ‘myPrimeFindsLocal’ [-Wunused-variable]
+ 4616 | __int128 myPrimeFindsLocal=0;
+      |          ^~~~~~~~~~~~~~~~~
+main.cpp:4620:10: warning: unused variable ‘primeDifference’ [-Wunused-variable]
+ 4620 | __int128 primeDifference=0;
+      |          ^~~~~~~~~~~~~~~
+main.cpp:4621:10: warning: unused variable ‘primeBuild’ [-Wunused-variable]
+ 4621 | __int128 primeBuild=0;
+      |          ^~~~~~~~~~
+main.cpp:4623:10: warning: unused variable ‘myPreviousPrime’ [-Wunused-variable]
+ 4623 | __int128 myPreviousPrime = 0;
+      |          ^~~~~~~~~~~~~~~
+main.cpp:4628:8: warning: unused variable ‘dance’ [-Wunused-variable]
+ 4628 |   bool dance=true;
+      |        ^~~~~
+main.cpp:4630:8: warning: unused variable ‘findPrevious’ [-Wunused-variable]
+ 4630 |   bool findPrevious=true;
+      |        ^~~~~~~~~~~~
+main.cpp: In member function ‘__int128 primeTileClass::moonWalkPrime(__int128)’:
+main.cpp:4933:10: warning: unused variable ‘myPrimeFindsLocal’ [-Wunused-variable]
+ 4933 | __int128 myPrimeFindsLocal=0;
+      |          ^~~~~~~~~~~~~~~~~
+main.cpp:4936:10: warning: unused variable ‘countThis’ [-Wunused-variable]
+ 4936 | __int128 countThis=0;
+      |          ^~~~~~~~~
+main.cpp:4937:10: warning: unused variable ‘primeDifference’ [-Wunused-variable]
+ 4937 | __int128 primeDifference=0;
+      |          ^~~~~~~~~~~~~~~
+main.cpp:4938:10: warning: unused variable ‘primeBuild’ [-Wunused-variable]
+ 4938 | __int128 primeBuild=0;
+      |          ^~~~~~~~~~
+main.cpp:4939:10: warning: unused variable ‘intTail’ [-Wunused-variable]
+ 4939 | __int128 intTail=0;
+      |          ^~~~~~~
+main.cpp:4940:10: warning: unused variable ‘myPreviousPrime’ [-Wunused-variable]
+ 4940 | __int128 myPreviousPrime = 0;
+      |          ^~~~~~~~~~~~~~~
+main.cpp:4941:10: warning: unused variable ‘moonWalker’ [-Wunused-variable]
+ 4941 | __int128 moonWalker = 0;
+      |          ^~~~~~~~~~
+main.cpp:4942:10: warning: unused variable ‘slice’ [-Wunused-variable]
+ 4942 | __int128 slice=0;
+      |          ^~~~~
+main.cpp:4943:10: warning: unused variable ‘spaceBuffer’ [-Wunused-variable]
+ 4943 | __int128 spaceBuffer =0;
+      |          ^~~~~~~~~~~
+main.cpp:4945:8: warning: unused variable ‘dance’ [-Wunused-variable]
+ 4945 |   bool dance=true;
+      |        ^~~~~
+main.cpp:4947:8: warning: unused variable ‘findPrevious’ [-Wunused-variable]
+ 4947 |   bool findPrevious=true;
+      |        ^~~~~~~~~~~~
+main.cpp: In member function ‘void primeTileClass::etchTile(std::byte)’:
+main.cpp:6132:13: error: no match for ‘operator+=’ (operand types are ‘__int128’ and ‘std::byte’)
+ 6132 |  etchWalkSum+=data; // ADD ONTO TILE SUM
+      |  ~~~~~~~~~~~^~~~~~
+main.cpp:6155:14: error: cannot convert ‘std::byte’ to ‘__int128’ in assignment
+ 6155 |  etchWalkSum=data; // BEGIN NEW TILE SUM
+      |              ^~~~
+      |              |
+      |              std::byte
+main.cpp: In member function ‘bool primeTileClass::verifyPrime(__int128)’:
+main.cpp:6753:22: error: no match for ‘operator*’ (operand types are ‘std::byte’ and ‘int’)
+ 6753 | primeBuild+= breeze()*2;
+      |              ~~~~~~~~^~
+      |                    |  |
+      |                    |  int
+      |                    std::byte
+main.cpp:6728:38: warning: unused variable ‘myTileWalk’ [-Wunused-variable]
+ 6728 |   __int128 isPrime = false; __int128 myTileWalk=0;  __int128 myBreezeWalk=0;
+      |                                      ^~~~~~~~~~
+main.cpp:6728:62: warning: unused variable ‘myBreezeWalk’ [-Wunused-variable]
+ 6728 |   __int128 isPrime = false; __int128 myTileWalk=0;  __int128 myBreezeWalk=0;
+      |                                                              ^~~~~~~~~~~~
+main.cpp: In member function ‘void primeTileClass::initiateBreeze()’:
+main.cpp:7041:9: warning: unused variable ‘threadBreezeWalk’ [-Wunused-variable]
+ 7041 |   byte* threadBreezeWalk = new byte[singers];
+      |         ^~~~~~~~~~~~~~~~
+main.cpp: In member function ‘bool primeTileClass::slowWalkToSundayDivise(__int128)’:
+main.cpp:7188:10: warning: unused variable ‘quickStep’ [-Wunused-variable]
+ 7188 | __int128 quickStep=0;
+      |          ^~~~~~~~~
+main.cpp: In member function ‘std::vector<std::byte> primeTileClass::ptv_primeBookAuthor(__int128, int, int, int)’:
+main.cpp:7480:22: error: no matching function for call to ‘std::vector<std::byte>::push_back(__int128&)’
+ 7480 |   wolfCatch.push_back(primeDifference);
+      |   ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/stl_vector.h:1283:7: note: candidate: ‘void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = std::byte; _Alloc = std::allocator<std::byte>; value_type = std::byte]’
+ 1283 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/stl_vector.h:1283:35: note:   no known conversion for argument 1 from ‘__int128’ to ‘const std::vector<std::byte>::value_type&’ {aka ‘const std::byte&’}
+ 1283 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/stl_vector.h:1300:7: note: candidate: ‘void std::vector<_Tp, _Alloc>::push_back(value_type&&) [with _Tp = std::byte; _Alloc = std::allocator<std::byte>; value_type = std::byte]’
+ 1300 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/stl_vector.h:1300:30: note:   no known conversion for argument 1 from ‘__int128’ to ‘std::vector<std::byte>::value_type&&’ {aka ‘std::byte&&’}
+ 1300 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+main.cpp: In member function ‘void primeTileClass::testBook()’:
+main.cpp:7860:24: error: no match for ‘operator*’ (operand types are ‘std::byte’ and ‘int’)
+ 7860 |   primeBuild+= breeze()*2;
+      |                ~~~~~~~~^~
+      |                      |  |
+      |                      |  int
+      |                      std::byte
+main.cpp:7856:11: warning: unused variable ‘singersPlus’ [-Wunused-variable]
+ 7856 |  __int128 singersPlus = singers +1 ;
+      |           ^~~~~~~~~~~
+main.cpp: In member function ‘void primeTileClass::librarianDancer(__int128, __int128, __int128, int, std::byte*)’:
+main.cpp:8068:18: error: cannot convert ‘int’ to ‘std::byte’ in initialization
+ 8068 |   byte return16 =0;
+      |                  ^
+      |                  |
+      |                  int
+main.cpp:8080:53: error: cannot convert ‘uint8_t**’ {aka ‘unsigned char**’} to ‘std::byte**’ in initialization
+ 8080 |     byte** myTiles = new uint8_t*[myMinimumTileCount]; // Allocate rows       // Dynamically allocate a 2D array
+      |                                                     ^
+      |                                                     |
+      |                                                     uint8_t** {aka unsigned char**}
+main.cpp:8081:67: error: cannot convert ‘uint8_t*’ {aka ‘unsigned char*’} to ‘std::byte*’ in assignment
+ 8081 |     for (int i = 0; i < myMinimumTileCount; ++i) {   myTiles[i] = new uint8_t[arrayGrid];} // Allocate columns for each row
+      |                                                                   ^~~~~~~~~~~~~~~~~~~~~~
+      |                                                                   |
+      |                                                                   uint8_t* {aka unsigned char*}
+main.cpp:8135:31: error: no match for ‘operator*’ (operand types are ‘std::byte’ and ‘int’)
+ 8135 |         primeBuild += return16*2;
+      |                       ~~~~~~~~^~
+      |                       |        |
+      |                       |        int
+      |                       std::byte
+main.cpp:8193:64: error: no match for ‘operator*’ (operand types are ‘std::byte’ and ‘int’)
+ 8193 |          return16=myTiles[myThreadTileWalk][myThreadBreezeWalk]*2;
+      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+      |                                                               | |
+      |                                                               | int
+      |                                                               std::byte
+main.cpp:8199:21: error: no match for ‘operator+=’ (operand types are ‘__int128’ and ‘std::byte’)
+ 8199 |          primeBuild += return16;
+      |          ~~~~~~~~~~~^~~~~~~~~~~
+main.cpp:8213:46: error: cannot convert ‘__int128’ to ‘std::byte’ in assignment
+ 8213 |       primeFindsArray[ myPrimeFindsLocal ] = primeDifference;
+      |                                              ^~~~~~~~~~~~~~~
+      |                                              |
+      |                                              __int128
+main.cpp:8047:10: warning: unused variable ‘myPrimeFindsLocalStep’ [-Wunused-variable]
+ 8047 | __int128 myPrimeFindsLocalStep=0;
+      |          ^~~~~~~~~~~~~~~~~~~~~
+main.cpp:8048:10: warning: unused variable ‘countThis’ [-Wunused-variable]
+ 8048 | __int128 countThis=0;
+      |          ^~~~~~~~~
+main.cpp:8053:24: warning: unused variable ‘return16b’ [-Wunused-variable]
+ 8053 | __int128 slice=0;  int return16b=0;
+      |                        ^~~~~~~~~
+main.cpp:8054:10: warning: unused variable ‘spaceBuffer’ [-Wunused-variable]
+ 8054 | __int128 spaceBuffer =0;
+      |          ^~~~~~~~~~~
+main.cpp:8056:20: warning: unused variable ‘dice’ [-Wunused-variable]
+ 8056 | __int128 d3=0; int dice=0;
+      |                    ^~~~
+main.cpp:8057:10: warning: unused variable ‘startTime’ [-Wunused-variable]
+ 8057 | __int128 startTime=0;
+      |          ^~~~~~~~~
+main.cpp:8058:7: warning: unused variable ‘myBreezeWalk’ [-Wunused-variable]
+ 8058 |   int myBreezeWalk = 0;
+      |       ^~~~~~~~~~~~
+main.cpp:8059:7: warning: unused variable ‘itWorks’ [-Wunused-variable]
+ 8059 |   int itWorks=0;
+      |       ^~~~~~~
+main.cpp:8060:7: warning: unused variable ‘jump’ [-Wunused-variable]
+ 8060 |   int jump = 6;
+      |       ^~~~
+main.cpp:8067:7: warning: unused variable ‘TIlePlacement’ [-Wunused-variable]
+ 8067 |   int TIlePlacement =0;
+      |       ^~~~~~~~~~~~~
+main.cpp:8069:8: warning: unused variable ‘foreverRead’ [-Wunused-variable]
+ 8069 |   bool foreverRead = true;
+      |        ^~~~~~~~~~~
+main.cpp:8083:7: warning: unused variable ‘myTargetTile’ [-Wunused-variable]
+ 8083 | byte* myTargetTile = new byte[gridInt];
+      |       ^~~~~~~~~~~~
+main.cpp: In constructor ‘primeTileClass::primeTileClass(__int128, __int128, __int128, __int128, __int128*, __int128, __int128)’:
+main.cpp:1939:10: warning: ‘primeTileClass::perThreadSlices’ will be initialized after [-Wreorder]
+ 1939 | __int128 perThreadSlices =0;
+      |          ^~~~~~~~~~~~~~~
+main.cpp:1928:10: warning:   ‘__int128 primeTileClass::singers’ [-Wreorder]
+ 1928 | __int128 singers =0;
+      |          ^~~~~~~
+main.cpp:8351:1: warning:   when initialized here [-Wreorder]
+ 8351 | primeTileClass(__int128 powerOfIN,
+      | ^~~~~~~~~~~~~~
+main.cpp:1966:11: warning: ‘primeTileClass::primeIndex’ will be initialized after [-Wreorder]
+ 1966 | __int128* primeIndex;
+      |           ^~~~~~~~~~
+main.cpp:1944:10: warning:   ‘__int128 primeTileClass::indexTiles’ [-Wreorder]
+ 1944 | __int128 indexTiles=0;
+      |          ^~~~~~~~~~
+main.cpp:8351:1: warning:   when initialized here [-Wreorder]
+ 8351 | primeTileClass(__int128 powerOfIN,
+      | ^~~~~~~~~~~~~~
+main.cpp:8373:12: error: call of overloaded ‘pow(int, __int128&)’ is ambiguous
+ 8373 |  grid = pow(2,powerOf);
+      |         ~~~^~~~~~~~~~~
+In file included from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/cmath:47,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/x86_64-w64-mingw32/bits/stdc++.h:114,
+                 from main.cpp:49:
+/usr/share/mingw-w64/include/math.h:191:18: note: candidate: ‘double pow(double, double)’
+  191 |   double __cdecl pow(double _X,double _Y);
+      |                  ^~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/cmath:380:3: note: candidate: ‘constexpr long double std::pow(long double, long double)’
+  380 |   pow(long double __x, long double __y)
+      |   ^~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/cmath:376:3: note: candidate: ‘constexpr float std::pow(float, float)’
+  376 |   pow(float __x, float __y)
+      |   ^~~
+main.cpp:8374:11: warning: unused variable ‘arrayGrid’ [-Wunused-variable]
+ 8374 | const int arrayGrid = static_cast<int>(std::pow(2, 20)); // Convert to int for array size
+      |           ^~~~~~~~~
+main.cpp:8385:10: warning: unused variable ‘tileLay’ [-Wunused-variable]
+ 8385 | __int128 tileLay =0; //cout << " 8888888 " << endl;
+      |          ^~~~~~~
+main.cpp: In member function ‘void primeTileClass::advanceInfiniteWalk(__int128)’:
+main.cpp:8415:113: error: call of overloaded ‘pow(int, __int128&)’ is ambiguous
+ 8415 | __int128 getInfiniteWalk(){return infiniteWalk;}    void advanceInfiniteWalk(__int128 factor){ infiniteWalk+=pow(2,factor);}
+      |                                                                                                              ~~~^~~~~~~~~~
+/usr/share/mingw-w64/include/math.h:191:18: note: candidate: ‘double pow(double, double)’
+  191 |   double __cdecl pow(double _X,double _Y);
+      |                  ^~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/cmath:380:3: note: candidate: ‘constexpr long double std::pow(long double, long double)’
+  380 |   pow(long double __x, long double __y)
+      |   ^~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/cmath:376:3: note: candidate: ‘constexpr float std::pow(float, float)’
+  376 |   pow(float __x, float __y)
+      |   ^~~
+main.cpp: In member function ‘std::string primeTileClass::getTileCreationTime()’:
+main.cpp:8507:30: warning: no return statement in function returning non-void [-Wreturn-type]
+ 8507 | string getTileCreationTime(){}
+      |                              ^
+main.cpp: At global scope:
+main.cpp:8562:8: error: ‘DISPLAY_DEVICE’ was not declared in this scope
+ 8562 | vector<DISPLAY_DEVICE> realm_gl_winGpus();
+      |        ^~~~~~~~~~~~~~
+main.cpp:8562:22: error: template argument 1 is invalid
+ 8562 | vector<DISPLAY_DEVICE> realm_gl_winGpus();
+      |                      ^
+main.cpp:8562:22: error: template argument 2 is invalid
+main.cpp:8575:8: error: ‘DISPLAY_DEVICE’ was not declared in this scope
+ 8575 | vector<DISPLAY_DEVICE> realm_gl_cores_cuda();
+      |        ^~~~~~~~~~~~~~
+main.cpp:8575:22: error: template argument 1 is invalid
+ 8575 | vector<DISPLAY_DEVICE> realm_gl_cores_cuda();
+      |                      ^
+main.cpp:8575:22: error: template argument 2 is invalid
+main.cpp:8612:40: error: ‘UINT’ has not been declared
+ 8612 | LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
+      |                                        ^~~~
+main.cpp:8613:20: warning: ‘stdcall’ attribute only applies to function types [-Wattributes]
+ 8613 | int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
+      |                    ^~~~~~~~~
+main.cpp:8613:20: error: ‘HINSTANCE’ was not declared in this scope
+main.cpp:8613:41: error: ‘HINSTANCE’ was not declared in this scope
+ 8613 | int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
+      |                                         ^~~~~~~~~
+main.cpp:8613:72: error: expected primary-expression before ‘lpCmdLine’
+ 8613 | int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
+      |                                                                        ^~~~~~~~~
+main.cpp:8613:83: error: expected primary-expression before ‘int’
+ 8613 | int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
+      |                                                                                   ^~~
+main.cpp:8613:95: error: expression list treated as compound expression in initializer [-fpermissive]
+ 8613 | int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow);
+      |                                                                                               ^
+main.cpp: In member function ‘void conduitClass::conduit_win_hosts(__int128, std::string, std::string, std::string, std::string, bool, bool, int, bool, primeTileClass)’:
+main.cpp:9024:5: warning: unused variable ‘hostConduits’ [-Wunused-variable]
+ 9024 | int hostConduits = conduits;
+      |     ^~~~~~~~~~~~
+main.cpp:9025:5: warning: unused variable ‘guestConduits’ [-Wunused-variable]
+ 9025 | int guestConduits = conduits;
+      |     ^~~~~~~~~~~~~
+main.cpp:9026:5: warning: unused variable ‘conduitCount’ [-Wunused-variable]
+ 9026 | int conduitCount =0;
+      |     ^~~~~~~~~~~~
+main.cpp: In member function ‘void conduitClass::conduit_win_guests(__int128, std::string, std::string, std::string, std::string, bool&, int&, int&, int&, int&, std::vector<std::byte>, std::string)’:
+main.cpp:9092:6: warning: unused variable ‘infinite’ [-Wunused-variable]
+ 9092 | bool infinite = true;
+      |      ^~~~~~~~
+main.cpp:9095:5: warning: unused variable ‘hostConduits’ [-Wunused-variable]
+ 9095 | int hostConduits = conduits;
+      |     ^~~~~~~~~~~~
+main.cpp:9096:5: warning: unused variable ‘guestConduits’ [-Wunused-variable]
+ 9096 | int guestConduits = conduits;
+      |     ^~~~~~~~~~~~~
+main.cpp:9099:10: warning: unused variable ‘wolfLeap’ [-Wunused-variable]
+ 9099 | __int128 wolfLeap =0;  __int128 returnWork=0; int returnPrimeQue =0;
+      |          ^~~~~~~~
+main.cpp:9099:33: warning: unused variable ‘returnWork’ [-Wunused-variable]
+ 9099 | __int128 wolfLeap =0;  __int128 returnWork=0; int returnPrimeQue =0;
+      |                                 ^~~~~~~~~~
+main.cpp:9099:51: warning: unused variable ‘returnPrimeQue’ [-Wunused-variable]
+ 9099 | __int128 wolfLeap =0;  __int128 returnWork=0; int returnPrimeQue =0;
+      |                                                   ^~~~~~~~~~~~~~
+main.cpp:9100:25: warning: unused variable ‘gatherTupleData’ [-Wunused-variable]
+ 9100 | int gatherData =0;  int gatherTupleData =0;
+      |                         ^~~~~~~~~~~~~~~
+main.cpp:9102:5: warning: unused variable ‘wolfHunger’ [-Wunused-variable]
+ 9102 | int wolfHunger = 0; int returnHunger=0;
+      |     ^~~~~~~~~~
+main.cpp:9102:25: warning: unused variable ‘returnHunger’ [-Wunused-variable]
+ 9102 | int wolfHunger = 0; int returnHunger=0;
+      |                         ^~~~~~~~~~~~
+main.cpp:9104:9: warning: unused variable ‘dataReturnArray’ [-Wunused-variable]
+ 9104 |     int dataReturnArray[numThreads];
+      |         ^~~~~~~~~~~~~~~
+main.cpp: In member function ‘void conduitClass::conduit_win_host(std::string, int, int, std::string, int, std::string, std::string, std::string, std::string, std::string, bool, bool, bool, primeTileClass)’:
+main.cpp:9742:12: error: ‘MAKEWORD’ was not declared in this scope
+ 9742 | WORD ver = MAKEWORD(2, 2);
+      |            ^~~~~~~~
+main.cpp:9761:15: error: request for member ‘S_un’ in ‘hint.sockaddr_in::sin_addr’, which is of non-class type ‘uint32_t’ {aka ‘unsigned int’}
+ 9761 | hint.sin_addr.s_addr = inet_addr("127.0.0.1");
+      |               ^~~~~~
+main.cpp:9762:35: error: could not convert ‘hint.sockaddr_in::sin_addr’ from ‘uint32_t’ {aka ‘unsigned int’} to ‘IN_ADDR’ {aka ‘in_addr’}
+ 9762 | string ipAddress = inet_ntoa(hint.sin_addr);
+      |                              ~~~~~^~~~~~~~
+      |                                   |
+      |                                   uint32_t {aka unsigned int}
+main.cpp:9888:30: error: ‘MAX_COMPUTERNAME_LENGTH’ was not declared in this scope
+ 9888 | /*H*/      char computerName[MAX_COMPUTERNAME_LENGTH + 1];
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:9889:44: error: ‘computerName’ was not declared in this scope; did you mean ‘computerNameSize’?
+ 9889 | /*H*/      DWORD computerNameSize = sizeof(computerName);
+      |                                            ^~~~~~~~~~~~
+      |                                            computerNameSize
+main.cpp:9894:12: error: ‘ZeroMemory’ was not declared in this scope
+ 9894 | /*H*/      ZeroMemory(host, NI_MAXHOST);
+      |            ^~~~~~~~~~
+main.cpp:9898:16: error: ‘GetComputerName’ was not declared in this scope
+ 9898 | /*H*/      if (GetComputerName(computerName, &computerNameSize)){
+      |                ^~~~~~~~~~~~~~~
+main.cpp:9913:29: error: ‘INET_ADDRSTRLEN’ was not declared in this scope
+ 9913 | /*H*/          char guestIP[INET_ADDRSTRLEN];
+      |                             ^~~~~~~~~~~~~~~
+main.cpp:9914:57: error: ‘guestIP’ was not declared in this scope; did you mean ‘guestIp’?
+ 9914 | /*H*/          inet_ntop(AF_INET, &clientAddr.sin_addr, guestIP, INET_ADDRSTRLEN);
+      |                                                         ^~~~~~~
+      |                                                         guestIp
+main.cpp:10009:10: warning: unused variable ‘guestData2Int’ [-Wunused-variable]
+10009 | __int128 guestData2Int = StringTo128Class::stringToInt128( guestData2 );
+      |          ^~~~~~~~~~~~~
+main.cpp:10053:30: error: call of overloaded ‘pow(int, __int128)’ is ambiguous
+10053 |     __int128 wolfHunger = pow(2, StringTo128Class::stringToInt128( wolfHungerString ));
+      |                           ~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/share/mingw-w64/include/math.h:191:18: note: candidate: ‘double pow(double, double)’
+  191 |   double __cdecl pow(double _X,double _Y);
+      |                  ^~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/cmath:380:3: note: candidate: ‘constexpr long double std::pow(long double, long double)’
+  380 |   pow(long double __x, long double __y)
+      |   ^~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/cmath:376:3: note: candidate: ‘constexpr float std::pow(float, float)’
+  376 |   pow(float __x, float __y)
+      |   ^~~
+main.cpp:10467:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<char>::size_type’ {aka ‘long long unsigned int’} [-Wsign-compare]
+10467 |    if (dataSend >= data.size()) {
+      |        ~~~~~~~~~^~~~~~~~~~~~~~
+main.cpp:10490:25: error: cannot convert ‘std::byte’ to ‘uint8_t’ {aka ‘unsigned char’} in initialization
+10490 |     for (uint8_t byte : primeCatchReceive) {
+      |                         ^~~~~~~~~~~~~~~~~
+main.cpp:10484:10: warning: unused variable ‘primeCatchDataBuffer’ [-Wunused-variable]
+10484 |     char primeCatchDataBuffer[MAX_BUFFER_SIZE];
+      |          ^~~~~~~~~~~~~~~~~~~~
+main.cpp:10051:14: warning: unused variable ‘guestHostclaimedPort00’ [-Wunused-variable]
+10051 |     __int128 guestHostclaimedPort00 = StringTo128Class::stringToInt128( guestData5 );
+      |              ^~~~~~~~~~~~~~~~~~~~~~
+main.cpp:10058:14: warning: unused variable ‘guestUpTimeDouble’ [-Wunused-variable]
+10058 |     __int128 guestUpTimeDouble = StringTo128Class::stringToInt128( guestData11 );
+      |              ^~~~~~~~~~~~~~~~~
+main.cpp:9721:31: warning: unused variable ‘updateGear’ [-Wunused-variable]
+ 9721 |  string guestName = "";  bool updateGear = false;  bool updateBook =false ;
+      |                               ^~~~~~~~~~
+main.cpp:9721:57: warning: unused variable ‘updateBook’ [-Wunused-variable]
+ 9721 |  string guestName = "";  bool updateGear = false;  bool updateBook =false ;
+      |                                                         ^~~~~~~~~~
+main.cpp:9722:6: warning: unused variable ‘isHost’ [-Wunused-variable]
+ 9722 | bool isHost = true; bool infiniteWalkGuest = false; string guestIp = "127.000.000.001" ; string guestPort = "55555"; string hostIp= "127.000.000.001"; string hostPort = "55555"; string uniqueFileName ="";
+      |      ^~~~~~
+main.cpp:9722:26: warning: unused variable ‘infiniteWalkGuest’ [-Wunused-variable]
+ 9722 | bool isHost = true; bool infiniteWalkGuest = false; string guestIp = "127.000.000.001" ; string guestPort = "55555"; string hostIp= "127.000.000.001"; string hostPort = "55555"; string uniqueFileName ="";
+      |                          ^~~~~~~~~~~~~~~~~
+main.cpp:9724:25: warning: unused variable ‘remotePortInt’ [-Wunused-variable]
+ 9724 |   string userInput; int remotePortInt=0;
+      |                         ^~~~~~~~~~~~~
+main.cpp:9725:6: warning: unused variable ‘yesContinue’ [-Wunused-variable]
+ 9725 | bool yesContinue=true; string guestIPstring="";
+      |      ^~~~~~~~~~~
+main.cpp:9730:6: warning: unused variable ‘receiveForever’ [-Wunused-variable]
+ 9730 | bool receiveForever=true;
+      |      ^~~~~~~~~~~~~~
+main.cpp:9733:9: warning: unused variable ‘printForever’ [-Wunused-variable]
+ 9733 |    bool printForever=true;
+      |         ^~~~~~~~~~~~
+main.cpp:9736:5: warning: unused variable ‘totalSends’ [-Wunused-variable]
+ 9736 | int totalSends=0;
+      |     ^~~~~~~~~~
+main.cpp:9737:6: warning: unused variable ‘allData’ [-Wunused-variable]
+ 9737 |  int allData=0;                    string    remotePortString = "";
+      |      ^~~~~~~
+main.cpp: In member function ‘void conduitClass::conduit_weaver(std::string, bool, __int128, std::string, int)’:
+main.cpp:10680:29: error: call of overloaded ‘pow(int, __int128&)’ is ambiguous
+10680 |   __int128 songCount   = pow( 2, songPowerOf );
+      |                          ~~~^~~~~~~~~~~~~~~~~~
+/usr/share/mingw-w64/include/math.h:191:18: note: candidate: ‘double pow(double, double)’
+  191 |   double __cdecl pow(double _X,double _Y);
+      |                  ^~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/cmath:380:3: note: candidate: ‘constexpr long double std::pow(long double, long double)’
+  380 |   pow(long double __x, long double __y)
+      |   ^~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/cmath:376:3: note: candidate: ‘constexpr float std::pow(float, float)’
+  376 |   pow(float __x, float __y)
+      |   ^~~
+main.cpp:10682:19: error: call of overloaded ‘pow(int, __int128&)’ is ambiguous
+10682 | privateGrid  = pow( 2, powerOf ); returnTile= new byte[privateGrid]; //1,048,576
+      |                ~~~^~~~~~~~~~~~~~
+/usr/share/mingw-w64/include/math.h:191:18: note: candidate: ‘double pow(double, double)’
+  191 |   double __cdecl pow(double _X,double _Y);
+      |                  ^~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/cmath:380:3: note: candidate: ‘constexpr long double std::pow(long double, long double)’
+  380 |   pow(long double __x, long double __y)
+      |   ^~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/cmath:376:3: note: candidate: ‘constexpr float std::pow(float, float)’
+  376 |   pow(float __x, float __y)
+      |   ^~~
+main.cpp:11042:17: error: ‘VK_RETURN’ was not declared in this scope
+11042 |    keybd_event( VK_RETURN, 0x0D, 0 , 0); // Emulates Keyboard enter key
+      |                 ^~~~~~~~~
+main.cpp:11042:4: error: ‘keybd_event’ was not declared in this scope
+11042 |    keybd_event( VK_RETURN, 0x0D, 0 , 0); // Emulates Keyboard enter key
+      |    ^~~~~~~~~~~
+main.cpp:11303:36: error: cannot convert ‘int’ to ‘std::byte’
+11303 |                 PrimeOne.etchFeast(static_cast<int>(b));
+      |                                    ^~~~~~~~~~~~~~~~~~~
+      |                                    |
+      |                                    int
+main.cpp:8480:21: note:   initializing argument 1 of ‘void primeTileClass::etchFeast(std::byte)’
+ 8480 | void etchFeast(byte data) { etchTile(data);total++;}
+      |                ~~~~~^~~~
+main.cpp:11499:6: error: no match for ‘operator==’ (operand types are ‘const std::byte’ and ‘int’)
+11499 | if (b==0){   tileFault=true;   break; }
+      |     ~^~~
+      |     |  |
+      |     |  int
+      |     const std::byte
+main.cpp:10641:5: warning: unused variable ‘vectorWalk’ [-Wunused-variable]
+10641 | int vectorWalk=0;    vector < thread > gitChoir;
+      |     ^~~~~~~~~~
+main.cpp:10657:10: warning: unused variable ‘wolfLeap’ [-Wunused-variable]
+10657 | __int128 wolfLeap =0;
+      |          ^~~~~~~~
+main.cpp:10658:5: warning: unused variable ‘wolfHunger’ [-Wunused-variable]
+10658 | int wolfHunger=0; int GuestInit=1;
+      |     ^~~~~~~~~~
+main.cpp:10659:29: warning: unused variable ‘conductorClockIns’ [-Wunused-variable]
+10659 |   string gitData="";    int conductorClockIns =0;    int conductorClockIn = getCurrentTimeInSeconds();
+      |                             ^~~~~~~~~~~~~~~~~
+main.cpp:10680:12: warning: unused variable ‘songCount’ [-Wunused-variable]
+10680 |   __int128 songCount   = pow( 2, songPowerOf );
+      |            ^~~~~~~~~
+main.cpp:11054:6: warning: unused variable ‘weaveNewHost’ [-Wunused-variable]
+11054 | bool weaveNewHost=false;
+      |      ^~~~~~~~~~~~
+main.cpp:11057:6: warning: unused variable ‘infinite’ [-Wunused-variable]
+11057 | bool infinite = true;  __int128 infiniteWalk=0;
+      |      ^~~~~~~~
+main.cpp:11058:5: warning: unused variable ‘choirSize’ [-Wunused-variable]
+11058 | int choirSize=0;
+      |     ^~~~~~~~~
+main.cpp:11061:5: warning: unused variable ‘assignedPort’ [-Wunused-variable]
+11061 | int assignedPort = globalNewHostPort;
+      |     ^~~~~~~~~~~~
+main.cpp:11065:5: warning: unused variable ‘hostConduits’ [-Wunused-variable]
+11065 | int hostConduits = conduits;
+      |     ^~~~~~~~~~~~
+main.cpp:11066:5: warning: unused variable ‘guestConduits’ [-Wunused-variable]
+11066 | int guestConduits = conduits;
+      |     ^~~~~~~~~~~~~
+main.cpp:11067:5: warning: unused variable ‘conduitCount’ [-Wunused-variable]
+11067 | int conduitCount =0;
+      |     ^~~~~~~~~~~~
+main.cpp:11068:10: warning: unused variable ‘weaverDataHost’ [-Wunused-variable]
+11068 | __int128 weaverDataHost = 0;
+      |          ^~~~~~~~~~~~~~
+main.cpp: In constructor ‘conduitClass::conduitClass(int)’:
+main.cpp:11571:9: warning: unused variable ‘guestReturnArray’ [-Wunused-variable]
+11571 | string* guestReturnArray = new string[ 1 ];
+      |         ^~~~~~~~~~~~~~~~
+main.cpp:11577:9: warning: unused variable ‘guestReturnIpArray’ [-Wunused-variable]
+11577 | string* guestReturnIpArray = new string[ 1 ];
+      |         ^~~~~~~~~~~~~~~~~~
+main.cpp:11579:9: warning: unused variable ‘guestReturnGearArray’ [-Wunused-variable]
+11579 | string* guestReturnGearArray = new string[ 1 ];
+      |         ^~~~~~~~~~~~~~~~~~~~
+main.cpp:11587:8: warning: unused variable ‘metalUpTime’ [-Wunused-variable]
+11587 | double metalUpTime = 0;// realm_metalUpTime();
+      |        ^~~~~~~~~~~
+main.cpp: In member function ‘int conduitClass::vectorToByteArray(const std::vector<std::byte>&, std::byte*, size_t)’:
+main.cpp:11794:72: warning: no return statement in function returning non-void [-Wreturn-type]
+11794 | if (size >= vec.size()) { memcpy(byteArray, vec.data(), vec.size());  }}
+      |                                                                        ^
+main.cpp: In function ‘int main(int, char**)’:
+main.cpp:11985:26: error: ‘GetConsoleWindow’ was not declared in this scope; did you mean ‘consoleWindow’?
+11985 |     HWND consoleWindow = GetConsoleWindow();
+      |                          ^~~~~~~~~~~~~~~~
+      |                          consoleWindow
+main.cpp:11991:5: error: ‘RECT’ was not declared in this scope
+11991 |     RECT desktopRect;
+      |     ^~~~
+main.cpp:11992:27: error: ‘GetDesktopWindow’ was not declared in this scope
+11992 |     const HWND hDesktop = GetDesktopWindow();
+      |                           ^~~~~~~~~~~~~~~~
+main.cpp:11993:30: error: ‘desktopRect’ was not declared in this scope
+11993 |     GetWindowRect(hDesktop, &desktopRect);
+      |                              ^~~~~~~~~~~
+main.cpp:11993:5: error: ‘GetWindowRect’ was not declared in this scope
+11993 |     GetWindowRect(hDesktop, &desktopRect);
+      |     ^~~~~~~~~~~~~
+main.cpp:12002:33: error: ‘HWND_TOP’ was not declared in this scope
+12002 |     SetWindowPos(consoleWindow, HWND_TOP, x, y, width, height, SWP_SHOWWINDOW);
+      |                                 ^~~~~~~~
+main.cpp:12002:64: error: ‘SWP_SHOWWINDOW’ was not declared in this scope
+12002 |     SetWindowPos(consoleWindow, HWND_TOP, x, y, width, height, SWP_SHOWWINDOW);
+      |                                                                ^~~~~~~~~~~~~~
+main.cpp:12002:5: error: ‘SetWindowPos’ was not declared in this scope
+12002 |     SetWindowPos(consoleWindow, HWND_TOP, x, y, width, height, SWP_SHOWWINDOW);
+      |     ^~~~~~~~~~~~
+main.cpp:12004:5: error: ‘SetConsoleTitle’ was not declared in this scope
+12004 |     SetConsoleTitle("PrimeBookGear");
+      |     ^~~~~~~~~~~~~~~
+main.cpp:12039:6: warning: unused variable ‘interrupted’ [-Wunused-variable]
+12039 | bool interrupted = false;
+      |      ^~~~~~~~~~~
+main.cpp: In function ‘void AttachConsoleWindow()’:
+main.cpp:12248:5: error: ‘AllocConsole’ was not declared in this scope
+12248 |     AllocConsole(); // Allocate a new console for this process
+      |     ^~~~~~~~~~~~
+main.cpp:12253:15: warning: ISO C++ forbids converting a string constant to ‘char*’ [-Wwrite-strings]
+12253 | char* title = "Debug Console";
+      |               ^~~~~~~~~~~~~~~
+main.cpp:12254:1: error: ‘SetConsoleTitle’ was not declared in this scope
+12254 | SetConsoleTitle(title);
+      | ^~~~~~~~~~~~~~~
+main.cpp: In function ‘double realm_metalUptime()’:
+main.cpp:12352:20: error: ‘GetTickCount’ was not declared in this scope
+12352 |     DWORD uptime = GetTickCount();
+      |                    ^~~~~~~~~~~~
+main.cpp: In function ‘std::tuple<int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, __int128, int, int, int, std::vector<std::byte, std::allocator<std::byte> >, int, std::unique_ptr<std::byte [], std::default_delete<std::byte []> > > realm_conduit_win_guest(std::string, std::string, std::string, int, int, std::string, int, std::string, std::string, std::string, std::string, std::string, std::vector<std::byte>, int, int, int, int)’:
+main.cpp:13107:12: error: ‘MAKEWORD’ was not declared in this scope
+13107 | WORD ver = MAKEWORD(2, 2);
+      |            ^~~~~~~~
+main.cpp:13118:15: error: request for member ‘S_un’ in ‘hint.sockaddr_in::sin_addr’, which is of non-class type ‘uint32_t’ {aka ‘unsigned int’}
+13118 | hint.sin_addr.s_addr = inet_addr(hostIp.c_str());
+      |               ^~~~~~
+main.cpp:13119:35: error: could not convert ‘hint.sockaddr_in::sin_addr’ from ‘uint32_t’ {aka ‘unsigned int’} to ‘IN_ADDR’ {aka ‘in_addr’}
+13119 | string ipAddress = inet_ntoa(hint.sin_addr);
+      |                              ~~~~~^~~~~~~~
+      |                                   |
+      |                                   uint32_t {aka unsigned int}
+main.cpp:13086:6: warning: unused variable ‘yesContinue’ [-Wunused-variable]
+13086 | bool yesContinue=true;  vector<byte> tileReceive;
+      |      ^~~~~~~~~~~
+main.cpp:13087:7: warning: unused variable ‘socketSearch’ [-Wunused-variable]
+13087 |  bool socketSearch=true; std::unique_ptr<byte[]> tileData(new byte[privateGrid]);   //byte* tileData = new byte[privateGrid];
+      |       ^~~~~~~~~~~~
+main.cpp:13089:9: warning: unused variable ‘sendForever’ [-Wunused-variable]
+13089 |    bool sendForever=true; bool guestCout = true;
+      |         ^~~~~~~~~~~
+main.cpp:13089:32: warning: unused variable ‘guestCout’ [-Wunused-variable]
+13089 |    bool sendForever=true; bool guestCout = true;
+      |                                ^~~~~~~~~
+main.cpp:13090:6: warning: unused variable ‘receiveForever’ [-Wunused-variable]
+13090 | bool receiveForever=true;
+      |      ^~~~~~~~~~~~~~
+main.cpp:13091:6: warning: unused variable ‘dataSend’ [-Wunused-variable]
+13091 |  int dataSend=0;     __int128 guestAssignedWolfLeap =0; int guestAssignedWolfHunger =0;
+      |      ^~~~~~~~
+main.cpp:13094:29: warning: unused variable ‘wolfHunger’ [-Wunused-variable]
+13094 |     string delString;   int wolfHunger = 16 ;    string wolfHungerString = "16"; //  2pow(16)
+      |                             ^~~~~~~~~~
+main.cpp:13096:5: warning: unused variable ‘totalSends’ [-Wunused-variable]
+13096 | int totalSends=0;   int allData=0;
+      |     ^~~~~~~~~~
+main.cpp:13096:25: warning: unused variable ‘allData’ [-Wunused-variable]
+13096 | int totalSends=0;   int allData=0;
+      |                         ^~~~~~~
+main.cpp: In function ‘void librarian_functions(std::string, int, int, std::string, std::string, std::string, bool, std::string, bool)’:
+main.cpp:14244:8: warning: unused variable ‘runForever’ [-Wunused-variable]
+14244 |   bool runForever=true;
+      |        ^~~~~~~~~~
+main.cpp: In function ‘void realm_win_handles_process()’:
+main.cpp:14767:23: error: ‘GetCurrentProcessId’ was not declared in this scope
+14767 |     DWORD processId = GetCurrentProcessId();
+      |                       ^~~~~~~~~~~~~~~~~~~
+main.cpp:14768:40: error: ‘PROCESS_ALL_ACCESS’ was not declared in this scope
+14768 |     HANDLE processHandle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, processId);
+      |                                        ^~~~~~~~~~~~~~~~~~
+main.cpp:14768:28: error: ‘OpenProcess’ was not declared in this scope
+14768 |     HANDLE processHandle = OpenProcess(PROCESS_ALL_ACCESS, FALSE, processId);
+      |                            ^~~~~~~~~~~
+main.cpp:14773:9: error: ‘CloseHandle’ was not declared in this scope; did you mean ‘processHandle’?
+14773 |         CloseHandle(processHandle);
+      |         ^~~~~~~~~~~
+      |         processHandle
+main.cpp: In function ‘void realm_win_handles_events()’:
+main.cpp:16018:6: warning: unused variable ‘yesContinue’ [-Wunused-variable]
+16018 | bool yesContinue=false;
+      |      ^~~~~~~~~~~
+main.cpp: In function ‘void realm_win_handles_mutex()’:
+main.cpp:16332:6: warning: unused variable ‘yesContinue’ [-Wunused-variable]
+16332 | bool yesContinue=false;
+      |      ^~~~~~~~~~~
+main.cpp: In function ‘void realm_win_save_state()’:
+main.cpp:16654:28: error: ‘GetCurrentProcess’ was not declared in this scope
+16654 |     HANDLE processHandle = GetCurrentProcess();
+      |                            ^~~~~~~~~~~~~~~~~
+main.cpp:16657:5: error: ‘SYSTEM_INFO’ was not declared in this scope; did you mean ‘SYSTEM_HANDLE’?
+16657 |     SYSTEM_INFO systemInfo;
+      |     ^~~~~~~~~~~
+      |     SYSTEM_HANDLE
+main.cpp:16658:20: error: ‘systemInfo’ was not declared in this scope; did you mean ‘system’?
+16658 |     GetSystemInfo(&systemInfo);
+      |                    ^~~~~~~~~~
+      |                    system
+main.cpp:16658:5: error: ‘GetSystemInfo’ was not declared in this scope
+16658 |     GetSystemInfo(&systemInfo);
+      |     ^~~~~~~~~~~~~
+main.cpp:16659:5: error: ‘LPVOID’ was not declared in this scope
+16659 |     LPVOID minAddress = systemInfo.lpMinimumApplicationAddress;
+      |     ^~~~~~
+main.cpp:16660:11: error: expected ‘;’ before ‘maxAddress’
+16660 |     LPVOID maxAddress = systemInfo.lpMaximumApplicationAddress;
+      |           ^~~~~~~~~~~
+      |           ;
+main.cpp:16663:5: error: ‘SIZE_T’ was not declared in this scope
+16663 |     SIZE_T memorySize = static_cast<SIZE_T>(reinterpret_cast<BYTE*>(maxAddress) - reinterpret_cast<BYTE*>(minAddress));
+      |     ^~~~~~
+main.cpp:16674:44: error: ‘minAddress’ was not declared in this scope
+16674 |     if (!WriteProcessMemory(processHandle, minAddress, minAddress, memorySize, nullptr))
+      |                                            ^~~~~~~~~~
+main.cpp:16674:68: error: ‘memorySize’ was not declared in this scope
+16674 |     if (!WriteProcessMemory(processHandle, minAddress, minAddress, memorySize, nullptr))
+      |                                                                    ^~~~~~~~~~
+main.cpp:16674:10: error: ‘WriteProcessMemory’ was not declared in this scope
+16674 |     if (!WriteProcessMemory(processHandle, minAddress, minAddress, memorySize, nullptr))
+      |          ^~~~~~~~~~~~~~~~~~
+main.cpp:16681:49: error: ‘minAddress’ was not declared in this scope
+16681 |     outFile.write(reinterpret_cast<const char*>(minAddress), memorySize);
+      |                                                 ^~~~~~~~~~
+main.cpp:16681:62: error: ‘memorySize’ was not declared in this scope
+16681 |     outFile.write(reinterpret_cast<const char*>(minAddress), memorySize);
+      |                                                              ^~~~~~~~~~
+main.cpp: In function ‘void realm_win_updater(bool, std::string, std::string, std::string, std::string, std::string, std::string)’:
+main.cpp:17282:16: error: ‘MAKEWORD’ was not declared in this scope
+17282 |     WORD ver = MAKEWORD(2, 2);
+      |                ^~~~~~~~
+main.cpp:17298:19: error: request for member ‘S_un’ in ‘hint.sockaddr_in::sin_addr’, which is of non-class type ‘uint32_t’ {aka ‘unsigned int’}
+17298 |     hint.sin_addr.s_addr = inet_addr("127.0.0.1");
+      |                   ^~~~~~
+main.cpp:17299:39: error: could not convert ‘hint.sockaddr_in::sin_addr’ from ‘uint32_t’ {aka ‘unsigned int’} to ‘IN_ADDR’ {aka ‘in_addr’}
+17299 |     string ipAddress = inet_ntoa(hint.sin_addr);
+      |                                  ~~~~~^~~~~~~~
+      |                                       |
+      |                                       uint32_t {aka unsigned int}
+main.cpp:17325:20: warning: unknown escape sequence: '\P'
+17325 | std::ofstream copy("PrimeOneUpdate\PrimeOneUpdate.zip", std::ios::binary);
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:17386:19: error: ‘MAX_COMPUTERNAME_LENGTH’ was not declared in this scope
+17386 | char computerName[MAX_COMPUTERNAME_LENGTH + 1];
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:17387:33: error: ‘computerName’ was not declared in this scope; did you mean ‘computerNameSize’?
+17387 | DWORD computerNameSize = sizeof(computerName);
+      |                                 ^~~~~~~~~~~~
+      |                                 computerNameSize
+main.cpp:17392:1: error: ‘ZeroMemory’ was not declared in this scope
+17392 | ZeroMemory(host, NI_MAXHOST);
+      | ^~~~~~~~~~
+main.cpp:17394:5: error: ‘GetComputerName’ was not declared in this scope
+17394 | if (GetComputerName(computerName, &computerNameSize)){
+      |     ^~~~~~~~~~~~~~~
+main.cpp:17412:24: warning: unknown escape sequence: '\P'
+17412 | std::ifstream original("PrimeOneUpdate\PrimeOneUpdater.zip", std::ios::binary);
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:17445:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<char>::size_type’ {aka ‘long long unsigned int’} [-Wsign-compare]
+17445 |     if (dataSend >= data.size()) {
+      |         ~~~~~~~~~^~~~~~~~~~~~~~
+main.cpp:17273:25: warning: unused variable ‘yesContinue’ [-Wunused-variable]
+17273 | int PORT = 54000 ; bool yesContinue=true; bool socketSearch=true; int PORTgrow = PORT; bool sendForever=true;
+      |                         ^~~~~~~~~~~
+main.cpp:17275:6: warning: unused variable ‘receiveForever’ [-Wunused-variable]
+17275 | bool receiveForever=true; int dataSend=0;  bool socketForever=true;  bool printForever=true;
+      |      ^~~~~~~~~~~~~~
+main.cpp:17279:6: warning: unused variable ‘array’ [-Wunused-variable]
+17279 | int* array = new int[ARRAY_SIZE];
+      |      ^~~~~
+main.cpp: In function ‘void realm_win_handles_thread()’:
+main.cpp:17592:48: error: ‘TH32CS_SNAPTHREAD’ was not declared in this scope
+17592 |     HANDLE snapshot = CreateToolhelp32Snapshot(TH32CS_SNAPTHREAD, 0);
+      |                                                ^~~~~~~~~~~~~~~~~
+main.cpp:17593:21: error: ‘INVALID_HANDLE_VALUE’ was not declared in this scope
+17593 |     if (snapshot != INVALID_HANDLE_VALUE)
+      |                     ^~~~~~~~~~~~~~~~~~~~
+main.cpp:17595:9: error: ‘THREADENTRY32’ was not declared in this scope
+17595 |         THREADENTRY32 threadEntry;
+      |         ^~~~~~~~~~~~~
+main.cpp:17596:9: error: ‘threadEntry’ was not declared in this scope
+17596 |         threadEntry.dwSize = sizeof(threadEntry);
+      |         ^~~~~~~~~~~
+main.cpp:17597:13: error: ‘Thread32First’ was not declared in this scope
+17597 |         if (Thread32First(snapshot, &threadEntry))
+      |             ^~~~~~~~~~~~~
+main.cpp:17601:55: error: ‘GetCurrentProcessId’ was not declared in this scope
+17601 |                 if (threadEntry.th32OwnerProcessID == GetCurrentProcessId())
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+main.cpp:17603:54: error: ‘THREAD_ALL_ACCESS’ was not declared in this scope
+17603 |                     HANDLE threadHandle = OpenThread(THREAD_ALL_ACCESS, FALSE, threadEntry.th32ThreadID);
+      |                                                      ^~~~~~~~~~~~~~~~~
+main.cpp:17603:43: error: ‘OpenThread’ was not declared in this scope; did you mean ‘_beginthread’?
+17603 |                     HANDLE threadHandle = OpenThread(THREAD_ALL_ACCESS, FALSE, threadEntry.th32ThreadID);
+      |                                           ^~~~~~~~~~
+      |                                           _beginthread
+main.cpp:17605:21: error: ‘CloseHandle’ was not declared in this scope
+17605 |                     CloseHandle(threadHandle);
+      |                     ^~~~~~~~~~~
+main.cpp:17607:22: error: ‘Thread32Next’ was not declared in this scope
+17607 |             } while (Thread32Next(snapshot, &threadEntry));
+      |                      ^~~~~~~~~~~~
+main.cpp:17610:9: error: ‘CloseHandle’ was not declared in this scope
+17610 |         CloseHandle(snapshot);
+      |         ^~~~~~~~~~~
+main.cpp: In function ‘bool realm_win_port_check(std::string)’:
+main.cpp:17901:6: warning: unused variable ‘yesContinue’ [-Wunused-variable]
+17901 | bool yesContinue=true;
+      |      ^~~~~~~~~~~
+main.cpp: In function ‘void realm_os_tcp_host()’:
+main.cpp:18233:16: error: ‘MAKEWORD’ was not declared in this scope
+18233 |     WORD ver = MAKEWORD(2, 2);
+      |                ^~~~~~~~
+main.cpp:18215:6: warning: unused variable ‘yesContinue’ [-Wunused-variable]
+18215 | bool yesContinue=true;
+      |      ^~~~~~~~~~~
+main.cpp: In function ‘void realm_os_tcp_guest(std::string)’:
+main.cpp:18543:16: error: ‘MAKEWORD’ was not declared in this scope
+18543 |     WORD ver = MAKEWORD(2, 2);
+      |                ^~~~~~~~
+main.cpp:18565:19: error: request for member ‘S_un’ in ‘hint.sockaddr_in::sin_addr’, which is of non-class type ‘uint32_t’ {aka ‘unsigned int’}
+18565 |     hint.sin_addr.s_addr = inet_addr(remoteHostIPv4.c_str());
+      |                   ^~~~~~
+main.cpp:18529:6: warning: unused variable ‘yesContinue’ [-Wunused-variable]
+18529 | bool yesContinue=true;
+      |      ^~~~~~~~~~~
+In file included from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/x86_64-w64-mingw32/bits/c++allocator.h:33,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/allocator.h:46,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/string:43,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/locale_classes.h:40,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/ios_base.h:41,
+                 from /usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/iomanip:42:
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/new_allocator.h: In instantiation of ‘void std::__new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = std::byte; _Args = {int}; _Tp = std::byte]’:
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/alloc_traits.h:575:17:   required from ‘static void std::allocator_traits<std::allocator<_CharT> >::construct(allocator_type&, _Up*, _Args&& ...) [with _Up = std::byte; _Args = {int}; _Tp = std::byte; allocator_type = std::allocator<std::byte>]’
+  575 |           __a.construct(__p, std::forward<_Args>(__args)...);
+      |           ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/vector.tcc:117:30:   required from ‘std::vector<_Tp, _Alloc>::reference std::vector<_Tp, _Alloc>::emplace_back(_Args&& ...) [with _Args = {int}; _Tp = std::byte; _Alloc = std::allocator<std::byte>; reference = std::byte&]’
+  117 |             _Alloc_traits::construct(this->_M_impl, this->_M_impl._M_finish,
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  118 |                                      std::forward<_Args>(__args)...);
+      |                                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp:10491:65:   required from here
+10491 |         vectorCaches[primeArrayLane[guestPrimeQue]].emplace_back(static_cast<int>(byte));
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/usr/lib/gcc/x86_64-w64-mingw32/14-win32/include/c++/bits/new_allocator.h:191:11: error: cannot convert ‘int’ to ‘std::byte’ in initialization
+  191 |         { ::new((void *)__p) _Up(std::forward<_Args>(__args)...); }
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.cpp: In member function ‘__int128 primeTileClass::moonWalkPrime(__int128)’:
+main.cpp:4975:1: warning: control reaches end of non-void function [-Wreturn-type]
+ 4975 | } // Close return previousPrime function
+      | ^
+main.cpp: In member function ‘__int128 primeTileClass::nextWalkPrime(__int128)’:
+main.cpp:4658:1: warning: control reaches end of non-void function [-Wreturn-type]
+ 4658 | } // Close return nextPrime function
+      | ^

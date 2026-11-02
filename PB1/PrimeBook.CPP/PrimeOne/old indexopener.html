@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="refresh" content="25">
+
+<title>Responsive Background</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+</style></head>
+<body>
+<div class="background" id="background"></div>
+
+<script>
+    window.onload = function() {
+        var background = document.getElementById('background');
+        var screenWidth = window.innerWidth;
+        var screenHeight = window.innerHeight;
+        var orientation = screenWidth > screenHeight ? 'landscape' : 'portrait';
+        var resolutionCategory;
+
+        if (screenWidth <= 640 && screenHeight <= 480) {
+            resolutionCategory = '640x480';
+        } else if (screenWidth <= 1366 && screenHeight <= 768) {
+            resolutionCategory = '1366x768';
+        } else {
+            resolutionCategory = '1920x1080';
+        }
+
+        var imagePath = 'images/';
+
+        // Construct the image file path based on orientation and resolution category
+        var imageUrl = imagePath + orientation + '-' + resolutionCategory + '.jpg';
+
+        // Set the background image
+        background.style.backgroundImage = 'url(' + imageUrl + ')';
+    };
+</script>

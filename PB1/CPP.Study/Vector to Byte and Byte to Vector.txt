@@ -1,0 +1,55 @@
+#include <iostream>
+#include <vector>
+#include <cstring> // For memcpy
+
+// Initialize a vector as a byte array
+std::vector<uint8_t> initializeVector() {
+    return {0x01, 0x02, 0x03, 0x04, 0x05};
+}
+
+// Convert a byte array to a vector
+std::vector<uint8_t> byteArrayToVector(const uint8_t* byteArray, size_t size) {
+    return std::vector<uint8_t>(byteArray, byteArray + size);
+}
+
+// Convert a vector to a byte array
+void vectorToByteArray(const std::vector<uint8_t>& vec, uint8_t* byteArray, size_t size) {
+    if (size >= vec.size()) {
+        std::memcpy(byteArray, vec.data(), vec.size());
+    }
+}
+
+int main() {
+    // Initialize vector
+    std::vector<uint8_t> vec = initializeVector();
+    
+    // Print vector
+    std::cout << "Vector contents: ";
+    for (uint8_t byte : vec) {
+        std::cout << std::hex << static_cast<int>(byte) << " ";
+    }
+    std::cout << std::dec << std::endl;
+
+    // Convert vector to byte array
+    uint8_t byteArray[5];
+    vectorToByteArray(vec, byteArray, sizeof(byteArray));
+    
+    // Print byte array
+    std::cout << "Byte array contents: ";
+    for (size_t i = 0; i < vec.size(); ++i) {
+        std::cout << std::hex << static_cast<int>(byteArray[i]) << " ";
+    }
+    std::cout << std::dec << std::endl;
+
+    // Convert byte array back to vector
+    std::vector<uint8_t> vecFromBytes = byteArrayToVector(byteArray, sizeof(byteArray));
+    
+    // Print new vector
+    std::cout << "Vector from byte array: ";
+    for (uint8_t byte : vecFromBytes) {
+        std::cout << std::hex << static_cast<int>(byte) << " ";
+    }
+    std::cout << std::dec << std::endl;
+    
+    return 0;
+}

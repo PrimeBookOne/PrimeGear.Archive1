@@ -1,0 +1,199 @@
+#include <iostream>
+#include <thread>
+#include <vector>
+#include <future>
+#include <condition_variable>
+#include <queue>
+
+
+
+int totalThreads= 8;
+int my perThreadSlices=300000;
+__int128 globalArraySize= 79000000000; // must be an as large a number as current memory allocation can allow
+
+queue<std::vector<int16>> perThreadData[totalThreads];
+
+
+mutex singerFinishedMutex[totalThreads];
+bool singerFinished[perThreadSlices];
+
+mutex globalArrayMutex;  // mutex to have only one thread read at a time
+int16 globalArray[globalArraySize];
+
+
+
+void singerThread(int totalSingers, int singer, __int16 perThreadSlices(perThreadSlices) {
+    //initialize thread
+    __int128 totalCount=perThreadSlices;
+    int finishedSingers =0;
+    bool checked = false;
+    
+    
+    for (int i = 0; i < 1; ) {
+    
+    
+      for (int j = 0; j < perThreadSlices; ) {
+        while (checked = false){ 
+          if (mutex globalArray = unlocked){
+            checked = true;
+            mutex lock globalArray
+            if (globalArray[j] < 100) {
+              perThreadData[singer].emplaceback(j);
+            }
+            mutex unlock globalArray
+       
+         else {
+           cout "Locked Mutex now Waiting";
+           chrono wait 5 seconds;}
+         }
+       }
+       checked = false;
+       j++;
+       }
+       finishedSingers =0;
+       
+
+    
+    }
+    
+    
+    
+    while (checked = false) {
+    
+      if (mutex singerFinishedArray = unlocked){
+        mutex lock singerFinishedArray;
+        singerFinishedArray[singer] == true;
+        mutex unlock singerFinished;
+        checked = true;
+      }
+    }
+    checked = false;
+         
+         
+     while (checked = false) {
+
+      if (mutex singerFinishedArray = unlocked){
+        mutex lock singerFinishedArray;
+        if (singerFinishedArray[singer] == false;
+        mutex unlock singerFinishedArray;
+        checked = true;
+      }
+    }
+    checked = false;
+ 
+ 
+ }
+          
+} 
+     }
+
+}
+   checked = false;
+    
+
+} // infinite thread
+
+} // Finish thread
+
+
+
+
+
+
+
+int main() {
+
+
+
+int b = 0;
+
+
+
+    // fill baseArray threads
+    vector<thread> singerThread;
+    for (int i = 0; i < numSingers; ++i) {
+    
+    
+        workerThreads.emplace_back(singerThread, totalSingers, singer);
+    }
+
+    // wait for all threads to finish processing
+    for (int i = 0; i < totalThreads; ++i) {
+        threadExitFutures[i].wait();
+    }
+
+    // Use OpenMP to process array
+    #pragma omp parallel for
+    for (int i = 0; i < globalArray.size(); i++) {
+        globalArray[i] *= 2;
+    }
+
+
+
+
+while (allFinished != true){
+  while ( b < mainTtotalThreads; b++) {
+    while (checked = false) {
+    
+      if (mutex singerFinished = unlocked){
+        mutex lock singerFinishedArray;
+        
+        if (singerFinishedArray[b] == true){
+          mutex unlock singerFinished;
+          checked = true;
+          finishedSingers++;
+          
+          if (finishedSingers = mainTtotalThreads){
+            allFinished = true;
+          }
+          
+        } 
+     }
+
+
+   }
+   checked = false;
+   finishedSingers=0;
+   
+   
+   
+       }
+       
+          else {
+           cout << "Locked Finished Mutex " << b << " now Waiting" << endl;
+           chrono wait 5 seconds;}
+         }
+     }
+
+} // infinite main loop
+} // finish main function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

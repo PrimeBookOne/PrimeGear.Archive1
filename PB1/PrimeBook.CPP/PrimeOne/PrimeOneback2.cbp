@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PrimeOne" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc-tdm-64" />
+		<Build>
+			<Target title="Debug">
+				<Option platforms="Windows;" />
+				<Option output="PrimeOne" prefix_auto="1" extension_auto="1" />
+				<Option object_output="C:/Users/Shark/Desktop/gyro.cpp.2023/PrimeOne" />
+				<Option type="1" />
+				<Option compiler="gcc-tdm-64" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add option="-lssh" />
+			<Add directory="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/bin" />
+			<Add directory="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/include" />
+			<Add directory="C:/Users/Shark/Desktop/gyro.cpp.2023/curl/bin" />
+			<Add directory="C:/Users/Shark/Desktop/gyro.cpp.2023/curl/include" />
+			<Add directory="../curl/include" />
+			<Add directory="../curl/include/curl" />
+			<Add directory="cppcodec" />
+			<Add directory="C:/Users/Shark/vcpkg/installed/x64-windows/include/" />
+			<Add directory="libminiupnpc" />
+			<Add directory="../libssh" />
+			<Add directory="../libssh/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lws2_32" />
+			<Add option="-lcurl" />
+			<Add library="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/lib/x64/cudart.lib" />
+			<Add library="C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x64/d3d9.lib" />
+			<Add library="C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x64/d3dx9.lib" />
+			<Add library="C:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x86/d3d9.lib" />
+			<Add library="c:/Program Files (x86)/Microsoft DirectX SDK (June 2010)/Lib/x86/d3dx9.lib" />
+			<Add library="C:/Program Files (x86)/Windows Kits/10/Lib/10.0.19041.0/um/x86/SetupAPI.Lib" />
+			<Add library="C:/Program Files (x86)/Windows Kits/10/Lib/10.0.19041.0/um/x64/SetupAPI.Lib" />
+			<Add library="../curl/lib/libcurl.a" />
+			<Add library="ws2_32" />
+			<Add library="ssh" />
+			<Add directory="C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.2/lib/x64" />
+			<Add directory="../curl/lib" />
+			<Add directory="C:/Users/Shark/vcpkg/installed/x64-windows/lib" />
+			<Add directory="libminiupnpc" />
+			<Add directory="../libssh" />
+		</Linker>
+		<Unit filename="cppcodec/base64_rfc4648.hpp" />
+		<Unit filename="main.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,1552 @@
+{
+  "stem": "primeOne_2023_06_10",
+  "year": "2023",
+  "todos": [],
+  "milestones": [],
+  "directions": [],
+  "comments": [
+    {
+      "type": "COMMENT",
+      "content": "#include <io.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <GL/glut.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "link with Ws2_32.lib"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Excludes Anything That Isn't Emscriptem Compatible"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Excludes Anything That Isn't Emscriptem Compatible"
+    },
+    {
+      "type": "COMMENT",
+      "content": "UNIX ONLY #include <sys/socket.h> #include <netinet/in.h> #include <arpa/inet.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <netdb.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-application.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-common.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "variable_type_array_step_count"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//////////////// GLOBAL Dancer"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//////////////// GLOBAL"
+    },
+    {
+      "type": "COMMENT",
+      "content": "array size in bytes"
+    },
+    {
+      "type": "COMMENT",
+      "content": "1MB"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Port number for the connection"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(lineCount) << \"lineCount \"<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(lineCountMax) << \"lineCountMax \"<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(data) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "READ primeBook"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primemilestones <<   \"totalPrimes: \" <<  int(totalPrimes) << \",\" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primemilestones <<  \" CurrentPrime: \" << int( primeBuild )<< \",\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primemilestones <<  \"  LargestPrimeDifference  Div2: \"<<  pDlarge << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_querry();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "heartbeat();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "gyrocore();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "sw_purchase_verify();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int_fast16_t* primeDifferencesArray = new int_fast16_t[5376999999];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int_fast16_t* primeDifferencesArray = new int_fast16_t[76999999];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "bool* songArray = new bool[songRequest];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"FLEXFunction \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" \" << int(intTestSizeGrow) << \"    \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"too large of an Array\" << int(intTestSizeGrow) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "bool isConsole = isatty(fileno(stdin));"
+    },
+    {
+      "type": "COMMENT",
+      "content": "text_post = \"Realm OS is Compiled by: \"+Compiler; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "=\"cout << \" & CHAR(34) & \"Function Begin : \"  & B2 & CHAR(34)  & \" << endl;\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"singer \"<< int(singer)<< \"  infiniteWalk \"<< int(infiniteWalk) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "IF PRIME"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** WHILE DANCE = TRUE LOOP *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH findPrevious"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"     ********************** BUILD perThreadSlicesTHREADArray **************************** \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"singer \"<< int(singer)<< \"  difference \"<< int(primeDifference) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** IF PRIME BY RANGE *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** WHILE DANCE = TRUE LOOP *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "slices"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"                  ********************** threadFinished **************************** \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "myPrimeChapter.capPen();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "future use 767676767"
+    },
+    {
+      "type": "COMMENT",
+      "content": "future use 1000000"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"     **********************  singersDigitSize  **************************** \"; //cout << endl << \"     **********************  \" << int(singers) << \"  **************************** \"; "
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"    hello\" << primeMiles.check(primeDifference);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** IF PRIME BY RANGE *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** WHILE DANCE = TRUE LOOP *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "slices"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primeBook.capPen();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "=============================================v  //cout  << \"***** infinite main = true # \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"    singer \" << int(singer)<< \" totalScan \" << int(totalScan);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//////  check system and gpu temp compare and contrast to previous inquiries in array"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<\"Step:\" <<  int(singers * perThreadSlices *2);\n\nprintInt=((singers * perThreadSlices *2)-((infiniteWalk - (infiniteWalkStart + (singers * perThreadSlices *2)))));\n\ncout <<\"  Step Difference \";\n"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE INFINITE == TRUE  ===============================================^"
+    },
+    {
+      "type": "COMMENT",
+      "content": "create array of bits then by bits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "sort variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "++variable_type_step_check;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "list variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "text_post = \"FUNCTION   realm_conduit_weaver   HAS COMPLETED SUCESSFULLY!\"; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "create link between two threads within same OS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "newdns // new lots"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Display Current Network Information"
+    },
+    {
+      "type": "COMMENT",
+      "content": "User Input IP Address of LAN"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Change existing Network Configurations"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Change existing Network Configurations"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Sign Into Live Work Schedule"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows OS Handles"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows NETWORK HOST"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows NETWORK UPDATER"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows CHECK PORT"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input( userInput );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows UPDATE SEQUENCE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows TCP Guest"
+    },
+    {
+      "type": "COMMENT",
+      "content": "text_post = \"FUNCTION   library   HAS COMPLETED SUCESSFULLY!\"; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "text_post = \"FUNCTION   library_letter   HAS COMPLETED SUCESSFULLY!\"; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "// text_post = \"FUNCTION   library_time   HAS COMPLETED SUCESSFULLY!\"; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_webgl();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_opengl();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_vulkan();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_metal();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_directx();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_cores_zeluda();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_cores_gpufort();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Get number of available CUDA devices"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Query each device for its maximum number of threads per block"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void ListProcessHandles()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int main()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return -1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Create the socket"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return -1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Bind the socket to a port"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return -1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Listen for incoming connections"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return -1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Accept the guest connection"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void ListProcessHandles()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void ListFileHandles()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "HRESULT hres;\n\n    // Step 1: Initialize COM\n//    hres = CoInitializeEx(0, COINIT_MULTITHREADED);\n    if (FAILED(hres))\n    {\n        std::cout << \"Failed to initialize COM.\" << std::endl;\n        re"
+    },
+    {
+      "type": "COMMENT",
+      "content": "BOOL CALLBACK EnumWindowsProc(HWND hwnd, LPARAM lParam)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Process or store the window handle as needed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"Window Handle: \" << hwnd << std::endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if (!EnumWindows(EnumWindowsProc, 0))"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"Failed to enumerate window handles.\" << std::endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void ListSocketHandles()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WSADATA wsaData;\n    if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0)\n    {\n        std::cout << \"Failed to initialize Winsock.\" << std::endl;\n        return;\n    }\n\n    SOCKET s = socket(AF_INET, SOCK_"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Function to save memory state to a file"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void SaveMemoryState(const std::string& fileName)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Get the minimum and maximum address range of the process memory"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Calculate the size of the memory region to be saved"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Create a file for writing memory state"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Read the memory state of the process and write it to the file"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void send_data(SOCKET socket)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int* array = new int[ARRAY_SIZE];\n    for (int i = 0; i < ARRAY_SIZE; i++)\n        array[i] = i;\n\n    while (true)\n    {\n        // Send the data\n        int bytes_sent = send(socket, (char*)array, AR"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" ARRAY_SIZE \" <<  ARRAY_SIZE << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Initialize Winsock\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Create socket\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "closesocket(sock);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WSACleanup();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int received_array[ARRAY_SIZE];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "(socketSearch==true)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Socket Connected Successfully\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Listen for incoming connections"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Waiting for a connection \" << endl; // Accept a client socket"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Service (i.e., port) the client is connected on"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Client's remote name"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return 1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Get information about the client"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Read the contents of the file into the vector variable"
+    },
+    {
+      "type": "COMMENT",
+      "content": "break;  // Break out of the loop when all data has been sent"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void ListThreadHandles()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Execute the PowerShell command and capture the output"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Close the pipe"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Check if the port is available"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Initialize Winsock"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Create socket"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Initialize Winsock"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Create socket"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Connect to the server"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Prepare the array"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Modify this array according to your needs"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Send the array size"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Send the array elements"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Clean up"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <io.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <GL/glut.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "link with Ws2_32.lib"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Excludes Anything That Isn't Emscriptem Compatible"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Excludes Anything That Isn't Emscriptem Compatible"
+    },
+    {
+      "type": "COMMENT",
+      "content": "UNIX ONLY #include <sys/socket.h> #include <netinet/in.h> #include <arpa/inet.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include <netdb.h>"
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-application.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "#include \"../application/vulkan/vulkan-common.hpp\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "variable_type_array_step_count"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//////////////// GLOBAL Dancer"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//////////////// GLOBAL"
+    },
+    {
+      "type": "COMMENT",
+      "content": "array size in bytes"
+    },
+    {
+      "type": "COMMENT",
+      "content": "1MB"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Port number for the connection"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(lineCount) << \"lineCount \"<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(lineCountMax) << \"lineCountMax \"<< endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << int(data) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "READ primeBook"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primemilestones <<   \"totalPrimes: \" <<  int(totalPrimes) << \",\" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primemilestones <<  \" CurrentPrime: \" << int( primeBuild )<< \",\";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primemilestones <<  \"  LargestPrimeDifference  Div2: \"<<  pDlarge << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_querry();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "heartbeat();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "gyrocore();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "sw_purchase_verify();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int_fast16_t* primeDifferencesArray = new int_fast16_t[5376999999];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int_fast16_t* primeDifferencesArray = new int_fast16_t[76999999];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "bool* songArray = new bool[songRequest];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"FLEXFunction \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" \" << int(intTestSizeGrow) << \"    \" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"too large of an Array\" << int(intTestSizeGrow) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "bool isConsole = isatty(fileno(stdin));"
+    },
+    {
+      "type": "COMMENT",
+      "content": "text_post = \"Realm OS is Compiled by: \"+Compiler; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "=\"cout << \" & CHAR(34) & \"Function Begin : \"  & B2 & CHAR(34)  & \" << endl;\""
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"singer \"<< int(singer)<< \"  infiniteWalk \"<< int(infiniteWalk) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "IF PRIME"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** WHILE DANCE = TRUE LOOP *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "FINISH findPrevious"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"     ********************** BUILD perThreadSlicesTHREADArray **************************** \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"singer \"<< int(singer)<< \"  difference \"<< int(primeDifference) << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** IF PRIME BY RANGE *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** WHILE DANCE = TRUE LOOP *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "slices"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"                  ********************** threadFinished **************************** \";"
+    },
+    {
+      "type": "COMMENT",
+      "content": "myPrimeChapter.capPen();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "future use 767676767"
+    },
+    {
+      "type": "COMMENT",
+      "content": "future use 1000000"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"     **********************  singersDigitSize  **************************** \"; //cout << endl << \"     **********************  \" << int(singers) << \"  **************************** \"; "
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << endl << \"    hello\" << primeMiles.check(primeDifference);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** IF PRIME BY RANGE *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "******** WHILE DANCE = TRUE LOOP *******"
+    },
+    {
+      "type": "COMMENT",
+      "content": "slices"
+    },
+    {
+      "type": "COMMENT",
+      "content": "primeBook.capPen();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "=============================================v  //cout  << \"***** infinite main = true # \" ;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"    singer \" << int(singer)<< \" totalScan \" << int(totalScan);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "//////  check system and gpu temp compare and contrast to previous inquiries in array"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout <<\"Step:\" <<  int(singers * perThreadSlices *2);\n\nprintInt=((singers * perThreadSlices *2)-((infiniteWalk - (infiniteWalkStart + (singers * perThreadSlices *2)))));\n\ncout <<\"  Step Difference \";\n"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WHILE INFINITE == TRUE  ===============================================^"
+    },
+    {
+      "type": "COMMENT",
+      "content": "create array of bits then by bits"
+    },
+    {
+      "type": "COMMENT",
+      "content": "sort variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "++variable_type_step_check;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "list variables by bit type"
+    },
+    {
+      "type": "COMMENT",
+      "content": "text_post = \"FUNCTION   realm_conduit_weaver   HAS COMPLETED SUCESSFULLY!\"; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "create link between two threads within same OS"
+    },
+    {
+      "type": "COMMENT",
+      "content": "newdns // new lots"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Display Current Network Information"
+    },
+    {
+      "type": "COMMENT",
+      "content": "User Input IP Address of LAN"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Change existing Network Configurations"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Change existing Network Configurations"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Sign Into Live Work Schedule"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows OS Handles"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows NETWORK HOST"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows NETWORK UPDATER"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows CHECK PORT"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_os_user_input( userInput );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows UPDATE SEQUENCE"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Windows TCP Guest"
+    },
+    {
+      "type": "COMMENT",
+      "content": "text_post = \"FUNCTION   library   HAS COMPLETED SUCESSFULLY!\"; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "text_post = \"FUNCTION   library_letter   HAS COMPLETED SUCESSFULLY!\"; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "// text_post = \"FUNCTION   library_time   HAS COMPLETED SUCESSFULLY!\"; realm_post_client(text_function_name, text_post );"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_webgl();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_opengl();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_vulkan();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_metal();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_directx();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_cores_zeluda();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "realm_gl_cores_gpufort();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Get number of available CUDA devices"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Query each device for its maximum number of threads per block"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void ListProcessHandles()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int main()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return -1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Create the socket"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return -1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Bind the socket to a port"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return -1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Listen for incoming connections"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return -1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Accept the guest connection"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void ListProcessHandles()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void ListFileHandles()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "HRESULT hres;\n\n    // Step 1: Initialize COM\n//    hres = CoInitializeEx(0, COINIT_MULTITHREADED);\n    if (FAILED(hres))\n    {\n        std::cout << \"Failed to initialize COM.\" << std::endl;\n        re"
+    },
+    {
+      "type": "COMMENT",
+      "content": "BOOL CALLBACK EnumWindowsProc(HWND hwnd, LPARAM lParam)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Process or store the window handle as needed"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"Window Handle: \" << hwnd << std::endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "if (!EnumWindows(EnumWindowsProc, 0))"
+    },
+    {
+      "type": "COMMENT",
+      "content": "std::cout << \"Failed to enumerate window handles.\" << std::endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void ListSocketHandles()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WSADATA wsaData;\n    if (WSAStartup(MAKEWORD(2, 2), &wsaData) != 0)\n    {\n        std::cout << \"Failed to initialize Winsock.\" << std::endl;\n        return;\n    }\n\n    SOCKET s = socket(AF_INET, SOCK_"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Function to save memory state to a file"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void SaveMemoryState(const std::string& fileName)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Get the minimum and maximum address range of the process memory"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Calculate the size of the memory region to be saved"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Create a file for writing memory state"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Read the memory state of the process and write it to the file"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void send_data(SOCKET socket)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int* array = new int[ARRAY_SIZE];\n    for (int i = 0; i < ARRAY_SIZE; i++)\n        array[i] = i;\n\n    while (true)\n    {\n        // Send the data\n        int bytes_sent = send(socket, (char*)array, AR"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \" ARRAY_SIZE \" <<  ARRAY_SIZE << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Initialize Winsock\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Create socket\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "closesocket(sock);"
+    },
+    {
+      "type": "COMMENT",
+      "content": "WSACleanup();"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "int received_array[ARRAY_SIZE];"
+    },
+    {
+      "type": "COMMENT",
+      "content": "(socketSearch==true)"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Socket Connected Successfully\" << endl;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Listen for incoming connections"
+    },
+    {
+      "type": "COMMENT",
+      "content": "cout << \"Waiting for a connection \" << endl; // Accept a client socket"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Service (i.e., port) the client is connected on"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Client's remote name"
+    },
+    {
+      "type": "COMMENT",
+      "content": "return 1;"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Get information about the client"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Read the contents of the file into the vector variable"
+    },
+    {
+      "type": "COMMENT",
+      "content": "break;  // Break out of the loop when all data has been sent"
+    },
+    {
+      "type": "COMMENT",
+      "content": "void ListThreadHandles()"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Execute the PowerShell command and capture the output"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Close the pipe"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Check if the port is available"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Initialize Winsock"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Create socket"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Initialize Winsock"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Create socket"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Connect to the server"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Prepare the array"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Modify this array according to your needs"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Send the array size"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Send the array elements"
+    },
+    {
+      "type": "COMMENT",
+      "content": "Clean up"
+    }
+  ],
+  "functions": [
+    {
+      "return_type": "void",
+      "name": "write"
+    },
+    {
+      "return_type": "int_fast16_t",
+      "name": "breeze"
+    },
+    {
+      "return_type": "void",
+      "name": "still"
+    },
+    {
+      "return_type": "__int128",
+      "name": "primetotals"
+    },
+    {
+      "return_type": "void",
+      "name": "NET"
+    },
+    {
+      "return_type": "void",
+      "name": "WALL"
+    },
+    {
+      "return_type": "void",
+      "name": "DOOR"
+    },
+    {
+      "return_type": "void",
+      "name": "IP"
+    },
+    {
+      "return_type": "void",
+      "name": "PORTS"
+    },
+    {
+      "return_type": "void",
+      "name": "DHCP"
+    },
+    {
+      "return_type": "void",
+      "name": "IPCONFIG"
+    },
+    {
+      "return_type": "bool",
+      "name": "pen16"
+    },
+    {
+      "return_type": "void",
+      "name": "unCapPen"
+    },
+    {
+      "return_type": "void",
+      "name": "printMileStone"
+    },
+    {
+      "return_type": "void",
+      "name": "mark"
+    },
+    {
+      "return_type": "void",
+      "name": "capPen"
+    },
+    {
+      "return_type": "void",
+      "name": "read"
+    },
+    {
+      "return_type": "int",
+      "name": "main"
+    },
+    {
+      "return_type": "void",
+      "name": "heartbeat"
+    },
+    {
+      "return_type": "void",
+      "name": "gyrocore"
+    },
+    {
+      "return_type": "void",
+      "name": "sw_purchase_verify"
+    },
+    {
+      "return_type": "void",
+      "name": "realm"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_initiate"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_silent"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_responsive"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_multi_core"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gpu_primer"
+    },
+    {
+      "return_type": "int",
+      "name": "realm_sw_array_Flexor"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_interface"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_post_client"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_querry_client"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_menu"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_user_input"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_divisor_dancer"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variable_primer"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variables"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variable"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_sw_variables_sort"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduits"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduit_weaver"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduit"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduit_adapter"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduits_ring"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_conduit_tree"
+    },
+    {
+      "return_type": "void",
+      "name": "librarian_functions"
+    },
+    {
+      "return_type": "void",
+      "name": "librarian_menu"
+    },
+    {
+      "return_type": "void",
+      "name": "library"
+    },
+    {
+      "return_type": "void",
+      "name": "library_letter"
+    },
+    {
+      "return_type": "void",
+      "name": "library_time"
+    },
+    {
+      "return_type": "void",
+      "name": "librarian"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_querry"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_webgl"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_vulkan"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_opengl"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_metal"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_directx"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_cores_zeluda"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_cores_gpufort"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_cuda_devices"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_gl_cuda_querry"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_host"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_windows"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_handles_process"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_handles_file"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_handles_file2"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_handles_sockets"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_handles_events"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_handles_mutex"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_save_state"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_host_send_data"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_updater"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_handles_thread"
+    },
+    {
+      "return_type": "bool",
+      "name": "realm_win_port_check"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_tcp_host"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_os_tcp_guest"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_ipconfig"
+    },
+    {
+      "return_type": "void",
+      "name": "realm_win_roll"
+    }
+  ],
+  "classes": [
+    {
+      "type": "class",
+      "name": "primePillarClass"
+    },
+    {
+      "type": "class",
+      "name": "realm_conduit_win64Class"
+    },
+    {
+      "type": "class",
+      "name": "primeScribeClass"
+    },
+    {
+      "type": "class",
+      "name": "string128Class"
+    }
+  ],
+  "total_todos": 0,
+  "total_milestones": 0,
+  "total_directions": 0
+}

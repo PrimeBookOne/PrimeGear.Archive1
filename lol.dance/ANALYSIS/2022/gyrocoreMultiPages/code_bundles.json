@@ -1,0 +1,73 @@
+{
+  "stem": "gyrocoreMultiPages",
+  "year": "2022",
+  "total_cells": 15,
+  "non_empty_cells": 4,
+  "cpp_lines": 4,
+  "cpp_size": 102,
+  "incorporated_count": 4,
+  "unused_count": 0,
+  "incorporated": [
+    {
+      "cell": "A82",
+      "snippet": "realm_engine_controls",
+      "full_length": 21,
+      "status": "incorporated"
+    },
+    {
+      "cell": "A83",
+      "snippet": "realm_engine_controls_passthrough",
+      "full_length": 33,
+      "status": "incorporated"
+    },
+    {
+      "cell": "A84",
+      "snippet": "realm_engine_controls_io",
+      "full_length": 24,
+      "status": "incorporated"
+    },
+    {
+      "cell": "A85",
+      "snippet": "realm_engine_control",
+      "full_length": 20,
+      "status": "incorporated"
+    }
+  ],
+  "unused": [],
+  "bundles": [
+    [
+      {
+        "cell": "A82",
+        "snippet": "realm_engine_controls",
+        "full_length": 21,
+        "status": "incorporated"
+      },
+      {
+        "cell": "A83",
+        "snippet": "realm_engine_controls_passthrough",
+        "full_length": 33,
+        "status": "incorporated"
+      },
+      {
+        "cell": "A84",
+        "snippet": "realm_engine_controls_io",
+        "full_length": 24,
+        "status": "incorporated"
+      },
+      {
+        "cell": "A85",
+        "snippet": "realm_engine_control",
+        "full_length": 20,
+        "status": "incorporated"
+      }
+    ]
+  ],
+  "structure": {
+    "includes": [],
+    "defines": [],
+    "functions": [],
+    "classes": [],
+    "globals": [],
+    "comments": []
+  }
+}
